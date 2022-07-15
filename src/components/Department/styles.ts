@@ -14,19 +14,25 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  h1 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-  }
+  margin-right: auto;
 
-  p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #777777;
+  .test {
+    margin-left: 2rem;
+    
+    h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #000000;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #777777;
+    }
   }
 `;

@@ -1,18 +1,26 @@
 import React from "react";
-import marcos from "../../assets/marcos.png";
 import arrowLeft from "../../assets/arrow-left.svg";
 
 import { Container, Content } from "./styles";
 
-const Department: React.FC = () => {
+interface IDepartament {
+  imageUrl: string;
+  name: string;
+  role: string;
+  action?: Function;
+}
+
+const Department: React.FC<IDepartament> = ({ imageUrl, name, role, action }) => {
   return (
     <Container>
-      <img src={marcos} alt="Presidência" className="person" />
+      <img src={imageUrl} alt="person imagem" className="person" />
       <Content>
-        <h1>Presidência</h1>
-        <p>Pr. Marcos Júnior</p>
+        <div className="test">
+          <h1>{role}</h1>
+          <p>{name}</p>
+        </div>
       </Content>
-      <img src={arrowLeft} alt="Enter" className="arrow" />
+      <img src={arrowLeft} alt="Link to show page" className="arrow" />
     </Container>
   );
 };
