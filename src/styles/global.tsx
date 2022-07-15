@@ -19,7 +19,7 @@ export default createGlobalStyle`
   html, body, #root {
     margin: 0 auto;
     height: 100%;
-    background-color: #eeeeef;
+    background-color: #FFFFFF;
   }
   
   button {
