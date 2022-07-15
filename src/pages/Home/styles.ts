@@ -39,6 +39,17 @@ export const ButtonHome = styled.button`
   background-color: #e8d71d;
   border: 0;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+
+  img {
+    width: 30px;
+    transform: rotate(-30deg);
+    margin-left: 10px;
+  }
 `;
 
 export const Corredor = styled.div`
