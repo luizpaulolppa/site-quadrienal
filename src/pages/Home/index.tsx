@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import menu from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
+import arrowRight from "../../assets/arrow-right.svg";
 import setaParaBaixo from "../../assets/seta-para-baixo.png";
 
 import {
@@ -35,7 +36,10 @@ const Login: React.FC = () => {
         <strong>2019-2022</strong>
       </Title>
       <ButtonContainer>
-        <ButtonHome>Saiba mais</ButtonHome>
+        <ButtonHome>
+          Saiba mais
+          <img src={arrowRight} alt="arrowRight" />
+        </ButtonHome>
       </ButtonContainer>
       <Corredor>
         <Marquee gradient={false}>
