@@ -36,7 +36,7 @@ const Login: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   if (openMenu) {
-    return <Menu onClose={() => setOpenMenu(false)} />
+    return <Menu onClose={() => setOpenMenu(false)} isHome />
   }
 
   return (
