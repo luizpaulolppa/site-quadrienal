@@ -3,14 +3,14 @@ import arrowLeft from "../../assets/arrow-left.svg";
 
 import { Container, Content } from "./styles";
 
-interface IDepartament {
+interface IDepartment {
   imageUrl: string;
   name: string;
   role: string;
   action?: Function;
 }
 
-const Department: React.FC<IDepartament> = ({ imageUrl, name, role, action }) => {
+const Department: React.FC<IDepartment> = ({ imageUrl, name, role, action }) => {
   return (
     <Container>
       <img src={imageUrl} alt="person imagem" className="person" />
