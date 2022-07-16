@@ -1,5 +1,5 @@
 import React from "react";
-import arrowLeft from "../../assets/arrow-left.svg";
+import right from "../../assets/right.svg";
 
 import { Container, Content } from "./styles";
 
@@ -20,7 +20,7 @@ const Department: React.FC<IDepartment> = ({ imageUrl, name, role, action }) => 
           <p>{name}</p>
         </div>
       </Content>
-      <img src={arrowLeft} alt="Link to show page" className="arrow" />
+      <img src={right} alt="Link to show page" className="arrow" />
     </Container>
   );
 };

@@ -24,7 +24,9 @@ export const ItemMenu = styled.div`
   align-items: center;
   justify-content: flex-end;
   margin-top: 100px;
+  margin-left: 30px;
   margin-right: 30px;
+  cursor: pointer;
 
   img {
     width: 30px;

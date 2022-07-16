@@ -9,30 +9,33 @@ import {
   NameContainer,
   Title,
 } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 interface IMenu {
   onClose: () => void;
 }
 
 const Menu: React.FC<IMenu> = ({ onClose }) => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <ContainerMenu>
         <img src={close} alt="Menu" onClick={onClose} />
       </ContainerMenu>
-      <ItemMenu>
+      <ItemMenu onClick={() => navigate("/")}>
         <img src={arrowRight} alt="" />
         <NameContainer>
           <Title>Home</Title>
         </NameContainer>
       </ItemMenu>
-      <ItemMenu>
+      <ItemMenu onClick={() => navigate("/sobre-nos")}>
         <img src={arrowRight} alt="" />
         <NameContainer>
           <Title>Sobre nós</Title>
         </NameContainer>
       </ItemMenu>
-      <ItemMenu>
+      <ItemMenu onClick={() => navigate("/")}>
         <img src={arrowRight} alt="" />
         <NameContainer>
           <Title>Departamentos</Title>
