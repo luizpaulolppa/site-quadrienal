@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 20px;
+  cursor: pointer;
 
   .arrow {
     width: 24px;

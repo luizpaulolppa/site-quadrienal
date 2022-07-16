@@ -27,16 +27,87 @@ import {
   Corredor,
   Footer,
   Departments,
-  DepartmentsTitle
+  DepartmentsTitle,
 } from "./styles";
 import Department from "../../components/Department";
 import Menu from "../../components/Menu";
+
+interface IDepartment {
+  imageUrl: string;
+  name: string;
+  role: string;
+  url?: string;
+}
+
+const departments: IDepartment[] = [
+  {
+    imageUrl: marcos,
+    name: "Pr. Marcos Júnior",
+    role: "Presidência",
+    url: "/marcos-junior",
+  },
+  {
+    imageUrl: rogerio,
+    name: "Pr. Rogério Gurniak",
+    role: "Secretaria",
+  },
+  {
+    imageUrl: everson,
+    name: "Everson Braga",
+    role: "Tesouraria",
+  },
+  {
+    imageUrl: fabiana,
+    name: "Fabiana Nowack",
+    role: "Educação Adventista",
+  },
+  {
+    imageUrl: douglas,
+    name: "Pr. Douglas Silva",
+    role: "Ministério Jovem",
+  },
+  {
+    imageUrl: samara,
+    name: "Samara Zabel",
+    role: "Ministério da Criança",
+  },
+  {
+    imageUrl: jesse,
+    name: "Pr. Jessé Santos",
+    role: "Desbravadores & Aventureiros",
+  },
+  {
+    imageUrl: joao,
+    name: "Pr. João Lorini",
+    role: "Ministério Pessoal",
+  },
+  {
+    imageUrl: rosinha,
+    name: "Rosinha Oliveira",
+    role: "Ministério da Mulher",
+  },
+  {
+    imageUrl: paulo,
+    name: "Pr. Paulo Aguiar",
+    role: "Ministério da Família",
+  },
+  {
+    imageUrl: marcelo,
+    name: "Pr. Marcelo Dadamo",
+    role: "Evangelismo",
+  },
+  {
+    imageUrl: juraci,
+    name: "Pr. Juraci Hauser",
+    role: "Publicações",
+  },
+];
 
 const Login: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   if (openMenu) {
-    return <Menu onClose={() => setOpenMenu(false)} isHome />
+    return <Menu onClose={() => setOpenMenu(false)} isHome />;
   }
 
   return (
@@ -69,18 +140,14 @@ const Login: React.FC = () => {
       <Departments>
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DepartmentsTitle>Departamentos</DepartmentsTitle>
-        <Department imageUrl={marcos} name="Pr. Marcos Júnior" role="Presidência" />
-        <Department imageUrl={rogerio} name="Pr. Rogério Gurniak" role="Secretaria" />
-        <Department imageUrl={everson} name="Everson Braga" role="Tesouraria" />
-        <Department imageUrl={fabiana} name="Fabiana Nowack" role="Educação Adventista" />
-        <Department imageUrl={douglas} name="Pr. Douglas Silva" role="Ministério Jovem" />
-        <Department imageUrl={samara} name="Samara Zabel" role="Ministério da Criança" />
-        <Department imageUrl={jesse} name="Pr. Jessé Santos" role="Desbravadores & Aventureiros" />
-        <Department imageUrl={joao} name="Pr. João Lorini" role="Ministério Pessoal" />
-        <Department imageUrl={rosinha} name="Rosinha Oliveira" role="Ministério da Mulher" />
-        <Department imageUrl={paulo} name="Pr. Paulo Aguiar" role="Ministério da Família" />
-        <Department imageUrl={marcelo} name="Pr. Marcelo Dadamo" role="Evangelismo" />
-        <Department imageUrl={juraci} name="Pr. Juraci Hauser" role="Publicações" />
+        {departments.map((dep) => (
+          <Department
+            imageUrl={dep.imageUrl}
+            name={dep.name}
+            role={dep.role}
+            url={dep.url}
+          />
+        ))}
       </Departments>
       <Footer>
         <p>Avenida João Wallig, 596 - Porto Alegre/RS</p>
