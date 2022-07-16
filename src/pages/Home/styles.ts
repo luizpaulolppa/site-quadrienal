@@ -6,6 +6,10 @@ export const ContainerMenu = styled.div`
   position: absolute;
   top: 30px;
   right: 30px;
+
+  img {
+    width: 40px;
+  }
 `;
 
 export const ContentLogo = styled.div`

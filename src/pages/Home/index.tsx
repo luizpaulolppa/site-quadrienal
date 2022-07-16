@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Marquee from "react-fast-marquee";
-import menu from "../../assets/menu.png";
+import menu from "../../assets/menu.svg";
 import logo from "../../assets/logo.png";
 import arrowRight from "../../assets/arrow-right.svg";
 import setaParaBaixo from "../../assets/seta-para-baixo.png";
@@ -30,12 +30,19 @@ import {
   DepartmentsTitle
 } from "./styles";
 import Department from "../../components/Department";
+import Menu from "../../components/Menu";
 
 const Login: React.FC = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  if (openMenu) {
+    return <Menu onClose={() => setOpenMenu(false)} />
+  }
+
   return (
     <Container>
       <ContainerMenu>
-        <img src={menu} alt="Menu" />
+        <img src={menu} alt="Menu" onClick={() => setOpenMenu(true)} />
       </ContainerMenu>
       <ContentLogo>
         <img src={logo} alt="logo" />
