@@ -43,7 +43,9 @@ export const Role = styled.div`
   color: #FFFFFF;
 `;
 
-export const TextContainer = styled.div``;
+export const TextContainer = styled.div`
+  margin-top: 30px;
+`;
 
 export const TextCapitularContainer = styled.div`
   display: flex;
