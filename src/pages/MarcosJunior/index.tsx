@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import marcos from "../../assets/marcos-without-back.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
 import setaParaBaixo from "../../assets/seta-para-baixo-red.png";
+import igrejaCinza from "../../assets/igreja-cinza.png";
+import peopleCinza from "../../assets/people-cinza.png";
+import peopleIgrejaCinza from "../../assets/people-igreja-cinza.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -21,10 +24,15 @@ import {
   GreenBox,
   DataContainer,
   DataTitle,
+  BoxData,
+  BoxDataInfo,
+  ItemBoxData,
+  VerticalLine,
 } from "./styles";
 
 const MarcosJunior: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [itemSelected, setItemSelected] = useState(0);
   const navigate = useNavigate();
 
   if (openMenu) {
@@ -73,7 +81,36 @@ const MarcosJunior: React.FC = () => {
       <DataContainer>
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DataTitle>Dados</DataTitle>
-        
+        <ItemBoxData onMouseOver={() => setItemSelected(0)}>
+          <VerticalLine show={itemSelected === 0} />
+          <BoxData red={itemSelected === 0}>
+            <img src={igrejaCinza} alt="Igreja" />
+            <BoxDataInfo>
+              <p>Igrejas</p>
+              <p>130</p>
+            </BoxDataInfo>
+          </BoxData>
+        </ItemBoxData>
+        <ItemBoxData onMouseOver={() => setItemSelected(1)}>
+          <VerticalLine show={itemSelected === 1} />
+          <BoxData red={itemSelected === 1}>
+            <img src={peopleCinza} alt="Igreja" />
+            <BoxDataInfo>
+              <p>Igrejas</p>
+              <p>130</p>
+            </BoxDataInfo>
+          </BoxData>
+        </ItemBoxData>
+        <ItemBoxData onMouseOver={() => setItemSelected(2)}>
+          <VerticalLine show={itemSelected === 2} />
+          <BoxData red={itemSelected === 2}>
+            <img src={peopleIgrejaCinza} alt="Igreja" />
+            <BoxDataInfo>
+              <p>Igrejas</p>
+              <p>130</p>
+            </BoxDataInfo>
+          </BoxData>
+        </ItemBoxData>
       </DataContainer>
     </Container>
   );

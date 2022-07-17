@@ -8,7 +8,7 @@ export const TitleContainer = styled.div`
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 49.79%, #000000 73.23%);
   background-image: url(${marcos});
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@ export const Name = styled.div`
   font-weight: 600;
   font-size: 72px;
   line-height: 120%;
-  color: #DEDEDE;
+  color: #dedede;
 `;
 
 export const Role = styled.div`
@@ -40,7 +40,7 @@ export const Role = styled.div`
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
 `;
 
 export const TextContainer = styled.div`
@@ -57,7 +57,7 @@ export const FirstLetter = styled.div`
   font-weight: 600;
   font-size: 96px;
   line-height: 116px;
-  color: #13B466;
+  color: #13b466;
   margin-right: 8px;
 `;
 
@@ -66,18 +66,18 @@ export const Text = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #DEDEDE;
+  color: #dedede;
   text-align: justify;
 `;
 
 export const GreenBox = styled.div`
   padding: 30px;
-  background-color: #13B466;
+  background-color: #13b466;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 62px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   div {
     display: flex;
@@ -103,3 +103,64 @@ export const DataTitle = styled.h1`
   margin-top: 30px;
 `;
 
+export const ItemBoxData = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  cursor: pointer;
+`;
+
+interface IBoxData {
+  red: boolean;
+}
+
+export const BoxData = styled.div<IBoxData>`
+  width: 100%;
+  margin-left: 16px;
+  display: flex;
+  border-radius: 16px;
+  padding: 33px;
+  ${({ red }) => (red ? `background-color: #e20000;` : ``)}
+
+  img {
+    width: 62px;
+    height: 62px;
+  }
+
+  /* &:hover {
+    background-color: #e20000;
+  } */
+`;
+
+export const BoxDataInfo = styled.div`
+  width: 100%;
+  margin-left: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #e6e6e6;
+
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p + p {
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 8px;
+  }
+`;
+
+interface IVerticalLine {
+  show: boolean;
+}
+
+export const VerticalLine = styled.div<IVerticalLine>`
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  ${({ show }) => (show ? `background-color: #d9d9d9;` : ``)}
+`;
