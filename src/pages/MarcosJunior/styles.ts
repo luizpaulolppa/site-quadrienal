@@ -200,3 +200,17 @@ export const CrmContainer = styled.h1`
     margin-bottom: 30px;
   }
 `;
+
+export const EvangelismoContainer = styled.h1`
+  padding: 30px;
+  font-weight: 600;
+  font-size: 40px;
+
+  > p {
+    margin-bottom: 16px;
+  }
+
+  > img {
+    margin-top: 32px;
+  }
+`;

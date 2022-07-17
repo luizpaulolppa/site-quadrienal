@@ -15,6 +15,7 @@ import estudosBiblicos from "../../assets/marcos-junior/estudos-biblicos.png";
 import membrosPresentes from "../../assets/marcos-junior/membros-presentes.png";
 import missao from "../../assets/marcos-junior/missao.png";
 import relacionamento from "../../assets/marcos-junior/relacionamento.png";
+import semestre1 from "../../assets/marcos-junior/1-semestre.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -39,12 +40,15 @@ import {
   VerticalLine,
   MembersContainer,
   CrmContainer,
+  EvangelismoContainer,
 } from "./styles";
+import Tabs from "../../components/Tabs";
 
 const MarcosJunior: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [itemSelected, setItemSelected] = useState(0);
   const [graficoPosition, setGraficoPosition] = useState(0);
+  const [tabIndex, setTabIndex] = useState(0);
   const navigate = useNavigate();
 
   function getImg(imgPosition: number) {
@@ -169,6 +173,15 @@ const MarcosJunior: React.FC = () => {
         </select>
         {getImg(graficoPosition)}
       </CrmContainer>
+      <EvangelismoContainer>
+        <p>Evangelismos</p>
+        <Tabs
+          tabs={["1º semestre", "2º semestre"]}
+          value={tabIndex}
+          onChange={setTabIndex}
+        />
+        <img src={semestre1} alt="semestre1" />
+      </EvangelismoContainer>
     </Container>
   );
 };
