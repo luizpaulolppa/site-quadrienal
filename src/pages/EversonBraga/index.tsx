@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import everson from "../../assets/everson-without-back.png";
-import arrowDown from "../../assets/arrow-down-white.svg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import Menu from "../../components/Menu";
@@ -34,7 +33,7 @@ import {
   Fade
 } from "./styles";
 
-const Everson: React.FC = () => {
+const EversonBraga: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const navigate = useNavigate();
 
@@ -133,7 +132,7 @@ const Everson: React.FC = () => {
           Bairro Aparecida | Bento Gonçalves | 150.000,00
         </BalanceText>
         <br />
-        <BalanceBadge color="#63B4EF"><span>2023</span></BalanceBadge>
+        <BalanceBadge color="#63B4EF"><span>2022</span></BalanceBadge>
         <br />
         <BalanceText>
           Bairro Pinheiros | Lajeado | 125.000,00
@@ -176,4 +175,4 @@ const Everson: React.FC = () => {
   );
 };
 
-export default Everson;
+export default EversonBraga;
