@@ -8,6 +8,13 @@ import peopleCinza from "../../assets/people-cinza.png";
 import peopleIgrejaCinza from "../../assets/people-igreja-cinza.png";
 import membersTotal from "../../assets/members-total.png";
 import pizzaCrm from "../../assets/pizza-crm.png";
+import batismo from "../../assets/marcos-junior/batismo.png";
+import comunhao from "../../assets/marcos-junior/comunhao.png";
+import discipulado from "../../assets/marcos-junior/discipulado.png";
+import estudosBiblicos from "../../assets/marcos-junior/estudos-biblicos.png";
+import membrosPresentes from "../../assets/marcos-junior/membros-presentes.png";
+import missao from "../../assets/marcos-junior/missao.png";
+import relacionamento from "../../assets/marcos-junior/relacionamento.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -37,7 +44,29 @@ import {
 const MarcosJunior: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [itemSelected, setItemSelected] = useState(0);
+  const [graficoPosition, setGraficoPosition] = useState(0);
   const navigate = useNavigate();
+
+  function getImg(imgPosition: number) {
+    switch (imgPosition) {
+      case 0:
+        return <img src={pizzaCrm} alt="" />;
+      case 1:
+        return <img src={membrosPresentes} alt="" />;
+      case 2:
+        return <img src={comunhao} alt="" />;
+      case 3:
+        return <img src={relacionamento} alt="" />;
+      case 4:
+        return <img src={missao} alt="" />;
+      case 5:
+        return <img src={estudosBiblicos} alt="" />;
+      case 6:
+        return <img src={batismo} alt="" />;
+      case 7:
+        return <img src={discipulado} alt="" />;
+    }
+  }
 
   if (openMenu) {
     return <Menu onClose={() => setOpenMenu(false)} />;
@@ -122,7 +151,13 @@ const MarcosJunior: React.FC = () => {
       </MembersContainer>
       <CrmContainer>
         <p>CRM - ACSR</p>
-        <select name="" id="">
+        <select
+          defaultValue={0}
+          name="datas"
+          id="datas"
+          value={graficoPosition}
+          onChange={(data) => setGraficoPosition(Number(data.target.value))}
+        >
           <option value="0">Matriculados (%)</option>
           <option value="1">Membros Presentes (%)</option>
           <option value="2">Comunhão (%)</option>
@@ -132,7 +167,7 @@ const MarcosJunior: React.FC = () => {
           <option value="6">Batismo (%)</option>
           <option value="7">Discipulado Pós-Batismo (%)</option>
         </select>
-        <img src={pizzaCrm} alt="Pizza CRM" />
+        {getImg(graficoPosition)}
       </CrmContainer>
     </Container>
   );
