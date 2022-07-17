@@ -132,7 +132,7 @@ const Everson: React.FC = () => {
           Bairro Aparecida | Bento Gonçalves | 150.000,00
         </BalanceText>
         <br />
-        <BalanceBadge color="#63B4EF"><span>2023</span></BalanceBadge>
+        <BalanceBadge color="#63B4EF"><span>2022</span></BalanceBadge>
         <br />
         <BalanceText>
           Bairro Pinheiros | Lajeado | 125.000,00
