@@ -37,6 +37,7 @@ export const Name = styled.div`
   line-height: 120%;
   color: #dedede;
   margin-bottom: 20px;
+  margin-top: -18px;
 `;
 
 export const Role = styled.div`
