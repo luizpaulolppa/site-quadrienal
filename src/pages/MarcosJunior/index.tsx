@@ -6,6 +6,8 @@ import setaParaBaixo from "../../assets/seta-para-baixo-red.png";
 import igrejaCinza from "../../assets/igreja-cinza.png";
 import peopleCinza from "../../assets/people-cinza.png";
 import peopleIgrejaCinza from "../../assets/people-igreja-cinza.png";
+import membersTotal from "../../assets/members-total.png";
+import pizzaCrm from "../../assets/pizza-crm.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -28,6 +30,8 @@ import {
   BoxDataInfo,
   ItemBoxData,
   VerticalLine,
+  MembersContainer,
+  CrmContainer,
 } from "./styles";
 
 const MarcosJunior: React.FC = () => {
@@ -112,6 +116,24 @@ const MarcosJunior: React.FC = () => {
           </BoxData>
         </ItemBoxData>
       </DataContainer>
+      <MembersContainer>
+        Total de membros <span>16.842</span>
+        <img src={membersTotal} alt="membersTotal" />
+      </MembersContainer>
+      <CrmContainer>
+        <p>CRM - ACSR</p>
+        <select name="" id="">
+          <option value="0">Matriculados (%)</option>
+          <option value="1">Membros Presentes (%)</option>
+          <option value="2">Comunhão (%)</option>
+          <option value="3">Relacionamento (%)</option>
+          <option value="4">Missão (%)</option>
+          <option value="5">Estudos Bíblicos (%)</option>
+          <option value="6">Batismo (%)</option>
+          <option value="7">Discipulado Pós-Batismo (%)</option>
+        </select>
+        <img src={pizzaCrm} alt="Pizza CRM" />
+      </CrmContainer>
     </Container>
   );
 };
