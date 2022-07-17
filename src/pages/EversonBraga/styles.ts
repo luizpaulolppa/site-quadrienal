@@ -64,7 +64,7 @@ export const FirstLetter = styled.div`
   line-height: 116px;
   color: #13b466;
   margin-right: 8px;
-  margin-top: -50px;
+  margin-top: -75px;
 `;
 
 export const Text = styled.p`
