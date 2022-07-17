@@ -26,9 +26,8 @@ export const ImageContainer = styled.div`
   width: auto;
 
   img {
-    width: fit-content;
+    width: 100%;
   }
-  /* background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 69.58%); */
 `;
 
 export const Name = styled.div`
