@@ -50,6 +50,7 @@ const departments: IDepartment[] = [
     imageUrl: rogerio,
     name: "Pr. Rogério Gurniak",
     role: "Secretaria",
+    url: "/rogerio-gurniak",
   },
   {
     imageUrl: everson,

@@ -33,7 +33,7 @@ import {
   Fade
 } from "./styles";
 
-const Everson: React.FC = () => {
+const EversonBraga: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const navigate = useNavigate();
 
@@ -175,4 +175,4 @@ const Everson: React.FC = () => {
   );
 };
 
-export default Everson;
+export default EversonBraga;
