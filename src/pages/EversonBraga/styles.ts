@@ -63,7 +63,7 @@ export const Text = styled.p`
 `;
 
 export const GreenBox = styled.div`
-  padding: 30px;
+  padding: 80px 30px;
   background-color: #13b466;
   font-style: normal;
   font-weight: 500;
@@ -153,7 +153,7 @@ export const ThanksContainer = styled.div`
 export const ThanksTitle = styled.span`
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px;
 `;
 
@@ -195,10 +195,14 @@ export const BalanceText = styled.span`
 
 export const BalanceBadge = styled.div`
   border-radius: 4px;
-  padding: 3px 20px;
+  padding: 3px 30px;
   background: ${(props) => props.color};
 
   span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
     color: #FFFFFF;
   }
 `;

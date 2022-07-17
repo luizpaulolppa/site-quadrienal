@@ -107,20 +107,21 @@ const Everson: React.FC = () => {
       </GreenBox>
       <BalanceContainer>
         <BalanceTitle>Balanços Patrimoniais</BalanceTitle>
-        <br /><br />
+        <br /><br /><br />
         <BalanceSubTitle>Terrenos adquiridos</BalanceSubTitle>
+        <br />
         <BalanceBadge color="#F1403F"><span>2019</span></BalanceBadge>
         <br />
         <BalanceText>
           Presidente Vargas | Bairro Cruzeiro | 315.000,00
         </BalanceText>
-        <br /> <br />
+        <br /> 
         <BalanceBadge color="#19CD77"><span>2020</span></BalanceBadge>
         <br />
         <BalanceText>
           Boa Vista do Incra | Cruz Alta | 11.162,52
         </BalanceText>
-        <br /> <br />
+        <br />
         <BalanceBadge color="#E8D71E"><span>2021</span></BalanceBadge>
         <br />
         <BalanceText>
@@ -129,7 +130,7 @@ const Everson: React.FC = () => {
         <BalanceText>
           Bairro Aparecida | Bento Gonçalves | 150.000,00
         </BalanceText>
-        <br /> <br />
+        <br />
         <BalanceBadge color="#63B4EF"><span>2023</span></BalanceBadge>
         <br />
         <BalanceText>
