@@ -30,7 +30,8 @@ import {
   BalanceTitle,
   BalanceSubTitle,
   BalanceBadge,
-  BalanceText
+  BalanceText,
+  Fade
 } from "./styles";
 
 const Everson: React.FC = () => {
@@ -51,6 +52,7 @@ const Everson: React.FC = () => {
         <ImageContainer>
           <img src={everson} alt="Everson" />
         </ImageContainer>
+        <Fade></Fade>
         <Name>
           Everson
           <br /> Braga 

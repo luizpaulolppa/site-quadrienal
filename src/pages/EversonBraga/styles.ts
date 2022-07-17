@@ -11,10 +11,28 @@ export const TitleContainer = styled.div`
   background-color: black;
 `;
 
+export const Fade = styled.div`
+    height: 10px;
+    background-color: red;
+    margin-top: -20px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 108.58%);
+    border-radius: 10px 10px 0 0;
+
+    div {
+      background-color: #000000;
+    }
+`;
+
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 69.58%);
+  width: auto;
+
+  img {
+    width: fit-content;
+  }
+  /* background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 69.58%); */
 `;
 
 export const Name = styled.div`
