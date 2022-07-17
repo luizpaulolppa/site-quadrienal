@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import marcos from "../../assets/marcos-without-back.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
+import setaParaBaixo from "../../assets/seta-para-baixo-red.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -18,6 +19,8 @@ import {
   FirstLetter,
   Text,
   GreenBox,
+  DataContainer,
+  DataTitle,
 } from "./styles";
 
 const MarcosJunior: React.FC = () => {
@@ -67,6 +70,11 @@ const MarcosJunior: React.FC = () => {
           <img src={arrowDown} alt="Down" />
         </div>
       </GreenBox>
+      <DataContainer>
+        <img src={setaParaBaixo} alt="setaParaBaixo" />
+        <DataTitle>Dados</DataTitle>
+        
+      </DataContainer>
     </Container>
   );
 };

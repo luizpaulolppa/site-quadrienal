@@ -91,3 +91,15 @@ export const GreenBox = styled.div`
   }
 `;
 
+export const DataContainer = styled.div`
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+`;
+
+export const DataTitle = styled.h1`
+  margin-bottom: 30px;
+  margin-top: 30px;
+`;
+
