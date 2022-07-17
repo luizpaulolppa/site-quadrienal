@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import everson from "../../assets/everson-without-back.png";
-import arrowDown from "../../assets/arrow-down-white.svg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import Menu from "../../components/Menu";
