@@ -12,16 +12,12 @@ export const TitleContainer = styled.div`
 `;
 
 export const Fade = styled.div`
-    height: 10px;
+    height: 20px;
     background-color: red;
     margin-top: -20px;
     position: relative;
     background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 108.58%);
     border-radius: 10px 10px 0 0;
-
-    div {
-      background-color: #000000;
-    }
 `;
 
 export const ImageContainer = styled.div`
