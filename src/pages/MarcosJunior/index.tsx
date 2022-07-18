@@ -250,7 +250,7 @@ const MarcosJunior: React.FC = () => {
           com sua dedicação.
         </p>
         <br />
-        <p>
+        <p> 
           Minha gratidão aos pastores e diretores de escola, que, com seu
           compromisso, desenvolvem uma parte fundamental no processo de
           crescimento desta associação.
