@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import rogerio from "../../assets/rogerio-without-back.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
-// import redArrowDown from "../../assets/seta-para-baixo-red.png";
+import membersChart from "../../assets/members-per-gender-chart.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -22,6 +22,7 @@ import {
   ThanksContainer,
   ThanksText,
   ThanksTitle,
+  MembersContainer,
 } from "./styles";
 
 const RogerioGurniak: React.FC = () => {
@@ -67,6 +68,10 @@ const RogerioGurniak: React.FC = () => {
           <img src={arrowDown} alt="Down" />
         </div>
       </GreenBox>
+      <MembersContainer>
+        Total de membros <span>16.842</span>
+        <img src={membersChart} alt="Menbers per gender" />
+      </MembersContainer>
       <ThanksContainer>
         <img src={yellowArrowDown} alt="Seta para baixo amarela" />
         <br />

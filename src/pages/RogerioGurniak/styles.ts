@@ -211,3 +211,19 @@ export const BalanceBadge = styled.div`
     color: #FFFFFF;
   }
 `;
+
+export const MembersContainer = styled.h1`
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  color: #000000;
+  padding: 30px;
+
+  span {
+    color: #F1403F;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+`;
