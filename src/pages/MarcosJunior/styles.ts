@@ -9,10 +9,6 @@ export const TitleContainer = styled.div`
   font-weight: 600;
   font-size: 40px;
   color: #ffffff;
-  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 49.79%, #000000 73.23%);
-  background-image: url(${marcos});
-  background-repeat: no-repeat;
-  background-position: center; */
   background-color: black;
 `;
 
@@ -20,10 +16,6 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 69.58%);
-  /* background-clip: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 69.58%);
-  background-image: url(${marcos});
-  background-repeat: no-repeat;
-  background-position: center; */
   height: 300px;
 `;
 
@@ -33,6 +25,7 @@ export const Name = styled.div`
   font-size: 72px;
   line-height: 120%;
   color: #dedede;
+  margin-top: -80px;
 `;
 
 export const Role = styled.div`

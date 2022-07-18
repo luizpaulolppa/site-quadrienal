@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import rogerio from "../../assets/rogerio-without-back.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
-import redArrowDown from "../../assets/seta-para-baixo-red.png";
+// import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -22,7 +22,6 @@ import {
   ThanksContainer,
   ThanksText,
   ThanksTitle,
-  Fade
 } from "./styles";
 
 const RogerioGurniak: React.FC = () => {
@@ -43,7 +42,6 @@ const RogerioGurniak: React.FC = () => {
         <ImageContainer>
           <img src={rogerio} alt="Rogerio" />
         </ImageContainer>
-        <Fade></Fade>
         <Name>
           Pr.
           <br /> Rogério
