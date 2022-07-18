@@ -12,12 +12,12 @@ export const TitleContainer = styled.div`
 `;
 
 export const Fade = styled.div`
-    height: 20px;
-    background-color: red;
-    margin-top: -20px;
-    position: relative;
-    background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 108.58%);
-    border-radius: 10px 10px 0 0;
+  height: 20px;
+  background-color: red;
+  margin-top: -20px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 108.58%);
+  border-radius: 10px 10px 0 0;
 `;
 
 export const ImageContainer = styled.div`
@@ -124,7 +124,7 @@ export const HighlightsText = styled.span`
 
   span {
     &.red {
-      color: #F1403F;
+      color: #f1403f;
     }
   }
 `;
@@ -144,11 +144,11 @@ export const HighlightsDataText = styled.span`
 
   span {
     &.green {
-      color: #19CD77;
+      color: #19cd77;
     }
 
     &.blue {
-      color: #63B4EF;
+      color: #63b4ef;
     }
   }
 `;
@@ -217,6 +217,63 @@ export const BalanceBadge = styled.div`
     font-weight: 600;
     font-size: 32px;
     line-height: 130%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
+`;
+
+export const ObjetivosContainer = styled.div`
+  padding: 60px 30px 30px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 60px;
+  }
+`;
+
+export const AccordionContainer = styled.div`
+  margin-top: 16px;
+`;
+
+interface IAccordionHeader {
+  isOpen: boolean;
+}
+
+export const AccordionHeader = styled.div<IAccordionHeader>`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 96px;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer;
+  ${({ isOpen }) => (isOpen ? `background-color: #E20000;` : ``)}
+  ${({ isOpen }) => (isOpen ? `color: #ffffff;` : ``)}
+
+  .arrow {
+    height: 22px;
+    width: 22px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    ${({ isOpen }) => (isOpen ? `opacity: 1;` : ``)}
+  }
+`;
+
+export const AccordionBody = styled.div`
+  padding: 22px;
+  background-color: #fcfcfc;
 `;
