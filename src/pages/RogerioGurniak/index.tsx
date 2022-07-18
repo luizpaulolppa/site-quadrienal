@@ -107,7 +107,6 @@ const RogerioGurniak: React.FC = () => {
         <ImageContainer>
           <img src={rogerio} alt="Rogerio" />
         </ImageContainer>
-        <Fade></Fade>
         <Name>
           Pr.
           <br /> Rogério
