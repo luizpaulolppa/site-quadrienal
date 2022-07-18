@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import marcos from "../../assets/marcos-without-back.png";
+import selectArrowDown from "../../assets/select-arrow-down.png";
 
 export const Container = styled.div``;
 
@@ -156,4 +157,119 @@ export const VerticalLine = styled.div<IVerticalLine>`
   border-radius: 2px;
   background-color: #FFFFFF;
   ${({ show }) => (show ? `background-color: #d9d9d9;` : ``)}
+`;
+
+export const MembersContainer = styled.h1`
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  color: #000000;
+  padding: 30px;
+
+  span {
+    color: #F1403F;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+`;
+
+export const CrmContainer = styled.h1`
+  padding: 30px;
+  font-weight: 600;
+  font-size: 40px;
+
+  select {
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(${selectArrowDown});
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    padding: 18px;
+    margin-bottom: 30px;
+  }
+`;
+
+export const EvangelismoContainer = styled.div`
+  padding: 30px;
+  font-weight: 600;
+  font-size: 40px;
+
+  > p {
+    margin-bottom: 16px;
+  }
+
+  > img {
+    margin-top: 32px;
+  }
+`;
+
+export const ProjetoPlante = styled.div`
+  background-color: black;
+  padding: 30px;
+  
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const ImpactoACSR = styled.div`
+  padding: 30px;
+  
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const Livros = styled.div`
+  padding: 30px;
+  margin-top: 40px;
+  
+  h1 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+`;
+
+export const Agradecimentos = styled.div`
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
 `;
