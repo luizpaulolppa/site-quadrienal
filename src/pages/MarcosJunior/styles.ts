@@ -201,7 +201,7 @@ export const CrmContainer = styled.h1`
   }
 `;
 
-export const EvangelismoContainer = styled.h1`
+export const EvangelismoContainer = styled.div`
   padding: 30px;
   font-weight: 600;
   font-size: 40px;
@@ -212,5 +212,71 @@ export const EvangelismoContainer = styled.h1`
 
   > img {
     margin-top: 32px;
+  }
+`;
+
+export const ProjetoPlante = styled.div`
+  background-color: black;
+  padding: 30px;
+  
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const ImpactoACSR = styled.div`
+  padding: 30px;
+  
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const Livros = styled.div`
+  padding: 30px;
+  margin-top: 40px;
+  
+  h1 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+`;
+
+export const Agradecimentos = styled.div`
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
   }
 `;
