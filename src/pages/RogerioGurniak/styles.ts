@@ -104,55 +104,6 @@ export const GreenBox = styled.div`
   }
 `;
 
-export const Highlights = styled.div`
-  padding: 60px 30px 30px;
-  display: flex;
-  flex-direction: column;
-
-  img {
-    width: 48px;
-    height: 48px;
-  }
-`;
-
-export const HighlightsText = styled.span`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 130%;
-  color: #000000;
-
-  span {
-    &.red {
-      color: #f1403f;
-    }
-  }
-`;
-
-export const HighlightsTitle = styled.span`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
-`;
-
-export const HighlightsDataText = styled.span`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 62px;
-
-  span {
-    &.green {
-      color: #19cd77;
-    }
-
-    &.blue {
-      color: #63b4ef;
-    }
-  }
-`;
-
 export const ThanksContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
@@ -286,10 +237,146 @@ export const MembersContainer = styled.h1`
 
   img {
     margin-top: 30px;
+    width: 100%;
   }
 `;
 
 export const AccordionBody = styled.div`
   padding: 22px;
   background-color: #fcfcfc;
+`;
+
+export const AgeGroupContainer = styled.div`
+  padding: 30px;
+  font-weight: 600;
+  font-size: 40px;
+
+  > p {
+    margin-bottom: 16px;
+  }
+
+  > img {
+    margin-top: 32px;
+    width: 100%;
+  }
+`;
+
+export const EntriesAndMoveOutContainer = styled.div`
+  padding: 80px 30px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 80px;
+  }
+`;
+
+export const EntriesAndMoveOutTitle = styled.span`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+`;
+
+export const EntriesAndMoveOutSubtitle = styled.span`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+`;
+
+export const FormerReligionContainer = styled.div`
+  padding: 80px 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const LabelContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  div {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    img {
+      width: 10px;
+      height: 10px;
+      margin-right: 8px;
+    }
+  }
+`;
+
+export const FormerReligionTitle = styled.span`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #000000;
+`;
+
+export const Badge = styled.div`
+  border-radius: 4px;
+  padding: 3px 30px;
+  background: ${(props) => props.color};
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+`;
+
+export const HighlightsContainer = styled.div`
+  padding: 60px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+`;
+
+export const HighlightsTitle = styled.span`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  color: #ffff;
+`;
+
+export const HighlightsText = styled.span`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffff;
+
+  &.green {
+    color: #19CD77;
+  }
+
+  img {
+    width: 310px;
+    height: 337px;
+  }
 `;

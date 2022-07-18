@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import marcos from "../../assets/marcos-without-back.png";
+import marcos from "../../assets/marcos-junior/marcos-without-back.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
 import setaParaBaixo from "../../assets/seta-para-baixo-red.png";
 import setaParaBaixoYelow from "../../assets/seta-para-baixo-yelow.png";
