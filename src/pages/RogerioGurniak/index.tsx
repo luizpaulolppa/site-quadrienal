@@ -80,6 +80,8 @@ interface IObjetivo {
 }
 
 const RogerioGurniak: React.FC = () => {
+  window.scrollTo(0, 0);
+
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState(false);
   const [tabIndex, setTabIndex] = useState(0);
@@ -126,9 +128,53 @@ const RogerioGurniak: React.FC = () => {
     setObjetivos(objs);
   }
 
-  if (openMenu) {
-    return <Menu onClose={() => setOpenMenu(false)} />;
+  function linkToDepartamentsSection() {
+    navigate("/")
   }
+
+  if (openMenu) {
+    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
+  }
+
+  // window.addEventListener('scroll', handleScroll);
+
+  // function isVisible(el: HTMLElement) {
+  //   const posicoes = el.getBoundingClientRect();
+  //   const inicio = posicoes.top;
+  //   const fim = posicoes.bottom;
+  //   let estaVisivel = false
+    
+  //   if((inicio >= 0) && (fim <= window.innerHeight)) {
+  //           estaVisivel = true;
+  //   }
+    
+  //   return estaVisivel;
+  // }
+
+  // function handleScroll() {
+  //   console.log('passei aqui')
+  //   const element = document.querySelector("#teste") as HTMLElement | null;
+  //   const element1 = document.querySelector("#teste1") as HTMLElement | null;
+  //   const element2 = document.querySelector("#teste2") as HTMLElement | null;
+
+  //   let backgroundcolor = ''
+
+  //   console.log(element1 && isVisible(element1))
+  //   if (element1 && isVisible(element1)) {
+  //     const color = window.getComputedStyle(element1).getPropertyValue("background-color");
+  //     backgroundcolor = color;
+  //   } else if (element2 && isVisible(element2)) {
+  //     const color = window.getComputedStyle(element2).getPropertyValue("background-color");
+  //     backgroundcolor = color;
+  //   } else if (element) {
+  //     const color = window.getComputedStyle(element).getPropertyValue("background-color");
+  //     backgroundcolor = 'white';
+  //   }
+
+  //   window.removeEventListener("scroll", handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
+  // }
+
 
   return (
     <Container>
@@ -163,9 +209,11 @@ const RogerioGurniak: React.FC = () => {
             interesse incessante dos seres celestiais — tudo se empenha em favor
             da redenção do homem” (Ellen G. White, Caminho a Cristo, p. 21).
           </Text>
+          <br />
         </TextContainer>
       </TitleContainer>
       <GreenBox>
+        <br />
         O Ministério da Secretaria tem objetivos claros:
         <br />
         <div>
@@ -173,6 +221,8 @@ const RogerioGurniak: React.FC = () => {
         </div>
       </GreenBox>
       <ObjetivosContainer>
+        <br />
+        <br />
         <img src={redArrowDown} alt="Seta para baixo amarela" />
         <br />
         <span>Objetivos</span>
@@ -211,8 +261,11 @@ const RogerioGurniak: React.FC = () => {
           onChange={setTabIndex}
         />
         <img src={ageGroup} alt="numero de membros" />
+        <br />
+        <br />
       </AgeGroupContainer>
       <EntriesAndMoveOutContainer>
+        <br />
         <EntriesAndMoveOutTitle>Entradas</EntriesAndMoveOutTitle>
         <EntriesAndMoveOutSubtitle>Batismo</EntriesAndMoveOutSubtitle>
         <img src={entriesChart} alt="numero de pessoas batizadas" />
@@ -224,6 +277,7 @@ const RogerioGurniak: React.FC = () => {
         <img src={returningChart} alt="numero de pessoas que retornaram para igreja" />
       </EntriesAndMoveOutContainer>
       <FormerReligionContainer>
+        <br />
         <FormerReligionTitle>Religião Anterior</FormerReligionTitle>
         <br />
         <img src={andventistAndCatholic} alt="Grafico com religiões antigas dos novos membros" />
@@ -419,8 +473,11 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
+        <br />
       </FormerReligionContainer>
       <HighlightsContainer>
+        <br />
+        <br />
         <img src={arrowDownGreen} alt="Seta para baixo verde" />
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
@@ -496,8 +553,11 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <br />
         <br />
+        <br />
       </HighlightsContainer>
       <ThanksContainer>
+        <br />
+        <br />
         <img src={yellowArrowDown} alt="Seta para baixo amarela" />
         <br />
         <ThanksTitle>Agradecimentos</ThanksTitle>

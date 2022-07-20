@@ -34,11 +34,17 @@ import {
 } from "./styles";
 
 const EversonBraga: React.FC = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
 
+  const [openMenu, setOpenMenu] = useState(false);
+
+  function linkToDepartamentsSection() {
+    navigate("/")
+  }
+
   if (openMenu) {
-    return <Menu onClose={() => setOpenMenu(false)} />;
+    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
   }
 
   return (
@@ -66,8 +72,11 @@ const EversonBraga: React.FC = () => {
             </Text>
           </TextCapitularContainer>
         </TextContainer>
+        <br />
       </TitleContainer>
       <Highlights>
+        <br />
+        <br />
         <img src={redArrowDown} alt="seta para baixo vermelha" />
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
@@ -98,6 +107,8 @@ const EversonBraga: React.FC = () => {
           <br /><br />
           (janeiro de 2019 – julho de 2022).
         </HighlightsText>
+        <br />
+        <br />
       </Highlights>
       <GreenBox>
         “O que semeia em abundância, em abundância também ceifará. 
@@ -107,6 +118,7 @@ const EversonBraga: React.FC = () => {
         <span>(Ellen G. White, <br /> Conselhos sobre Mordomia, p. 58).</span>
       </GreenBox>
       <BalanceContainer>
+        <br />
         <BalanceTitle>Balanços Patrimoniais</BalanceTitle>
         <br /><br /><br />
         <BalanceSubTitle>Terrenos adquiridos</BalanceSubTitle>

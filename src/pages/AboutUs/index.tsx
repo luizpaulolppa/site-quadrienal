@@ -17,12 +17,16 @@ import {
 } from "./styles";
 
 const AboutUs: React.FC = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-
   const navigate = useNavigate();
 
+  const [openMenu, setOpenMenu] = useState(false);
+
+  function linkToDepartamentsSection() {
+    navigate('/')
+  }
+
   if (openMenu) {
-    return <Menu onClose={() => setOpenMenu(false)} />;
+    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
   }
 
   return (

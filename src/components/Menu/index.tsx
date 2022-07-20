@@ -13,10 +13,11 @@ import { useNavigate } from "react-router-dom";
 
 interface IMenu {
   onClose: () => void;
+  link: () => void;
   isHome?: boolean;
 }
 
-const Menu: React.FC<IMenu> = ({ onClose, isHome }) => {
+const Menu: React.FC<IMenu> = ({ onClose, link, isHome }) => {
   const navigate = useNavigate();
 
   function handleBackHome() {
@@ -44,7 +45,7 @@ const Menu: React.FC<IMenu> = ({ onClose, isHome }) => {
           <Title>Sobre nós</Title>
         </NameContainer>
       </ItemMenu>
-      <ItemMenu onClick={handleBackHome}>
+      <ItemMenu onClick={() => link()}>
         <img src={arrowRight} alt="" />
         <NameContainer>
           <Title>Departamentos</Title>

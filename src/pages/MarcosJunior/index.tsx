@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import marcos from "../../assets/marcos-junior/marcos-without-back.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
@@ -62,11 +62,13 @@ import {
 import Tabs from "../../components/Tabs";
 
 const MarcosJunior: React.FC = () => {
+  window.scrollTo(0, 0);
+  const navigate = useNavigate();
+
   const [openMenu, setOpenMenu] = useState(false);
   const [itemSelected, setItemSelected] = useState(0);
   const [graficoPosition, setGraficoPosition] = useState(0);
   const [tabIndex, setTabIndex] = useState(0);
-  const navigate = useNavigate();
 
   function getImg(imgPosition: number) {
     switch (imgPosition) {
@@ -89,8 +91,12 @@ const MarcosJunior: React.FC = () => {
     }
   }
 
+  function linkToDepartamentsSection() {
+    navigate("/")
+  }
+
   if (openMenu) {
-    return <Menu onClose={() => setOpenMenu(false)} />;
+    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
   }
 
   return (
@@ -123,16 +129,24 @@ const MarcosJunior: React.FC = () => {
             região central do Rio Grande do Sul, por todo o apoio e envolvimento
             neste período.
           </Text>
+          <br />
+          <br />
         </TextContainer>
       </TitleContainer>
       <GreenBox>
+        <br />
+        <br />
         Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
         <br />
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
+        <br />
+        <br />
       </GreenBox>
       <DataContainer>
+        <br />
+        <br />
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DataTitle>Dados</DataTitle>
         <ItemBoxData onMouseOver={() => setItemSelected(0)}>
@@ -165,6 +179,7 @@ const MarcosJunior: React.FC = () => {
             </BoxDataInfo>
           </BoxData>
         </ItemBoxData>
+        <br />
       </DataContainer>
       <MembersContainer>
         Total de membros <span>16.842</span>
@@ -198,8 +213,12 @@ const MarcosJunior: React.FC = () => {
           onChange={setTabIndex}
         />
         <img src={semestre1} alt="semestre1" />
+        <br />
+        <br />
       </EvangelismoContainer>
       <ProjetoPlante>
+        <br />
+        <br />
         <h1>Projeto Plante</h1>
         <p>Número de treinamentos</p>
         <img src={projetoPlante1} alt="projetoPlante1" />
@@ -207,8 +226,11 @@ const MarcosJunior: React.FC = () => {
         <img src={projetoPlante2} alt="projetoPlante2" />
         <p>Igrejas Plantadas</p>
         <img src={projetoPlante3} alt="projetoPlante3" />
-      </ProjetoPlante>
-      <ProjetoPlante>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>Projeto Revitalize</h1>
         <p>Número de treinamentos</p>
         <img src={revitalize1} alt="projetoPlante1" />
@@ -216,8 +238,14 @@ const MarcosJunior: React.FC = () => {
         <img src={revitalize2} alt="projetoPlante2" />
         <p>Igrejas Plantadas</p>
         <img src={revitalize3} alt="projetoPlante3" />
+        <br />
+        <br />
+        <br />
+        <br />
       </ProjetoPlante>
       <ImpactoACSR>
+       <br />
+        <br />
         <h1>Impacto ACSR</h1>
         <p>Número de pontos de pregação</p>
         <img src={impacto1} alt="impacto 1" />
