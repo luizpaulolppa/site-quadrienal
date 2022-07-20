@@ -139,20 +139,20 @@ const Login: React.FC = () => {
     return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} isHome />;
   }
 
-  window.addEventListener('scroll', handleScroll);
+  // window.addEventListener('scroll', handleScroll);
 
-  function isVisible(el: HTMLElement) {
-    const posicoes = el.getBoundingClientRect();
-    const inicio = posicoes.top;
-    const fim = posicoes.bottom;
-    let estaVisivel = false
+  // function isVisible(el: HTMLElement) {
+  //   const posicoes = el.getBoundingClientRect();
+  //   const inicio = posicoes.top;
+  //   const fim = posicoes.bottom;
+  //   let estaVisivel = false
     
-    if((inicio >= 0) && (fim <= window.innerHeight)) {
-            estaVisivel = true;
-    }
+  //   if((inicio >= 0) && (fim <= window.innerHeight)) {
+  //           estaVisivel = true;
+  //   }
     
-    return estaVisivel;
-  }
+  //   return estaVisivel;
+  // }
 
   // function handleScroll() {
   //   console.log('passei aqui')
