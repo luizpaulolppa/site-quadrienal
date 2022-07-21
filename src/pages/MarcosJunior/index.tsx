@@ -7,6 +7,9 @@ import setaParaBaixoYelow from "../../assets/seta-para-baixo-yelow.png";
 import igrejaCinza from "../../assets/igreja-cinza.png";
 import peopleCinza from "../../assets/people-cinza.png";
 import peopleIgrejaCinza from "../../assets/people-igreja-cinza.png";
+import igrejaCinzaBranco from "../../assets/igreja-branco.png";
+import peopleCinzaBranco from "../../assets/people-branco.png";
+import peopleIgrejaCinzaBranco from "../../assets/people-igreja-branco.png";
 import membersTotal from "../../assets/members-total.png";
 import pizzaCrm from "../../assets/pizza-crm.png";
 import batismo from "../../assets/marcos-junior/batismo.png";
@@ -169,7 +172,11 @@ const MarcosJunior: React.FC = () => {
         <ItemBoxData>
           <VerticalLine show={itemSelected === 0} />
           <BoxData red={itemSelected === 0}>
-            <img src={igrejaCinza} alt="Igreja" />
+            {itemSelected === 0 ? (
+              <img src={igrejaCinzaBranco} alt="Igreja" />
+            ) : (
+              <img src={igrejaCinza} alt="Igreja" />
+            )}
             <BoxDataInfo>
               <p>Igrejas</p>
               <p>130</p>
@@ -179,7 +186,11 @@ const MarcosJunior: React.FC = () => {
         <ItemBoxData>
           <VerticalLine show={itemSelected === 1} />
           <BoxData red={itemSelected === 1}>
-            <img src={peopleCinza} alt="Igreja" />
+            {itemSelected === 1 ? (
+              <img src={peopleCinzaBranco} alt="Igreja" />
+            ) : (
+              <img src={peopleCinza} alt="Igreja" />
+            )}
             <BoxDataInfo>
               <p>Igrejas</p>
               <p>130</p>
@@ -189,7 +200,11 @@ const MarcosJunior: React.FC = () => {
         <ItemBoxData>
           <VerticalLine show={itemSelected === 2} />
           <BoxData red={itemSelected === 2}>
-            <img src={peopleIgrejaCinza} alt="Igreja" />
+            {itemSelected === 2 ? (
+              <img src={peopleIgrejaCinzaBranco} alt="Igreja" />
+            ) : (
+              <img src={peopleIgrejaCinza} alt="Igreja" />
+            )}
             <BoxDataInfo>
               <p>Igrejas</p>
               <p>130</p>
