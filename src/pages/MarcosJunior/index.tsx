@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import React, { useEffect, useState } from "react";
 
 import marcos from "../../assets/marcos-junior/marcos-without-back.png";
@@ -63,6 +64,7 @@ import {
   Agradecimentos,
 } from "./styles";
 import Tabs from "../../components/Tabs";
+import FadeIn from "../../components/FadeIn";
 
 const MarcosJunior: React.FC = () => {
   const navigate = useNavigate();
@@ -82,6 +84,13 @@ const MarcosJunior: React.FC = () => {
       } else if (this.scrollY >= 2100 && this.scrollY <= 2300) {
         setItemSelected(2);
       }
+    });
+  }, []);
+
+  useEffect(() => {
+    const el = document.querySelector('#fade');
+    window.addEventListener("scroll", function () {
+      playAnimation(el)
     });
   }, []);
 
@@ -119,6 +128,16 @@ const MarcosJunior: React.FC = () => {
     );
   }
 
+  function isOnScreen(el: any) {
+      let rect = el.getBoundingClientRect() 
+      return rect.top > 0 && rect.bottom < window.innerHeight;
+  }
+
+  function playAnimation(el: any) {
+    if(isOnScreen(el)) el.style.animationPlayState = 'running';
+  }
+
+
   return (
     <Container>
       <MenuBlack
@@ -153,10 +172,13 @@ const MarcosJunior: React.FC = () => {
           <br />
         </TextContainer>
       </TitleContainer>
+
       <GreenBox>
         <br />
         <br />
-        Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
+        <FadeIn id="fade" duration='3s' delay="0.2s">
+          Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
+        </FadeIn>
         <br />
         <div>
           <img src={arrowDown} alt="Down" />
@@ -164,6 +186,7 @@ const MarcosJunior: React.FC = () => {
         <br />
         <br />
       </GreenBox>
+
       <DataContainer>
         <br />
         <br />

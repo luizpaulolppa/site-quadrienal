@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import marcos from "../../assets/marcos-without-back.png";
+import styled, { keyframes } from "styled-components";
 import selectArrowDown from "../../assets/select-arrow-down.png";
 
 export const Container = styled.div``;
@@ -120,10 +119,6 @@ export const BoxData = styled.div<IBoxData>`
     width: 62px;
     height: 62px;
   }
-
-  /* &:hover {
-    background-color: #e20000;
-  } */
 `;
 
 export const BoxDataInfo = styled.div`
