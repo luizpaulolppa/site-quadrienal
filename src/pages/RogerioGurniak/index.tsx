@@ -229,7 +229,7 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <span>Objetivos</span>
         {objetivos.map((obj, index) => (
-          <AccordionContainer onClick={() => changeAcc(index)}>
+          <AccordionContainer key={index + obj.title} onClick={() => changeAcc(index)}>
             <AccordionHeader isOpen={obj.isOpen}>
               {obj.isOpen ? (
                 <img src={obj.iconOpened} alt="informar" />
