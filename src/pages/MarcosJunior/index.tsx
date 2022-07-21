@@ -72,7 +72,6 @@ const MarcosJunior: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
-      console.log(this.scrollY);
       if (this.scrollY >= 1500 && this.scrollY <= 1700) {
         setItemSelected(0);
       } else if (this.scrollY >= 1700 && this.scrollY <= 1900) {
