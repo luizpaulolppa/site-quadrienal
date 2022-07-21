@@ -107,7 +107,7 @@ const MarcosJunior: React.FC = () => {
   }
 
   function linkToDepartamentsSection() {
-    navigate("/");
+    navigate("/?departamentos=true");
   }
 
   if (openMenu) {
