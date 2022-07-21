@@ -38,15 +38,23 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonHome = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 80px;
   background-color: #e8d71d;
   border: 0;
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+  
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0C0B0B;
+  }
 
   img {
     width: 30px;

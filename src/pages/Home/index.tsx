@@ -31,6 +31,7 @@ import {
 } from "./styles";
 import Department from "../../components/Department";
 import Menu from "../../components/Menu";
+import { Link } from "react-router-dom";
 
 interface IDepartment {
   imageUrl: string;
@@ -198,7 +199,7 @@ const Login: React.FC = () => {
       </Title>
       <ButtonContainer>
         <ButtonHome>
-          Sobre nós
+          <Link to="/sobre-nos">Sobre nós</Link>
           <img src={arrowRight} alt="arrowRight" />
         </ButtonHome>
       </ButtonContainer>
