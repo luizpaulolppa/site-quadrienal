@@ -47,7 +47,6 @@ export const ButtonHome = styled.button`
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  font-weight: 600;
 
   img {
     width: 30px;

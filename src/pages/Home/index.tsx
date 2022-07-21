@@ -198,7 +198,7 @@ const Login: React.FC = () => {
       </Title>
       <ButtonContainer>
         <ButtonHome>
-          Saiba mais
+          Sobre nós
           <img src={arrowRight} alt="arrowRight" />
         </ButtonHome>
       </ButtonContainer>
