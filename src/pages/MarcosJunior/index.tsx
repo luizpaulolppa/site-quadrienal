@@ -90,9 +90,9 @@ const MarcosJunior: React.FC = () => {
   useEffect(() => {
     const elements: Array<Element | null>  = [];
     const el = document.querySelector('#fade1') as Element;
-    const el2 = document.querySelector('#fade2') as Element;
+    // const el2 = document.querySelector('#fade2') as Element;
     elements.push(el);
-    elements.push(el2);
+    // elements.push(el2);
 
     window.addEventListener("scroll", function () {
       elements.forEach(el => playAnimation(el));
@@ -279,9 +279,7 @@ const MarcosJunior: React.FC = () => {
       <ProjetoPlante>
         <br />
         <br />
-        <FadeIn id="fade2" duration="2s" delay="0.5">
-          <h1>Projeto Plante</h1>
-        </FadeIn>
+        <h1>Projeto Plante</h1>
         <p>Número de treinamentos</p>
         <img src={projetoPlante1} alt="projetoPlante1" />
         <p>Pastores treinados</p>
