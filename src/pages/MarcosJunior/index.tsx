@@ -62,13 +62,26 @@ import {
 import Tabs from "../../components/Tabs";
 
 const MarcosJunior: React.FC = () => {
-  window.scrollTo(0, 0);
   const navigate = useNavigate();
 
   const [openMenu, setOpenMenu] = useState(false);
   const [itemSelected, setItemSelected] = useState(0);
   const [graficoPosition, setGraficoPosition] = useState(0);
   const [tabIndex, setTabIndex] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    window.addEventListener("scroll", function () {
+      console.log(this.scrollY);
+      if (this.scrollY >= 1500 && this.scrollY <= 1700) {
+        setItemSelected(0);
+      } else if (this.scrollY >= 1700 && this.scrollY <= 1900) {
+        setItemSelected(1);
+      } else if (this.scrollY >= 2100 && this.scrollY <= 2300) {
+        setItemSelected(2);
+      }
+    });
+  }, []);
 
   function getImg(imgPosition: number) {
     switch (imgPosition) {
@@ -92,11 +105,16 @@ const MarcosJunior: React.FC = () => {
   }
 
   function linkToDepartamentsSection() {
-    navigate("/")
+    navigate("/");
   }
 
   if (openMenu) {
-    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
+    return (
+      <Menu
+        link={linkToDepartamentsSection}
+        onClose={() => setOpenMenu(false)}
+      />
+    );
   }
 
   return (
@@ -149,7 +167,7 @@ const MarcosJunior: React.FC = () => {
         <br />
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DataTitle>Dados</DataTitle>
-        <ItemBoxData onMouseOver={() => setItemSelected(0)}>
+        <ItemBoxData>
           <VerticalLine show={itemSelected === 0} />
           <BoxData red={itemSelected === 0}>
             <img src={igrejaCinza} alt="Igreja" />
@@ -159,7 +177,7 @@ const MarcosJunior: React.FC = () => {
             </BoxDataInfo>
           </BoxData>
         </ItemBoxData>
-        <ItemBoxData onMouseOver={() => setItemSelected(1)}>
+        <ItemBoxData>
           <VerticalLine show={itemSelected === 1} />
           <BoxData red={itemSelected === 1}>
             <img src={peopleCinza} alt="Igreja" />
@@ -169,7 +187,7 @@ const MarcosJunior: React.FC = () => {
             </BoxDataInfo>
           </BoxData>
         </ItemBoxData>
-        <ItemBoxData onMouseOver={() => setItemSelected(2)}>
+        <ItemBoxData>
           <VerticalLine show={itemSelected === 2} />
           <BoxData red={itemSelected === 2}>
             <img src={peopleIgrejaCinza} alt="Igreja" />
@@ -244,7 +262,7 @@ const MarcosJunior: React.FC = () => {
         <br />
       </ProjetoPlante>
       <ImpactoACSR>
-       <br />
+        <br />
         <br />
         <h1>Impacto ACSR</h1>
         <p>Número de pontos de pregação</p>
@@ -278,7 +296,7 @@ const MarcosJunior: React.FC = () => {
           com sua dedicação.
         </p>
         <br />
-        <p> 
+        <p>
           Minha gratidão aos pastores e diretores de escola, que, com seu
           compromisso, desenvolvem uma parte fundamental no processo de
           crescimento desta associação.

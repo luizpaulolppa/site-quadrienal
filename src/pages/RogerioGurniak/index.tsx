@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import rogerio from "../../assets/rogerio-gurniak/rogerio-without-back.png";
 import informar from "../../assets/informar.png";
@@ -80,8 +80,6 @@ interface IObjetivo {
 }
 
 const RogerioGurniak: React.FC = () => {
-  window.scrollTo(0, 0);
-
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState(false);
   const [tabIndex, setTabIndex] = useState(0);
@@ -117,6 +115,10 @@ const RogerioGurniak: React.FC = () => {
       arrowClosed: arrowTopSVG,
     },
   ]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function changeAcc(index: number) {
     const objs = objetivos.map((obj, indexObj) => {

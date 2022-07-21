@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import everson from "../../assets/everson-without-back.png";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
@@ -34,10 +34,13 @@ import {
 } from "./styles";
 
 const EversonBraga: React.FC = () => {
-  window.scrollTo(0, 0);
   const navigate = useNavigate();
 
   const [openMenu, setOpenMenu] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function linkToDepartamentsSection() {
     navigate("/")
