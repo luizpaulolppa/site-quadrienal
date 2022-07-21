@@ -88,9 +88,14 @@ const MarcosJunior: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const el = document.querySelector('#fade');
+    const elements: Array<Element | null>  = [];
+    const el = document.querySelector('#fade1') as Element;
+    const el2 = document.querySelector('#fade2') as Element;
+    elements.push(el);
+    elements.push(el2);
+
     window.addEventListener("scroll", function () {
-      playAnimation(el)
+      elements.forEach(el => playAnimation(el));
     });
   }, []);
 
@@ -176,7 +181,7 @@ const MarcosJunior: React.FC = () => {
       <GreenBox>
         <br />
         <br />
-        <FadeIn id="fade" duration='3s' delay="0.2s">
+        <FadeIn id="fade1" duration='3s' delay="0.2s">
           Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
         </FadeIn>
         <br />
@@ -274,7 +279,9 @@ const MarcosJunior: React.FC = () => {
       <ProjetoPlante>
         <br />
         <br />
-        <h1>Projeto Plante</h1>
+        <FadeIn id="fade2" duration="2s" delay="0.5">
+          <h1>Projeto Plante</h1>
+        </FadeIn>
         <p>Número de treinamentos</p>
         <img src={projetoPlante1} alt="projetoPlante1" />
         <p>Pastores treinados</p>
