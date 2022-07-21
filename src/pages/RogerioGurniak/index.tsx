@@ -304,7 +304,7 @@ const RogerioGurniak: React.FC = () => {
         <FormerReligionTitle>Secretárias Nota 1000</FormerReligionTitle>
         <br />
         <br />
-        <img src={note1000Secretaries} alt="Secretárias nota 1000 " />
+        <img src={note1000Secretaries} style={{ width: '214px', height: '337px' }} alt="Secretárias nota 1000 " />
         <br />
         <br />
         <FormerReligionTitle>Igrejas Organizadas</FormerReligionTitle>
