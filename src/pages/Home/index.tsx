@@ -31,7 +31,7 @@ import {
 } from "./styles";
 import Department from "../../components/Department";
 import Menu from "../../components/Menu";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 
 interface IDepartment {
   imageUrl: string;
@@ -107,8 +107,9 @@ const departments: IDepartment[] = [
 ];
 
 const Login: React.FC = () => {
+  const [searchParams] = useSearchParams();
   const [openMenu, setOpenMenu] = useState(false);
-  const [goToDepartaments, setGoToDepartaments] = useState(false);
+  const [goToDepartaments, setGoToDepartaments] = useState(searchParams.get('departamentos') === 'true');
 
   useEffect(() => {
     if (goToDepartaments) {
@@ -118,7 +119,7 @@ const Login: React.FC = () => {
 
 
   function goToDepartamentsSection() {
-    const id = '#departamentos';
+    const id = '#departaments';
     const to = document.querySelector(id) as HTMLElement | null;
     
     if (to != null) {
@@ -203,13 +204,13 @@ const Login: React.FC = () => {
           <img src={arrowRight} alt="arrowRight" />
         </ButtonHome>
       </ButtonContainer>
-      <Corredor id="departamentos">
+      <Corredor>
         <Marquee gradient={false}>
           <p>+ de 16.000 membros</p>
           <p>+ de 16.000 membros</p>
         </Marquee>
       </Corredor>
-      <Departments>
+      <Departments id="departaments">
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DepartmentsTitle>Departamentos</DepartmentsTitle>
         {departments.map((dep) => (
@@ -233,3 +234,7 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+function useQuery() {
+  throw new Error("Function not implemented.");
+}
+
