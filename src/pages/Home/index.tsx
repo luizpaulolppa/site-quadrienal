@@ -106,7 +106,7 @@ const departments: IDepartment[] = [
   },
 ];
 
-const Login: React.FC = () => {
+const Home: React.FC = () => {
   const [searchParams] = useSearchParams();
   const [openMenu, setOpenMenu] = useState(false);
   const [goToDepartaments, setGoToDepartaments] = useState(searchParams.get('departamentos') === 'true');
@@ -141,47 +141,6 @@ const Login: React.FC = () => {
     return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} isHome />;
   }
 
-  // window.addEventListener('scroll', handleScroll);
-
-  // function isVisible(el: HTMLElement) {
-  //   const posicoes = el.getBoundingClientRect();
-  //   const inicio = posicoes.top;
-  //   const fim = posicoes.bottom;
-  //   let estaVisivel = false
-    
-  //   if((inicio >= 0) && (fim <= window.innerHeight)) {
-  //           estaVisivel = true;
-  //   }
-    
-  //   return estaVisivel;
-  // }
-
-  // function handleScroll() {
-  //   console.log('passei aqui')
-  //   const element = document.querySelector("#test") as HTMLElement | null;
-  //   const element1 = document.querySelector("#departamentos") as HTMLElement | null;
-  //   const element2 = document.querySelector("#footer") as HTMLElement | null;
-
-  //   let backgroundcolor = ''
-
-  //   console.log(element1 && isVisible(element1))
-  //   if (element1 && isVisible(element1)) {
-  //     const color = window.getComputedStyle(element1).getPropertyValue("background-color");
-  //     backgroundcolor = color;
-  //   } else if (element2 && isVisible(element2)) {
-  //     const color = window.getComputedStyle(element2).getPropertyValue("background-color");
-  //     backgroundcolor = color;
-  //   } else if (element) {
-  //     const color = window.getComputedStyle(element).getPropertyValue("background-color");
-  //     backgroundcolor = 'white';
-  //   }
-  
-  //   if (element) {
-  //     element.style.backgroundColor = backgroundcolor;
-  //   }
-  //   window.removeEventListener("scroll", handleScroll);
-  //   window.addEventListener('scroll', handleScroll);
-  // }
 
   return (
     <Container id="test">
@@ -204,13 +163,13 @@ const Login: React.FC = () => {
           <img src={arrowRight} alt="arrowRight" />
         </ButtonHome>
       </ButtonContainer>
-      <Corredor>
+      <Corredor id="departaments">
         <Marquee gradient={false}>
           <p>+ de 16.000 membros</p>
           <p>+ de 16.000 membros</p>
         </Marquee>
       </Corredor>
-      <Departments id="departaments">
+      <Departments>
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DepartmentsTitle>Departamentos</DepartmentsTitle>
         {departments.map((dep) => (
@@ -222,7 +181,7 @@ const Login: React.FC = () => {
           />
         ))}
       </Departments>
-      <Footer id="footer">
+      <Footer>
         <p>Avenida João Wallig, 596 - Porto Alegre/RS</p>
         <p>CEP: 91340-000</p>
         <p>Tel.: (51) 3375-1600</p>
@@ -233,8 +192,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
-function useQuery() {
-  throw new Error("Function not implemented.");
-}
-
+export default Home;
