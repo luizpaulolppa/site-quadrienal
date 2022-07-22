@@ -241,9 +241,15 @@ export const MembersContainer = styled.h1`
   }
 `;
 
-export const AccordionBody = styled.div`
+interface IAccordionBody {
+  isOpen: boolean;
+}
+
+export const AccordionBody = styled.div<IAccordionBody>`
   padding: 22px;
   background-color: #fcfcfc;
+  display: none;
+  ${({ isOpen }) => isOpen && `display: flex;` }
 `;
 
 export const AgeGroupContainer = styled.div`

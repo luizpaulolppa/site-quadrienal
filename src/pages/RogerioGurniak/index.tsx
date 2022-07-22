@@ -243,11 +243,9 @@ const RogerioGurniak: React.FC = () => {
                 <img src={obj.arrowClosed} alt="" className="arrow" />
               )}
             </AccordionHeader>
-            {obj.isOpen && (
-              <AccordionBody>
-                <p>{obj.description}</p>
-              </AccordionBody>
-            )}
+            <AccordionBody isOpen={obj.isOpen}>
+              <p>{obj.description}</p>
+            </AccordionBody>
           </AccordionContainer>
         ))}
       </ObjetivosContainer>
