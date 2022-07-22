@@ -19,6 +19,14 @@ export const ContentLogo = styled.div`
 
   img {
     margin-top: 100px;
+
+    @media only screen and (max-width: 325px) {
+      width: 300px;
+    }
+
+    @media only screen and (max-width: 315px) {
+      width: 230px;
+    }
   }
 `;
 

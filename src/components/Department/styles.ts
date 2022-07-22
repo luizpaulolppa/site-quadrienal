@@ -12,6 +12,16 @@ export const Container = styled.div`
   .arrow {
     width: 24px;
   }
+
+  .person {
+    @media only screen and (max-width: 400px) {
+      width: 72px;
+    }
+
+    @media only screen and (max-width: 380px) {
+      width: 52px;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -19,13 +29,21 @@ export const Content = styled.div`
 
   .test {
     margin-left: 2rem;
-    
+
     h1 {
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
       line-height: 36px;
       color: #000000;
+
+      @media only screen and (max-width: 400px) {
+        font-size: 18px;
+      }
+
+      @media only screen and (max-width: 380px) {
+        font-size: 14px;
+      }
     }
 
     p {
