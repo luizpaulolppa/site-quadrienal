@@ -18,7 +18,7 @@ export const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    margin-top: -90px;
+    margin-top: -35px;
   }
 `;
 
