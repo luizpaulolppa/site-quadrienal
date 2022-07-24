@@ -31,7 +31,7 @@ import {
 } from "./styles";
 import Department from "../../components/Department";
 import Menu from "../../components/Menu";
-import { Link, useLocation, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 interface IDepartment {
   imageUrl: string;

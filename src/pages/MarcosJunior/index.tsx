@@ -90,12 +90,13 @@ const MarcosJunior: React.FC = () => {
   useEffect(() => {
     const elements: Array<Element | null>  = [];
     const el = document.querySelector('#fade1') as Element;
+    const elTrigger = document.querySelector('#start_fade1') as Element;
     // const el2 = document.querySelector('#fade2') as Element;
     elements.push(el);
     // elements.push(el2);
 
     window.addEventListener("scroll", function () {
-      elements.forEach(el => playAnimation(el));
+      elements.forEach(el => playAnimation(el, elTrigger));
     });
   }, []);
 
@@ -138,10 +139,9 @@ const MarcosJunior: React.FC = () => {
       return rect.top > 0 && rect.bottom < window.innerHeight;
   }
 
-  function playAnimation(el: any) {
-    if(isOnScreen(el)) el.style.animationPlayState = 'running';
+  function playAnimation(el: any, trigger: any) {
+    if(isOnScreen(trigger)) el.style.animationPlayState = 'running';
   }
-
 
   return (
     <Container>
@@ -177,11 +177,11 @@ const MarcosJunior: React.FC = () => {
           <br />
         </TextContainer>
       </TitleContainer>
-
+      <div id="start_fade1"></div>
       <GreenBox>
         <br />
         <br />
-        <FadeIn id="fade1" duration='3s' delay="0.2s">
+        <FadeIn id="fade1" duration='3s' delay="0.5s">
           Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
         </FadeIn>
         <br />
