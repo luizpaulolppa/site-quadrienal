@@ -69,12 +69,12 @@ export const Text = styled.p`
 `;
 
 export const GreenBox = styled.div`
-  padding: 80px 30px;
+  padding: 30px;
   background-color: #13b466;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
-  line-height: 130%;
+  line-height: 62px;
   color: #ffffff;
 
   div {
