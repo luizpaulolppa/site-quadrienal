@@ -11,15 +11,6 @@ export const TitleContainer = styled.div`
   background-color: black;
 `;
 
-export const Fade = styled.div`
-  height: 20px;
-  background-color: red;
-  margin-top: -20px;
-  position: relative;
-  background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 108.58%);
-  border-radius: 10px 10px 0 0;
-`;
-
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -27,6 +18,7 @@ export const ImageContainer = styled.div`
 
   img {
     width: 100%;
+    margin-top: -90px;
   }
 `;
 
@@ -37,7 +29,7 @@ export const Name = styled.div`
   line-height: 120%;
   color: #dedede;
   margin-bottom: 20px;
-  margin-top: -80px;
+  margin-top: -70px;
 `;
 
 export const Role = styled.div`

@@ -172,8 +172,9 @@ const Home: React.FC = () => {
       <Departments>
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DepartmentsTitle>Departamentos</DepartmentsTitle>
-        {departments.map((dep) => (
+        {departments.map((dep, index) => (
           <Department
+            id={index}
             imageUrl={dep.imageUrl}
             name={dep.name}
             role={dep.role}

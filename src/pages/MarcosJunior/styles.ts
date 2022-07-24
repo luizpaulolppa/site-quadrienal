@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import selectArrowDown from "../../assets/select-arrow-down.png";
 
 export const Container = styled.div``;
@@ -15,8 +15,12 @@ export const TitleContainer = styled.div`
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(19, 14, 11, 0) 0%, #000000 69.58%);
-  height: 300px;
+  width: auto;
+
+  img {
+    width: 100%;
+    margin-top: -90px;
+  }
 `;
 
 export const Name = styled.div`
@@ -25,7 +29,8 @@ export const Name = styled.div`
   font-size: 72px;
   line-height: 120%;
   color: #dedede;
-  margin-top: -80px;
+  margin-bottom: 20px;
+  margin-top: -70px;
 `;
 
 export const Role = styled.div`

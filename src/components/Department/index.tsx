@@ -9,9 +9,10 @@ interface IDepartment {
   name: string;
   role: string;
   url?: string;
+  id: number;
 }
 
-const Department: React.FC<IDepartment> = ({ imageUrl, name, role, url }) => {
+const Department: React.FC<IDepartment> = ({ imageUrl, name, role, url, id }) => {
   const navigate = useNavigate();
 
   function handleNavigate() {
@@ -21,7 +22,7 @@ const Department: React.FC<IDepartment> = ({ imageUrl, name, role, url }) => {
   }
 
   return (
-    <Container onClick={handleNavigate}>
+    <Container id={id.toString()} onClick={handleNavigate}>
       <img src={imageUrl} alt="person imagem" className="person" />
       <Content>
         <div className="test">

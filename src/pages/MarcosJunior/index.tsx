@@ -181,7 +181,7 @@ const MarcosJunior: React.FC = () => {
       <GreenBox>
         <br />
         <br />
-        <FadeIn id="fade1" duration='3s' delay="0.5s">
+        <FadeIn id="fade1" duration='3s' delay="0.2s">
           Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
         </FadeIn>
         <br />

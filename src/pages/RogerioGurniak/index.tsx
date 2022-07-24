@@ -140,38 +140,49 @@ const RogerioGurniak: React.FC = () => {
 
   // window.addEventListener('scroll', handleScroll);
 
-  // function isVisible(el: HTMLElement) {
-  //   const posicoes = el.getBoundingClientRect();
-  //   const inicio = posicoes.top;
-  //   const fim = posicoes.bottom;
-  //   let estaVisivel = false
-    
-  //   if((inicio >= 0) && (fim <= window.innerHeight)) {
-  //           estaVisivel = true;
-  //   }
-    
-  //   return estaVisivel;
+
+  // function isOnScreen(el: any) {
+  //   let rect = el.getBoundingClientRect() 
+  //   return rect.top > 0 && rect.bottom < window.innerHeight;
   // }
 
   // function handleScroll() {
   //   console.log('passei aqui')
-  //   const element = document.querySelector("#teste") as HTMLElement | null;
-  //   const element1 = document.querySelector("#teste1") as HTMLElement | null;
-  //   const element2 = document.querySelector("#teste2") as HTMLElement | null;
+  //   const element = document.querySelector("#section1") as HTMLElement | null;
+  //   let elementOriginalColor;
+  //   if (element) {
+  //     elementOriginalColor = window.getComputedStyle(element).getPropertyValue("background-color");
+  //   }
+  //   const element1 = document.querySelector("#section2") as HTMLElement | null;
+  //   const element2 = document.querySelector("#section3") as HTMLElement | null;
 
   //   let backgroundcolor = ''
 
-  //   console.log(element1 && isVisible(element1))
-  //   if (element1 && isVisible(element1)) {
+    
+  //   console.log('1 CONDITION', (element1 && isOnScreen(element1)))
+  //   if (element1 && isOnScreen(element1)) {
   //     const color = window.getComputedStyle(element1).getPropertyValue("background-color");
   //     backgroundcolor = color;
-  //   } else if (element2 && isVisible(element2)) {
+
+  //     if (element) {
+  //       element.style.backgroundColor = backgroundcolor;
+  //     }
+  //   } 
+
+  //   console.log('2 CONDITION', (element && isOnScreen(element)))
+  //   if (element && isOnScreen(element)) {
+  //     element.style.backgroundColor = elementOriginalColor || '';
+  //   } 
+
+  //   console.log('3 CONDITION', (element2 && isOnScreen(element2)))
+  //   if (element2 && isOnScreen(element2)) {
   //     const color = window.getComputedStyle(element2).getPropertyValue("background-color");
   //     backgroundcolor = color;
-  //   } else if (element) {
-  //     const color = window.getComputedStyle(element).getPropertyValue("background-color");
-  //     backgroundcolor = 'white';
-  //   }
+
+  //     if (element1) {
+  //       element1.style.backgroundColor = backgroundcolor;
+  //     }
+  //   } 
 
   //   window.removeEventListener("scroll", handleScroll);
   //   window.addEventListener('scroll', handleScroll);
@@ -184,7 +195,7 @@ const RogerioGurniak: React.FC = () => {
         onBack={() => navigate("/")}
         setOpenMenu={(data) => setOpenMenu(data)}
       />
-      <TitleContainer>
+      <TitleContainer id="section1">
         <ImageContainer>
           <img src={rogerio} alt="Rogerio" />
         </ImageContainer>
@@ -214,7 +225,7 @@ const RogerioGurniak: React.FC = () => {
           <br />
         </TextContainer>
       </TitleContainer>
-      <GreenBox>
+      <GreenBox id="section2">
         <br />
         O Ministério da Secretaria tem objetivos claros:
         <br />
@@ -222,7 +233,7 @@ const RogerioGurniak: React.FC = () => {
           <img src={arrowDown} alt="Down" />
         </div>
       </GreenBox>
-      <ObjetivosContainer>
+      <ObjetivosContainer id="section3">
         <br />
         <br />
         <img src={redArrowDown} alt="Seta para baixo amarela" />
