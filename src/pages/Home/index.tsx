@@ -63,26 +63,31 @@ const departments: IDepartment[] = [
     imageUrl: fabiana,
     name: "Fabiana Nowack",
     role: "Educação Adventista",
+    url: "/fabiana-nowack",
   },
   {
     imageUrl: douglas,
     name: "Pr. Douglas Silva",
     role: "Ministério Jovem",
+    url: "/",
   },
   {
     imageUrl: samara,
     name: "Samara Zabel",
     role: "Ministério da Criança",
+    url: "/",
   },
   {
     imageUrl: jesse,
     name: "Pr. Jessé Santos",
     role: "Desbravadores & Aventureiros",
+    url: "/",
   },
   {
     imageUrl: joao,
     name: "Pr. João Lorini",
     role: "Ministério Pessoal",
+    url: "/",
   },
   {
     imageUrl: rosinha,
@@ -93,6 +98,7 @@ const departments: IDepartment[] = [
     imageUrl: paulo,
     name: "Pr. Paulo Aguiar",
     role: "Ministério da Família",
+    url: "/",
   },
   {
     imageUrl: marcelo,
@@ -103,6 +109,7 @@ const departments: IDepartment[] = [
     imageUrl: juraci,
     name: "Pr. Juraci Hauser",
     role: "Publicações",
+    url: "/",
   },
 ];
 

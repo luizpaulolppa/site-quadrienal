@@ -346,7 +346,6 @@ export const HighlightsContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
   flex-direction: column;
-  background-color: #000000;
 
   img {
     width: 48px;
@@ -359,7 +358,7 @@ export const HighlightsTitle = styled.span`
   font-weight: 600;
   font-size: 35px;
   line-height: 60px;
-  color: #ffff;
+  color: #000000;
 `;
 
 export const HighlightsText = styled.span`
@@ -367,7 +366,7 @@ export const HighlightsText = styled.span`
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #ffff;
+  color: #000000;
 
   &.green {
     color: #19CD77;

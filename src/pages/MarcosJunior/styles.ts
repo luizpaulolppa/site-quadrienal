@@ -73,7 +73,7 @@ export const GreenBox = styled.div`
   background-color: #13b466;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 62px;
   color: #ffffff;
 
