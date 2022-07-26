@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 import fabiana from "../../assets/fabiana-nowack/fabiana-without-back.png";
+import totalStudents from "../../assets/fabiana-nowack/total-students.png";
+import newStudents from "../../assets/fabiana-nowack/new-students.png";
+import adventistStudents from "../../assets/fabiana-nowack/adventist-students.png";
+import loyalty from "../../assets/fabiana-nowack/loyalty.png";
+import totalTeachers from "../../assets/fabiana-nowack/total-teachers.png";
+import philanthropy from "../../assets/fabiana-nowack/philanthropy.png";
+
 import arrowDown from "../../assets/arrow-down-white.svg";
 import arrowDownGreen from "../../assets/seta-para-baixo.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
@@ -26,6 +33,7 @@ import {
   HighlightsContainer,
   HighlightsText,
   HighlightsTitle,
+  HighlightsSubTitle,
 } from "./styles";
 
 
@@ -96,7 +104,7 @@ const FabianaNowack: React.FC = () => {
       <HighlightsContainer>
         <br />
         <br />
-        <img src={arrowDownGreen} alt="Seta para baixo verde" />
+        <img src={arrowDownGreen} style={{ height: '48px', width: '48px' }}alt="Seta para baixo verde" />
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
@@ -105,6 +113,63 @@ const FabianaNowack: React.FC = () => {
           pois mantivemos a missão e filosofia da Educação Adventista em todas as unidades 
           escolares. Acompanhe alguns índices de pessoal e dados administrativos:
         </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <HighlightsSubTitle>Total de Alunos</HighlightsSubTitle>
+        <br />
+        <br />
+        <img src={totalStudents} alt="Total de alunos" />
+        <br />
+        <br />
+        <br />
+        <HighlightsSubTitle>Alunos novos</HighlightsSubTitle>
+        <br />
+        <br />
+        <img src={newStudents} alt="Novos alunos" />
+        <br />
+        <br />
+        <br />
+        <HighlightsSubTitle>Alunos adventistas</HighlightsSubTitle>
+        <br />
+        <br />
+        <img src={adventistStudents} alt=" Alunos adventistas" />
+        <br />
+        <br />
+        <br />
+        <HighlightsSubTitle>Fidelização (%)</HighlightsSubTitle>
+        <br />
+        <br />
+        <img src={loyalty} alt="Fidelização" />
+        <br />
+        <br />
+        <br />
+        <HighlightsSubTitle>Total de professores</HighlightsSubTitle>
+        <br />
+        <br />
+        <img src={totalTeachers} alt="Total de professores" />
+        <br />
+        <br />
+        <HighlightsSubTitle>Resultado Financeiro</HighlightsSubTitle>
+        <br />
+        <br />
+        <br />
+        <br />
+        <HighlightsTitle>Filantropia</HighlightsTitle>
+        <br />
+        <br />
+        <HighlightsText>
+          Esta é uma concessão governamental à Instituição Adventista de Educação, regida por legislação nacional própria que visa à concessão de bolsas de estudos para famílias que se enquadram num perfil socioeconômico específico. Os critérios são apresentados no Edital de Filantropia, divulgado em cada escola, no período da campanha de matrículas. 
+        </HighlightsText>
+        <br />
+        <br />
+        <HighlightsText>
+          Para terem acesso à gratuidade escolar de 50% ou 100%, pais ou responsáveis enviam a documentação (conforme edital nacional de filantropia) de forma on-line, para ser analisada pela assistente social. O resultado é divulgado (de acordo com edital nacional de filantropia) mediante as vagas existentes nas turmas de cada unidade e o percentual de alunos pagantes matriculados, conforme a legislação vigente. Desta forma, várias famílias são atendidas pela escola a cada ano.
+        </HighlightsText>
+        <br />
+        <br />
+        <img src={philanthropy} alt="Filantroipia" />
+        <br />
         <br />
       </HighlightsContainer>
       <ThanksContainer>

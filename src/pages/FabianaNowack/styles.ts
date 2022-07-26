@@ -339,11 +339,6 @@ export const HighlightsContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
   flex-direction: column;
-
-  img {
-    width: 48px;
-    height: 48px;
-  }
 `;
 
 export const HighlightsTitle = styled.span`
@@ -352,6 +347,13 @@ export const HighlightsTitle = styled.span`
   font-size: 35px;
   line-height: 60px;
   color: #000000;
+`;
+
+export const HighlightsSubTitle = styled.span`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
 `;
 
 export const HighlightsText = styled.span`
