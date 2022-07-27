@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import douglasSilva from "../../assets/douglas-silva/douglas-silva.png";
-import arrowDown from "../../assets/arrow-down-white.svg";
+import douglasSilva from "../../assets/douglas-silva/douglas-without-back.png";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 
@@ -19,7 +18,6 @@ import {
   TextCapitularContainer,
   FirstLetter,
   Text,
-  GreenBox,
   ThanksContainer,
   ThanksText,
   ThanksTitle,
