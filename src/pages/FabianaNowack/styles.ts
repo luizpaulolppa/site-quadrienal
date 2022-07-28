@@ -65,7 +65,7 @@ export const Text = styled.p`
   font-size: 18px;
   line-height: 22px;
   color: #dedede;
-  text-align: justify;
+  text-align: left;
 `;
 
 export const GreenBox = styled.div`
@@ -115,230 +115,25 @@ export const ThanksText = styled.span`
   color: #000000;
 `;
 
-export const BalanceContainer = styled.div`
-  padding: 60px 30px 30px;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const BalanceTitle = styled.span`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
-`;
-
-export const BalanceSubTitle = styled.span`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 45px;
-`;
-
-export const BalanceText = styled.span`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-`;
-
-export const BalanceBadge = styled.div`
-  border-radius: 4px;
-  padding: 3px 30px;
-  background: ${(props) => props.color};
-
-  span {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 130%;
-    color: #ffffff;
-  }
-`;
-
-export const ObjetivosContainer = styled.div`
-  padding: 60px 30px 30px;
-  display: flex;
-  flex-direction: column;
-
-  img {
-    width: 48px;
-    height: 48px;
-  }
-
-  span {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 60px;
-  }
-`;
-
-export const AccordionContainer = styled.div`
-  margin-top: 16px;
-`;
-
-interface IAccordionHeader {
-  isOpen: boolean;
-}
-
-export const AccordionHeader = styled.div<IAccordionHeader>`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 96px;
-  border-radius: 16px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  cursor: pointer;
-  ${({ isOpen }) => (isOpen ? `background-color: #E20000;` : ``)}
-  ${({ isOpen }) => (isOpen ? `color: #ffffff;` : ``)}
-
-  .arrow {
-    height: 22px;
-    width: 22px;
-  }
-
-  &:hover {
-    opacity: 0.7;
-    ${({ isOpen }) => (isOpen ? `opacity: 1;` : ``)}
-  }
-`;
-
-export const MembersContainer = styled.h1`
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 62px;
-  color: #000000;
-  padding: 30px;
-
-  span {
-    color: #F1403F;
-  }
-
-  img {
-    margin-top: 30px;
-    width: 100%;
-  }
-`;
-
-interface IAccordionBody {
-  isOpen: boolean;
-}
-
-export const AccordionBody = styled.div<IAccordionBody>`
-  padding: 22px;
-  background-color: #fcfcfc;
-  display: none;
-  ${({ isOpen }) => isOpen && `display: flex;` }
-`;
-
-export const AgeGroupContainer = styled.div`
-  padding: 30px;
-  font-weight: 600;
-  font-size: 40px;
-
-  > p {
-    margin-bottom: 16px;
-  }
-
-  > img {
-    margin-top: 32px;
-    width: 100%;
-  }
-`;
-
-export const EntriesAndMoveOutContainer = styled.div`
-  padding: 80px 30px;
-  background-color: #000000;
-  display: flex;
-  flex-direction: column;
-
-  img {
-    margin-bottom: 80px;
-  }
-`;
-
-export const EntriesAndMoveOutTitle = styled.span`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
-  color: #FFFFFF;
-  margin-bottom: 5px;
-`;
-
-export const EntriesAndMoveOutSubtitle = styled.span`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-  color: #FFFFFF;
-  margin-bottom: 40px;
-`;
-
-export const FormerReligionContainer = styled.div`
-  padding: 80px 30px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const LabelContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-
-  div {
-    display: flex;
-    margin-right: auto;
-    align-items: center;
-
-    span {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 130%;
-    }
-
-    img {
-      width: 10px;
-      height: 10px;
-      margin-right: 8px;
-    }
-  }
-`;
-
-export const FormerReligionTitle = styled.span`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 130%;
-  color: #000000;
-`;
-
-export const Badge = styled.div`
-  border-radius: 4px;
-  padding: 3px 30px;
-  background: ${(props) => props.color};
-
-  span {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 130%;
-    color: #FFFFFF;
-  }
-`;
-
 export const HighlightsContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
   flex-direction: column;
+
+  div {
+    display: flex;
+
+    span {
+      font-style: normal;
+      font-size: 16px;
+      line-height: 130%;
+      font-weight: 400;
+
+      &.bold {
+        font-weight: 600;
+      }
+    }
+  }
 `;
 
 export const HighlightsTitle = styled.span`
@@ -352,8 +147,15 @@ export const HighlightsTitle = styled.span`
 export const HighlightsSubTitle = styled.span`
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 130%;
+`;
+
+export const HighlightsSubTitle2 = styled.span`
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
 `;
 
 export const HighlightsText = styled.span`

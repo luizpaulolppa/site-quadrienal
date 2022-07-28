@@ -34,6 +34,7 @@ import {
   HighlightsText,
   HighlightsTitle,
   HighlightsSubTitle,
+  HighlightsSubTitle2,
 } from "./styles";
 
 
@@ -89,6 +90,7 @@ const FabianaNowack: React.FC = () => {
           (Ellen G. White, Educação, p. 9).
           </Text>
           <br />
+          <br />
         </TextContainer>
       </TitleContainer>
       <GreenBox>
@@ -99,8 +101,64 @@ const FabianaNowack: React.FC = () => {
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
+        <br />
       </GreenBox>
       <HighlightsContainer>
+      <br /><br />
+        <div>
+          <div style={{ minWidth: '55%'}}>
+            <HighlightsText className="bold">
+              Cachoeira do Sul
+            </HighlightsText>
+            <HighlightsText  className="bold" style={{ margin: '0 5px'}}>
+              180
+            </HighlightsText>
+            <HighlightsText  className="bold" style={{ margin: '0 5px'}}>
+              20
+            </HighlightsText>
+          </div>
+          <div style={{ margin: '0 10px'}}>
+            <HighlightsText>
+              Educação Infantil, Ensino Fundamental - Séries Iniciais
+            </HighlightsText>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsText>
+          A equipe do departamento de Educação que atua apoiando as escolas, conta com:
+        </HighlightsText>
+        <br /> <br />
+        <HighlightsText>
+          Departamental de Educação — <HighlightsText className="green">Fabiana Hartmann Nowack</HighlightsText>
+          <br /><br />
+          Coordenadora Pedagógica — <HighlightsText className="green">Roseli Aguero</HighlightsText> 
+          <br /><br />
+          Coordenadora da Pastoral Escolar — <HighlightsText className="green">Monie Braga</HighlightsText>
+          <br /><br />
+          Secretária — <HighlightsText className="green">Daniela Pires</HighlightsText>
+          <br /><br />
+          Gerente Financeiro — <HighlightsText className="green">Phelipe Contri</HighlightsText>
+          <br /><br />
+          Contadores — <HighlightsText className="green">Tiago Pilger e Luis Librelotto</HighlightsText>
+          <br /><br />
+          Cobrança — <HighlightsText className="green">Robson Zanoni</HighlightsText>
+          <br /><br />
+          Orientadora Educacional de Inclusão — <HighlightsText className="green">Sandra Pedroso</HighlightsText>
+          <br /><br />
+          Atendente Educacional  Especializada — <HighlightsText className="green">Lia Cardoso</HighlightsText>
+          <br /><br />
+          Bibliotecária — <HighlightsText className="green">Martinha Silveira</HighlightsText>
+          <br /><br />
+          Nutricionista — <HighlightsText className="green">Pâmela Silva</HighlightsText>
+          <br /><br />
+          Marketing Educacional — <HighlightsText className="green">Chaylloana Librelotto</HighlightsText>
+          <br /><br />
+          Assistente Social — <HighlightsText className="green">Albertina Feck</HighlightsText>
+          <br /> <br />
+        </HighlightsText>
         <br /><br />
         <img src={arrowDownGreen} style={{ height: '48px', width: '48px' }}alt="Seta para baixo verde" />
         <br />
@@ -134,6 +192,7 @@ const FabianaNowack: React.FC = () => {
         <br /><br />
         <HighlightsSubTitle>Resultado Financeiro</HighlightsSubTitle>
         <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <HighlightsTitle>Filantropia</HighlightsTitle>
         <br /><br />
         <HighlightsText>
@@ -155,7 +214,7 @@ const FabianaNowack: React.FC = () => {
         </HighlightsText>
         <br /><br />
         <img src={philanthropy} alt="Filantroipia" />
-        <br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
         <HighlightsTitle>Implementação do Ensino Médio em Cachoeirinha</HighlightsTitle>
         <br /><br />
         <HighlightsText>
@@ -165,8 +224,9 @@ const FabianaNowack: React.FC = () => {
           turma do Ensino Médio do Colégio Adventista de Cachoeirinha.
         </HighlightsText>
         <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <HighlightsTitle>Nova Escola Adventista em Canoas</HighlightsTitle>
-        <br /><br />
+        <br />
         <HighlightsText>
           Em 11 de dezembro de 2019, o Conselho Estadual de Educação autorizou o início 
           dos trabalhos da Escola Adventista de Canoas. Em 28 de janeiro de 2020, a Escola 
@@ -178,16 +238,23 @@ const FabianaNowack: React.FC = () => {
         </HighlightsText>
         <br /><br /><br /><br />
         <HighlightsTitle>Novo terreno para a Escola de Caxias do Sul</HighlightsTitle>
-        <br /><br />
+        <br />
         <HighlightsText>
           Em 2021, houve a aquisição do terreno da esquina ao lado da Escola Adventista de 
           Caxias do Sul, com quatro lotes com 1.953,85 m². Estamos em fase de elaboração do 
           projeto arquitetônico dos novos prédios para a ampliação da escola.
         </HighlightsText>
         <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <HighlightsTitle>Ampliações de estruturas físicas das unidades escolares da ACSR</HighlightsTitle>
         <br />
-        <HighlightsSubTitle>Colégio Adventista de Cachoeirinha</HighlightsSubTitle>
+        <br />
+        <HighlightsText>
+          Escola Adventista de Cachoeira do Sul — Construção de duas novas salas de aula com 170,60 m² de construção.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle >Colégio Adventista de Cachoeirinha</HighlightsSubTitle>
         <br />
         <HighlightsText>
           Em 2019, aconteceram duas ampliações com área de 566,58 m², compreendendo seis 
@@ -202,7 +269,8 @@ const FabianaNowack: React.FC = () => {
           ginásio coberto, quadras esportivas descobertas, sala maker, depósitos para 
           banheiros e afins, num total de 1.871,82 m².
         </HighlightsText>
-        <br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <HighlightsSubTitle>Colégio Adventista de Santa Maria</HighlightsSubTitle>
         <br />
         <HighlightsText>
@@ -218,7 +286,8 @@ const FabianaNowack: React.FC = () => {
           Ampliação e reforma de seis novas salas de aula, área administrativa, sala de 
           professores, biblioteca escolar, numa área construída de 1.000,15 m². 
         </HighlightsText>
-        <br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <HighlightsSubTitle>Colégio Adventista Marechal Rondon</HighlightsSubTitle>
         <br />
         <HighlightsText>
@@ -226,6 +295,225 @@ const FabianaNowack: React.FC = () => {
           pastoral, de recursos, maker, de aula e de TI. Total de 301,88 m² de reforma e 
           construção. 
         </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsTitle>Certificação Escola Saudável 2020</HighlightsTitle>
+        <br />
+        <HighlightsText>
+          Avaliação institucional educacional da União Sul Brasileira para as 
+          escolas adventistas, departamentos de Educação e seus índices nas áreas: 
+          espiritual, pedagógica e administrativa. Na ocasião, dois troféus foram 
+          entregues à ACSR, que obteve o 2º lugar na USB em pontuação geral de campo mais 
+          saudável, captação de alunos, batismos e crescimento: em matrículas, real da 
+          receita e na quantidade de alunos adventistas.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsTitle>Área Espiritual</HighlightsTitle>
+        <br />
+        <HighlightsText>
+          A missão de Educar Salvando é nossa razão de existir. Por isso, mantemos no 
+          Calendário das Escolas Adventistas da ACSR todos os programas missionais da IASD: 
+          10 dias de Oração, Impacto Esperança, Semana Santa, Missão Calebe, Semana de 
+          Oração, Classes Bíblicas, além das aulas de Ensino Religioso da Educação Infantil 
+          ao Ensino Médio. Iniciativas que foram destaque deste quadriênio:
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Minha Escola, Minha Igreja (MEMI)</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          São igrejas e grupos que estão sendo plantados nas escolas, para atender alunos 
+          e pais de alunos. Atualmente, está em pleno funcionamento a Igreja do CAMAR, 
+          que iniciou em agosto de 2020, com 42 membros e um culto para alunos, denominado 
+          ‘Descendentes’, com 60 alunos adolescentes participando nas sextas-feiras, à noite. Nesta congregação foram realizados dez batismos em 2021. 
+        </HighlightsText>
+        <br /><br />
+        <HighlightsText>
+          Em 10 de abril de 2021, o grupo ICASM iniciou suas atividades no Colégio 
+          Adventista de Santa Maria. Nele existem 28 membros e 8 interessados. 
+          As demais escolas estão na fase de implantação do grupo base para a formação 
+          de novas congregações. 
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Classes Bíblicas</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Nas unidades escolares mantemos várias classes bíblicas com alunos, 
+          pais e servidores durante o ano letivo. O crescimento pode ser acompanhado 
+          a cada ano:
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Batismos</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Que momento de festa! Nas escolas, ele se repete com alunos, pais, servidores 
+          e amigos que decidem amar e servir ao Senhor para sempre. Tivemos a 
+          oportunidade de celebrar os seguintes batismos:
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Jornada Espiritual de Fidelidade — Contagem Regressiva</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          A Jornada é realizada a cada ano, com todos os servidores das unidades escolares 
+          com o objetivo de resguardar a comunhão e o relacionamento de todos os 
+          funcionários e professores.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Together — Encontro de Alunos Adventistas</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          O Together foi criado para fortalecer a identidade adventista de nossos alunos. 
+          No primeiro encontro realizado em 2022, no IACS, participaram 90 alunos 
+          adventistas que ouviram temas sobre: família, história de vida, comunhão, 
+          sexualidade, relacionamento e missão. 
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Missão Calebe School</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          As escolas da ACSR estão engajadas nas ações missionárias da IASD. 
+          Por isso, foi planejado e realizado o Calebe School a cada ano.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Visita de Professores aos pais e alunos</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Mais de 1.500 visitas foram realizadas a cada ano, com acolhimento e 
+          ênfase espiritual.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Celebras</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          É o momento espiritual com os alunos em cada escola, 
+          semanal ou quinzenalmente.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Retiros Espirituais</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Os retiros são realizados anualmente, com todos os servidores das unidades 
+          escolares, com o objetivo fortalecer a comunhão, o relacionamento e a missão. 
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Recolta nas Escolas</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          As escolas realizam anualmente a campanha da recolta, visando arrecadar 
+          donativos, tais como: roupas, alimentos e valores em espécie. As roupas e 
+          alimentos são destinados à comunidade e ASA das igrejas locais. Já as doações 
+          em dinheiro são somadas às doações da IASD para compor o Fundo Solidário 
+          Educacional que, a cada ano, mantém alunos novos carentes com a anuidade 
+          escolar, livros didáticos e kit de uniforme escolar. Os alunos beneficiários 
+          do Fundo Solidário Educacional são distribuídos nas diversas unidades escolares 
+          da ACSR. 
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Implementação da Coordenação da Pastoral Escolar</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Atualmente, sete pastores e cinco professores de Ensino Religioso atendem 
+          às escolas da ACSR. Desde 2021, todo o programa evangelístico das escolas 
+          está sendo coordenado pela professora Monie Braga com os pastores escolares. 
+          Assim, temos direção, missão com planejamento e execução muito focados em 
+          discipulado dos alunos adventistas, além da pregação do evangelho. 
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsTitle>Área Pedagógica</HighlightsTitle>
+        <br />
+        <HighlightsSubTitle2>Formação continuada</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          São realizados cursos para a equipe de professores e funcionários em 
+          diversas áreas de conhecimento, para a formação profissional.
+        </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <HighlightsSubTitle2>Aula de Projeto de Vida</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Trabalha o autoconhecimento da Educação Infantil ao Ensino Médio.
+        </HighlightsText>
+        <br />
+        <br />
+        <HighlightsSubTitle2>Implantação Novo Ensino Médio</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Conforme a legislação nacional sobre Educação, o Ensino Médio sofreu 
+          alteração. A partir de 2022, foi implantado o Novo Ensino Médio nas unidades 
+          de Santa Maria, Cachoeirinha e Marechal Rondon, com maior carga horária, 
+          preparação para a área vocacional, empreendedorismo, vestibulares, tendo como 
+          fundamento a Filosofia Educacional Adventista.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Ensino Bilíngue</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Desde 2019, implantamos o Programa Bilíngue nos Colégios de Cachoeirinha e 
+          Marechal Rondon para as turmas da Educação Infantil e até o 2º ano do Ensino 
+          Fundamental. Desta forma, os alunos interagem com atividades na Língua Inglesa 
+          todos os dias letivos do ano, o que permite a fluência deles com a nova língua. 
+          Está no planejamento incluir outras escolas nos próximos anos.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Bibliotecas Escolares</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Expansão de área física das bibliotecas, completa reforma, mobiliários, 
+          equipamentos novos e acervos atualizados, nas seguintes escolas: 
+          Santo Ângelo (2019), Ijuí (2020), Cachoeirinha (2019), Cachoeira do Sul (2021), 
+          Santa Maria (2021) e Canoas (2022). O total do acervo das nove bibliotecas 
+          escolares são:
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>Espaços e Equipamentos Pedagógicos</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          Atualização de equipamentos, reestruturação de espaços e inauguração de salas 
+          especiais para o desenvolvimento escolar dos alunos durante este quadriênio, 
+          como: Laboratório de Informática, equipamentos de informática para salas de 
+          aulas, tablets ou Chromebooks para uso dos alunos em aula.
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle2>E-class</HighlightsSubTitle2>
+        <br />
+        <HighlightsText>
+          As aulas na Escola Adventista não pararam durante a pandemia da Covid-19, 
+          que afetou drasticamente os anos letivos de 2020 e 2021. A Educação Adventista 
+          desenvolveu a plataforma digital E-class para atender as aulas remotas nesse 
+          período e assim manter o ambiente discente e docente para todas as unidades 
+          escolares no Brasil, incluindo as escolas da ACSR. 
+        </HighlightsText>
+        <br />
+        <br />
+        <HighlightsText>
+          E-class possibilitou a interação entre professores e alunos como: explicações 
+          de aulas, envio de material escolar para os estudantes, entrega de tarefas e 
+          atividades para os professores, feedback das tarefas realizadas, realização de 
+          provas e simulados. Este material fica armazenado diariamente, por disciplina, 
+          e pode ser acessado por pais, discentes e docentes. Aulas e atividades do 
+          E-class das nove unidades escolares da ACRS de fevereiro ao início de setembro 
+          de 2021:
+        </HighlightsText>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
       </HighlightsContainer>
       <ThanksContainer>
         <br /><br />

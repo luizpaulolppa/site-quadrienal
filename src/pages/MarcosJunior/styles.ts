@@ -65,7 +65,7 @@ export const Text = styled.p`
   font-size: 18px;
   line-height: 22px;
   color: #dedede;
-  text-align: justify;
+  text-align: left;
 `;
 
 export const GreenBox = styled.div`
