@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import douglasSilva from "../../assets/douglas-silva/douglas-without-back.png";
+import douglasSilva from "../../assets/douglas-silva/douglas-silva.png";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 
@@ -181,8 +181,13 @@ const DouglasSilva: React.FC = () => {
         </HighlightsText>
         <br />
         <HighlightsText>
-          Jovens que participaram da Missão Calebe por ano: 2019 – 1.150 calebes
-          2020 – 998 calebes 2021 – 1.240 calebes 2022 – 1.380 calebes
+          Jovens que participaram da Missão Calebe por ano:
+          <ul className="remove-list-style">
+            <li>2019 – 1.150 calebes</li>
+            <li>2020 – 998 calebes</li>
+            <li>2021 – 1.240 calebes</li>
+            <li>2022 – 1.380 calebes</li>
+          </ul>
         </HighlightsText>
         <br />
         <br />
@@ -229,9 +234,13 @@ const DouglasSilva: React.FC = () => {
           aspectos técnicos e espirituais são trabalhados. O departamento
           promoveu os seguintes programas:
         </HighlightsText>
+        <br />
         <HighlightsText>
-          • Capacitação do Ministério da Música; • Capacitação de Sonoplastas; •
-          Encontro de Músicos no IACS.
+          <ul className="ml16">
+            <li>Capacitação do Ministério da Música;</li>
+            <li>Capacitação de Sonoplastas;</li>
+            <li>Encontro de Músicos no IACS;</li>
+          </ul>
         </HighlightsText>
         <br />
         <br />
@@ -287,12 +296,16 @@ const DouglasSilva: React.FC = () => {
         <BackgroundImage />
         <br />
         <HighlightsText>
-          Notícias para portal da ACSR; — Conteúdo para redes sociais; —
-          Reportagens para TV Novo Tempo (Revista Novo Tempo); — Reportagens
-          para TV Novo Tempo (Anjos da Esperança); — Transmissões ao vivo
-          (através do Canal do YouTube); — Testemunhos para ACSR, USB e DSA; —
-          Promocionais de eventos e datas comemorativas; — Conteúdos internos e
-          institucionais.
+          Notícias para portal da ACSR;
+          <ul className="ml16">
+            <li>Conteúdo para redes sociais;</li>
+            <li>Reportagens para TV Novo Tempo (Revista Novo Tempo);</li>
+            <li>Reportagens para TV Novo Tempo (Anjos da Esperança);</li>
+            <li>Transmissões ao vivo (através do Canal do YouTube);</li>
+            <li>Testemunhos para ACSR, USB e DSA;</li>
+            <li>Promocionais de eventos e datas comemorativas;</li>
+            <li>Conteúdos internos e institucionais.</li>
+          </ul>
         </HighlightsText>
         <br />
         <br />
@@ -301,7 +314,15 @@ const DouglasSilva: React.FC = () => {
         <BackgroundImage />
         <br />
         <HighlightsText>(Assessoria de Imprensa ACSR)</HighlightsText>
-        <HighlightsText>2019: 28 2020: 6 2021: 3 2022: 16</HighlightsText>
+        <HighlightsText>
+          <br />
+          <ul className="remove-list-style">
+            <li>2019:28</li>
+            <li>2020:6</li>
+            <li>2021:3</li>
+            <li>2022:16</li>
+          </ul>
+        </HighlightsText>
         <br />
         <br />
         <HighlightsTitle>Revista ACSR News</HighlightsTitle>
@@ -311,23 +332,31 @@ const DouglasSilva: React.FC = () => {
         <HighlightsText>
           (Informes oficiais do campo distribuídos para todas as igrejas)
         </HighlightsText>
-        <HighlightsText>2019: 3 2020: 3 2021: 2 2022: 2</HighlightsText>
+        <HighlightsText>
+          <br />
+          <ul className="remove-list-style">
+            <li>2019:28</li>
+            <li>2020:6</li>
+            <li>2021:3</li>
+            <li>2022:16</li>
+          </ul>
+        </HighlightsText>
         <br />
         <br />
         <HighlightsTitle>Canais de Comunicação da ACSR</HighlightsTitle>
         <br />
-        <BackgroundImage />
-        <br />
         <HighlightsText>
-          Site: acsr.adventistas.org Redes Sociais: Facebook: @acsr.rs
-          Instagram: @adventistasacsr YouTube: Adventistas Centro do Rio Grande
-          do Sul
+          <ul className="remove-list-style">
+            <li>Site: acsr.adventistas.org</li>
+            <li>Redes Sociais:</li>
+            <li>Facebook: @acsr.rs</li>
+            <li>Instagram: @adventistasacsr</li>
+            <li>YouTube: Adventistas Centro do Rio Grande do Sul</li>
+          </ul>
         </HighlightsText>
         <br />
         <br />
         <HighlightsTitle>TV Novo Tempo</HighlightsTitle>
-        <br />
-        <BackgroundImage />
         <br />
         <HighlightsText>
           No Brasil, a TV Novo Tempo é transmitida em canal fechado nas

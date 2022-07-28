@@ -369,6 +369,14 @@ export const HighlightsText = styled.span`
     width: 310px;
     height: 337px;
   }
+
+  .remove-list-style {
+    list-style: none;
+  }
+
+  .ml16 {
+    margin-left: 16px;
+  }
 `;
 
 export const BackgroundImage = styled.span`
