@@ -88,6 +88,7 @@ const PauloAguiar: React.FC = () => {
         </TextContainer>
       </TitleContainer>
       <HighlightsContainer>
+        <br /> <br />
         <HighlightsTitle>Mordomia Cristã</HighlightsTitle>
         <br />
         <HighlightsText>
@@ -125,7 +126,7 @@ const PauloAguiar: React.FC = () => {
           dar voluntariamente estas coisas? Porque tudo vem de ti, e nós só damos o que 
           vem das tuas mãos” (1Cr29:14).
         </HighlightsText>
-        <br />
+        <br /><br />
         <HighlightsTitle>Reavivamento Espiritual</HighlightsTitle>
         <br />
 
@@ -137,7 +138,7 @@ const PauloAguiar: React.FC = () => {
           contribuir nesse processo.
         </HighlightsText>
 
-        <br />
+        <br /><br />
         <HighlightsTitle>Seminário Teórico-Prático</HighlightsTitle>
         <br />
 
@@ -147,7 +148,7 @@ const PauloAguiar: React.FC = () => {
           Nestes quatro anos, 120 congregações foram atendidas com o programa.
         </HighlightsText>
 
-        <br />
+        <br /><br />
         <HighlightsTitle>Capacitações</HighlightsTitle>
         <br />
 
@@ -160,7 +161,7 @@ const PauloAguiar: React.FC = () => {
           tesoureiros para guiar o trabalho nessas áreas importantes da igreja.
         </HighlightsText>
 
-        <br />
+        <br /><br />
         <HighlightsTitle>Treinamentos nas trimestrais</HighlightsTitle>
         <br />
 
@@ -170,7 +171,7 @@ const PauloAguiar: React.FC = () => {
           sobre o tema nas trimestrais.
         </HighlightsText>
 
-        <br />
+        <br /><br />
         <HighlightsTitle>Treinamentos para as famílias</HighlightsTitle>
         <br />
 
@@ -188,20 +189,24 @@ const PauloAguiar: React.FC = () => {
       </HighlightsContainer>
       <GreenBox>
         <br />
-          Ministério da Família
+        <span className="title">Ministério da Família</span>
         <br />
-        Ellen White escreveu: 
-
+        <br />
+        <span className="sub-title">Ellen White escreveu: </span>
+        <br />
+        <br />
         "Uma família bem ordenada, bem disciplinada, terá poderosa 
-        influência para o bem" 
-
-
-        (Ellen G. White, Beneficência Social, p.235).
+        influência para o bem"
+        <br />
+        <br />
+        <span className="footer">
+          (Ellen G. White, Beneficência Social, p.235).
+        </span>   
         <br />
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
-        <br />
+        <br /><br />
       </GreenBox>
       <HighlightsContainer>
         <HighlightsText>
@@ -291,7 +296,8 @@ const PauloAguiar: React.FC = () => {
           trabalho solidário. Através dessa campanha, a comunidade conhece as iniciativas da ASA 
           com a oportunidade de colaborar.
         </HighlightsText>
-        <br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <HighlightsSubTitle>Fundo Solidário Educacional</HighlightsSubTitle>
         <br />
         <HighlightsText>

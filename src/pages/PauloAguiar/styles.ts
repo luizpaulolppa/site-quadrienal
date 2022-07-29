@@ -56,7 +56,7 @@ export const FirstLetter = styled.div`
   line-height: 116px;
   color: #13b466;
   margin-right: 8px;
-  margin-top: -40px;
+  margin-top: -10px;
 `;
 
 export const Text = styled.p`
@@ -72,9 +72,9 @@ export const GreenBox = styled.div`
   padding: 30px;
   background-color: #13b466;
   font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 62px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
   color: #ffffff;
 
   div {
@@ -86,6 +86,23 @@ export const GreenBox = styled.div`
   img {
     width: 40px;
     text-align: center;
+  }
+
+  span {
+    &.title {
+      font-size: 40px;
+      line-height: 130%;
+    }
+
+    &.sub-title {
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &.footer {
+      font-size: 18px;
+      line-height: 130%;
+    }
   }
 `;
 
