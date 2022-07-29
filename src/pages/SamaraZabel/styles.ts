@@ -348,6 +348,14 @@ export const HighlightsContainer = styled.div`
   .italic-block {
     font-style: italic;
   }
+
+  .red {
+    color: #f1403f;
+  }
+
+  .fs32 {
+    font-size: 32px;
+  }
 `;
 
 export const HighlightsTitle = styled.span`
@@ -418,4 +426,17 @@ export const BoxDescription = styled.div`
   margin: 22px;
   border-left: 3px solid black;
   border-right: 3px solid black;
+`;
+
+export const GreenNumbersText = styled.p`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #19cd77;
+
+  span {
+    font-size: 64px;
+  }
 `;

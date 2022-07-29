@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import samaraZabel from "../../assets/samara-zabel/samara-without-back.png";
+import bases from "../../assets/samara-zabel/bases.png";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
-import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
+import setaParaBaixoRedonda from "../../assets/seta-para-baixo-redonda.png";
 import greenArrowDown from "../../assets/seta-para-baixo.png";
 
 import Menu from "../../components/Menu";
@@ -30,6 +31,7 @@ import {
   DestaquesLayout,
   BoxDescription,
   BoxTitle,
+  GreenNumbersText,
 } from "./styles";
 
 const SamaraZabel: React.FC = () => {
@@ -122,18 +124,117 @@ const SamaraZabel: React.FC = () => {
         <DestaquesLayout>
           <BoxTitle>Escola de Pais</BoxTitle>
           <BoxDescription>‘Tudo começa em casa’</BoxDescription>
-          <BoxTitle>Participação dos <br />adolescentes</BoxTitle>
+          <BoxTitle>
+            Participação dos <br />
+            adolescentes
+          </BoxTitle>
           <BoxDescription>
-            ‘BEP Teen - Bom de<br /> Espírito de Profecia’
+            ‘BEP Teen - Bom de
+            <br /> Espírito de Profecia’
           </BoxDescription>
-          <BoxTitle>Crianças envolvidas na<br /> pregação do Evangelho</BoxTitle>
+          <BoxTitle>
+            Crianças envolvidas na
+            <br /> pregação do Evangelho
+          </BoxTitle>
           <BoxDescription>‘Grande como Davi’</BoxDescription>
-          <BoxTitle>Realização de oito<br /> Escolas de Pais.</BoxTitle>
+          <BoxTitle>
+            Realização de oito
+            <br /> Escolas de Pais.
+          </BoxTitle>
           <BoxDescription>
-            ‘Escola Cristã de Férias<br /> em parceria com os<br /> calebes’
+            ‘Escola Cristã de Férias
+            <br /> em parceria com os
+            <br /> calebes’
           </BoxDescription>
         </DestaquesLayout>
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle>Relatório</HighlightsTitle>
+        <HighlightsText>
+          Em 2019, foram realizadas quinze trimestrais regionais com
+        </HighlightsText>
         <br />
+        <GreenNumbersText>
+          <span>427</span> professores
+        </GreenNumbersText>
+        <br />
+        <HighlightsText>
+          capacitados por trimestre, além de duas trimestrais com líderes
+          distritais.
+        </HighlightsText>
+        <br />
+        <img src={setaParaBaixoRedonda} alt="Seta Para Baixo Redonda" />
+        <br />
+        <HighlightsText>
+          Durante o ano de 2020, quatro trimestrais foram on-line com
+          capacitação para
+        </HighlightsText>
+        <br />
+        <GreenNumbersText>
+          <span>118</span> professores
+        </GreenNumbersText>
+        <br />
+        <HighlightsText>
+          No mesmo ano, tanto a Escola Sabatina quanto a Semana Santa on-line
+          foram executadas pelo Departamento MC e MA da ACRS para todo o campo.
+        </HighlightsText>
+        <br />
+        <img src={setaParaBaixoRedonda} alt="Seta Para Baixo Redonda" />
+        <br />
+        <HighlightsText>
+          No decorrer de 2021, dez trimestrais regionais foram preparadas para{" "}
+        </HighlightsText>
+        <br />
+        <GreenNumbersText>
+          <span>456</span> professores
+        </GreenNumbersText>
+        <br />
+        <HighlightsText>
+          e duas trimestrais para líderes distritais. Numa das trimestrais,
+          voltada para a liderança distrital do MC e MA, cada líder levou um
+          discipulado. Já a liderança do MA levou um adolescente para o encontro
+          que durou um final de semana.
+          <br />
+          <br />
+          Neste ano, inclusive, três grandes movimentos aconteceram para
+          crianças e adolescentes:
+        </HighlightsText>
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle className="red fs32">
+          Adoletchê ‘Reféns – O Resgate Final’
+        </HighlightsTitle>
+        <HighlightsText>
+          com mais de 800 adolescentes durante um final de semana no IACS, em
+          parceria com a ACRS;
+        </HighlightsText>
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle className="red fs32">
+          Concurso de Oratória do Soul+ e Adolescentes
+        </HighlightsTitle>
+        <HighlightsText>
+          com final no Encontro de Anciãos em outubro;
+        </HighlightsText>
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle className="red fs32">
+          Início da Adoração Infantil
+        </HighlightsTitle>
+        <HighlightsText>
+          nos cultos de quarta e domingo.
+          <br />
+          <br />
+          Até este momento de 2022, quinze trimestrais regionais foram
+          elaboradas para 534 professores.
+        </HighlightsText>
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle>Bases de Geração 148 Teen no campo:</HighlightsTitle>
+        <HighlightsText>
+          <br />
+          <img src={bases} alt="Bases" />
+        </HighlightsText>
       </HighlightsContainer>
       <ThanksContainer>
         <img src={greenArrowDown} alt="Seta para baixo verde" />
