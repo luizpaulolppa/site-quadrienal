@@ -27,6 +27,7 @@ import {
   HighlightsContainer,
   HighlightsText,
   HighlightsTitle,
+  HighlightsSubTitle,
 } from "./styles";
 
 
@@ -216,29 +217,39 @@ const PauloAguiar: React.FC = () => {
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
+        <HighlightsSubTitle>Curso de Noivos</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           A cada ano, foram realizados dois cursos de noivos de modo a preparar os casais para a 
           vida conjugal, abordando temas essenciais como: vida espiritual, missão da família cristã, 
           educação de filhos, intimidade, finanças e comunicação do casal.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Retiros e Encontros de Casais</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Nos distritos da ACSR tivemos 116 retiros ou encontros de casais neste quadriênio. 
           Esses encontros focalizaram a comunicação do casal, maior intimidade entre eles e com Deus.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Encontro para pais</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Ao longo dos quatro anos, foram realizados 172 encontros para pais para auxiliar os 
           pais na educação e preparo dos filhos para a vida. Nesses encontros, os principais temas 
           tradados foram: disciplina cristã, finanças para crianças, educação cristã e formação 
           das novas gerações para a missão.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Adoração em Família</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Visando desenvolver espiritualmente as famílias no estudo da Bíblia e do Espírito de Profecia, 
           foram realizadas oito quartas-feiras de estudo de um livro do Espírito de Profecia por ano, em cada igreja.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Projeto Conectando Corações</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Através do incentivo de um álbum de figurinhas colecionáveis dos personagens bíblicos e 
           outras ações, as famílias foram incentivadas a crescer em cinco áreas seguindo o 
@@ -246,18 +257,24 @@ const PauloAguiar: React.FC = () => {
           Comunhão (estudo da Bíblia e lição), Intercessão (oração em família) e Lazer 
           (brincadeiras e atividades juntos).
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Incentivo à fidelidade das novas gerações</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Neste quadriênio, a ACSR incentivou os pais a fidelidade das novas gerações tanto em eventos 
           para famílias pastorais, funcionários e programações nas igrejas locais.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Capacitação de líderes</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           A cada ano, os líderes do Ministério da Família eram treinados por capacitações 
           gerais e regionais com objetivo de desenvolver novos líderes e prover conhecimento, 
           motivação e materiais para o trabalho com as famílias da igreja.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Ação Solidária Adventista (ASA)</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Ação Solidária Adventista reflete a visão de impulsionar ideias e ações ligadas a uma 
           relação de auxílio mútuo, uma virtude cristã que pratica a partilha de bens, sejam 
@@ -265,13 +282,18 @@ const PauloAguiar: React.FC = () => {
           membro da igreja no Relacionamento através do incentivo às ações solidárias semanais. 
           Nosso objetivo é ter a maioria dos membros vivendo o amor ao próximo como seu estilo de vida.
         </HighlightsText>
-
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <HighlightsSubTitle>Recolta</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Uma vez ao ano, a Igreja Adventista realiza a campanha da recolta para levantar fundos ao 
           trabalho solidário. Através dessa campanha, a comunidade conhece as iniciativas da ASA 
           com a oportunidade de colaborar.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Fundo Solidário Educacional</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Exclusivamente na ACSR, desde 2015, os valores da recolta são destinados para o Fundo 
           Solidário Educacional, desta forma, alunos abaixo da linha da pobreza têm a oportunidade 
@@ -280,12 +302,15 @@ const PauloAguiar: React.FC = () => {
           corrente ajudam os alunos no ano seguinte. De 2019 a 2021, oito alunos foram ajudados 
           e em 2022, nove alunos receberam ajuda financeira.
         </HighlightsText>
-
+        <br />
+        <HighlightsSubTitle>Capacitações e treinamentos</HighlightsSubTitle>
+        <br />
         <HighlightsText>
           Ao longo de cada ano, os líderes da ASA foram treinados com capacitações gerais, 
           regionais e locais para desenvolver novos líderes e prover inspiração, estratégias 
           e materiais para o trabalho nos postos locais.
         </HighlightsText>
+        <br /><br />
       </HighlightsContainer>
       <ThanksContainer>
         <br /><br />
@@ -294,26 +319,25 @@ const PauloAguiar: React.FC = () => {
         <ThanksTitle>Agradecimentos</ThanksTitle>
         <br /><br />
         <ThanksText>
-          Meus agradecimentos pelos quatro anos de trabalho no Departamento de Educação da 
-          ACSR são em primeiro lugar para Deus, pelas maravilhosas bênçãos recebidas, pela 
-          saúde e motivação renovada a cada dia para cumprir a missão. Pela honra de servi-Lo 
-          através da Educação Adventista.
+          Agradeço a Deus, o Doador de toda a vida pelo chamado para a missão. 
+          É um privilégio servir na Obra do Senhor. 
           <br /><br />
-          Agradeço ao meu esposo, Abraão Vicente pelo apoio constante, suas orações, as 
-          palavras de encorajamento, bem como à toda minha família!
+          Agradeço à minha amada esposa Karina Aguiar pela parceria, apoio, 
+          dedicação e amor, sem ela, nada disso seria possível. Aos meus filhos 
+          Lukas e Júlia pelo carinho, amor e por sempre me colocarem ‘pra cima’, 
+          vocês são meu orgulho, meu presente e minha alegria.  E não posso esquecer 
+          dos meus pais Deniclei Aguiar (Dino) e Maria de Lurdes Aguiar (Lú) por 
+          colocarem no meu coração o amor a Cristo, à Igreja e à Missão. 
           <br /><br />
-          Também ressalto meu imenso sentimento de gratidão pelos companheiros que servem 
-          nas Escolas Adventistas da ACSR: diretores, pastores, tesoureiros, coordenadoras 
-          pedagógicas, orientadoras educacionais, secretários escolares, professores e demais 
-          funcionários, bem como aos colegas do Departamento de Educação! Que privilégio poder 
-          trabalharmos juntos para fortalecer a missão da Educação Adventista aqui em nosso 
-          território.
+          Obrigado à Administração do campo da ACSR por nos dar toda a estrutura 
+          para realizar nosso trabalho a cada dia. Grato aos meus colegas distritais 
+          e departamentais, sobretudo aos pastores Rogério Gurniak, Elton Júnior e 
+          João Lorini que respectivamente, lideraram as áreas de Mordomia Cristã, 
+          Ministério da Família e ASA de 2019 a 2021 com um excelente trabalho. 
           <br /><br />
-          Agradeço aos colegas departamentais da ACSR, aos administradores da ACSR pastor 
-          Marcos Júnior, pastor Rogério Gurniak e Everson Braga. Também ao pastor Elton Alves 
-          e Laudecir Mazzo que também administraram o campo em anos anteriores. 
-          Finalmente, minha gratidão à administração da USB com toda sua equipe do 
-          departamento de Educação, especialmente ao pastor Rubens Silva.
+          Por fim, muito obrigado à igreja de Cristo, aos nossos líderes e membros 
+          que tornam todos os sonhos, trabalhos e realizações possíveis através da 
+          dedicação pessoal e da presença do Espírito Santo em suas vidas.
           <br /><br />
         </ThanksText>
       </ThanksContainer>
