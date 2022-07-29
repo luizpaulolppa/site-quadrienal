@@ -81,7 +81,7 @@ const departments: IDepartment[] = [
     imageUrl: jesse,
     name: "Pr. Jessé Santos",
     role: "Desbravadores & Aventureiros",
-    url: "/",
+    url: "/jesse-santos",
   },
   {
     imageUrl: joao,

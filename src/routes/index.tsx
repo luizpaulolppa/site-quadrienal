@@ -7,6 +7,7 @@ import EversonBraga from "../pages/EversonBraga";
 import RogerioGurniak from "../pages/RogerioGurniak";
 import FabianaNowack from "../pages/FabianaNowack";
 import DouglasSilva from "../pages/DouglasSilva";
+import JesseSantos from "../pages/JesseSantos";
 
 const RoutesApp: React.FC = () => (
   <BrowserRouter>
@@ -18,6 +19,7 @@ const RoutesApp: React.FC = () => (
       <Route path="/rogerio-gurniak" element={<RogerioGurniak />} />
       <Route path="/fabiana-nowack" element={<FabianaNowack />} />
       <Route path="/douglas-silva" element={<DouglasSilva />} />
+      <Route path="/jesse-santos" element={<JesseSantos />} />
     </Routes>
   </BrowserRouter>
 );
