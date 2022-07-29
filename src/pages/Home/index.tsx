@@ -75,7 +75,7 @@ const departments: IDepartment[] = [
     imageUrl: samara,
     name: "Samara Zabel",
     role: "Ministério da Criança",
-    url: "/",
+    url: "/samara-zabel",
   },
   {
     imageUrl: jesse,
