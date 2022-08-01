@@ -110,7 +110,7 @@ const departments: IDepartment[] = [
     imageUrl: juraci,
     name: "Pr. Juraci Hauser",
     role: "Publicações",
-    url: "/",
+    url: "/juraci-hauser",
   },
 ];
 
