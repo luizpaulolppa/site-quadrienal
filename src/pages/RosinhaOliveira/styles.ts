@@ -362,14 +362,6 @@ export const HighlightsContainer = styled.div`
   }
 `;
 
-export const HighlightsTitle = styled.span`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 60px;
-  color: #000000;
-`;
-
 export const HighlightsText = styled.span`
   font-style: normal;
   font-weight: 400;
@@ -426,47 +418,4 @@ export const BackgroundImage = styled.span`
   width: 300px;
   background-color: #d9d9d9;
   border-radius: 5px;
-`;
-
-export const DestaquesLayout = styled.div``;
-
-export const BoxTitle = styled.div`
-  width: 100%;
-  background-color: #f1403f;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-  color: #ffffff;
-  padding: 8px;
-  text-align: center;
-`;
-
-export const BoxDescription = styled.div`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-  text-align: center;
-  color: #000000;
-  margin: 22px;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-`;
-
-export const GreenNumbersText = styled.p`
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 130%;
-  color: #19cd77;
-
-  span {
-    font-size: 64px;
-  }
 `;

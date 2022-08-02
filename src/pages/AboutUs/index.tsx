@@ -21,12 +21,12 @@ const AboutUs: React.FC = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
 
-  function linkToDepartamentsSection() {
+  function linkToDepartmentsSection() {
     navigate('/')
   }
 
   if (openMenu) {
-    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
+    return <Menu link={linkToDepartmentsSection} onClose={() => setOpenMenu(false)} />;
   }
 
   return (

@@ -88,15 +88,22 @@ const MarcosJunior: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const elements: Array<Element | null>  = [];
-    const el = document.querySelector('#fade1') as Element;
-    const elTrigger = document.querySelector('#start_fade1') as Element;
-    // const el2 = document.querySelector('#fade2') as Element;
+    const elements: Array<Element | null> = [];
+    const el = document.querySelector("#fade1") as Element;
+    const elTrigger = document.querySelector("#start_fade1") as Element;
     elements.push(el);
-    // elements.push(el2);
+
+    function isOnScreen(el: any) {
+      let rect = el.getBoundingClientRect();
+      return rect.top > 0 && rect.bottom < window.innerHeight;
+    }
+
+    function playAnimation(el: any, trigger: any) {
+      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
+    }
 
     window.addEventListener("scroll", function () {
-      elements.forEach(el => playAnimation(el, elTrigger));
+      elements.forEach((el) => playAnimation(el, elTrigger));
     });
   }, []);
 
@@ -121,26 +128,17 @@ const MarcosJunior: React.FC = () => {
     }
   }
 
-  function linkToDepartamentsSection() {
+  function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
 
   if (openMenu) {
     return (
       <Menu
-        link={linkToDepartamentsSection}
+        link={linkToDepartmentsSection}
         onClose={() => setOpenMenu(false)}
       />
     );
-  }
-
-  function isOnScreen(el: any) {
-      let rect = el.getBoundingClientRect() 
-      return rect.top > 0 && rect.bottom < window.innerHeight;
-  }
-
-  function playAnimation(el: any, trigger: any) {
-    if(isOnScreen(trigger)) el.style.animationPlayState = 'running';
   }
 
   return (
@@ -181,7 +179,7 @@ const MarcosJunior: React.FC = () => {
       <GreenBox>
         <br />
         <br />
-        <FadeIn id="fade1" duration='3s' delay="0.2s">
+        <FadeIn id="fade1" duration="3s" delay="0.2s">
           Neste quadriênio, pela graça <br /> de Deus foi possível chegar a
         </FadeIn>
         <br />

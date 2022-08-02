@@ -33,6 +33,7 @@ import {
   BoxTitle,
   GreenNumbersText,
 } from "./styles";
+import FadeIn from "../../components/FadeIn";
 
 const SamaraZabel: React.FC = () => {
   const navigate = useNavigate();
@@ -42,14 +43,34 @@ const SamaraZabel: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  function linkToDepartamentsSection() {
+  useEffect(() => {
+    const elements: Array<Element | null> = [];
+    const el = document.querySelector("#fade1") as Element;
+    const elTrigger = document.querySelector("#start_fade1") as Element;
+    elements.push(el);
+
+    function isOnScreen(el: any) {
+      let rect = el.getBoundingClientRect();
+      return rect.top > 0 && rect.bottom < window.innerHeight;
+    }
+
+    function playAnimation(el: any, trigger: any) {
+      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
+    }
+
+    window.addEventListener("scroll", function () {
+      elements.forEach((el) => playAnimation(el, elTrigger));
+    });
+  }, []);
+
+  function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
 
   if (openMenu) {
     return (
       <Menu
-        link={linkToDepartamentsSection}
+        link={linkToDepartmentsSection}
         onClose={() => setOpenMenu(false)}
       />
     );
@@ -95,11 +116,14 @@ const SamaraZabel: React.FC = () => {
         </HighlightsText>
         <br />
       </HighlightsContainer>
+      <div id="start_fade1"></div>
       <GreenBox>
         <br />
         <br />
-        Pensando nisso, a ACSR não mediu esforços para que parte de seus
-        recursos fossem destinados a esse departamento neste quadriênio.
+        <FadeIn id="fade1" duration="3s" delay="0.2s">
+          Pensando nisso, a ACSR não mediu esforços para que parte de seus
+          recursos fossem destinados a esse departamento neste quadriênio.
+        </FadeIn>
         <br />
         <br />
       </GreenBox>

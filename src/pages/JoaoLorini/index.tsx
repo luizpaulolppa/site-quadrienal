@@ -38,14 +38,14 @@ const JoaoLorini: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  function linkToDepartamentsSection() {
+  function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
 
   if (openMenu) {
     return (
       <Menu
-        link={linkToDepartamentsSection}
+        link={linkToDepartmentsSection}
         onClose={() => setOpenMenu(false)}
       />
     );

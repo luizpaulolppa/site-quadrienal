@@ -38,12 +38,12 @@ const JesseSantos: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  function linkToDepartamentsSection() {
+  function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
 
   if (openMenu) {
-    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
+    return <Menu link={linkToDepartmentsSection} onClose={() => setOpenMenu(false)} />;
   }
 
   return (
