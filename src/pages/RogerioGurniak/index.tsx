@@ -227,7 +227,7 @@ const RogerioGurniak: React.FC = () => {
       </TitleContainer>
       <GreenBox id="section2">
         <br />
-        O Ministério da Secretaria tem objetivos claros:
+          O Ministério <br />da <br />Secretaria <br />tem <br />objetivos <br />claros:
         <br />
         <div>
           <img src={arrowDown} alt="Down" />

@@ -68,64 +68,6 @@ export const Text = styled.p`
   text-align: left;
 `;
 
-export const GreenBox = styled.div`
-  padding: 30px;
-  background-color: #13b466;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 130%;
-  color: #ffffff;
-
-  span {
-    &.sub-title {
-      font-size: 24px;
-      line-height: 130%;
-      font-weight: 600;
-    }
-
-    &.footer {
-      font-size: 18px;
-      line-height: 130%;
-    }
-
-    &.special-text {
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 130%;
-    }
-
-    &.number {
-      font-weight: 600;
-      font-size: 64px;
-      line-height: 130%;
-    }
-  }
-`;
-
-export const RedBox = styled.div`
-  padding: 30px;
-  background-color: #F1403F;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  color: #ffffff;
-
-  span {
-    &.title {
-      font-size: 40px;
-      line-height: 130%;
-      font-weight: 600;
-    }
-
-    &.footer {
-      font-size: 18px;
-      line-height: 130%;
-    }
-  }
-`;
-
 export const ThanksContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
@@ -158,25 +100,17 @@ export const HighlightsContainer = styled.div`
   flex-direction: column;
 
   div {
-    &.label-green {
-      background: #19CD77;
-      border-radius: 8px;
-      padding: 10px;
+    display: flex;
 
-      span {
-        font-size: 24px;
-        line-height: 130%;
-        color: #ffffff;
-      }
-    }
-  }
-
-  span {
-    &.number {
-      font-weight: 600;
-      font-size: 64px;
+    span {
+      font-style: normal;
+      font-size: 16px;
       line-height: 130%;
-      color: #F1403F;
+      font-weight: 400;
+
+      &.bold {
+        font-weight: 600;
+      }
     }
   }
 `;
@@ -194,17 +128,13 @@ export const HighlightsSubTitle = styled.span`
   font-weight: 500;
   font-size: 22px;
   line-height: 130%;
-
-  &.bold {
-    font-weight: 600;
-  }
 `;
 
 export const HighlightsSubTitle2 = styled.span`
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 130%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
 `;
 
 export const HighlightsText = styled.span`
@@ -222,4 +152,39 @@ export const HighlightsText = styled.span`
     width: 310px;
     height: 337px;
   }
+`;
+
+export const EntriesAndMoveOutContainer = styled.div`
+  padding: 80px 30px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 80px;
+  }
+`;
+
+export const EntriesAndMoveOutTitle = styled.span`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+`;
+
+export const EntriesAndMoveOutSubtitle = styled.span`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+`;
+
+export const EntriesAndMoveText = styled.span`
+  font-size: 20px;
+  line-height: 130%;
+  color: #FFFFFF;
 `;

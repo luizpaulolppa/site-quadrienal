@@ -117,7 +117,7 @@ const JuraciHauser: React.FC = () => {
         <br /><br />
       </HighlightsContainer>
       <GreenBox>
-        <br /><br />
+        <br /><br /><br /><br />
         <span className="sub-title">Núcleo de Formação de Colportores (NFC)</span>
         <br /><br />
         O NFC é onde começa a preparação para candidatos iniciantes que querem seguir 
@@ -140,7 +140,7 @@ const JuraciHauser: React.FC = () => {
         <span className="number">
           30
         </span>   
-        <br /><br />
+        <br /><br /><br /><br />
       </GreenBox>
       <HighlightsContainer>
         <br /><br />

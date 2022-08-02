@@ -105,6 +105,7 @@ const departments: IDepartment[] = [
     imageUrl: marcelo,
     name: "Pr. Marcelo Dadamo",
     role: "Evangelismo",
+    url: "/marcelo-dadamo"
   },
   {
     imageUrl: juraci,
