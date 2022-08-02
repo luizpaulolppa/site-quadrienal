@@ -42,10 +42,10 @@ const JuraciHauser: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
+  function addFideIn(element: string, startFade: string) {
     const elements: Array<Element | null> = [];
-    const el = document.querySelector("#fade1") as Element;
-    const elTrigger = document.querySelector("#start_fade1") as Element;
+    const el = document.querySelector("#" + element) as Element;
+    const elTrigger = document.querySelector("#" + startFade) as Element;
     elements.push(el);
 
     function isOnScreen(el: any) {
@@ -60,46 +60,14 @@ const JuraciHauser: React.FC = () => {
     window.addEventListener("scroll", function () {
       elements.forEach((el) => playAnimation(el, elTrigger));
     });
-  }, []);
+  }
 
   useEffect(() => {
-    const elements: Array<Element | null> = [];
-    const el = document.querySelector("#fade2") as Element;
-    const elTrigger = document.querySelector("#start_fade2") as Element;
-    elements.push(el);
-
-    function isOnScreen(el: any) {
-      let rect = el.getBoundingClientRect();
-      return rect.top > 0 && rect.bottom < window.innerHeight;
-    }
-
-    function playAnimation(el: any, trigger: any) {
-      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
-    }
-
-    window.addEventListener("scroll", function () {
-      elements.forEach((el) => playAnimation(el, elTrigger));
-    });
-  }, []);
-
-  useEffect(() => {
-    const elements: Array<Element | null> = [];
-    const el = document.querySelector("#fade3") as Element;
-    const elTrigger = document.querySelector("#start_fade3") as Element;
-    elements.push(el);
-
-    function isOnScreen(el: any) {
-      let rect = el.getBoundingClientRect();
-      return rect.top > 0 && rect.bottom < window.innerHeight;
-    }
-
-    function playAnimation(el: any, trigger: any) {
-      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
-    }
-
-    window.addEventListener("scroll", function () {
-      elements.forEach((el) => playAnimation(el, elTrigger));
-    });
+    addFideIn("fade1", "start_fade1");
+    addFideIn("fade2", "start_fade2");
+    addFideIn("fade3", "start_fade3");
+    addFideIn("fade4", "start_fade4");
+    addFideIn("fade5", "start_fade5");
   }, []);
 
   function linkToDepartmentsSection() {
@@ -309,17 +277,25 @@ const JuraciHauser: React.FC = () => {
         <br />
         <br />
       </HighlightsContainer>
+      <div id="start_fade4"></div>
+      <div id="start_fade5"></div>
       <RedBox>
         <br />
         <br />
-        <span className="title">Ministério da Saúde</span>
+        <span className="title">
+          <FadeIn id="fade4" duration="3s" delay="0.2s">
+            Ministério da Saúde
+          </FadeIn>
+        </span>
         <br />
         <br />
-        “A reforma de saúde está tão intimamente relacionada com a terceira
-        mensagem angélica, como o braço ao corpo; mas o braço não pode tomar o
-        lugar do corpo. A proclamação da mensagem do terceiro anjo, dos
-        mandamentos de Deus e do testemunho de Jesus, é o tema principal de
-        nossa obra”
+        <FadeIn id="fade5" duration="3s" delay="0.2s">
+          “A reforma de saúde está tão intimamente relacionada com a terceira
+          mensagem angélica, como o braço ao corpo; mas o braço não pode tomar o
+          lugar do corpo. A proclamação da mensagem do terceiro anjo, dos
+          mandamentos de Deus e do testemunho de Jesus, é o tema principal de
+          nossa obra”
+        </FadeIn>
         <br />
         <br />
         <span className="footer">
