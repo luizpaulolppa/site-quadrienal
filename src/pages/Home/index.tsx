@@ -117,17 +117,17 @@ const departments: IDepartment[] = [
 const Home: React.FC = () => {
   const [searchParams] = useSearchParams();
   const [openMenu, setOpenMenu] = useState(false);
-  const [goToDepartaments, setGoToDepartaments] = useState(searchParams.get('departamentos') === 'true');
+  const [goToDepartments, setGoToDepartments] = useState(searchParams.get('departamentos') === 'true');
 
   useEffect(() => {
-    if (goToDepartaments) {
-      goToDepartamentsSection()
+    if (goToDepartments) {
+      goToDepartmentsSection()
     }
-  }, [goToDepartaments])
+  }, [goToDepartments])
 
 
-  function goToDepartamentsSection() {
-    const id = '#departaments';
+  function goToDepartmentsSection() {
+    const id = '#Departments';
     const to = document.querySelector(id) as HTMLElement | null;
     
     if (to != null) {
@@ -137,16 +137,16 @@ const Home: React.FC = () => {
       })
     }
     
-    setGoToDepartaments(false);
+    setGoToDepartments(false);
   }
 
-  function linkToDepartamentsSection() {
+  function linkToDepartmentsSection() {
     setOpenMenu(false)
-    setGoToDepartaments(true);
+    setGoToDepartments(true);
   }
 
   if (openMenu) {
-    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} isHome />;
+    return <Menu link={linkToDepartmentsSection} onClose={() => setOpenMenu(false)} isHome />;
   }
 
 
@@ -171,7 +171,7 @@ const Home: React.FC = () => {
           <img src={arrowRight} alt="arrowRight" />
         </ButtonHome>
       </ButtonContainer>
-      <Corredor id="departaments">
+      <Corredor id="Departments">
         <Marquee gradient={false}>
           <p>+ de 16.000 membros</p>
           <p>+ de 16.000 membros</p>

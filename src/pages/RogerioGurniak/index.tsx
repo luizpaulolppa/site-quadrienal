@@ -50,7 +50,7 @@ import {
   ThanksContainer,
   ThanksText,
   ThanksTitle,
-  MembersContainer, 
+  MembersContainer,
   ObjetivosContainer,
   AccordionBody,
   AccordionHeader,
@@ -68,6 +68,7 @@ import {
   HighlightsTitle,
 } from "./styles";
 import Tabs from "../../components/Tabs";
+import FadeIn from "../../components/FadeIn";
 
 interface IObjetivo {
   title: string;
@@ -120,6 +121,26 @@ const RogerioGurniak: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const elements: Array<Element | null> = [];
+    const el = document.querySelector("#fade1") as Element;
+    const elTrigger = document.querySelector("#start_fade1") as Element;
+    elements.push(el);
+
+    function isOnScreen(el: any) {
+      let rect = el.getBoundingClientRect();
+      return rect.top > 0 && rect.bottom < window.innerHeight;
+    }
+
+    function playAnimation(el: any, trigger: any) {
+      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
+    }
+
+    window.addEventListener("scroll", function () {
+      elements.forEach((el) => playAnimation(el, elTrigger));
+    });
+  }, []);
+
   function changeAcc(index: number) {
     const objs = objetivos.map((obj, indexObj) => {
       return {
@@ -130,64 +151,18 @@ const RogerioGurniak: React.FC = () => {
     setObjetivos(objs);
   }
 
-  function linkToDepartamentsSection() {
+  function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
 
   if (openMenu) {
-    return <Menu link={linkToDepartamentsSection} onClose={() => setOpenMenu(false)} />;
+    return (
+      <Menu
+        link={linkToDepartmentsSection}
+        onClose={() => setOpenMenu(false)}
+      />
+    );
   }
-
-  // window.addEventListener('scroll', handleScroll);
-
-
-  // function isOnScreen(el: any) {
-  //   let rect = el.getBoundingClientRect() 
-  //   return rect.top > 0 && rect.bottom < window.innerHeight;
-  // }
-
-  // function handleScroll() {
-  //   console.log('passei aqui')
-  //   const element = document.querySelector("#section1") as HTMLElement | null;
-  //   let elementOriginalColor;
-  //   if (element) {
-  //     elementOriginalColor = window.getComputedStyle(element).getPropertyValue("background-color");
-  //   }
-  //   const element1 = document.querySelector("#section2") as HTMLElement | null;
-  //   const element2 = document.querySelector("#section3") as HTMLElement | null;
-
-  //   let backgroundcolor = ''
-
-    
-  //   console.log('1 CONDITION', (element1 && isOnScreen(element1)))
-  //   if (element1 && isOnScreen(element1)) {
-  //     const color = window.getComputedStyle(element1).getPropertyValue("background-color");
-  //     backgroundcolor = color;
-
-  //     if (element) {
-  //       element.style.backgroundColor = backgroundcolor;
-  //     }
-  //   } 
-
-  //   console.log('2 CONDITION', (element && isOnScreen(element)))
-  //   if (element && isOnScreen(element)) {
-  //     element.style.backgroundColor = elementOriginalColor || '';
-  //   } 
-
-  //   console.log('3 CONDITION', (element2 && isOnScreen(element2)))
-  //   if (element2 && isOnScreen(element2)) {
-  //     const color = window.getComputedStyle(element2).getPropertyValue("background-color");
-  //     backgroundcolor = color;
-
-  //     if (element1) {
-  //       element1.style.backgroundColor = backgroundcolor;
-  //     }
-  //   } 
-
-  //   window.removeEventListener("scroll", handleScroll);
-  //   window.addEventListener('scroll', handleScroll);
-  // }
-
 
   return (
     <Container>
@@ -225,9 +200,12 @@ const RogerioGurniak: React.FC = () => {
           <br />
         </TextContainer>
       </TitleContainer>
+      <div id="start_fade1"></div>
       <GreenBox id="section2">
         <br />
-        O Ministério da Secretaria tem objetivos claros:
+        <FadeIn id="fade1" duration="3s" delay="0.2s">
+          O Ministério da Secretaria tem objetivos claros:
+        </FadeIn>
         <br />
         <div>
           <img src={arrowDown} alt="Down" />
@@ -240,7 +218,10 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <span>Objetivos</span>
         {objetivos.map((obj, index) => (
-          <AccordionContainer key={index + obj.title} onClick={() => changeAcc(index)}>
+          <AccordionContainer
+            key={index + obj.title}
+            onClick={() => changeAcc(index)}
+          >
             <AccordionHeader isOpen={obj.isOpen}>
               {obj.isOpen ? (
                 <img src={obj.iconOpened} alt="informar" />
@@ -284,24 +265,44 @@ const RogerioGurniak: React.FC = () => {
         <EntriesAndMoveOutSubtitle>Apostasia</EntriesAndMoveOutSubtitle>
         <img src={moveOutChart} alt="numero de pessoas apostatadas" />
         <EntriesAndMoveOutTitle>Admissões</EntriesAndMoveOutTitle>
-        <EntriesAndMoveOutSubtitle>Batismo | Rebatismo | Profissão de Fé</EntriesAndMoveOutSubtitle>
-        <img src={returningChart} alt="numero de pessoas que retornaram para igreja" />
+        <EntriesAndMoveOutSubtitle>
+          Batismo | Rebatismo | Profissão de Fé
+        </EntriesAndMoveOutSubtitle>
+        <img
+          src={returningChart}
+          alt="numero de pessoas que retornaram para igreja"
+        />
       </EntriesAndMoveOutContainer>
       <FormerReligionContainer>
         <br />
         <FormerReligionTitle>Religião Anterior</FormerReligionTitle>
         <br />
-        <img src={andventistAndCatholic} alt="Grafico com religiões antigas dos novos membros" />
+        <img
+          src={andventistAndCatholic}
+          alt="Grafico com religiões antigas dos novos membros"
+        />
         <br />
-        <img src={evangelicals} alt="Grafico com religiões antigas dos novos membros" />
+        <img
+          src={evangelicals}
+          alt="Grafico com religiões antigas dos novos membros"
+        />
         <br />
-        <img src={others} alt="Grafico com religiões antigas dos novos membros" />
+        <img
+          src={others}
+          alt="Grafico com religiões antigas dos novos membros"
+        />
         <br />
-        <img src={totalMembers} alt="Grafico com religiões antigas dos novos membros" />
+        <img
+          src={totalMembers}
+          alt="Grafico com religiões antigas dos novos membros"
+        />
         <br />
         <FormerReligionTitle>Modo de Conversão</FormerReligionTitle>
         <br />
-        <img src={conversionModelChart} alt="Grafico com dados do modo de conversão do membros" />
+        <img
+          src={conversionModelChart}
+          alt="Grafico com dados do modo de conversão do membros"
+        />
         <br />
         <br />
         <FormerReligionTitle>Congregações</FormerReligionTitle>
@@ -313,13 +314,19 @@ const RogerioGurniak: React.FC = () => {
         <FormerReligionTitle>Secretárias Nota 1000</FormerReligionTitle>
         <br />
         <br />
-        <img src={note1000Secretaries} style={{ width: '214px', height: '337px' }} alt="Secretárias nota 1000 " />
+        <img
+          src={note1000Secretaries}
+          style={{ width: "214px", height: "337px" }}
+          alt="Secretárias nota 1000 "
+        />
         <br />
         <br />
         <FormerReligionTitle>Igrejas Organizadas</FormerReligionTitle>
         <br />
         <br />
-        <Badge color="#F1403F"><span>2019</span></Badge>
+        <Badge color="#F1403F">
+          <span>2019</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -344,7 +351,9 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
-        <Badge color="#19CD77"><span>2020</span></Badge>
+        <Badge color="#19CD77">
+          <span>2020</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -357,7 +366,9 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
-        <Badge color="#E8D71E"><span>2021</span></Badge>
+        <Badge color="#E8D71E">
+          <span>2021</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -382,7 +393,9 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
-        <Badge color="#63B4EF"><span>2022</span></Badge>
+        <Badge color="#63B4EF">
+          <span>2022</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -396,7 +409,9 @@ const RogerioGurniak: React.FC = () => {
         <FormerReligionTitle>Grupos Abertos</FormerReligionTitle>
         <br />
         <br />
-        <Badge color="#F1403F"><span>2019</span></Badge>
+        <Badge color="#F1403F">
+          <span>2019</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -417,7 +432,9 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
-        <Badge color="#19CD77"><span>2020</span></Badge>
+        <Badge color="#19CD77">
+          <span>2020</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -438,7 +455,9 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
-        <Badge color="#E8D71E"><span>2021</span></Badge>
+        <Badge color="#E8D71E">
+          <span>2021</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -475,7 +494,9 @@ const RogerioGurniak: React.FC = () => {
           </div>
         </LabelContainer>
         <br />
-        <Badge color="#63B4EF"><span>2022</span></Badge>
+        <Badge color="#63B4EF">
+          <span>2022</span>
+        </Badge>
         <br />
         <LabelContainer>
           <div>
@@ -493,61 +514,110 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
-        <HighlightsText className="green">Serviço Voluntário Adventista (SVA)</HighlightsText>
+        <HighlightsText className="green">
+          Serviço Voluntário Adventista (SVA)
+        </HighlightsText>
         <br />
         <HighlightsText>
-          O Serviço Voluntário Adventista é um programa oficial da Igreja Adventista do Sétimo Dia com o propósito de disponibilizar, organizadamente, oportunidades de ações voluntárias para adventistas jovens e adultos, estudantes e profissionais, em regiões necessitadas da Divisão Sul-Americana e do mundo, auxiliando a igreja na proclamação do evangelho. 
+          O Serviço Voluntário Adventista é um programa oficial da Igreja
+          Adventista do Sétimo Dia com o propósito de disponibilizar,
+          organizadamente, oportunidades de ações voluntárias para adventistas
+          jovens e adultos, estudantes e profissionais, em regiões necessitadas
+          da Divisão Sul-Americana e do mundo, auxiliando a igreja na
+          proclamação do evangelho.
           <br />
           <br />
           <br />
-          No último quadriênio, mais de 60 membros leigos das igrejas da ACSR participaram de missões para a Amazônia, para levar a esperança de Jesus a pessoas e lugares onde o Evangelho ainda não chegou e auxiliar nas construções e restaurações de instituições escolares e igrejas adventistas. 
+          No último quadriênio, mais de 60 membros leigos das igrejas da ACSR
+          participaram de missões para a Amazônia, para levar a esperança de
+          Jesus a pessoas e lugares onde o Evangelho ainda não chegou e auxiliar
+          nas construções e restaurações de instituições escolares e igrejas
+          adventistas.
           <br />
           <br />
           <br />
-          O projeto Um Ano em Missão (OYiM) abrange jovens de várias localidades do Brasil que investem um ano de suas vidas para levar Jesus às pessoas. Nos últimos quatro anos, mais de 40 jovens participaram do projeto neste campo. Em 2022, 14 jovens estão concentrados em plantar e revitalizar igrejas em vários bairros de Porto Alegre. Este projeto é coordenado pelo Ministério Jovem. 
+          O projeto Um Ano em Missão (OYiM) abrange jovens de várias localidades
+          do Brasil que investem um ano de suas vidas para levar Jesus às
+          pessoas. Nos últimos quatro anos, mais de 40 jovens participaram do
+          projeto neste campo. Em 2022, 14 jovens estão concentrados em plantar
+          e revitalizar igrejas em vários bairros de Porto Alegre. Este projeto
+          é coordenado pelo Ministério Jovem.
           <br />
           <br />
           <br />
-          Na ACSR existem dois Centros de Influência: Porto Alegre e Caxias do Sul. Cada um deles abrange três grandes objetivos: envolver mais voluntários adventistas com seus dons para abençoar as pessoas; aumentar o número de pessoas que migram dos cursos para as classes bíblicas que ali ocorrem; e servir de modelo para que igrejas e escolas do campo se tornem centros de influência em suas comunidades. 
+          Na ACSR existem dois Centros de Influência: Porto Alegre e Caxias do
+          Sul. Cada um deles abrange três grandes objetivos: envolver mais
+          voluntários adventistas com seus dons para abençoar as pessoas;
+          aumentar o número de pessoas que migram dos cursos para as classes
+          bíblicas que ali ocorrem; e servir de modelo para que igrejas e
+          escolas do campo se tornem centros de influência em suas comunidades.
           <br />
-          <br />
-          <br />
-          <HighlightsText className="green">Centro de Vida Saudável (CVS)</HighlightsText>
-          <br />
-          <br />
-          Os centros contam com 75 voluntários adventistas que atenderam nos últimos quatro anos, cerca de 1.600 pessoas com os cursos oferecidos. Doze pessoas já foram batizadas pela influência direta desses centros e, atualmente, 50 estão estudando a Bíblia.
-          <br />
-          <br />
-          <br />
-          Os pastores David Barcelos e Diego Zanotto são os responsáveis por liderar as ações e os projetos desses centros, respectivamente, em Porto Alegre e Caxias do Sul. Nesses locais, são oferecidos os seguintes cursos: 
           <br />
           <br />
           <HighlightsText className="green">
-          •	Ginástica funcional;<br />
-          •	Pilates;<br />
-          •	Culinária saudável;<br />
-          •	Atendimento jurídico;<br />
-          •	Aconselhamento familiar;<br />
-          •	Psicoterapia em grupo;<br />
-          •	Massoterapia;<br />
-          •	‘Sem Tabus’ (inteligência emocional);<br />
-          •	Teen coach;<br />
-          •	Papo de homem (grupo terapêutico);<br />
-          •	Consultoria jurídica; <br />
-          •	Terapia familiar; <br />
-          •	Violão;<br />
-          •	Teologia (estudo bíblico);<br />
-          •	Atendimento psicológico (seis psicólogos);<br />
-          •	Aromatouch (aromaterapia);<br />
-          •	Inteligência emocional;<br />
-          •	Artesanato;<br />
-          •	Inglês; <br />
-          •	Português para estrangeiros;<br />
-          •	Palestras mensais sobre qualidade de vida com profissionais de saúde<br />
+            Centro de Vida Saudável (CVS)
           </HighlightsText>
           <br />
           <br />
-          Atualmente, existe no CVS de Caxias do Sul um grupo organizado, que já levou ao batismo cerca de 55 pessoas:
+          Os centros contam com 75 voluntários adventistas que atenderam nos
+          últimos quatro anos, cerca de 1.600 pessoas com os cursos oferecidos.
+          Doze pessoas já foram batizadas pela influência direta desses centros
+          e, atualmente, 50 estão estudando a Bíblia.
+          <br />
+          <br />
+          <br />
+          Os pastores David Barcelos e Diego Zanotto são os responsáveis por
+          liderar as ações e os projetos desses centros, respectivamente, em
+          Porto Alegre e Caxias do Sul. Nesses locais, são oferecidos os
+          seguintes cursos:
+          <br />
+          <br />
+          <HighlightsText className="green">
+            • Ginástica funcional;
+            <br />
+            • Pilates;
+            <br />
+            • Culinária saudável;
+            <br />
+            • Atendimento jurídico;
+            <br />
+            • Aconselhamento familiar;
+            <br />
+            • Psicoterapia em grupo;
+            <br />
+            • Massoterapia;
+            <br />
+            • ‘Sem Tabus’ (inteligência emocional);
+            <br />
+            • Teen coach;
+            <br />
+            • Papo de homem (grupo terapêutico);
+            <br />
+            • Consultoria jurídica; <br />
+            • Terapia familiar; <br />
+            • Violão;
+            <br />
+            • Teologia (estudo bíblico);
+            <br />
+            • Atendimento psicológico (seis psicólogos);
+            <br />
+            • Aromatouch (aromaterapia);
+            <br />
+            • Inteligência emocional;
+            <br />
+            • Artesanato;
+            <br />
+            • Inglês; <br />
+            • Português para estrangeiros;
+            <br />
+            • Palestras mensais sobre qualidade de vida com profissionais de
+            saúde
+            <br />
+          </HighlightsText>
+          <br />
+          <br />
+          Atualmente, existe no CVS de Caxias do Sul um grupo organizado, que já
+          levou ao batismo cerca de 55 pessoas:
           <br />
           <br />
           <br />
@@ -555,7 +625,9 @@ const RogerioGurniak: React.FC = () => {
           <br />
           <br />
           <br />
-          O CVS de Porto Alegre participou no plantio de duas novas congregações, Higienópolis e Jardim Lindoia. Neste momento, há uma congregação no próprio CVS, que levou ao batismo 58 pessoas:
+          O CVS de Porto Alegre participou no plantio de duas novas
+          congregações, Higienópolis e Jardim Lindoia. Neste momento, há uma
+          congregação no próprio CVS, que levou ao batismo 58 pessoas:
           <br />
           <br />
           <br />

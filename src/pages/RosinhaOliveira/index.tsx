@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import rosinhaOliveira from "../../assets/rosinha-oliveira/rosinha-without-back.png";
-import bases from "../../assets/samara-zabel/bases.png";
-import arrowDownRed from "../../assets/seta-para-baixo-red.png";
-import setaParaBaixoRedonda from "../../assets/seta-para-baixo-redonda.png";
 import greenArrowDown from "../../assets/seta-para-baixo.png";
 
 import Menu from "../../components/Menu";
@@ -25,13 +22,9 @@ import {
   ThanksTitle,
   HighlightsContainer,
   HighlightsText,
-  HighlightsTitle,
   GreenBox,
-  DestaquesLayout,
-  BoxDescription,
-  BoxTitle,
-  GreenNumbersText,
 } from "./styles";
+import FadeIn from "../../components/FadeIn";
 
 const RosinhaOliveira: React.FC = () => {
   const navigate = useNavigate();
@@ -41,14 +34,34 @@ const RosinhaOliveira: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  function linkToDepartamentsSection() {
+  useEffect(() => {
+    const elements: Array<Element | null> = [];
+    const el = document.querySelector("#fade1") as Element;
+    const elTrigger = document.querySelector("#start_fade1") as Element;
+    elements.push(el);
+
+    function isOnScreen(el: any) {
+      let rect = el.getBoundingClientRect();
+      return rect.top > 0 && rect.bottom < window.innerHeight;
+    }
+
+    function playAnimation(el: any, trigger: any) {
+      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
+    }
+
+    window.addEventListener("scroll", function () {
+      elements.forEach((el) => playAnimation(el, elTrigger));
+    });
+  }, []);
+
+  function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
 
   if (openMenu) {
     return (
       <Menu
-        link={linkToDepartamentsSection}
+        link={linkToDepartmentsSection}
         onClose={() => setOpenMenu(false)}
       />
     );
@@ -116,12 +129,15 @@ const RosinhaOliveira: React.FC = () => {
         </HighlightsText>
         <br />
       </HighlightsContainer>
+      <div id="start_fade1"></div>
       <GreenBox>
         <br />
         <br />
-        Ao longo do último quadriênio, mesmo diante dos desafios, pela graça e
-        atuação de Deus, muitas vitórias foram alcançadas no departamento do
-        Ministério da Mulher.
+        <FadeIn id="fade1" duration="3s" delay="0.2s">
+          Ao longo do último quadriênio, mesmo diante dos desafios, pela graça e
+          atuação de Deus, muitas vitórias foram alcançadas no departamento do
+          Ministério da Mulher.
+        </FadeIn>
         <br />
         <br />
       </GreenBox>
