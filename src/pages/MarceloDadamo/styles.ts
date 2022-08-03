@@ -188,3 +188,103 @@ export const EntriesAndMoveText = styled.span`
   line-height: 130%;
   color: #FFFFFF;
 `;
+
+export const LabelContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  div {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    img {
+      width: 10px;
+      height: 10px;
+      margin-right: 8px;
+    }
+  }
+`;
+
+export const FormerReligionContainer = styled.div`
+  padding: 80px 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const FormerReligionTitle = styled.span`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #000000;
+`;
+
+
+export const RedBox = styled.div`
+  padding: 30px;
+  background-color: #F1403F;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFFFF;
+
+  div {
+    &.card {
+      background: #DB3332;
+      border-radius: 16px;
+      padding: 25px;
+    }
+  }
+
+  span {
+    &.title {
+      font-size: 40px;
+      line-height: 130%;
+      font-weight: 600;
+    }
+
+    &.sub-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    &.footer {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    &.number {
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 130%;
+    }
+  }
+`;
+
+
+export const Badge = styled.div`
+  border-radius: 4px;
+  padding: 3px 30px;
+  background: ${(props) => props.color};
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+`;
