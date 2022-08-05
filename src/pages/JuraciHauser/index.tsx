@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import juraci from "../../assets/juraci-hauser/juraci-without-back.png";
+import juraci from "../../assets/juraci-hauser/juraci-without-back.jpg";
 
 import arrowDownGreen from "../../assets/seta-para-baixo.png";
 import books from "../../assets/juraci-hauser/books.png";

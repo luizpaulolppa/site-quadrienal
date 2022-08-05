@@ -190,6 +190,7 @@ const Home: React.FC = () => {
             url={dep.url}
           />
         ))}
+        <br /><br /><br /><br />
       </Departments>
       <Footer>
         <p>Avenida João Wallig, 596 - Porto Alegre/RS</p>

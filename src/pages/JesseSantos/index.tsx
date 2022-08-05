@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import jesse from "../../assets/jesse-santos/jesse-without-back.png";
+import jesse from "../../assets/jesse-santos/jesse-without-back.jpg";
 
 import arrowDownGreen from "../../assets/seta-para-baixo.png";
 import arrowDownRed from "../../assets/seta-para-baixo-light-red.png";

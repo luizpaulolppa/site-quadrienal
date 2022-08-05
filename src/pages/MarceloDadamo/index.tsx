@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import marcelo from "../../assets/marcelo-dadamo/marcelo-without-back.png";
+import marcelo from "../../assets/marcelo-dadamo/marcelo-without-back.jpg";
 import composition from "../../assets/marcelo-dadamo/composition.png";
 import batismos from "../../assets/marcelo-dadamo/batismos.png";
 import capacitacoes from "../../assets/marcelo-dadamo/capacitacoes.png";

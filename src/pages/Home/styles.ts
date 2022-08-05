@@ -3,11 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div``;
 
 export const ContainerMenu = styled.div`
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   img {
+    margin-left: auto;
     width: 40px;
   }
 `;
@@ -19,6 +24,7 @@ export const ContentLogo = styled.div`
 
   img {
     margin-top: 100px;
+    width: 100%;
 
     @media only screen and (max-width: 325px) {
       width: 300px;
@@ -53,7 +59,7 @@ export const ButtonHome = styled.button`
   height: 80px;
   background-color: #e8d71d;
   border: 0;
-  border-radius: 6px;
+  border-radius: 14px;
   
   a {
     font-size: 20px;

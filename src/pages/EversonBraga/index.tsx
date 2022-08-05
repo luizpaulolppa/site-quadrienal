@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import everson from "../../assets/everson/everson-without-back.png";
+import everson from "../../assets/everson/everson-without-back.jpg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import Menu from "../../components/Menu";

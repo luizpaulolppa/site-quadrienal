@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import rosinhaOliveira from "../../assets/rosinha-oliveira/rosinha-without-back.png";
+import rosinhaOliveira from "../../assets/rosinha-oliveira/rosinha-without-back.jpg";
 import greenArrowDown from "../../assets/seta-para-baixo.png";
 
 import Menu from "../../components/Menu";

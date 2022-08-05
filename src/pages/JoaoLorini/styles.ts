@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-  padding: 0 30px 30px;
+padding: 100px 30px 30px;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;

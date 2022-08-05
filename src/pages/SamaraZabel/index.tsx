@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import samaraZabel from "../../assets/samara-zabel/samara-without-back.png";
+import samaraZabel from "../../assets/samara-zabel/samara-without-back.jpg";
 import bases from "../../assets/samara-zabel/bases.png";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import setaParaBaixoRedonda from "../../assets/seta-para-baixo-redonda.png";

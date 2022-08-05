@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import paulo from "../../assets/paulo-aguiar/paulo-without-back.png";
+import paulo from "../../assets/paulo-aguiar/paulo-without-back.jpg";
 
 import arrowDown from "../../assets/arrow-down-white.svg";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";

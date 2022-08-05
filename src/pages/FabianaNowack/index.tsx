@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import fabiana from "../../assets/fabiana-nowack/fabiana-without-back.png";
+import fabiana from "../../assets/fabiana-nowack/fabiana-without-back.jpg";
 import totalStudents from "../../assets/fabiana-nowack/total-students.png";
 import newStudents from "../../assets/fabiana-nowack/new-students.png";
 import adventistStudents from "../../assets/fabiana-nowack/adventist-students.png";
