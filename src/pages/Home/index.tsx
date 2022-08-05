@@ -152,7 +152,7 @@ const Home: React.FC = () => {
 
 
   return (
-    <Container id="test">
+    <Container>
       <ContainerMenu>
         <img src={menu} alt="Menu" onClick={() => setOpenMenu(true)} />
       </ContainerMenu>
@@ -172,11 +172,12 @@ const Home: React.FC = () => {
           <img src={arrowRight} alt="arrowRight" />
         </ButtonHome>
       </ButtonContainer>
-      <Corredor id="Departments">
+      <Corredor>
         <Marquee gradient={false}>
           <p>+ de 16.000 membros</p>
           <p>+ de 16.000 membros</p>
         </Marquee>
+        <div id="Departments"></div>
       </Corredor>
       <Departments>
         <img src={setaParaBaixo} alt="setaParaBaixo" />
