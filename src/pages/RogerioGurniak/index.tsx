@@ -203,8 +203,8 @@ const RogerioGurniak: React.FC = () => {
       <div id="start_fade1"></div>
       <GreenBox id="section2">
         <br />
-        <FadeIn id="fade1" duration="3s" delay="0.2s">
-          O Ministério da Secretaria tem objetivos claros:
+        <FadeIn className="fade" id="fade1" duration="3s" delay="0.2s">
+          O Ministério <br /> da <br />Secretaria <br />tem <br />objetivos <br />claros:
         </FadeIn>
         <br />
         <div>

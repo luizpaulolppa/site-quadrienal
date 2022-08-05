@@ -81,6 +81,10 @@ export const GreenBox = styled.div`
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
+
+    &.fade {
+      justify-content: flex-start;
+    }
   }
 
   img {
