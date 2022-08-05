@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import rogerio from "../../assets/rogerio-gurniak/rogerio-without-back.png";
+import rogerio from "../../assets/rogerio-gurniak/rogerio-without-back.jpg";
 import informar from "../../assets/informar.png";
 import discipular from "../../assets/discipular.png";
 import resgatar from "../../assets/resgatar.png";
