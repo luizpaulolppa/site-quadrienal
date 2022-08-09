@@ -117,12 +117,13 @@ export const BoxData = styled.div<IBoxData>`
   margin-left: 16px;
   display: flex;
   border-radius: 16px;
+  align-items: center;
   padding: 33px;
   ${({ red }) => (red ? `background-color: #e20000;` : ``)}
 
   img {
-    width: 62px;
-    height: 62px;
+    width: 66px;
+    height: 54px;
   }
 `;
 
