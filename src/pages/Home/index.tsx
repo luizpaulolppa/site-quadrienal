@@ -184,6 +184,7 @@ const Home: React.FC = () => {
         <DepartmentsTitle>Departamentos</DepartmentsTitle>
         {departments.map((dep, index) => (
           <Department
+            key={index}
             id={index}
             imageUrl={dep.imageUrl}
             name={dep.name}

@@ -76,12 +76,9 @@ const MarcosJunior: React.FC = () => {
   const [itemSelected, setItemSelected] = useState(0);
   const [graficoPosition, setGraficoPosition] = useState(0);
   const [tabIndex, setTabIndex] = useState(0);
+  let isRunningMembersCount = false;
 
   useEffect(() => {
-    // let count = document.getElementById("totalMembers") as Element;
-    // if (!count) return;
-    // count.setAttribute('value', '1');
-
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
       if (this.scrollY >= 1500 && this.scrollY <= 1700) {
@@ -90,8 +87,12 @@ const MarcosJunior: React.FC = () => {
         setItemSelected(1);
       } else if (this.scrollY >= 2100 && this.scrollY <= 2300) {
         setItemSelected(2);
+        if (!isRunningMembersCount) {
+          startTotalMembersCount();
+        }
       }
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -112,27 +113,23 @@ const MarcosJunior: React.FC = () => {
 
     window.addEventListener("scroll", function () {
       elements.forEach((el) => playAnimation(el, elTrigger));
-      const counter = document.querySelector("#totalMembers") as Element;
-      if (isOnScreen(counter)) {
-        startTotalMembersCOunt()
-      }
     });
   }, []);
 
-  function startTotalMembersCOunt() {
+  function startTotalMembersCount() {
+    isRunningMembersCount = true;
     const totalMembers = 16842;
-    let counts=setInterval(updated);
-    let upto=16500;
+    let counts = setInterval(updated);
+    let upto = 16500;
 
-    function updated(){
-        let counter = document.getElementById("totalMembers") as Element;
-        if (!counter) return;
-        if (counter.innerHTML === totalMembers.toLocaleString('pt-BR')) return;
-
-        counter.innerHTML=(++upto).toLocaleString('pt-BR');
-        if(upto === totalMembers) {
-            clearInterval(counts);
-        }
+    function updated() {
+      let counter = document.getElementById("totalMembers") as Element;
+      if (!counter) return;
+      counter.innerHTML = (++upto).toLocaleString("pt-BR");
+      if (upto >= totalMembers) {
+        clearInterval(counts);
+        isRunningMembersCount = false;
+      }
     }
   }
 
@@ -141,19 +138,29 @@ const MarcosJunior: React.FC = () => {
       case 0:
         return (
           <>
-          <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: "running" }}>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={enrolleds} alt="" />
-          </FadeIn>
+            <FadeIn
+              duration="3s"
+              delay="0.2s"
+              style={{ animationPlayState: "running" }}
+            >
+              <img src={pizzaCrm} alt="" />
+              <br />
+              <br />
+              <img src={enrolleds} alt="" />
+            </FadeIn>
           </>
         );
       case 1:
         return (
           <>
-            <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: "running" }}>
+            <FadeIn
+              duration="3s"
+              delay="0.2s"
+              style={{ animationPlayState: "running" }}
+            >
               <img src={pizzaCrm} alt="" />
-              <br /><br />
+              <br />
+              <br />
               <img src={membrosPresentes} alt="" />
             </FadeIn>
           </>
@@ -162,7 +169,8 @@ const MarcosJunior: React.FC = () => {
         return (
           <>
             <img src={pizzaCrm} alt="" />
-            <br /><br />
+            <br />
+            <br />
             <img src={comunhao} alt="" />
           </>
         );
@@ -170,7 +178,8 @@ const MarcosJunior: React.FC = () => {
         return (
           <>
             <img src={pizzaCrm} alt="" />
-            <br /><br />
+            <br />
+            <br />
             <img src={relacionamento} alt="" />
           </>
         );
@@ -178,7 +187,8 @@ const MarcosJunior: React.FC = () => {
         return (
           <>
             <img src={pizzaCrm} alt="" />
-            <br /><br />
+            <br />
+            <br />
             <img src={missao} alt="" />
           </>
         );
@@ -186,7 +196,8 @@ const MarcosJunior: React.FC = () => {
         return (
           <>
             <img src={pizzaCrm} alt="" />
-            <br /><br />
+            <br />
+            <br />
             <img src={estudosBiblicos} alt="" />
           </>
         );
@@ -194,7 +205,8 @@ const MarcosJunior: React.FC = () => {
         return (
           <>
             <img src={pizzaCrm} alt="" />
-            <br /><br />
+            <br />
+            <br />
             <img src={batismo} alt="" />
           </>
         );
@@ -202,7 +214,8 @@ const MarcosJunior: React.FC = () => {
         return (
           <>
             <img src={pizzaCrm} alt="" />
-            <br /><br />
+            <br />
+            <br />
             <img src={discipulado} alt="" />
           </>
         );
@@ -324,8 +337,10 @@ const MarcosJunior: React.FC = () => {
         <br />
       </DataContainer>
       <MembersContainer>
-        Total de membros <br /><span id="totalMembers">0</span>
-        <br /><br />
+        Total de membros <br />
+        <span id="totalMembers">0</span>
+        <br />
+        <br />
         <img src={membersTotal} alt="membersTotal" />
       </MembersContainer>
       <CrmContainer>
