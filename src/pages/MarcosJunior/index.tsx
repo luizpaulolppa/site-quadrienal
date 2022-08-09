@@ -14,7 +14,14 @@ import igrejaCinzaBranco from "../../assets/igreja-branco.png";
 import peopleCinzaBranco from "../../assets/people-branco.png";
 import peopleIgrejaCinzaBranco from "../../assets/people-igreja-branco.png";
 import membersTotal from "../../assets/members-total.png";
-import pizzaCrm from "../../assets/pizza-crm.png";
+import pizzaCrm from "../../assets/marcos-junior/pizza-crm.png";
+import pizza2 from "../../assets/marcos-junior/pizza2.png";
+import pizza3 from "../../assets/marcos-junior/pizza3.png";
+import pizza4 from "../../assets/marcos-junior/pizza4.png";
+import pizza5 from "../../assets/marcos-junior/pizza5.png";
+import pizza6 from "../../assets/marcos-junior/pizza6.png";
+import pizza7 from "../../assets/marcos-junior/pizza7.png";
+import pizza8 from "../../assets/marcos-junior/pizza8.png";
 import enrolleds from "../../assets/marcos-junior/enrolleds.png";
 import batismo from "../../assets/marcos-junior/batismo.png";
 import comunhao from "../../assets/marcos-junior/comunhao.png";
@@ -24,6 +31,7 @@ import membrosPresentes from "../../assets/marcos-junior/membros-presentes.png";
 import missao from "../../assets/marcos-junior/missao.png";
 import relacionamento from "../../assets/marcos-junior/relacionamento.png";
 import semestre1 from "../../assets/marcos-junior/1-semestre.png";
+import semestre2 from "../../assets/marcos-junior/2-semestre.png";
 import projetoPlante1 from "../../assets/marcos-junior/projeto-plante-1.png";
 import projetoPlante2 from "../../assets/marcos-junior/projeto-plante-2.png";
 import projetoPlante3 from "../../assets/marcos-junior/projeto-plante-3.png";
@@ -69,8 +77,16 @@ import {
 import Tabs from "../../components/Tabs";
 import FadeIn from "../../components/FadeIn";
 
+function testee() {
+  let counter = document.getElementById("totalMembers") as Element;
+  if (!counter) return;
+  counter.innerHTML='0'
+}
+
 const MarcosJunior: React.FC = () => {
   const navigate = useNavigate();
+
+  testee()
 
   const [openMenu, setOpenMenu] = useState(false);
   const [itemSelected, setItemSelected] = useState(0);
@@ -78,10 +94,6 @@ const MarcosJunior: React.FC = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   useEffect(() => {
-    // let count = document.getElementById("totalMembers") as Element;
-    // if (!count) return;
-    // count.setAttribute('value', '1');
-
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
       if (this.scrollY >= 1500 && this.scrollY <= 1700) {
@@ -114,12 +126,12 @@ const MarcosJunior: React.FC = () => {
       elements.forEach((el) => playAnimation(el, elTrigger));
       const counter = document.querySelector("#totalMembers") as Element;
       if (isOnScreen(counter)) {
-        startTotalMembersCOunt()
+        startTotalMembersCount()
       }
     });
   }, []);
 
-  function startTotalMembersCOunt() {
+  function startTotalMembersCount() {
     const totalMembers = 16842;
     let counts=setInterval(updated);
     let upto=16500;
@@ -133,79 +145,6 @@ const MarcosJunior: React.FC = () => {
         if(upto === totalMembers) {
             clearInterval(counts);
         }
-    }
-  }
-
-  function getImg(imgPosition: number) {
-    switch (imgPosition) {
-      case 0:
-        return (
-          <>
-          <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: "running" }}>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={enrolleds} alt="" />
-          </FadeIn>
-          </>
-        );
-      case 1:
-        return (
-          <>
-            <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizzaCrm} alt="" />
-              <br /><br />
-              <img src={membrosPresentes} alt="" />
-            </FadeIn>
-          </>
-        );
-      case 2:
-        return (
-          <>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={comunhao} alt="" />
-          </>
-        );
-      case 3:
-        return (
-          <>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={relacionamento} alt="" />
-          </>
-        );
-      case 4:
-        return (
-          <>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={missao} alt="" />
-          </>
-        );
-      case 5:
-        return (
-          <>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={estudosBiblicos} alt="" />
-          </>
-        );
-      case 6:
-        return (
-          <>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={batismo} alt="" />
-          </>
-        );
-      case 7:
-        return (
-          <>
-            <img src={pizzaCrm} alt="" />
-            <br /><br />
-            <img src={discipulado} alt="" />
-          </>
-        );
     }
   }
 
@@ -346,7 +285,85 @@ const MarcosJunior: React.FC = () => {
           <option value="6">Batismo (%)</option>
           <option value="7">Discipulado Pós-Batismo (%)</option>
         </select>
-        {getImg(graficoPosition)}
+        {graficoPosition === 0 && (
+          <>
+            <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: 'running' }} >
+              <img src={pizzaCrm} alt="" />
+              <br /><br />
+              <img src={enrolleds} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 1 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza2} alt="" />
+              <br /><br />
+              <img src={membrosPresentes} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 2 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza3} alt="" />
+              <br /><br />
+              <img src={comunhao} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 3 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza4} alt="" />
+              <br /><br />
+              <img src={relacionamento} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 4 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza5} alt="" />
+              <br /><br />
+              <img src={missao} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 5 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza6} alt="" />
+              <br /><br />
+              <img src={estudosBiblicos} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 6 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza7} alt="" />
+              <br /><br />
+              <img src={batismo} alt="" />
+            </FadeIn>
+          </>
+        )}
+
+        {graficoPosition === 7 && (
+          <>
+            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizza8} alt="" />
+              <br /><br />
+              <img src={discipulado} alt="" />
+            </FadeIn>
+          </>
+        )}
       </CrmContainer>
       <EvangelismoContainer>
         <p>Evangelismos</p>
@@ -355,7 +372,9 @@ const MarcosJunior: React.FC = () => {
           value={tabIndex}
           onChange={setTabIndex}
         />
-        <img src={semestre1} alt="semestre1" />
+        <br />
+        { tabIndex === 0 &&  <FadeIn duration="1s" delay="0.2s" style={{ animationPlayState: "running" }}><img src={semestre1} alt="semestre1" /></FadeIn> }
+        { tabIndex === 1 &&  <FadeIn duration="1s" delay="0.2s" style={{ animationPlayState: "running" }}><img src={semestre2} alt="semestre2" /></FadeIn> }
         <br />
         <br />
       </EvangelismoContainer>
