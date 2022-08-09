@@ -15,6 +15,7 @@ import peopleCinzaBranco from "../../assets/people-branco.png";
 import peopleIgrejaCinzaBranco from "../../assets/people-igreja-branco.png";
 import membersTotal from "../../assets/members-total.png";
 import pizzaCrm from "../../assets/pizza-crm.png";
+import enrolleds from "../../assets/marcos-junior/enrolleds.png";
 import batismo from "../../assets/marcos-junior/batismo.png";
 import comunhao from "../../assets/marcos-junior/comunhao.png";
 import discipulado from "../../assets/marcos-junior/discipulado.png";
@@ -138,21 +139,73 @@ const MarcosJunior: React.FC = () => {
   function getImg(imgPosition: number) {
     switch (imgPosition) {
       case 0:
-        return <img src={pizzaCrm} alt="" />;
+        return (
+          <>
+          <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: "running" }}>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={enrolleds} alt="" />
+          </FadeIn>
+          </>
+        );
       case 1:
-        return <img src={membrosPresentes} alt="" />;
+        return (
+          <>
+            <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: "running" }}>
+              <img src={pizzaCrm} alt="" />
+              <br /><br />
+              <img src={membrosPresentes} alt="" />
+            </FadeIn>
+          </>
+        );
       case 2:
-        return <img src={comunhao} alt="" />;
+        return (
+          <>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={comunhao} alt="" />
+          </>
+        );
       case 3:
-        return <img src={relacionamento} alt="" />;
+        return (
+          <>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={relacionamento} alt="" />
+          </>
+        );
       case 4:
-        return <img src={missao} alt="" />;
+        return (
+          <>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={missao} alt="" />
+          </>
+        );
       case 5:
-        return <img src={estudosBiblicos} alt="" />;
+        return (
+          <>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={estudosBiblicos} alt="" />
+          </>
+        );
       case 6:
-        return <img src={batismo} alt="" />;
+        return (
+          <>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={batismo} alt="" />
+          </>
+        );
       case 7:
-        return <img src={discipulado} alt="" />;
+        return (
+          <>
+            <img src={pizzaCrm} alt="" />
+            <br /><br />
+            <img src={discipulado} alt="" />
+          </>
+        );
     }
   }
 
