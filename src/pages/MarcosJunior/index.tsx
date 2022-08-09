@@ -92,6 +92,7 @@ const MarcosJunior: React.FC = () => {
   const [itemSelected, setItemSelected] = useState(0);
   const [graficoPosition, setGraficoPosition] = useState(0);
   const [tabIndex, setTabIndex] = useState(0);
+  let isRunningMembersCount = false;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -102,8 +103,12 @@ const MarcosJunior: React.FC = () => {
         setItemSelected(1);
       } else if (this.scrollY >= 2100 && this.scrollY <= 2300) {
         setItemSelected(2);
+        if (!isRunningMembersCount) {
+          startTotalMembersCount();
+        }
       }
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -124,27 +129,23 @@ const MarcosJunior: React.FC = () => {
 
     window.addEventListener("scroll", function () {
       elements.forEach((el) => playAnimation(el, elTrigger));
-      const counter = document.querySelector("#totalMembers") as Element;
-      if (isOnScreen(counter)) {
-        startTotalMembersCount()
-      }
     });
   }, []);
 
   function startTotalMembersCount() {
+    isRunningMembersCount = true;
     const totalMembers = 16842;
-    let counts=setInterval(updated);
-    let upto=16500;
+    let counts = setInterval(updated);
+    let upto = 16500;
 
-    function updated(){
-        let counter = document.getElementById("totalMembers") as Element;
-        if (!counter) return;
-        if (counter.innerHTML === totalMembers.toLocaleString('pt-BR')) return;
-
-        counter.innerHTML=(++upto).toLocaleString('pt-BR');
-        if(upto === totalMembers) {
-            clearInterval(counts);
-        }
+    function updated() {
+      let counter = document.getElementById("totalMembers") as Element;
+      if (!counter) return;
+      counter.innerHTML = (++upto).toLocaleString("pt-BR");
+      if (upto >= totalMembers) {
+        clearInterval(counts);
+        isRunningMembersCount = false;
+      }
     }
   }
 
@@ -263,8 +264,10 @@ const MarcosJunior: React.FC = () => {
         <br />
       </DataContainer>
       <MembersContainer>
-        Total de membros <br /><span id="totalMembers">0</span>
-        <br /><br />
+        Total de membros <br />
+        <span id="totalMembers">0</span>
+        <br />
+        <br />
         <img src={membersTotal} alt="membersTotal" />
       </MembersContainer>
       <CrmContainer>

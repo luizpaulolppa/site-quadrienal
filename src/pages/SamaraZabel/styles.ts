@@ -391,13 +391,6 @@ export const HighlightsText = styled.span`
   }
 `;
 
-export const BackgroundImage = styled.span`
-  height: 250px;
-  width: 300px;
-  background-color: #d9d9d9;
-  border-radius: 5px;
-`;
-
 export const DestaquesLayout = styled.div``;
 
 export const BoxTitle = styled.div`

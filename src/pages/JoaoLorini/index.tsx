@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
-
 import joaoLorini from "../../assets/joao-lorini/joao-without-back.jpg";
-
-import arrowDown from "../../assets/arrow-down-white.svg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
-
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
 import { useNavigate } from "react-router-dom";

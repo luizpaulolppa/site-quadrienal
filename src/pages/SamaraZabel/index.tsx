@@ -26,7 +26,6 @@ import {
   HighlightsContainer,
   HighlightsText,
   HighlightsTitle,
-  BackgroundImage,
   GreenBox,
   DestaquesLayout,
   BoxDescription,
