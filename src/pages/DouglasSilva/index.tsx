@@ -84,6 +84,7 @@ const DouglasSilva: React.FC = () => {
             (Ellen G. White, Mensagens aos Jovens, p. 56).
           </Text>
           <br />
+          <br />
         </TextContainer>
       </TitleContainer>
       <HighlightsContainer>

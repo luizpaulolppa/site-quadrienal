@@ -107,6 +107,7 @@ const SamaraZabel: React.FC = () => {
             (Ellen G. White, O Desejado de Todas as Nações, p. 515, 516).
           </Text>
           <br />
+          <br />
         </TextContainer>
       </TitleContainer>
       <HighlightsContainer>

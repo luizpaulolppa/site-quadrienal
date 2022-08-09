@@ -121,6 +121,8 @@ const FabianaNowack: React.FC = () => {
       <div id="start_fade1"></div>
       <GreenBox>
         <br />
+        <br />
+        <br />
         <FadeIn id="fade1" duration="3s" delay="0.2s">
           Estrutura educacional das nove escolas que compõem o Departamento de
           Educação na ACRS:
@@ -129,6 +131,7 @@ const FabianaNowack: React.FC = () => {
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
+        <br />
         <br />
       </GreenBox>
       <HighlightsContainer>
