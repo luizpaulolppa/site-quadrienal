@@ -95,6 +95,9 @@ const MarcosJunior: React.FC = () => {
   let isRunningMembersCount = false;
 
   useEffect(() => {
+    let counter = document.getElementById("totalMembers") as Element;
+    if (!counter) return; 
+
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
       if (this.scrollY >= 1500 && this.scrollY <= 1700) {
@@ -103,34 +106,39 @@ const MarcosJunior: React.FC = () => {
         setItemSelected(1);
       } else if (this.scrollY >= 2100 && this.scrollY <= 2300) {
         setItemSelected(2);
-        if (!isRunningMembersCount) {
-          startTotalMembersCount();
-        }
+      } else if (isOnScreen(counter)) {
+          if (counter.innerHTML === (16842).toLocaleString("pt-BR")) return; 
+          if (!isRunningMembersCount) {
+            startTotalMembersCount();
+          }
       }
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    const elements: Array<Element | null> = [];
+    const elements: Array<{ element: Element, trigger: Element } | null> = [];
     const el = document.querySelector("#fade1") as Element;
+    const el2 = document.querySelector("#fade2") as Element;
     const elTrigger = document.querySelector("#start_fade1") as Element;
-    elements.push(el);
-
-    function isOnScreen(el: any) {
-      if (!el) return;
-      let rect = el.getBoundingClientRect();
-      return rect.top > 0 && rect.bottom < window.innerHeight;
-    }
-
-    function playAnimation(el: any, trigger: any) {
-      if (isOnScreen(trigger)) el.style.animationPlayState = "running";
-    }
+    const elTrigger2 = document.querySelector("#start_fade2") as Element;
+    elements.push({ element: el, trigger: elTrigger });
+    elements.push({ element: el2, trigger: elTrigger2 });
 
     window.addEventListener("scroll", function () {
-      elements.forEach((el) => playAnimation(el, elTrigger));
+      elements.forEach((el: any) => playAnimation(el.element, el.trigger));
     });
   }, []);
+
+  function playAnimation(el: any, trigger: any) {
+    if (isOnScreen(trigger)) el.style.animationPlayState = "running";
+  }
+
+  function isOnScreen(el: any) {
+    if (!el) return;
+    let rect = el.getBoundingClientRect();
+    return rect.top > 0 && rect.bottom < window.innerHeight;
+  }
 
   function startTotalMembersCount() {
     isRunningMembersCount = true;
@@ -259,17 +267,19 @@ const MarcosJunior: React.FC = () => {
             </BoxDataInfo>
           </BoxData>
         </ItemBoxData>
+        <div id="start_fade2"></div>
         <br />
         <br />
         <br />
       </DataContainer>
-      <MembersContainer>
-        Total de membros <br />
-        <span id="totalMembers">0</span>
-        <br />
-        <br />
-        <img src={membersTotal} alt="membersTotal" />
-      </MembersContainer>
+      <FadeIn id="fade2" duration="3s" delay="0.2s">
+        <MembersContainer>
+          Total de membros <br />
+          <span id="totalMembers">0</span>
+          <br />
+          <img src={membersTotal} alt="membersTotal" />
+        </MembersContainer>
+      </FadeIn>
       <CrmContainer>
         <p>CRM - ACSR</p>
         <select
