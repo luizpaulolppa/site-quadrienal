@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable no-loop-func */
 /* eslint-disable react/jsx-no-undef */
 import React, { useEffect, useState } from "react";
 
@@ -75,6 +77,10 @@ const MarcosJunior: React.FC = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   useEffect(() => {
+    // let count = document.getElementById("totalMembers") as Element;
+    // if (!count) return;
+    // count.setAttribute('value', '1');
+
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
       if (this.scrollY >= 1500 && this.scrollY <= 1700) {
@@ -94,6 +100,7 @@ const MarcosJunior: React.FC = () => {
     elements.push(el);
 
     function isOnScreen(el: any) {
+      if (!el) return;
       let rect = el.getBoundingClientRect();
       return rect.top > 0 && rect.bottom < window.innerHeight;
     }
@@ -104,8 +111,29 @@ const MarcosJunior: React.FC = () => {
 
     window.addEventListener("scroll", function () {
       elements.forEach((el) => playAnimation(el, elTrigger));
+      const counter = document.querySelector("#totalMembers") as Element;
+      if (isOnScreen(counter)) {
+        startTotalMembersCOunt()
+      }
     });
   }, []);
+
+  function startTotalMembersCOunt() {
+    const totalMembers = 16842;
+    let counts=setInterval(updated);
+    let upto=16500;
+
+    function updated(){
+        let counter = document.getElementById("totalMembers") as Element;
+        if (!counter) return;
+        if (counter.innerHTML === totalMembers.toLocaleString('pt-BR')) return;
+
+        counter.innerHTML=(++upto).toLocaleString('pt-BR');
+        if(upto === totalMembers) {
+            clearInterval(counts);
+        }
+    }
+  }
 
   function getImg(imgPosition: number) {
     switch (imgPosition) {
@@ -243,7 +271,8 @@ const MarcosJunior: React.FC = () => {
         <br />
       </DataContainer>
       <MembersContainer>
-        Total de membros <span>16.842</span>
+        Total de membros <br /><span id="totalMembers">0</span>
+        <br /><br />
         <img src={membersTotal} alt="membersTotal" />
       </MembersContainer>
       <CrmContainer>
