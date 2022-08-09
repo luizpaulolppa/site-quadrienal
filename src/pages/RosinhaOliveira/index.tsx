@@ -101,6 +101,7 @@ const RosinhaOliveira: React.FC = () => {
             (Ellen G. White, Evangelismo, p. 369).
           </Text>
           <br />
+          <br />
         </TextContainer>
       </TitleContainer>
       <HighlightsContainer>

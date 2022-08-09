@@ -103,6 +103,7 @@ const EversonBraga: React.FC = () => {
           </TextCapitularContainer>
         </TextContainer>
         <br />
+        <br />
       </TitleContainer>
       <Highlights>
         <br />
@@ -151,15 +152,18 @@ const EversonBraga: React.FC = () => {
       </Highlights>
       <div id="start_fade1"></div>
       <GreenBox>
+        <br />
+        <br />
         <FadeIn id="fade1" duration="3s" delay="0.2s">
           “O que semeia em abundância, em abundância também ceifará. Deus não é
           injusto para que Se esqueça do vosso labor, do vosso trabalho de amor”
         </FadeIn>
         <br />
-        <br />
         <span>
           (Ellen G. White, <br /> Conselhos sobre Mordomia, p. 58).
         </span>
+        <br />
+        <br />
       </GreenBox>
       <BalanceContainer>
         <br />

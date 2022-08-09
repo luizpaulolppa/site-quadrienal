@@ -198,10 +198,14 @@ const RogerioGurniak: React.FC = () => {
             da redenção do homem” (Ellen G. White, Caminho a Cristo, p. 21).
           </Text>
           <br />
+          <br />
+          <br />
         </TextContainer>
       </TitleContainer>
       <div id="start_fade1"></div>
       <GreenBox id="section2">
+        <br />
+        <br />
         <br />
         <FadeIn className="fade" id="fade1" duration="3s" delay="0.2s">
           O Ministério <br /> da <br />Secretaria <br />tem <br />objetivos <br />claros:
@@ -210,6 +214,8 @@ const RogerioGurniak: React.FC = () => {
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
+        <br />
+        <br />
       </GreenBox>
       <ObjetivosContainer id="section3">
         <br />
@@ -258,6 +264,8 @@ const RogerioGurniak: React.FC = () => {
       </AgeGroupContainer>
       <EntriesAndMoveOutContainer>
         <br />
+        <br />
+        <br />
         <EntriesAndMoveOutTitle>Entradas</EntriesAndMoveOutTitle>
         <EntriesAndMoveOutSubtitle>Batismo</EntriesAndMoveOutSubtitle>
         <img src={entriesChart} alt="numero de pessoas batizadas" />
@@ -272,6 +280,8 @@ const RogerioGurniak: React.FC = () => {
           src={returningChart}
           alt="numero de pessoas que retornaram para igreja"
         />
+        <br />
+        <br />
       </EntriesAndMoveOutContainer>
       <FormerReligionContainer>
         <br />
@@ -514,6 +524,8 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
+        <br />
+        <br />
         <HighlightsText className="green">
           Serviço Voluntário Adventista (SVA)
         </HighlightsText>
@@ -633,6 +645,8 @@ const RogerioGurniak: React.FC = () => {
           <br />
           <img src={cvsPortoAlegre} alt="CVS Porto Alegre" />
         </HighlightsText>
+        <br />
+        <br />
         <br />
         <br />
         <br />

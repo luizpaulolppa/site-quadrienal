@@ -276,6 +276,7 @@ const MarcosJunior: React.FC = () => {
         <br />
         <img src={setaParaBaixo} alt="setaParaBaixo" />
         <DataTitle>Dados</DataTitle>
+        <br />
         <ItemBoxData>
           <VerticalLine show={itemSelected === 0} />
           <BoxData red={itemSelected === 0}>
@@ -294,9 +295,9 @@ const MarcosJunior: React.FC = () => {
           <VerticalLine show={itemSelected === 1} />
           <BoxData red={itemSelected === 1}>
             {itemSelected === 1 ? (
-              <img src={peopleCinzaBranco} alt="Igreja" />
+              <img src={peopleCinzaBranco} alt="Grupos" />
             ) : (
-              <img src={peopleCinza} alt="Igreja" />
+              <img src={peopleCinza} alt="Grupos" />
             )}
             <BoxDataInfo>
               <p>Grupos</p>
@@ -318,6 +319,8 @@ const MarcosJunior: React.FC = () => {
             </BoxDataInfo>
           </BoxData>
         </ItemBoxData>
+        <br />
+        <br />
         <br />
       </DataContainer>
       <MembersContainer>
@@ -359,6 +362,10 @@ const MarcosJunior: React.FC = () => {
       <ProjetoPlante>
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>Projeto Plante</h1>
         <p>Número de treinamentos</p>
         <img src={projetoPlante1} alt="projetoPlante1" />
@@ -378,6 +385,10 @@ const MarcosJunior: React.FC = () => {
         <img src={revitalize2} alt="projetoPlante2" />
         <p>Igrejas Plantadas</p>
         <img src={revitalize3} alt="projetoPlante3" />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
