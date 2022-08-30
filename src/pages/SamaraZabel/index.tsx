@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 import samaraZabel from "../../assets/samara-zabel/samara-without-back.jpg";
-import bases from "../../assets/samara-zabel/bases.png";
+import batismo1 from "../../assets/samara-zabel/batismo-1.svg";
+import batismo2 from "../../assets/samara-zabel/batismo-2.svg";
+import batismo3 from "../../assets/samara-zabel/batismo-3.svg";
+import batismo4 from "../../assets/samara-zabel/batismo-4.svg";
+import batismo5 from "../../assets/samara-zabel/batismo-5.svg";
+import batismo6 from "../../assets/samara-zabel/batismo-6.svg";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
-import setaParaBaixoRedonda from "../../assets/seta-para-baixo-redonda.png";
-import greenArrowDown from "../../assets/seta-para-baixo.png";
+import arrowDownYellow from "../../assets/seta-para-baixo-yellow.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -27,10 +31,18 @@ import {
   HighlightsText,
   HighlightsTitle,
   GreenBox,
-  DestaquesLayout,
-  BoxDescription,
-  BoxTitle,
-  GreenNumbersText,
+  HighlightListContainer,
+  HighlightContainer,
+  HighlightHead,
+  HighlightBody,
+  ReportContainer,
+  ReportTitle,
+  ReportYearRed,
+  ReportDescription,
+  ReportYearGreen,
+  ReportYearYellow,
+  ReportYearBlue,
+  ReportYearRedAdoletche,
 } from "./styles";
 import FadeIn from "../../components/FadeIn";
 
@@ -145,152 +157,193 @@ const SamaraZabel: React.FC = () => {
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
-        <DestaquesLayout>
-          <BoxTitle>Escola de Pais</BoxTitle>
-          <BoxDescription>‘Tudo começa em casa’</BoxDescription>
-          <BoxTitle>
-            Participação dos <br />
-            adolescentes
-          </BoxTitle>
-          <BoxDescription>
-            ‘BEP Teen - Bom de
-            <br /> Espírito de Profecia’
-          </BoxDescription>
-          <BoxTitle>
-            Crianças envolvidas na
-            <br /> pregação do Evangelho
-          </BoxTitle>
-          <BoxDescription>‘Grande como Davi’</BoxDescription>
-          <BoxTitle>
-            Realização de oito
-            <br /> Escolas de Pais.
-          </BoxTitle>
-          <BoxDescription>
-            ‘Escola Cristã de Férias
-            <br /> em parceria com os
-            <br /> calebes’
-          </BoxDescription>
-        </DestaquesLayout>
+        <HighlightListContainer>
+          <HighlightContainer>
+            <HighlightHead>
+              4 Escolas de Pais - Tudo Começa em Casa
+            </HighlightHead>
+            <HighlightBody>
+              Adolescentes Participando do Concurso - “BEP Teen - Bom de
+              Espírito de Profecia”
+            </HighlightBody>
+          </HighlightContainer>
+          <HighlightContainer>
+            <HighlightHead>
+              82 Escolas Cristã de Férias em Parceria com os Calebs
+            </HighlightHead>
+            <HighlightBody>
+              Adolescentes e Juvenis Participando do Concurso de Oratória
+            </HighlightBody>
+          </HighlightContainer>
+          <HighlightContainer>
+            <HighlightHead>Lançamento do Evangelismo Kids</HighlightHead>
+            <HighlightBody>
+              Escola Sabatina na Pandemia Online para Todas as Crianças
+            </HighlightBody>
+          </HighlightContainer>
+          <HighlightContainer>
+            <HighlightHead>
+              Escola Sabatina na Pandemia Online para Todas as Crianças
+            </HighlightHead>
+            <HighlightBody>
+              Vídeos para Adoração Infantil nos Cultos de Quarta e Domingo
+            </HighlightBody>
+          </HighlightContainer>
+        </HighlightListContainer>
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Relatório</HighlightsTitle>
-        <HighlightsText>
-          Em 2019, foram realizadas quinze trimestrais regionais com
-        </HighlightsText>
-        <br />
-        <GreenNumbersText>
-          <span>427</span> professores
-        </GreenNumbersText>
-        <br />
-        <HighlightsText>
-          capacitados por trimestre, além de duas trimestrais com líderes
-          distritais.
-        </HighlightsText>
-        <br />
-        <img src={setaParaBaixoRedonda} alt="Seta Para Baixo Redonda" />
-        <br />
-        <HighlightsText>
-          Durante o ano de 2020, quatro trimestrais foram on-line com
-          capacitação para
-        </HighlightsText>
-        <br />
-        <GreenNumbersText>
-          <span>118</span> professores
-        </GreenNumbersText>
-        <br />
-        <HighlightsText>
-          No mesmo ano, tanto a Escola Sabatina quanto a Semana Santa on-line
-          foram executadas pelo Departamento MC e MA da ACRS para todo o campo.
-        </HighlightsText>
-        <br />
-        <img src={setaParaBaixoRedonda} alt="Seta Para Baixo Redonda" />
-        <br />
-        <HighlightsText>
-          No decorrer de 2021, dez trimestrais regionais foram preparadas para{" "}
-        </HighlightsText>
-        <br />
-        <GreenNumbersText>
-          <span>456</span> professores
-        </GreenNumbersText>
-        <br />
-        <HighlightsText>
-          e duas trimestrais para líderes distritais. Numa das trimestrais,
-          voltada para a liderança distrital do MC e MA, cada líder levou um
-          discipulado. Já a liderança do MA levou um adolescente para o encontro
-          que durou um final de semana.
-          <br />
-          <br />
-          Neste ano, inclusive, três grandes movimentos aconteceram para
-          crianças e adolescentes:
-        </HighlightsText>
+        <ReportContainer>
+          <ReportTitle>
+            <span>CRM</span> com crianças
+          </ReportTitle>
+          <ReportYearRed>2019</ReportYearRed>
+          <ReportDescription>
+            Dados baseados em cima de 2.951 crianças - <span>(33%)</span>
+          </ReportDescription>
+
+          <ReportYearGreen>2020</ReportYearGreen>
+          <ReportDescription>Sem dados</ReportDescription>
+
+          <ReportYearYellow>2021</ReportYearYellow>
+          <ReportDescription>
+            Dados baseados em cima de 2.858 crianças - <span>(21%)</span>
+          </ReportDescription>
+
+          <ReportYearBlue>2022</ReportYearBlue>
+          <ReportDescription>
+            Dados baseados em cima de 1.437 crianças -{" "}
+            <span>(30% até o segundo trimestre)</span>
+          </ReportDescription>
+        </ReportContainer>
+        <ReportContainer>
+          <ReportTitle>
+            <span>CRM</span> com adolescentes
+          </ReportTitle>
+          <ReportYearRed>2019</ReportYearRed>
+          <ReportDescription>
+            Dados baseados em cima de 963 crianças - <span>(32%)</span>
+          </ReportDescription>
+
+          <ReportYearGreen>2020</ReportYearGreen>
+          <ReportDescription>Sem dados</ReportDescription>
+
+          <ReportYearYellow>2021</ReportYearYellow>
+          <ReportDescription>
+            Dados baseados em cima de 1.004 crianças - <span>(21%)</span>
+          </ReportDescription>
+
+          <ReportYearBlue>2022</ReportYearBlue>
+          <ReportDescription>
+            Dados baseados em cima de 518 crianças -{" "}
+            <span>(30% até o segundo trimestre)</span>
+          </ReportDescription>
+        </ReportContainer>
       </HighlightsContainer>
       <HighlightsContainer>
-        <HighlightsTitle className="red fs32">
-          Adoletchê ‘Reféns – O Resgate Final’
+        <HighlightsTitle>Batismos de Crianças</HighlightsTitle>
+        <HighlightsText>
+          <strong>Idade de 8 a 12 anos</strong>
+          <br />
+          <br />
+          <img src={batismo1} alt="Batismos de Crianças" />
+        </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <br />
+        <HighlightsTitle>Batismos de Adolescentes</HighlightsTitle>
+        <HighlightsText>
+          <strong>Idade de 13 a 16 anos</strong>
+          <br />
+          <br />
+          <img src={batismo2} alt="Batismos de Adolescentes" />
+        </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <br />
+        <HighlightsTitle>Bases G148TEEN</HighlightsTitle>
+        <HighlightsText>
+          <br />
+          <br />
+          <img src={batismo3} alt="Bases G148TEEN" />
+        </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <br />
+        <HighlightsTitle>Adoletchê</HighlightsTitle>
+        <HighlightsText>
+          <ReportYearRedAdoletche>1 no quadriênio</ReportYearRedAdoletche>
+          <ReportYearRedAdoletche>+ de 1.000 adolescentes</ReportYearRedAdoletche>
+          <ReportYearRedAdoletche>6 batismos</ReportYearRedAdoletche>
+        </HighlightsText>
+        <br />
+        <br />
+        <HighlightsTitle>Trimestrais</HighlightsTitle>
+        <HighlightsText>
+          <br />
+          <br />
+          <img src={batismo4} alt="Trimestrais" />
+        </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <br />
+        <HighlightsTitle>Professores Capacitados</HighlightsTitle>
+        <HighlightsText>
+          <br />
+          <br />
+          <img src={batismo5} alt="Professores Capacitados" />
+        </HighlightsText>
+        <br />
+        <br />
+        <br />
+        <br />
+        <HighlightsTitle>
+          Curso de Liderança para Líderes do MC e MA
         </HighlightsTitle>
         <HighlightsText>
-          com mais de 800 adolescentes durante um final de semana no IACS, em
-          parceria com a ACRS;
-        </HighlightsText>
-      </HighlightsContainer>
-      <HighlightsContainer>
-        <HighlightsTitle className="red fs32">
-          Concurso de Oratória do Soul+ e Adolescentes
-        </HighlightsTitle>
-        <HighlightsText>
-          com final no Encontro de Anciãos em outubro;
-        </HighlightsText>
-      </HighlightsContainer>
-      <HighlightsContainer>
-        <HighlightsTitle className="red fs32">
-          Início da Adoração Infantil
-        </HighlightsTitle>
-        <HighlightsText>
-          nos cultos de quarta e domingo.
           <br />
           <br />
-          Até este momento de 2022, quinze trimestrais regionais foram
-          elaboradas para 534 professores.
-        </HighlightsText>
-      </HighlightsContainer>
-      <HighlightsContainer>
-        <HighlightsTitle>Bases de Geração 148 Teen no campo:</HighlightsTitle>
-        <HighlightsText>
-          <br />
-          <img src={bases} alt="Bases" />
+          <img
+            src={batismo6}
+            alt="Curso de Liderança para Líderes do MC e MA"
+          />
         </HighlightsText>
       </HighlightsContainer>
       <ThanksContainer>
-        <img src={greenArrowDown} alt="Seta para baixo verde" />
+        <img src={arrowDownYellow} alt="Seta para baixo amarela" />
         <br />
         <ThanksTitle>Agradecimentos</ThanksTitle>
         <br />
         <br />
         <ThanksText>
-          Agradeço a Deus primeiramente, que olha com amor eterno e acredita que
-          crianças, juvenis e adolescentes têm muito a fazer e contribuir para a
-          finalização de Sua Obra.
+          A Deus primeiramente que olha com amor eterno e acredita que crianças,
+          juvenis e adolescentes têm muito a fazer e contribuir para a
+          finalização de Sua Obra.
           <br />
           <br />
-          À minha família, que sempre me apoiou e esteve ao meu lado em todos os
-          momentos.
+          A minha família, em especial meu marido Gerson Zabel que sempre me
+          apoiou e esteve ao meu lado em todos os momentos.
           <br />
           <br />
-          À Administração da ACSR, que não mede esforços para que os objetivos
-          desse departamento sejam alcançados.
+          A Administração da ACSR que não mede esforços para que os objetivos
+          desse departamento sejam alcançados.
           <br />
           <br />
-          À União Sul Brasileira (USB), em especial à professora Júlia Cardoso
-          pelo apoio incondicional e orientações inspiradoras.
+          A USB na pessoa da Prof. Júlia pelo apoio incondicional e orientações
+          inspiradoras.
           <br />
           <br />
-          Ao casal Marcus e Daiana Azevedo, por viverem intensamente o
-          Ministério do Adolescente junto à ACSR.
+          Ao Marcus e Daiana Azevedo por viver intensamente o Ministério do
+          Adolescente junto a ACSR.
           <br />
           <br />
-          Aos coordenadores e professores que são fiéis, incansáveis, pacientes
+          Aos coordenadores e professores que são fieis, incansáveis, pacientes
           e perseverantes no serviço de levar crianças, juvenis e adolescentes
-          rumo à Canaã Celestial.
+          rumo a Canaã Celestial.
           <br />
           <br />
           Aos pastores e suas respectivas esposas que incentivaram, participaram

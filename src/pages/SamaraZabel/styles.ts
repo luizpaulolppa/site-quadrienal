@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div``;
 
 export const TitleContainer = styled.div`
-padding: 100px 30px 30px;
+  padding: 100px 30px 30px;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -391,45 +391,78 @@ export const HighlightsText = styled.span`
   }
 `;
 
-export const DestaquesLayout = styled.div``;
+export const HighlightListContainer = styled.div``;
 
-export const BoxTitle = styled.div`
-  width: 100%;
+export const HighlightContainer = styled.div``;
+
+export const HighlightHead = styled.div`
   background-color: #f1403f;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
   color: #ffffff;
-  padding: 8px;
-  text-align: center;
-`;
-
-export const BoxDescription = styled.div`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-  text-align: center;
-  color: #000000;
-  margin: 22px;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-`;
-
-export const GreenNumbersText = styled.p`
-  font-family: "Poppins";
-  font-style: normal;
+  padding: 24px;
+  border-radius: 14px;
   font-weight: 600;
   font-size: 24px;
   line-height: 130%;
-  color: #19cd77;
+`;
+
+export const HighlightBody = styled.div`
+  color: #f1403f;
+  padding: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+`;
+
+export const ReportContainer = styled.div``;
+
+export const ReportTitle = styled.div`
+  margin-top: 50px;
+  font-weight: 600;
 
   span {
-    font-size: 64px;
+    font-size: 36px;
+    line-height: 130%;
+    margin-right: 12px;
+  }
+`;
+
+export const ReportYear = styled.div`
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #ffffff;
+  padding: 12px 0px 12px 40px;
+  border-radius: 6px;
+  background-color: black;
+`;
+
+export const ReportYearRed = styled(ReportYear)`
+  background-color: #f1403f;
+`;
+
+export const ReportYearGreen = styled(ReportYear)`
+  background-color: #19cd77;
+`;
+
+export const ReportYearYellow = styled(ReportYear)`
+  background-color: #e8d71e;
+`;
+
+export const ReportYearBlue = styled(ReportYear)`
+  background-color: #63b4ef;
+`;
+
+export const ReportYearRedAdoletche = styled(ReportYear)`
+  background-color: #f1403f;
+  font-size: 20px;
+`;
+
+export const ReportDescription = styled.div`
+  font-weight: bold;
+
+  span {
+    color: #19cd77;
   }
 `;
