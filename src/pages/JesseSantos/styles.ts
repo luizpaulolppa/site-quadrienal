@@ -134,6 +134,14 @@ export const HighlightsContainer = styled.div`
       }
     }
   }
+
+  .red-text {
+    color: #F1403F;
+  }
+
+  .green-text {
+    color: #19CD77;
+  }
 `;
 
 export const HighlightsTitle = styled.span`
@@ -176,4 +184,50 @@ export const HighlightsText = styled.span`
     width: 310px;
     height: 337px;
   }
+`;
+
+export const BoxLine = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+
+  p {
+    margin-left: 16px;
+  }
+`;
+
+export const BoxRed = styled.div`
+  min-width: 24px;
+  height: 24px;
+  width: 24px;
+  background-color: #F1403F;
+  border-radius: 2px;
+`;
+
+export const BoxGreen = styled(BoxRed)`
+  background-color: #19CD77;
+`;
+
+export const BoxYellow = styled(BoxRed)`
+  background-color: #E8D71E;
+`;
+
+export const BoxBlue = styled(BoxRed)`
+  background-color: #63B4EF;
+`;
+
+export const BoxPink = styled(BoxRed)`
+  background-color: #E1A0F8;
+`;
+
+export const BoxOrange = styled(BoxRed)`
+  background-color: #F6B109;
+`;
+
+export const BoxGreen2 = styled(BoxRed)`
+  background-color: #73CD19;
+`;
+
+export const BoxPink2 = styled(BoxRed)`
+  background-color: #8F1EE8;
 `;

@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import marcos from "../../assets/marcos-junior/marcos-without-back.jpg";
 import arrowDown from "../../assets/arrow-down-white.svg";
 import setaParaBaixo from "../../assets/seta-para-baixo-red.png";
-import setaParaBaixoYelow from "../../assets/seta-para-baixo-yelow.png";
+import setaParaBaixoYelow from "../../assets/seta-para-baixo-yellow.png";
 import igrejaCinza from "../../assets/igreja-cinza.png";
 import peopleCinza from "../../assets/people-cinza.png";
 import peopleIgrejaCinza from "../../assets/people-igreja-cinza.png";
