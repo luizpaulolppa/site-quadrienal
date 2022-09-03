@@ -1,6 +1,25 @@
 import React, { useEffect, useState } from "react";
 
 import douglasSilva from "../../assets/douglas-silva/douglas-silva.png";
+import douglasImg1 from "../../assets/douglas-silva/douglas-img1.png";
+import douglasImg2 from "../../assets/douglas-silva/douglas-img2.png";
+import douglasImg3 from "../../assets/douglas-silva/douglas-img3.png";
+import douglasImg4 from "../../assets/douglas-silva/douglas-img4.png";
+import douglasImg5 from "../../assets/douglas-silva/douglas-img5.png";
+import douglasImg6 from "../../assets/douglas-silva/douglas-img6.png";
+import douglasImg7 from "../../assets/douglas-silva/douglas-img7.png";
+import douglasImg8 from "../../assets/douglas-silva/douglas-img8.png";
+import douglasImg9 from "../../assets/douglas-silva/douglas-img9.png";
+import douglasImg10 from "../../assets/douglas-silva/douglas-img10.png";
+import douglasImg11 from "../../assets/douglas-silva/douglas-img11.png";
+import douglasImg12 from "../../assets/douglas-silva/douglas-img12.png";
+import crm from "../../assets/douglas-silva/crm.png";
+import calebes from "../../assets/douglas-silva/calebes.png";
+import universitarios from "../../assets/douglas-silva/universitarios.png";
+import comunicacao from "../../assets/douglas-silva/comunicacao.png";
+import producoes from "../../assets/douglas-silva/producoes.png";
+import revista from "../../assets/douglas-silva/revista.png";
+
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 
@@ -24,7 +43,15 @@ import {
   HighlightsContainer,
   HighlightsText,
   HighlightsTitle,
-  BackgroundImage,
+  GreenBox,
+  HighlightsContainerBlack,
+  BoxYear,
+  Year,
+  YearsContainer,
+  BoxYearGreen,
+  BoxYearBlue,
+  BoxYearYellow,
+  RedBox,
 } from "./styles";
 
 const DouglasSilva: React.FC = () => {
@@ -90,7 +117,11 @@ const DouglasSilva: React.FC = () => {
       <HighlightsContainer>
         <br />
         <br />
-        <img src={arrowDownRed} alt="Seta para baixo verde" />
+        <img
+          src={arrowDownRed}
+          className="arrow-down"
+          alt="Seta para baixo verde"
+        />
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
@@ -102,19 +133,40 @@ const DouglasSilva: React.FC = () => {
           juventude são fatores cruciais para a saúde de uma igreja local.
         </HighlightsText>
         <br />
-        <HighlightsText>
-          Como a própria palavra de Deus diz: “Jovens, escrevi a vocês, porque
-          são fortes, e a Palavra de Deus permanece em vocês, e vocês já
-          venceram o Maligno.” I Jo 2:14. O objetivo claro nos ideais JA é
-          salvar do pecado e guiar no serviço, e isso acontece quando os jovens
-          fazem da missão do Senhor o seu estilo de vida. Através das várias
-          ações deste departamento, visamos ter um exército de jovens que (1)
-          vivam em comunhão com o Senhor, (2) transmitam o amor de Jesus através
-          de ações solidárias e (3) estejam focados na missão de salvar. A
-          tarefa principal não é encher as reuniões de jovens.
-        </HighlightsText>
         <br />
-        <HighlightsText>
+      </HighlightsContainer>
+      <GreenBox>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Como a própria palavra de Deus diz:</p>
+        <br />
+        <p className="fs2">
+          “Jovens, escrevi a vocês, porque são fortes, e a Palavra de Deus
+          permanece em vocês, e vocês já venceram o Maligno.” I Jo 2:14.
+        </p>
+        <br />
+        <p>
+          O objetivo claro nos ideais JA é salvar do pecado e guiar no serviço,
+          e isso acontece quando os jovens fazem da missão do Senhor o seu
+          estilo de vida.
+        </p>
+        <br />
+        <p>
+          Através das várias ações deste departamento, visamos ter um exército
+          de jovens que (1) vivam em comunhão com o Senhor, (2) transmitam o
+          amor de Jesus através de ações solidárias e (3) estejam focados na
+          missão de salvar. A tarefa principal não é encher as reuniões de
+          jovens.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+      </GreenBox>
+      <HighlightsContainer>
+        <p>
           Nossa missão está centrada em lotar as cidades de novos discípulos de
           Cristo. Não se pode medir o sucesso do Ministério Jovem pela
           quantidade de pessoas que assistem aos eventos, mas pela quantidade de
@@ -122,56 +174,62 @@ const DouglasSilva: React.FC = () => {
           algumas frentes para alcançarmos o objetivo de discipular esta nova
           geração. Com a graça de Deus, já temos visto grandes mobilizações e
           resultados!
-        </HighlightsText>
-        <br />
-        <br />
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Equipe de Líderes</HighlightsTitle>
         <br />
-        <HighlightsText>
+        <p>
           Além do tradicional grupo de regionais e conselheiros nos últimos três
           anos, o departamento vem trabalhando na formação de uma equipe de
-          distritais JA. Esses líderes trabalham dando um suporte imediato para
-          os diretores de jovens de cada igreja, ao todo são cinco conselheiros,
-          sete regionais e 38 distritais.
-        </HighlightsText>
+          distritais JA.
+        </p>
         <br />
-        <br />
+        <p>
+          Esses líderes trabalham dando um suporte imediato para os diretores de
+          jovens de cada igreja, ao todo são cinco conselheiros, sete regionais
+          e 38 distritais.
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Save One</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={douglasImg2} alt="douglasImg1" />
         <br />
-        <HighlightsText>
+        <img src={douglasImg1} alt="douglasImg1" />
+        <br />
+        <p>
           O treinamento para os líderes de jovens foi realizado a cada ano
           através de uma convenção que recebeu o nome de Save One. Nesse
           treinamento, os jovens receberam motivação, material e direcionamento
           para o cumprimento da missão, através de atividades práticas sobre
           Escola Sabatina Jovem, G148, Missão Calebe, estilização de sala etc.
-        </HighlightsText>
-        <br />
-        <br />
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Campori de Jovens</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={douglasImg3} alt="douglasImg1" />
         <br />
-        <HighlightsText>
+        <p>
           Dois grandes acampamentos foram realizados em Bento Gonçalves durante
           o quadriênio. A cidade tornou-se palco do movimento de jovens
           adventistas que impactaram a cidade com ações sociais, fortaleceram a
           missão e os ideais do MJA.
-        </HighlightsText>
+        </p>
         <br />
-        <HighlightsText>
+        <p>
           Em 2019, o Campori Legado reforçou a identidade do Jovem Adventista e
           contou com a presença de 1.100 jovens. Em 2022, o Campori Chamados
           revigorou o propósito de Deus na vida de 1.500 jovens.
-        </HighlightsText>
-        <br />
-        <br />
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Missão Calebe</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={douglasImg4} alt="douglasImg1" />
         <br />
-        <HighlightsText>
+        <p>
           Centenas de jovens calebes doaram parte das suas férias para Jesus em
           cada início de ano. Saindo do conforto da casa, alguns viajaram muitos
           quilômetros para o local da missão. Nesses locais, eles desenvolveram
@@ -179,24 +237,27 @@ const DouglasSilva: React.FC = () => {
           atividades sociais para a comunidade como feiras de saúde e outras.
           Cremos que uma geração de missionários está surgindo através deste
           programa.
-        </HighlightsText>
+        </p>
         <br />
-        <HighlightsText>
-          Jovens que participaram da Missão Calebe por ano:
-          <ul className="remove-list-style">
-            <li>2019 – 1.150 calebes</li>
-            <li>2020 – 998 calebes</li>
-            <li>2021 – 1.240 calebes</li>
-            <li>2022 – 1.380 calebes</li>
-          </ul>
-        </HighlightsText>
+        <img src={douglasImg5} alt="douglasImg5" />
+        <img src={douglasImg6} alt="douglasImg5" />
+        <img src={douglasImg7} alt="douglasImg5" />
+        <img src={douglasImg8} alt="douglasImg5" />
+        <img src={douglasImg9} alt="douglasImg5" />
+        <br />
+        <br />
+        <strong>Jovens que participaram da Missão Calebe por ano:</strong>
+        <br />
+        <img src={douglasImg10} alt="douglasImg10" />
+        <br />
+        <img src={douglasImg11} alt="douglasImg11" />
         <br />
         <br />
         <HighlightsTitle>Projeto OYiM</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={douglasImg12} alt="douglasImg12" />
         <br />
-        <HighlightsText>
+        <p>
           O projeto Um Ano em Missão nestes últimos quatro anos envolveu 50
           jovens em um trabalho de tempo integral para o Senhor no território da
           ACSR. Eles atuaram diretamente na evangelização em grandes centros
@@ -204,14 +265,182 @@ const DouglasSilva: React.FC = () => {
           Influência e ministração de estudos bíblicos. A ACSR presta todo o
           treinamento, motivação, preparo, subvenções e orientações para o
           trabalho destes jovens.
-        </HighlightsText>
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainerBlack>
+        <HighlightsTitle>OYIM</HighlightsTitle>
+        <br />
+        <p>Número de Batismos</p>
+        <YearsContainer>
+          <Year>
+            <p>2019</p>
+            <BoxYear>
+              <p>30</p>
+            </BoxYear>
+          </Year>
+          <Year>
+            <p>2020</p>
+            <BoxYear>
+              <p>0</p>
+            </BoxYear>
+          </Year>
+          <Year>
+            <p>2021</p>
+            <BoxYear>
+              <p>26</p>
+            </BoxYear>
+          </Year>
+          <Year>
+            <p>2022</p>
+            <BoxYear>
+              <p>9</p>
+            </BoxYear>
+          </Year>
+        </YearsContainer>
+        <p className="desc">2020 - Pandemia (Projeto cancelado)</p>
+        <br />
+
+        <br />
+        <p>Igrejas Plantadas</p>
+        <YearsContainer>
+          <Year>
+            <p>2019</p>
+            <BoxYearGreen>
+              <p>1</p>
+            </BoxYearGreen>
+          </Year>
+          <Year>
+            <p>2020</p>
+            <BoxYearGreen>
+              <p>0</p>
+            </BoxYearGreen>
+          </Year>
+          <Year>
+            <p>2021</p>
+            <BoxYearGreen>
+              <p>0</p>
+            </BoxYearGreen>
+          </Year>
+          <Year>
+            <p>2022</p>
+            <BoxYearGreen>
+              <p>0</p>
+            </BoxYearGreen>
+          </Year>
+        </YearsContainer>
+        <p className="desc">2019 - Higienópolis</p>
+        <p className="desc">2020 - Pandemia (Projeto cancelado)</p>
+        <br />
+
+        <br />
+        <p>Igrejas Revitalizadas</p>
+        <YearsContainer>
+          <Year>
+            <p>2019</p>
+            <BoxYearYellow>
+              <p>3</p>
+            </BoxYearYellow>
+          </Year>
+          <Year>
+            <p>2020</p>
+            <BoxYearYellow>
+              <p>0</p>
+            </BoxYearYellow>
+          </Year>
+          <Year>
+            <p>2021</p>
+            <BoxYearYellow>
+              <p>5</p>
+            </BoxYearYellow>
+          </Year>
+          <Year>
+            <p>2022</p>
+            <BoxYearYellow>
+              <p>3</p>
+            </BoxYearYellow>
+          </Year>
+        </YearsContainer>
+        <p className="desc">2020 - Pandemia (Projeto cancelado)</p>
+        <br />
+
+        <br />
+        <p>Igrejas Revitalizadas</p>
+        <YearsContainer>
+          <Year>
+            <p>2019</p>
+            <BoxYearBlue>
+              <p>75</p>
+            </BoxYearBlue>
+          </Year>
+          <Year>
+            <p>2020</p>
+            <BoxYearBlue>
+              <p>0</p>
+            </BoxYearBlue>
+          </Year>
+          <Year>
+            <p>2021</p>
+            <BoxYearBlue>
+              <p>130</p>
+            </BoxYearBlue>
+          </Year>
+          <Year>
+            <p>2022</p>
+            <BoxYearBlue>
+              <p>80</p>
+            </BoxYearBlue>
+          </Year>
+        </YearsContainer>
+        <p className="desc">2020 - Pandemia (Projeto cancelado)</p>
         <br />
         <br />
+      </HighlightsContainerBlack>
+      <HighlightsContainer>
+        <HighlightsTitle>CRM</HighlightsTitle>
+        <br />
+        <img src={crm} alt="crm" width="300px" />
+        <br />
+        <br />
+        <HighlightsTitle>Calebes</HighlightsTitle>
+        <br />
+        <img src={calebes} alt="calebes" width="300px" />
+        <br />
+        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle>Campori de Jovens</HighlightsTitle>
+        <br />
+        <strong>Nomes dos Camporis:</strong>
+        <br />
+        <p className="green-text">
+          Legado/2019 e <br /> Chamados/2022
+        </p>
+        <br />
+        <strong>Número de Participantes:</strong>
+        <br />
+        <p className="green-text">
+          2019:1.016 <br /> 2022: 1293
+        </p>
+        <br />
+        <strong>Número de Investidos:</strong>
+        <br />
+        <p className="green-text">
+          2019: 31 <br /> 2022: 35
+        </p>
+        <br />
+        <strong>Número de Batismos:</strong>
+        <br />
+        <p className="green-text">
+          2019: 8 <br /> 2022: 28
+        </p>
+        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Universitários</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={universitarios} alt="universitarios" />
         <br />
-        <HighlightsText>
+        <p>
           Cada universitário como um embaixador no campus é o objetivo deste
           departamento. Para isso, a Agremiação Gaúcha dos Universitários
           Adventistas (AGUA) organiza simpósios nos quais são ministradas
@@ -219,14 +448,15 @@ const DouglasSilva: React.FC = () => {
           os universitários adventistas de sua missão. Além disso, os cultos de
           envio fortalecem os princípios e o propósito do Jovem Universitário no
           período da Faculdade.
-        </HighlightsText>
+        </p>
         <br />
-        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Música</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={universitarios} alt="universitarios" />
         <br />
-        <HighlightsText>
+        <p>
           A música tem um papel singular no contexto da adoração. Cada igreja
           deve dedicar tempo, recursos e talentos para que este ministério seja
           cumprido de modo que honre o nome de Deus. Pensando em melhor atender
@@ -234,142 +464,170 @@ const DouglasSilva: React.FC = () => {
           treinamentos e ofereceu por dois anos um Encontro de Músicos onde os
           aspectos técnicos e espirituais são trabalhados. O departamento
           promoveu os seguintes programas:
-        </HighlightsText>
+        </p>
         <br />
-        <HighlightsText>
-          <ul className="ml16">
-            <li>Capacitação do Ministério da Música;</li>
-            <li>Capacitação de Sonoplastas;</li>
-            <li>Encontro de Músicos no IACS;</li>
-          </ul>
-        </HighlightsText>
+        <p>
+          • Capacitação do Ministério da Música;
+          <br />
+          • Capacitação de Sonoplastas;
+          <br />• Encontro de Músicos no IACS.
+        </p>
         <br />
-        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Comunicação</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <img src={comunicacao} alt="comunicacao" />
         <br />
-        <HighlightsText>
+        <p>
           A Comunicação é, sem dúvidas, um dos ministérios mais dinâmicos e
           intensos da Igreja Adventista. Ele surge para somar e age como um elo
           entre os demais ministérios, reunindo todas as informações e
           disponibilizando-as harmoniosamente ao público interno e externo (que
-          compreende adventistas e a sociedade em geral). Além disso, este
-          ministério também auxilia os comunicadores das igrejas lá na ponta e
-          promove o maior alcance da Rede Novo Tempo de Comunicação na região.
-        </HighlightsText>
-        <HighlightsText>
+          compreende adventistas e a sociedade em geral).
+          <br />
+          <br />
+          Além disso, este ministério também auxilia os comunicadores das
+          igrejas lá na ponta e promove o maior alcance da Rede Novo Tempo de
+          Comunicação na região.
+        </p>
+        <br />
+        <img src={comunicacao} alt="comunicacao" />
+        <br />
+        <p>
           Esta divulgação interna e externa acontece por uma equipe composta por
           um assessor de comunicação e um diretor de mídia. Eles produzem
           conteúdos disponibilizados em sites oficiais, redes sociais, materiais
           impressos, reportagens na TV Novo Tempo, testemunhos, inserções na
           imprensa local, entre outros.
-        </HighlightsText>
-        <HighlightsText>
+        </p>
+        <br />
+        <p>
           Já o trabalho dos comunicadores das igrejas é fortalecido por
           treinamentos, assessoramentos e materiais também promovidos por este
           núcleo. O alcance das antenas da TV Novo Tempo é gerenciado por uma
           equipe técnica da área administrativa do escritório da ACSR. Com esta
           dinâmica de atividades, temos visto um desenvolvimento muito
           expressivo da comunicação em nossa região.
-        </HighlightsText>
-        <HighlightsText>
+        </p>
+        <br />
+        <p>
           A inserção no mundo digital, o aperfeiçoamento do trabalho do
           comunicador e o aumento do alcance da mensagem de esperança nos
           mostram que estamos apontando para o caminho certo — a pregação da
           Palavra de Deus, até Jesus voltar. Veja mais detalhes sobre as
           atividades promovidas neste departamento nos últimos quatro anos.
-        </HighlightsText>
+        </p>
         <br />
-        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Congregações identificadas</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <strong>Logo NT:</strong>
+        <p>
+          <span className="green-text">70%</span> das igrejas e grupos
+        </p>
         <br />
-        <HighlightsText>
-          Logo NT: 70% das igrejas e grupos Logo Igreja: 98% das igrejas e
-          grupos
-        </HighlightsText>
-        <br />
-        <br />
+        <strong>Logo Igreja:</strong>
+        <p>
+          <span className="green-text">98%</span> das igrejas e grupos
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Produções diversas</HighlightsTitle>
         <br />
-        <BackgroundImage />
-        <br />
-        <HighlightsText>
-          Notícias para portal da ACSR;
-          <ul className="ml16">
-            <li>Conteúdo para redes sociais;</li>
-            <li>Reportagens para TV Novo Tempo (Revista Novo Tempo);</li>
-            <li>Reportagens para TV Novo Tempo (Anjos da Esperança);</li>
-            <li>Transmissões ao vivo (através do Canal do YouTube);</li>
-            <li>Testemunhos para ACSR, USB e DSA;</li>
-            <li>Promocionais de eventos e datas comemorativas;</li>
-            <li>Conteúdos internos e institucionais.</li>
-          </ul>
-        </HighlightsText>
-        <br />
-        <br />
-        <HighlightsTitle>Produções diversas</HighlightsTitle>
-        <br />
-        <BackgroundImage />
-        <br />
-        <HighlightsText>(Assessoria de Imprensa ACSR)</HighlightsText>
-        <HighlightsText>
+        <p>
+          • Notícias para portal da ACSR;
           <br />
-          <ul className="remove-list-style">
-            <li>2019:28</li>
-            <li>2020:6</li>
-            <li>2021:3</li>
-            <li>2022:16</li>
-          </ul>
-        </HighlightsText>
+          • Conteúdo para redes sociais;
+          <br />
+          • Reportagens para TV Novo Tempo (Revista Novo Tempo);
+          <br />
+          • Reportagens para TV Novo Tempo (Anjos da Esperança);
+          <br />
+          • Transmissões ao vivo (através do Canal do YouTube);
+          <br />
+          • Testemunhos para ACSR, USB e DSA;
+          <br />
+          • Promocionais de eventos e datas comemorativas;
+          <br />
+          • Conteúdos internos e institucionais.
+          <br />
+        </p>
+      </HighlightsContainer>
+      <HighlightsContainer>
+        <HighlightsTitle>Produções diversas</HighlightsTitle>
         <br />
+        <p>(Assessoria de Imprensa ACSR)</p>
         <br />
+        <img src={producoes} alt="producoes" width="300px" />
+        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Revista ACSR News</HighlightsTitle>
         <br />
-        <BackgroundImage />
+        <p>(Informes oficiais do campo distribuídos para todas as igrejas)</p>
         <br />
-        <HighlightsText>
-          (Informes oficiais do campo distribuídos para todas as igrejas)
-        </HighlightsText>
-        <HighlightsText>
-          <br />
-          <ul className="remove-list-style">
-            <li>2019:28</li>
-            <li>2020:6</li>
-            <li>2021:3</li>
-            <li>2022:16</li>
-          </ul>
-        </HighlightsText>
+        <img src={revista} alt="revista" width="300px" />
         <br />
-        <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>Canais de Comunicação da ACSR</HighlightsTitle>
         <br />
-        <HighlightsText>
-          <ul className="remove-list-style">
-            <li>Site: acsr.adventistas.org</li>
-            <li>Redes Sociais:</li>
-            <li>Facebook: @acsr.rs</li>
-            <li>Instagram: @adventistasacsr</li>
-            <li>YouTube: Adventistas Centro do Rio Grande do Sul</li>
-          </ul>
-        </HighlightsText>
+        <strong className="subtitle">Site</strong>
+        <RedBox>acsr.adventistas.org</RedBox>
         <br />
+        <strong className="subtitle">Redes Sociais</strong>
+        <strong>Facebook</strong>
+        <RedBox>@acsr.rs</RedBox>
+        <strong>Instagram</strong>
+        <RedBox>@adventistasacsr</RedBox>
+        <strong>YouTube</strong>
+        <RedBox>
+          Adventistas Centro <br /> do Rio Grande do Sul
+        </RedBox>
         <br />
+      </HighlightsContainer>
+      <HighlightsContainer>
         <HighlightsTitle>TV Novo Tempo</HighlightsTitle>
         <br />
-        <HighlightsText>
+        <p>
           No Brasil, a TV Novo Tempo é transmitida em canal fechado nas
-          operadoras de TV por assinatura, como: Sky (33 e 433), Net (184 e
-          684), Claro TV (184 e 684) e Oi (214). Além disso, a programação da TV
-          também pode ser assistida em canal aberto para algumas cidades
-          brasileiras do nosso território: 45 UHF (Grande Porto Alegre) e 46 UHF
-          (Cachoeira do Sul).
-        </HighlightsText>
+          operadoras de TV por assinatura, como:
+        </p>
+        <br />
+        <p>
+          <span className="green-text">Sky</span> (33 e 433)
+        </p>
+        <p>
+          <span className="green-text">Net</span> (184 e 684)
+        </p>
+        <p>
+          <span className="green-text">Claro TV</span> (184 e 684)
+        </p>
+        <p>
+          <span className="green-text">Oi</span> (214)
+        </p>
+        <br />
+        <p>
+          Além disso, a programação da TV também pode ser assistida em canal
+          aberto para algumas cidades brasileiras do nosso território:
+        </p>
+        <br />
+        <p>
+          <span className="green-text">45 UHF</span> (Grande Porto Alegre)
+        </p>
+        <p>
+          <span className="green-text">46 UHF</span> (Cachoeira do Sul)
+        </p>
+        <br />
       </HighlightsContainer>
       <ThanksContainer>
-        <img src={yellowArrowDown} alt="Seta para baixo amarela" />
+        <img
+          src={yellowArrowDown}
+          className="arrow-down"
+          alt="Seta para baixo amarela"
+        />
         <br />
         <ThanksTitle>Agradecimentos</ThanksTitle>
         <br />

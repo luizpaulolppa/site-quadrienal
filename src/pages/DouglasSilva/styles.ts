@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div``;
 
 export const TitleContainer = styled.div`
-padding: 100px 30px 30px;
+  padding: 100px 30px 30px;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -71,11 +71,16 @@ export const Text = styled.p`
 export const GreenBox = styled.div`
   padding: 30px;
   background-color: #13b466;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 62px;
   color: #ffffff;
+  font-style: normal;
+
+  h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 62px;
+    margin: 0;
+  }
 
   div {
     display: flex;
@@ -86,6 +91,11 @@ export const GreenBox = styled.div`
   img {
     width: 40px;
     text-align: center;
+  }
+
+  .fs2 {
+    font-style: italic;
+    font-size: 18px;
   }
 `;
 
@@ -340,9 +350,46 @@ export const HighlightsContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  img {
+  .arrow-down {
     width: 48px;
     height: 48px;
+  }
+
+  .green-text {
+    color: #19cd77;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+`;
+
+export const HighlightsContainerBlack = styled.div`
+  padding: 60px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  .arrow-down {
+    width: 48px;
+    height: 48px;
+  }
+
+  span,
+  p {
+    color: #ffffff;
+  }
+
+  .desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
   }
 `;
 
@@ -384,4 +431,56 @@ export const BackgroundImage = styled.span`
   width: 300px;
   background-color: #d9d9d9;
   border-radius: 5px;
+`;
+
+export const YearsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 12px;
+`;
+
+export const Year = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+`;
+
+export const BoxYear = styled.div`
+  height: 65px;
+  width: 65px;
+  background-color: #f1403f;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+`;
+
+export const BoxYearGreen = styled(BoxYear)`
+  background-color: #19cd77;
+`;
+
+export const BoxYearYellow = styled(BoxYear)`
+  background-color: #e8d71e;
+`;
+
+export const BoxYearBlue = styled(BoxYear)`
+  background-color: #63b4ef;
+`;
+
+export const RedBox = styled.div`
+  background-color: #f1403f;
+  color: white;
+  border-radius: 8px;
+  width: max-content;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  color: #ffffff;
 `;
