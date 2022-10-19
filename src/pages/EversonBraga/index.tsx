@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import everson from "../../assets/everson/everson-without-back.jpg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
+import balance from "../../assets/everson/balance.png";
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
 import { useNavigate } from "react-router-dom";
@@ -133,8 +134,8 @@ const EversonBraga: React.FC = () => {
 
         <HighlightsDataText>
           Podemos confirmá-la através do crescimento de{" "}
-          <span className="green">18,01% </span>
-          nos dízimos e <span className="blue">9,43%</span> nas ofertas
+          <span className="green">24,58% </span>
+          nos dízimos e <span className="blue">15,86%</span> nas ofertas
         </HighlightsDataText>
 
         <br />
@@ -142,7 +143,7 @@ const EversonBraga: React.FC = () => {
 
         <HighlightsText>
           Nesse mesmo período, tivemos um crescimento de inflação de{" "}
-          <span className="red">27,95%</span>
+          <span className="red">23,59%</span>
           <br />
           <br />
           (janeiro de 2019 – julho de 2022).
@@ -167,48 +168,11 @@ const EversonBraga: React.FC = () => {
       </GreenBox>
       <BalanceContainer>
         <br />
-        <BalanceTitle>Balanços Patrimoniais</BalanceTitle>
+        <BalanceTitle>Área Religiosa</BalanceTitle>
         <br />
         <br />
         <br />
-        <BalanceSubTitle>Terrenos adquiridos</BalanceSubTitle>
-        <br />
-        <BalanceBadge color="#F1403F">
-          <span>2019</span>
-        </BalanceBadge>
-        <br />
-        <BalanceText>
-          Presidente Vargas | Bairro Cruzeiro | 315.000,00
-        </BalanceText>
-        <br />
-        <BalanceBadge color="#19CD77">
-          <span>2020</span>
-        </BalanceBadge>
-        <br />
-        <BalanceText>Boa Vista do Incra | Cruz Alta | 11.162,52</BalanceText>
-        <br />
-        <BalanceBadge color="#E8D71E">
-          <span>2021</span>
-        </BalanceBadge>
-        <br />
-        <BalanceText>Nova Brasília | Alegrete | 65.000,00</BalanceText>
-        <BalanceText>
-          Bairro Aparecida | Bento Gonçalves | 150.000,00
-        </BalanceText>
-        <br />
-        <BalanceBadge color="#63B4EF">
-          <span>2022</span>
-        </BalanceBadge>
-        <br />
-        <BalanceText>Bairro Pinheiros | Lajeado | 125.000,00</BalanceText>
-        <BalanceText>Rio Branco | Caxias do Sul | 700.000,00</BalanceText>
-        <BalanceText>Bela União | Santa Maria | 100.000,00</BalanceText>
-        <BalanceText>Olarias | Canoas | 180.000,00</BalanceText>
-        <br />
-        <br />
-        <BalanceText>
-          <strong>TOTAL TERRENOS: 1.646.162,52</strong>
-        </BalanceText>
+        <img src={balance} alt="Balanço" />
       </BalanceContainer>
       <ThanksContainer>
         <img src={yellowArrowDown} alt="Seta para baixo amarela" />
