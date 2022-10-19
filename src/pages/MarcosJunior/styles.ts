@@ -36,7 +36,7 @@ export const Name = styled.div`
 export const Role = styled.div`
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 120%;
   color: #ffffff;
 `;
@@ -167,6 +167,11 @@ export const MembersContainer = styled.h1`
   color: #000000;
   padding: 30px;
 
+  .subtitle {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
   span {
     color: #F1403F;
   }
@@ -176,22 +181,16 @@ export const MembersContainer = styled.h1`
   }
 `;
 
-export const CrmContainer = styled.h1`
+export const CrmContainer = styled.div`
   padding: 30px;
   font-weight: 600;
   font-size: 40px;
+  margin-right: auto;
 
-  select {
-    border-radius: 8px;
-    background-color: #EEEEEE;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url(${selectArrowDown});
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-x: 95%;
-    padding: 18px;
-    margin-bottom: 30px;
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
   }
 `;
 
@@ -213,19 +212,28 @@ export const ProjetoPlante = styled.div`
   background-color: black;
   padding: 30px;
   
-  h1 {
-    font-weight: 600;
-    font-size: 40px;
-    color: #FFFFFF;
-  }
-
   p {
+    &.title {
+      font-weight: 600;
+      font-size: 40px;
+      color: #FFFFFF;
+    }
+
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
     color: #FFFFFF;
     margin-top: 36px;
     margin-bottom: 16px;
+  }
+
+  span {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 120%;
+    color: #FFFFFF;
   }
 `;
 

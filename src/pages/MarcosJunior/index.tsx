@@ -7,29 +7,10 @@ import marcos from "../../assets/marcos-junior/marcos-without-back.jpg";
 import arrowDown from "../../assets/arrow-down-white.svg";
 import setaParaBaixo from "../../assets/seta-para-baixo-red.png";
 import setaParaBaixoYelow from "../../assets/seta-para-baixo-yellow.png";
-import igrejaCinza from "../../assets/igreja-cinza.png";
-import peopleCinza from "../../assets/people-cinza.png";
-import peopleIgrejaCinza from "../../assets/people-igreja-cinza.png";
-import igrejaCinzaBranco from "../../assets/igreja-branco.png";
-import peopleCinzaBranco from "../../assets/people-branco.png";
-import peopleIgrejaCinzaBranco from "../../assets/people-igreja-branco.png";
-import membersTotal from "../../assets/members-total.png";
-import pizzaCrm from "../../assets/marcos-junior/pizza-crm.png";
-import pizza2 from "../../assets/marcos-junior/pizza2.png";
-import pizza3 from "../../assets/marcos-junior/pizza3.png";
-import pizza4 from "../../assets/marcos-junior/pizza4.png";
-import pizza5 from "../../assets/marcos-junior/pizza5.png";
-import pizza6 from "../../assets/marcos-junior/pizza6.png";
-import pizza7 from "../../assets/marcos-junior/pizza7.png";
-import pizza8 from "../../assets/marcos-junior/pizza8.png";
-import enrolleds from "../../assets/marcos-junior/enrolleds.png";
-import batismo from "../../assets/marcos-junior/batismo.png";
-import comunhao from "../../assets/marcos-junior/comunhao.png";
-import discipulado from "../../assets/marcos-junior/discipulado.png";
-import estudosBiblicos from "../../assets/marcos-junior/estudos-biblicos.png";
-import membrosPresentes from "../../assets/marcos-junior/membros-presentes.png";
-import missao from "../../assets/marcos-junior/missao.png";
-import relacionamento from "../../assets/marcos-junior/relacionamento.png";
+import membersTotal from "../../assets/marcos-junior/members-total.png";
+import membersTotal2 from "../../assets/marcos-junior/members-total-2.png";
+import crm from "../../assets/marcos-junior/crm.png";
+import dadosGerais from "../../assets/marcos-junior/dados-gerais.png";
 import semestre1 from "../../assets/marcos-junior/1-semestre.png";
 import semestre2 from "../../assets/marcos-junior/2-semestre.png";
 import projetoPlante1 from "../../assets/marcos-junior/projeto-plante-1.png";
@@ -38,12 +19,7 @@ import projetoPlante3 from "../../assets/marcos-junior/projeto-plante-3.png";
 import revitalize1 from "../../assets/marcos-junior/revitalize-1.png";
 import revitalize2 from "../../assets/marcos-junior/revitalize-2.png";
 import revitalize3 from "../../assets/marcos-junior/revitalize-3.png";
-import impacto1 from "../../assets/marcos-junior/impacto-1.png";
-import impacto2 from "../../assets/marcos-junior/impacto-2.png";
-import impacto3 from "../../assets/marcos-junior/impacto-3.png";
-import impacto4 from "../../assets/marcos-junior/impacto-4.png";
-import impacto5 from "../../assets/marcos-junior/impacto-5.png";
-import livros from "../../assets/marcos-junior/livros.png";
+import impacto from "../../assets/marcos-junior/impacto.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -62,16 +38,11 @@ import {
   GreenBox,
   DataContainer,
   DataTitle,
-  BoxData,
-  BoxDataInfo,
-  ItemBoxData,
-  VerticalLine,
   MembersContainer,
   CrmContainer,
   EvangelismoContainer,
   ProjetoPlante,
   ImpactoACSR,
-  Livros,
   Agradecimentos,
 } from "./styles";
 import Tabs from "../../components/Tabs";
@@ -83,34 +54,43 @@ function testee() {
   counter.innerHTML='0'
 }
 
+function testee2() {
+  let counter = document.getElementById("totalMembers2") as Element;
+  if (!counter) return;
+  counter.innerHTML='0'
+}
+
 const MarcosJunior: React.FC = () => {
   const navigate = useNavigate();
 
   testee()
+  testee2()
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [itemSelected, setItemSelected] = useState(0);
-  const [graficoPosition, setGraficoPosition] = useState(0);
   const [tabIndex, setTabIndex] = useState(0);
   let isRunningMembersCount = false;
+  let isRunningMembersCount2 = false;
+
 
   useEffect(() => {
     let counter = document.getElementById("totalMembers") as Element;
     if (!counter) return; 
 
+    let counter2 = document.getElementById("totalMembers2") as Element;
+    if (!counter2) return; 
+
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
-      if (this.scrollY >= 1500 && this.scrollY <= 1700) {
-        setItemSelected(0);
-      } else if (this.scrollY >= 1700 && this.scrollY <= 1900) {
-        setItemSelected(1);
-      } else if (this.scrollY >= 2100 && this.scrollY <= 2300) {
-        setItemSelected(2);
-      } else if (isOnScreen(counter)) {
-          if (counter.innerHTML === (16842).toLocaleString("pt-BR")) return; 
-          if (!isRunningMembersCount) {
-            startTotalMembersCount();
-          }
+  if (isOnScreen(counter)) {
+        if (counter.innerHTML === (16842).toLocaleString("pt-BR")) return; 
+        if (!isRunningMembersCount) {
+          startTotalMembersCount();
+        }
+
+        if (counter2.innerHTML === (17475).toLocaleString("pt-BR")) return; 
+        if (!isRunningMembersCount2) {
+          startTotalMembersCount2();
+        }
       }
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -157,6 +137,23 @@ const MarcosJunior: React.FC = () => {
     }
   }
 
+  function startTotalMembersCount2() {
+    isRunningMembersCount2 = true;
+    const totalMembers = 17475;
+    let counts = setInterval(updated);
+    let upto = 17000;
+
+    function updated() {
+      let counter = document.getElementById("totalMembers2") as Element;
+      if (!counter) return;
+      counter.innerHTML = (++upto).toLocaleString("pt-BR");
+      if (upto >= totalMembers) {
+        clearInterval(counts);
+        isRunningMembersCount2 = false;
+      }
+    }
+  }
+
   function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
   }
@@ -190,11 +187,12 @@ const MarcosJunior: React.FC = () => {
           <TextCapitularContainer>
             <FirstLetter>É</FirstLetter>
             <Text>
-              com muita alegria que recebemos você, delegado da V Assembleia
-              Quadrienal da Associação Central Sul.
+              com muita alegria que recebemos você, delegado da V Assembleia Quadrienal da Associação Central Sul
+              <br /> Rio-Grandense.
             </Text>
           </TextCapitularContainer>
           <Text>
+          <br /> 
             Agradeço a Deus por chegarmos até aqui e a Ele todo louvor pelas
             vitórias alcançadas. Ao olhar para trás, sou muito grato à igreja na
             região central do Rio Grande do Sul, por todo o apoio e envolvimento
@@ -220,164 +218,38 @@ const MarcosJunior: React.FC = () => {
       </GreenBox>
 
       <DataContainer>
-        <br />
-        <br />
-        <img src={setaParaBaixo} alt="setaParaBaixo" />
-        <DataTitle>Dados</DataTitle>
-        <br />
-        <ItemBoxData>
-          <VerticalLine show={itemSelected === 0} />
-          <BoxData red={itemSelected === 0}>
-            {itemSelected === 0 ? (
-              <img src={igrejaCinzaBranco} alt="Igreja" />
-            ) : (
-              <img src={igrejaCinza} alt="Igreja" />
-            )}
-            <BoxDataInfo>
-              <p>Igrejas</p>
-              <p>130</p>
-            </BoxDataInfo>
-          </BoxData>
-        </ItemBoxData>
-        <ItemBoxData>
-          <VerticalLine show={itemSelected === 1} />
-          <BoxData red={itemSelected === 1}>
-            {itemSelected === 1 ? (
-              <img src={peopleCinzaBranco} alt="Grupos" />
-            ) : (
-              <img src={peopleCinza} alt="Grupos" />
-            )}
-            <BoxDataInfo>
-              <p>Grupos</p>
-              <p>99</p>
-            </BoxDataInfo>
-          </BoxData>
-        </ItemBoxData>
-        <ItemBoxData>
-          <VerticalLine show={itemSelected === 2} />
-          <BoxData red={itemSelected === 2}>
-            {itemSelected === 2 ? (
-              <img src={peopleIgrejaCinzaBranco} alt="Igreja" />
-            ) : (
-              <img src={peopleIgrejaCinza} alt="Igreja" />
-            )}
-            <BoxDataInfo>
-              <p>Total de Congregações</p>
-              <p>229</p>
-            </BoxDataInfo>
-          </BoxData>
-        </ItemBoxData>
         <div id="start_fade2"></div>
         <br />
         <br />
+        <img src={setaParaBaixo} alt="setaParaBaixo" />
+        <DataTitle>Dados <br />gerais</DataTitle>
+        <br />
+        <img src={dadosGerais} alt="dadosGerais" />
         <br />
       </DataContainer>
       <FadeIn id="fade2" duration="3s" delay="0.2s">
         <MembersContainer>
           Total de membros <br />
+          <p className="subtitle" >setembro | 2022</p>
           <span id="totalMembers">0</span>
           <br />
           <img src={membersTotal} alt="membersTotal" />
+          <br /><br />
+          <p className="subtitle">dezembro | 2018</p>
+          <span id="totalMembers2">0</span>
+          <br />
+          <img src={membersTotal2} alt="membersTotal2" />
         </MembersContainer>
       </FadeIn>
       <CrmContainer>
         <p>CRM - ACSR</p>
-        <select
-          defaultValue={0}
-          name="datas"
-          id="datas"
-          value={graficoPosition}
-          onChange={(data) => setGraficoPosition(Number(data.target.value))}
-        >
-          <option value="0">Matriculados (%)</option>
-          <option value="1">Membros Presentes (%)</option>
-          <option value="2">Comunhão (%)</option>
-          <option value="3">Relacionamento (%)</option>
-          <option value="4">Missão (%)</option>
-          <option value="5">Estudos Bíblicos (%)</option>
-          <option value="6">Batismo (%)</option>
-          <option value="7">Discipulado Pós-Batismo (%)</option>
-        </select>
-        {graficoPosition === 0 && (
-          <>
-            <FadeIn duration="3s" delay="0.2s" style={{ animationPlayState: 'running' }} >
-              <img src={pizzaCrm} alt="" />
-              <br /><br />
-              <img src={enrolleds} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 1 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza2} alt="" />
-              <br /><br />
-              <img src={membrosPresentes} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 2 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza3} alt="" />
-              <br /><br />
-              <img src={comunhao} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 3 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza4} alt="" />
-              <br /><br />
-              <img src={relacionamento} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 4 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza5} alt="" />
-              <br /><br />
-              <img src={missao} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 5 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza6} alt="" />
-              <br /><br />
-              <img src={estudosBiblicos} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 6 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza7} alt="" />
-              <br /><br />
-              <img src={batismo} alt="" />
-            </FadeIn>
-          </>
-        )}
-
-        {graficoPosition === 7 && (
-          <>
-            <FadeIn duration="2s" delay="0.2s" style={{ animationPlayState: "running" }}>
-              <img src={pizza8} alt="" />
-              <br /><br />
-              <img src={discipulado} alt="" />
-            </FadeIn>
-          </>
-        )}
+        <img src={crm} alt="CRM" />
       </CrmContainer>
+      <span>
+        *Obs.: Em 2019 o cartão de chamada da Escola Sabatina não possuía as 
+        perguntas da Roda do Discipulado. Em 2022, os dados são do 3º trimestre, 
+        quando foram levantados os dados para esta revista.
+      </span>
       <EvangelismoContainer>
         <p>Evangelismos</p>
         <Tabs
@@ -395,10 +267,10 @@ const MarcosJunior: React.FC = () => {
         <br />
         <br />
         <br />
+        <p className="title">Projeto Plante</p>
+        <span>Formar um movimento de igrejas que plantem outras igrejas.</span>
         <br />
         <br />
-        <br />
-        <h1>Projeto Plante</h1>
         <p>Número de treinamentos</p>
         <img src={projetoPlante1} alt="projetoPlante1" />
         <p>Pastores treinados</p>
@@ -410,7 +282,9 @@ const MarcosJunior: React.FC = () => {
         <br />
         <br />
         <br />
-        <h1>Projeto Revitalize</h1>
+        <p className="title">Projeto Revitalize</p>
+        <span>Projeto que visa revitalizar igrejas 
+              que precisem crescer na Comunhão, no Relacionamento e na Missão.</span>
         <p>Número de treinamentos</p>
         <img src={revitalize1} alt="projetoPlante1" />
         <p>Pastores treinados</p>
@@ -430,21 +304,12 @@ const MarcosJunior: React.FC = () => {
         <br />
         <br />
         <h1>Impacto ACSR</h1>
-        <p>Número de pontos de pregação</p>
-        <img src={impacto1} alt="impacto 1" />
-        <p>Estudos Bíblicos</p>
-        <img src={impacto2} alt="impacto 2" />
-        <p>Pedidos de Batismo</p>
-        <img src={impacto3} alt="impacto 3" />
-        <p>Média de Público Diário</p>
-        <img src={impacto4} alt="impacto 4" />
-        <p>Pessoas Batizadas</p>
-        <img src={impacto5} alt="impacto 5" />
+        <span>(evangelismo 10 dias de oração)</span>
+        <br />
+        <br />
+      
+        <img src={impacto} alt="impacto" />
       </ImpactoACSR>
-      <Livros>
-        <h1>Livros Missionários Adquiridos</h1>
-        <img src={livros} alt="livros" />
-      </Livros>
       <Agradecimentos>
         <img src={setaParaBaixoYelow} alt="setaParaBaixoYelow" />
         <h1>Agradecimentos</h1>
@@ -490,11 +355,6 @@ const MarcosJunior: React.FC = () => {
           Aos colportores, por nos inspirar a trabalhar pela fé. A todos os
           funcionários da ACRS, da Educação e voluntários que atuam nas igrejas,
           meu reconhecimento pelo empenho e dedicação.
-        </p>
-        <br />
-        <p>
-          Agradeço às organizações superiores, em especial à Divisão
-          Sul-Americana (DSA).
         </p>
         <br />
         <p>
