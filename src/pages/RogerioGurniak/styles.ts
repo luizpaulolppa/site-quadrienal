@@ -99,7 +99,7 @@ export const ThanksContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  img {
+  .arrowDown {
     width: 48px;
     height: 48px;
   }
@@ -400,6 +400,14 @@ export const FormerReligionTitle = styled.span`
   font-size: 40px;
   line-height: 130%;
   color: #000000;
+
+  .sub {
+    font-size: 24px;
+  }
+
+  .green {
+    color: #19CD77;
+  }
 `;
 
 export const Badge = styled.div`
@@ -422,7 +430,7 @@ export const HighlightsContainer = styled.div`
   flex-direction: column;
   background-color: #000000;
 
-  img {
+  .arrowDownGreen {
     width: 48px;
     height: 48px;
   }
@@ -447,8 +455,71 @@ export const HighlightsText = styled.span`
     color: #19CD77;
   }
 
+  .green {
+    color: #19CD77;
+  }
+
   img {
     width: 310px;
     height: 337px;
   }
 `;
+
+export const ContainerRegiao = styled.div`
+  display: flex;
+  margin-top: 16px;
+
+  .desc {
+    font-weight: 600;
+    font-size: 18px;
+    height: 60px;
+  }
+
+  .green-box {
+    color: #FFFFFF;
+    background-color: #19CD77;
+    height: 60px;
+    margin-right: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 32px;
+  }
+  
+  .boxes {
+    width: 50%;
+  }
+`
+
+export const TotalRegiao = styled.div`
+  margin-top: 32px;
+
+  p {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 60px;
+  }
+
+  .box-value {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .green-value {
+    height: 33px;
+    color: #FFFFFF;
+    background-color: #19CD77;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+`
+
+export const FormerReligionSubTitle = styled.strong``
