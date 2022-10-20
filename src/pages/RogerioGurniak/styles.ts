@@ -65,7 +65,8 @@ export const Text = styled.p`
   font-size: 18px;
   line-height: 22px;
   color: #dedede;
-  text-align: left;
+  text-align: justify;
+  margin-top: 16px;
 `;
 
 export const GreenBox = styled.div`
@@ -228,6 +229,14 @@ export const MembersContainer = styled.h1`
     margin-top: 30px;
     width: 100%;
   }
+
+  .month {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #000000;
+  }
 `;
 
 interface IAccordionBody {
@@ -254,6 +263,14 @@ export const AgeGroupContainer = styled.div`
     margin-top: 32px;
     width: 100%;
   }
+
+  .year {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+  }
 `;
 
 export const EntriesAndMoveOutContainer = styled.div`
@@ -262,8 +279,68 @@ export const EntriesAndMoveOutContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
   img {
     margin-bottom: 80px;
+  }
+
+  .number {
+    color: #FFFFFF;
+    margin-left: 8px;
+  }
+
+  .desc {
+    color: #FFFFFF;
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .linha-rosa {
+    width: 100%;
+    height: 22px;
+    max-width: 80%;
+    background-color: #E1A0F8;
+    border-radius: 4px;
+  }
+
+  .linha-vermelha {
+    width: 100%;
+    height: 22px;
+    max-width: 70%;
+    background-color: #F1403F;
+    border-radius: 4px;
+  }
+
+  .linha-verde {
+    width: 100%;
+    max-width: 40%;
+    height: 22px;
+    background-color: #19CD77;
+    border-radius: 4px;
+  }
+
+  .linha-amarela {
+    width: 100%;
+    max-width: 60%;
+    height: 22px;
+    background-color: #E8D71E;
+    border-radius: 4px;
+  }
+
+  .linha-azul {
+    width: 100%;
+    max-width: 50%;
+    height: 22px;
+    background-color: #63B4EF;
+    border-radius: 4px;
+  }
+
+  .year {
+    color: #FFFFFF;
   }
 `;
 

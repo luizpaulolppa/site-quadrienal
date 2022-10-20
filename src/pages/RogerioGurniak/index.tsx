@@ -14,6 +14,9 @@ import diagonalArrowYellow from "../../assets/diagonal-arrow-yellow.png";
 import diagonalArrowGreen from "../../assets/diagonal-arrow-green.png";
 import diagonalArrowBlue from "../../assets/diagonal-arrow-blue.png";
 import membersChart from "../../assets/rogerio-gurniak/members-per-gender-chart.png";
+import membersChart2 from "../../assets/rogerio-gurniak/members-per-gender-chart2.png";
+import membersChart3 from "../../assets/rogerio-gurniak/members-per-gender-chart3.png";
+import membersChart4 from "../../assets/rogerio-gurniak/members-per-gender-chart4.png";
 import entriesChart from "../../assets/rogerio-gurniak/entries-chart.png";
 import moveOutChart from "../../assets/rogerio-gurniak/move-out-chart.png";
 import cvsPortoAlegre from "../../assets/rogerio-gurniak/cvs-porto-alegre.png";
@@ -31,6 +34,12 @@ import arrowUpSVG from "../../assets/chevron-up-white.svg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import ageGroup from "../../assets/rogerio-gurniak/age-group.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
+import mulheres1 from "../../assets/rogerio-gurniak/mulheres1.png";
+import homens1 from "../../assets/rogerio-gurniak/homens1.png";
+import total1 from "../../assets/rogerio-gurniak/total1.png";
+import mulheres2 from "../../assets/rogerio-gurniak/mulheres2.png";
+import homens2 from "../../assets/rogerio-gurniak/homens2.png";
+import total2 from "../../assets/rogerio-gurniak/total2.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -84,6 +93,7 @@ const RogerioGurniak: React.FC = () => {
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState(false);
   const [tabIndex, setTabIndex] = useState(0);
+  const [tabIndex2, setTabIndex2] = useState(0);
   const [objetivos, setObjetivos] = useState<IObjetivo[]>([
     {
       title: "Informar",
@@ -99,7 +109,7 @@ const RogerioGurniak: React.FC = () => {
       title: "Resgatar",
       description:
         "O resgate é um processo natural do Ministério da Secretaria, pois com a precisão e celeridade de dados que o departamento detém, a missão de buscar os afastados, desaparecidos e os que abandonaram a igreja se torna seu foco.",
-      isOpen: false,
+      isOpen: true,
       iconOpened: resgatar,
       iconClosed: resgatarBlack,
       arrowOpened: arrowUpSVG,
@@ -109,7 +119,7 @@ const RogerioGurniak: React.FC = () => {
       title: "Dicipular",
       description:
         "O discipulado é a razão de qualquer área da igreja, e neste departamento não é diferente. Por isso, realiza um trabalho que envolve mais pessoas no ministério, por metas traçadas dentro de uma liderança em rede. Desta forma, um distrital de Secretaria tem uma liderança discipuladora sobre os secretários de cada congregação do distrito pastoral.",
-      isOpen: false,
+      isOpen: true,
       iconOpened: discipular,
       iconClosed: discipularBlack,
       arrowOpened: arrowUpSVG,
@@ -118,7 +128,7 @@ const RogerioGurniak: React.FC = () => {
   ]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
@@ -142,13 +152,13 @@ const RogerioGurniak: React.FC = () => {
   }, []);
 
   function changeAcc(index: number) {
-    const objs = objetivos.map((obj, indexObj) => {
-      return {
-        ...obj,
-        isOpen: indexObj === index,
-      };
-    });
-    setObjetivos(objs);
+    // const objs = objetivos.map((obj, indexObj) => {
+    //   return {
+    //     ...obj,
+    //     isOpen: indexObj === index,
+    //   };
+    // });
+    // setObjetivos(objs);
   }
 
   function linkToDepartmentsSection() {
@@ -208,7 +218,11 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <br />
         <FadeIn className="fade" id="fade1" duration="3s" delay="0.2s">
-          O Ministério <br /> da <br />Secretaria <br />tem <br />objetivos <br />claros:
+          O Ministério <br /> da <br />
+          Secretaria <br />
+          tem <br />
+          objetivos <br />
+          claros:
         </FadeIn>
         <br />
         <div>
@@ -220,9 +234,8 @@ const RogerioGurniak: React.FC = () => {
       <ObjetivosContainer id="section3">
         <br />
         <br />
-        <img src={redArrowDown} alt="Seta para baixo amarela" />
+        <img src={redArrowDown} alt="" />
         <br />
-        <span>Objetivos</span>
         {objetivos.map((obj, index) => (
           <AccordionContainer
             key={index + obj.title}
@@ -248,17 +261,40 @@ const RogerioGurniak: React.FC = () => {
         ))}
       </ObjetivosContainer>
       <MembersContainer>
-        Total de membros <span>16.842</span>
-        <img src={membersChart} alt="Members per gender" />
+        <p>Total de membros</p>
+        <p className="month">setembro | 2022</p>
+        <span>16.735</span>
+        <img src={membersChart} alt="" />
+        <img src={membersChart2} alt="" />
+        <br />
+        <br />
+        <p className="month">setembro | 2022</p>
+        <span>17.475</span>
+        <img src={membersChart3} alt="" />
+        <img src={membersChart4} alt="" />
       </MembersContainer>
       <AgeGroupContainer>
         <p>Faixa etária</p>
+        <p className="year">(2019-2022)</p>
         <Tabs
-          tabs={["Mulheres", "Homens"]}
+          tabs={["Mulheres", "Homens", "Total"]}
           value={tabIndex}
           onChange={setTabIndex}
         />
-        <img src={ageGroup} alt="numero de membros" />
+        {tabIndex === 0 && <img src={mulheres1} alt="" />}
+        {tabIndex === 1 && <img src={homens1} alt="" />}
+        {tabIndex === 2 && <img src={total1} alt="" />}
+        <br />
+        <br />
+        <p className="year">(2015-2018)</p>
+        <Tabs
+          tabs={["Mulheres", "Homens", "Total"]}
+          value={tabIndex2}
+          onChange={setTabIndex2}
+        />
+        {tabIndex2 === 0 && <img src={mulheres2} alt="" />}
+        {tabIndex2 === 1 && <img src={homens2} alt="" />}
+        {tabIndex2 === 2 && <img src={total2} alt="" />}
         <br />
         <br />
       </AgeGroupContainer>
@@ -267,19 +303,65 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <br />
         <EntriesAndMoveOutTitle>Entradas</EntriesAndMoveOutTitle>
-        <EntriesAndMoveOutSubtitle>Batismo</EntriesAndMoveOutSubtitle>
-        <img src={entriesChart} alt="numero de pessoas batizadas" />
+        <EntriesAndMoveOutSubtitle>Batismo | Rebatismo | Profissão de Fé</EntriesAndMoveOutSubtitle>
+        <p className="year">(2015-2018)</p>
+        <div className="container">
+          <div className="linha-rosa"></div><p className="number">6.953</p>
+        </div>
+        <p className="year">(2019-2022)</p>
+        <div className="container">
+          <div className="linha-vermelha"></div><p className="number">4.407</p>
+        </div>
+        <br />
+        <p className="year">2019</p>
+        <div className="container">
+          <div className="linha-vermelha"></div><p className="number">1.439</p>
+        </div>
+        <p className="year">2020</p>
+        <div className="container">
+          <div className="linha-verde"></div><p className="number">849</p>
+        </div>
+        <p className="year">2021</p>
+        <div className="container">
+          <div className="linha-amarela"></div><p className="number">1.215</p>
+        </div>
+        <p className="year">2022</p>
+        <div className="container">
+          <div className="linha-azul"></div><p className="number">904</p>
+        </div>
+        <p className="desc">*Dados até set. 2022</p>
+
+        <br />
+        <br />
+
         <EntriesAndMoveOutTitle>Saídas</EntriesAndMoveOutTitle>
-        <EntriesAndMoveOutSubtitle>Apostasia</EntriesAndMoveOutSubtitle>
-        <img src={moveOutChart} alt="numero de pessoas apostatadas" />
-        <EntriesAndMoveOutTitle>Admissões</EntriesAndMoveOutTitle>
-        <EntriesAndMoveOutSubtitle>
-          Batismo | Rebatismo | Profissão de Fé
-        </EntriesAndMoveOutSubtitle>
-        <img
-          src={returningChart}
-          alt="numero de pessoas que retornaram para igreja"
-        />
+        <EntriesAndMoveOutSubtitle>Remoção por disciplina</EntriesAndMoveOutSubtitle>
+        <p className="year">(2015-2018)</p>
+        <div className="container">
+          <div className="linha-rosa"></div><p className="number">5.341</p>
+        </div>
+        <p className="year">(2019-2022)</p>
+        <div className="container">
+          <div className="linha-vermelha"></div><p className="number">3.288</p>
+        </div>
+        <br />
+        <p className="year">2019</p>
+        <div className="container">
+          <div className="linha-vermelha"></div><p className="number">1.012</p>
+        </div>
+        <p className="year">2020</p>
+        <div className="container">
+          <div className="linha-verde"></div><p className="number">550</p>
+        </div>
+        <p className="year">2021</p>
+        <div className="container">
+          <div className="linha-amarela"></div><p className="number">953</p>
+        </div>
+        <p className="year">2022</p>
+        <div className="container">
+          <div className="linha-azul"></div><p className="number">773</p>
+        </div>
+        <p className="desc">*Dados até set. 2022</p>
         <br />
         <br />
       </EntriesAndMoveOutContainer>
