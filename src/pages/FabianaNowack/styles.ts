@@ -100,6 +100,10 @@ export const ThanksContainer = styled.div`
   }
 `;
 
+export const ContainerData = styled.div`
+  padding: 60px 30px 30px;
+`;
+
 export const ThanksTitle = styled.span`
   font-style: normal;
   font-weight: 600;
