@@ -96,6 +96,20 @@ export const GreenBox = styled.div`
   }
 `;
 
+export const Badge = styled.div`
+  border-radius: 4px;
+  padding: 3px 30px;
+  background: ${(props) => props.color};
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+`;
+
 export const Highlights = styled.div`
   padding: 60px 30px 30px;
   display: flex;
@@ -175,6 +189,25 @@ export const BalanceContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
   flex-direction: column;
+
+  div {
+    display: flex;
+
+    p {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 45px;
+      margin: 0 10px;
+    }
+  }
+
+  span {
+    &.subtitle {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
 `;
 
 export const BalanceTitle = styled.span`
