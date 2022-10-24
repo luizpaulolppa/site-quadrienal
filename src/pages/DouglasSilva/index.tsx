@@ -13,12 +13,19 @@ import douglasImg9 from "../../assets/douglas-silva/douglas-img9.png";
 import douglasImg10 from "../../assets/douglas-silva/douglas-img10.png";
 import douglasImg11 from "../../assets/douglas-silva/douglas-img11.png";
 import douglasImg12 from "../../assets/douglas-silva/douglas-img12.png";
-import crm from "../../assets/douglas-silva/crm.png";
+import image1 from "../../assets/douglas-silva/image1.png";
+import image2 from "../../assets/douglas-silva/image2.png";
+import image3 from "../../assets/douglas-silva/image3.png";
+import image4 from "../../assets/douglas-silva/image4.png";
+import image5 from "../../assets/douglas-silva/image5.png";
+import image6 from "../../assets/douglas-silva/image6.png";
+import image8 from "../../assets/douglas-silva/image8.png";
+import image9 from "../../assets/douglas-silva/image9.png";
+
 import calebes from "../../assets/douglas-silva/calebes.png";
 import universitarios from "../../assets/douglas-silva/universitarios.png";
 import comunicacao from "../../assets/douglas-silva/comunicacao.png";
 import producoes from "../../assets/douglas-silva/producoes.png";
-import revista from "../../assets/douglas-silva/revista.png";
 
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
@@ -93,6 +100,7 @@ const DouglasSilva: React.FC = () => {
         <Role>
           Ministério Jovem, Ministério da Música, Comunicação e Universitários
         </Role>
+        <br />
         <TextContainer>
           <TextCapitularContainer>
             <FirstLetter>“D</FirstLetter>
@@ -190,12 +198,15 @@ const DouglasSilva: React.FC = () => {
           jovens de cada igreja, ao todo são cinco conselheiros, sete regionais
           e 38 distritais.
         </p>
+        <br />
+        <HighlightsTitle>CRM</HighlightsTitle>
+        <br />
+        <img src={image1} alt="douglasImg1" />
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Save One</HighlightsTitle>
         <br />
-        <img src={douglasImg2} alt="douglasImg1" />
-        <br />
+        <img src={douglasImg2} style={{ marginBottom: '10px' }} alt="douglasImg1" />
         <img src={douglasImg1} alt="douglasImg1" />
         <br />
         <p>
@@ -209,7 +220,8 @@ const DouglasSilva: React.FC = () => {
       <HighlightsContainer>
         <HighlightsTitle>Campori de Jovens</HighlightsTitle>
         <br />
-        <img src={douglasImg3} alt="douglasImg1" />
+        <img src={image2} style={{ marginBottom: '10px' }} alt="" />
+        <img src={image3} alt="" />
         <br />
         <p>
           Dois grandes acampamentos foram realizados em Bento Gonçalves durante
@@ -221,13 +233,20 @@ const DouglasSilva: React.FC = () => {
         <p>
           Em 2019, o Campori Legado reforçou a identidade do Jovem Adventista e
           contou com a presença de 1.100 jovens. Em 2022, o Campori Chamados
-          revigorou o propósito de Deus na vida de 1.500 jovens.
+          revigorou o propósito de Deus na vida de 1.305 jovens.
         </p>
+        <br />
+        <img src={image4} alt="" />
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Missão Calebe</HighlightsTitle>
         <br />
         <img src={douglasImg4} alt="douglasImg1" />
+        <br />
+        <HighlightsTitle>Calebes</HighlightsTitle>
+        <br />
+        <img src={calebes} alt="calebes" width="300px" />
+        <br />
         <br />
         <p>
           Centenas de jovens calebes doaram parte das suas férias para Jesus em
@@ -396,46 +415,6 @@ const DouglasSilva: React.FC = () => {
         <br />
       </HighlightsContainerBlack>
       <HighlightsContainer>
-        <HighlightsTitle>CRM</HighlightsTitle>
-        <br />
-        <img src={crm} alt="crm" width="300px" />
-        <br />
-        <br />
-        <HighlightsTitle>Calebes</HighlightsTitle>
-        <br />
-        <img src={calebes} alt="calebes" width="300px" />
-        <br />
-        <br />
-      </HighlightsContainer>
-      <HighlightsContainer>
-        <HighlightsTitle>Campori de Jovens</HighlightsTitle>
-        <br />
-        <strong>Nomes dos Camporis:</strong>
-        <br />
-        <p className="green-text">
-          Legado/2019 e <br /> Chamados/2022
-        </p>
-        <br />
-        <strong>Número de Participantes:</strong>
-        <br />
-        <p className="green-text">
-          2019:1.016 <br /> 2022: 1293
-        </p>
-        <br />
-        <strong>Número de Investidos:</strong>
-        <br />
-        <p className="green-text">
-          2019: 31 <br /> 2022: 35
-        </p>
-        <br />
-        <strong>Número de Batismos:</strong>
-        <br />
-        <p className="green-text">
-          2019: 8 <br /> 2022: 28
-        </p>
-        <br />
-      </HighlightsContainer>
-      <HighlightsContainer>
         <HighlightsTitle>Universitários</HighlightsTitle>
         <br />
         <img src={universitarios} alt="universitarios" />
@@ -454,7 +433,7 @@ const DouglasSilva: React.FC = () => {
       <HighlightsContainer>
         <HighlightsTitle>Música</HighlightsTitle>
         <br />
-        <img src={universitarios} alt="universitarios" />
+        <img src={image5} alt="musicas" />
         <br />
         <p>
           A música tem um papel singular no contexto da adoração. Cada igreja
@@ -492,7 +471,7 @@ const DouglasSilva: React.FC = () => {
           Comunicação na região.
         </p>
         <br />
-        <img src={comunicacao} alt="comunicacao" />
+        <img src={image6} alt="comunicacao" />
         <br />
         <p>
           Esta divulgação interna e externa acontece por uma equipe composta por
@@ -522,6 +501,20 @@ const DouglasSilva: React.FC = () => {
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Congregações identificadas</HighlightsTitle>
+        <span><strong>2015-2018</strong></span>
+        <br />
+        <strong>Logo NT:</strong>
+        <p>
+          <span className="green-text">37%</span> das igrejas e grupos
+        </p>
+        <br />
+        <strong>Logo Igreja:</strong>
+        <p>
+          <span className="green-text">80%</span> das igrejas e grupos
+        </p>
+        <br />
+        <br />
+        <span><strong>2019-2022</strong></span>
         <br />
         <strong>Logo NT:</strong>
         <p>
@@ -556,11 +549,11 @@ const DouglasSilva: React.FC = () => {
         </p>
       </HighlightsContainer>
       <HighlightsContainer>
-        <HighlightsTitle>Produções diversas</HighlightsTitle>
+        <HighlightsTitle>Número de reportagens</HighlightsTitle>
         <br />
         <p>(Assessoria de Imprensa ACSR)</p>
         <br />
-        <img src={producoes} alt="producoes" width="300px" />
+        <img src={image8} alt="producoes" width="300px" />
         <br />
       </HighlightsContainer>
       <HighlightsContainer>
@@ -568,7 +561,7 @@ const DouglasSilva: React.FC = () => {
         <br />
         <p>(Informes oficiais do campo distribuídos para todas as igrejas)</p>
         <br />
-        <img src={revista} alt="revista" width="300px" />
+        <img src={image9} alt="revista" width="300px" />
         <br />
       </HighlightsContainer>
       <HighlightsContainer>
@@ -580,8 +573,10 @@ const DouglasSilva: React.FC = () => {
         <strong className="subtitle">Redes Sociais</strong>
         <strong>Facebook</strong>
         <RedBox>@acsr.rs</RedBox>
+        <br />
         <strong>Instagram</strong>
         <RedBox>@adventistasacsr</RedBox>
+        <br />
         <strong>YouTube</strong>
         <RedBox>
           Adventistas Centro <br /> do Rio Grande do Sul
