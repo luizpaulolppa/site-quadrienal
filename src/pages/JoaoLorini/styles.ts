@@ -43,7 +43,7 @@ export const Name = styled.div`
 export const Role = styled.div`
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 120%;
   color: #ffffff;
 `;
