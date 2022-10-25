@@ -102,6 +102,12 @@ export const ThanksContainer = styled.div`
 
 export const ContainerData = styled.div`
   padding: 60px 30px 30px;
+
+  .small-text {
+    font-weight: 600;
+    font-size: 10px;
+    color: #000000;
+  }
 `;
 
 export const ThanksTitle = styled.span`
@@ -178,3 +184,57 @@ export const HighlightsText = styled.span`
     height: 337px;
   }
 `;
+
+export const BoxFinancial = styled.div`
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FFFFFF;
+`
+
+export const BoxFinancialPink = styled(BoxFinancial)`
+  background-color: #E1A0F8;
+`
+
+export const BoxFinancialRed = styled(BoxFinancial)`
+  background-color: #F1403F;
+`
+
+export const BoxFinancialGreen = styled(BoxFinancial)`
+  background-color: #19CD77;
+`
+
+export const BoxFinancialYellow = styled(BoxFinancial)`
+  background-color: #E8D71E;
+`
+
+export const BoxFinancialBlue = styled(BoxFinancial)`
+  background-color: #63B4EF;
+`
+
+export const Bullet = styled.div`
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  strong {
+    margin: 0;
+    padding: 0;
+  }
+`
+
+export const YellowTopic = styled.div`
+  height: 12px;
+  width: 12px;
+  min-height: 12px;
+  min-width: 12px;
+  background-color: #E8D71E;
+  border-radius: 2px;
+  margin-top: 6px;
+  margin-right: 6px;
+`

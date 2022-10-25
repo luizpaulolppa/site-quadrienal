@@ -11,6 +11,20 @@ import escolas7 from "../../assets/fabiana-nowack/escolas7.png";
 import escolas8 from "../../assets/fabiana-nowack/escolas8.png";
 import escolas9 from "../../assets/fabiana-nowack/escolas9.png";
 import escolas10 from "../../assets/fabiana-nowack/escolas10.png";
+import alunos1 from "../../assets/fabiana-nowack/alunos1.png";
+import alunos2 from "../../assets/fabiana-nowack/alunos2.png";
+import alunos3 from "../../assets/fabiana-nowack/alunos3.png";
+import alunos4 from "../../assets/fabiana-nowack/alunos4.png";
+import alunos5 from "../../assets/fabiana-nowack/alunos5.png";
+import gratuidade1 from "../../assets/fabiana-nowack/gratuidade1.png";
+import gratuidade2 from "../../assets/fabiana-nowack/gratuidade2.png";
+import gratuidade3 from "../../assets/fabiana-nowack/gratuidade3.png";
+import em1 from "../../assets/fabiana-nowack/em1.png";
+import em2 from "../../assets/fabiana-nowack/em2.png";
+import em3 from "../../assets/fabiana-nowack/em3.png";
+import em4 from "../../assets/fabiana-nowack/em4.png";
+import inadimplencia from "../../assets/fabiana-nowack/inadimplencia.png";
+import img13 from "../../assets/fabiana-nowack/image13.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import arrowDown from "../../assets/arrow-down-white.svg";
 
@@ -118,52 +132,237 @@ const FabianaNowack: React.FC = () => {
         <br />
       </S.GreenBox>
       <S.ContainerData>
-        <S.ThanksTitle>
-          Escolas/
-          <br />
-          Colégios
-        </S.ThanksTitle>
-        <br />
-        <br />
-        <img src={escolas1} alt="" />
-        <br />
-        <br />
-        <img src={escolas2} alt="" />
-        <br />
-        <br />
-        <img src={escolas3} alt="" />
-        <br />
-        <br />
-        <img src={escolas4} alt="" />
-        <br />
-        <br />
-        <img src={escolas5} alt="" />
-        <br />
-        <br />
-        <img src={escolas6} alt="" />
-        <br />
-        <br />
-        <img src={escolas7} alt="" />
-        <br />
-        <br />
-        <img src={escolas8} alt="" />
-        <br />
-        <br />
-        <img src={escolas9} alt="" />
-        <br />
-        <br />
-        <img src={escolas10} alt="" />
-        <br />
-        <br />
-        <br />
-        <S.ThanksText>
-          O Departamento de Educação da ACSR foi muito abençoado neste último
-          quadriênio, pois mantivemos a missão e filosofia da Educação
-          Adventista em todas as unidades escolares. Acompanhe alguns índices de
-          pessoal e dados administrativos:
+        <div>
+          <S.ThanksTitle>
+            Escolas/
+            <br />
+            Colégios
+          </S.ThanksTitle>
           <br />
           <br />
-        </S.ThanksText>
+          <img src={escolas1} alt="" />
+          <br />
+          <br />
+          <img src={escolas2} alt="" />
+          <br />
+          <br />
+          <img src={escolas3} alt="" />
+          <br />
+          <br />
+          <img src={escolas4} alt="" />
+          <br />
+          <br />
+          <img src={escolas5} alt="" />
+          <br />
+          <br />
+          <img src={escolas6} alt="" />
+          <br />
+          <br />
+          <img src={escolas7} alt="" />
+          <br />
+          <br />
+          <img src={escolas8} alt="" />
+          <br />
+          <br />
+          <img src={escolas9} alt="" />
+          <br />
+          <br />
+          <img src={escolas10} alt="" />
+          <br />
+          <br />
+          <br />
+          <S.ThanksText>
+            O Departamento de Educação da ACSR foi muito abençoado neste último
+            quadriênio, pois mantivemos a missão e filosofia da Educação
+            Adventista em todas as unidades escolares. Acompanhe alguns índices de
+            pessoal e dados administrativos:
+            <br />
+            <br />
+          </S.ThanksText>
+          <S.HighlightsSubTitle>Total de alunos</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={alunos1} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Alunos novos</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={alunos2} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Alunos adventistas</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={alunos3} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Fidelização (%)</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={alunos4} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Total de professores</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={alunos5} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Resultado Financeiro</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <br />
+          <strong>2018</strong>
+          <S.BoxFinancialPink>R$3.207.969,44</S.BoxFinancialPink>
+          <br />
+          <strong>2019</strong>
+          <S.BoxFinancialRed>R$9.061.367,22</S.BoxFinancialRed>
+          <br />
+          <strong>2020</strong>
+          <S.BoxFinancialGreen>R$3.530.028,06</S.BoxFinancialGreen>
+          <br />
+          <strong>2021</strong>
+          <S.BoxFinancialYellow>R$ 9.090.123,76</S.BoxFinancialYellow>
+          <br />
+          <strong>2022</strong>
+          <S.BoxFinancialBlue>R$ 5.382.722,00*</S.BoxFinancialBlue>
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Resultado Financeiro</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={inadimplencia} alt="" />
+          <span>*Dados de setembro/22</span>
+          <br />
+          <br />
+          <strong>2018</strong>
+          <S.BoxFinancialPink>R$ 3.883.069,73</S.BoxFinancialPink>
+          <br />
+          <strong>2019</strong>
+          <S.BoxFinancialRed>R$ 16.185.460,75*</S.BoxFinancialRed>
+          <span className="small-text">*Houve subvenção da USB para a ACSR</span>
+          <br />
+          <strong>2020</strong>
+          <S.BoxFinancialGreen>R$ 5.503.554,50</S.BoxFinancialGreen>
+          <br />
+          <strong>2021</strong>
+          <S.BoxFinancialYellow>R$ 9.288.868,44</S.BoxFinancialYellow>
+          <br />
+          <strong>2021</strong>
+          <S.BoxFinancialBlue>R$ 15.442.245,42*</S.BoxFinancialBlue>
+          <span className="small-text">*Valor agosto/22</span>
+        </div>
+        <div>
+          <br />
+          <br />
+          <S.ThanksTitle>Filantropia</S.ThanksTitle>
+          <br />
+          <S.ThanksText>É uma concessão governamental à Instituição Adventista de Educação. A filantropia é regida por legislação nacional própria que visa a concessão de bolsas de estudos para famílias que se enquadram no perfil sócio-econômico de acordo com os critérios são apresentados no Edital de Filantropia, divulgado em cada escola, no período de matrículas escolares. Atendemos o seguinte, nos últimos anos:</S.ThanksText>
+          <br />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Gratuidade de 50%</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={gratuidade1} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Gratuidade de 100%</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={gratuidade2} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Total ACSR</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={gratuidade3} alt="" />
+        </div>
+        <div>
+          <br />
+          <br />
+          <S.ThanksTitle>Implantação do Ensino Médio em Cachoeirinha</S.ThanksTitle>
+          <br />
+          <br />
+          <S.ThanksText>Em 2019, houve a autorização do Conselho Estadual de Educação para que ofertássemos o Ensino Médio em Cachoeirinha. Abaixo temos os dados:</S.ThanksText>
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Alunos 1º ano EM</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={em1} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Alunos 2º ano EM</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={em2} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Alunos 3º ano EM</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={em3} alt="" />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Total de Alunos no EM</S.HighlightsSubTitle>
+          <br />
+          <br />
+          <img src={em4} alt="" />
+          <br />
+          <br />
+          <S.ThanksText>Em 2021, houve a formatura a 1º turma do Ensino Médio do Colégio Adventista de Cachoeirinha.</S.ThanksText>
+          <br />
+          <br />
+          <img src={img13} alt="" />
+        </div>
+        <div>
+          <br />
+          <br />
+          <S.ThanksTitle>Nova Escola Adventista em Canoas</S.ThanksTitle>
+          <br />
+          <br />
+          <S.ThanksText>O cronograma histórico foi assim:</S.ThanksText>
+          <br />
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p><strong>Dezembro de 2018 -</strong> Alvará de Construção da Escola Adventista de Canoas concedido pela prefeitura.</p>
+          </S.Bullet>
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p><strong>Janeiro de 2019 -</strong> Início das obras da futura Escola Adventista de Canoas.</p>
+          </S.Bullet>
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p><strong>11 de dezembro de 2019 -</strong> Autorização de funcionamento da Escola Adventista de Canoas para Educação Infantil e Ensino Fundamental pelo Conselho Estadual de Educação.</p>
+          </S.Bullet>
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p><strong>13 de dezembro de 2019 -</strong> Primeira matrícula realizada na Escola Adventista de Canoas.</p>
+          </S.Bullet>
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p><strong>28 de janeiro de 2020 -</strong> Inauguração da Escola, numa cerimônia com autoridades denominacionais, municipais e estaduais presentes, além dos funcionários, novos professores, pais e alunos.</p>
+          </S.Bullet>
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p>Neste dia, também comemoramos o alcance de meta de alunos para 2020.</p>
+          </S.Bullet>
+          <br />
+          <S.Bullet>
+            <S.YellowTopic />
+            <p><strong>10 de fevereiro de 2020 -</strong> Primeiro dia letivo, do primeiro ano letivo  da Escola Adventista de Canoas</p>
+          </S.Bullet>
+          <br />
+          <S.ThanksText>Acompanhe o desenvolvimento da escola:</S.ThanksText>
+        </div>
       </S.ContainerData>
       <S.ThanksContainer>
         <br />
