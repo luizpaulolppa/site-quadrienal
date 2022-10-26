@@ -108,6 +108,11 @@ export const ContainerData = styled.div`
     font-size: 10px;
     color: #000000;
   }
+
+  .itens-igreja {
+    font-weight: bold;
+    margin-left: 16px;
+  }
 `;
 
 export const ThanksTitle = styled.span`
@@ -237,4 +242,32 @@ export const YellowTopic = styled.div`
   border-radius: 2px;
   margin-top: 6px;
   margin-right: 6px;
+`
+
+export const YearTitle = styled.div`
+  height: 56px;
+  border-radius: 6px;
+  background-color: black;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+`
+
+export const YearTitleGreen = styled(YearTitle)`
+  background-color: #19CD77;
+`
+
+export const YearTitleRed = styled(YearTitle)`
+  background-color: #F1403F;
+`
+
+export const YearTitleYellow = styled(YearTitle)`
+  background-color: #E8D71E;
+`
+
+export const YearTitleBlue = styled(YearTitle)`
+  background-color: #63B4EF;
 `
