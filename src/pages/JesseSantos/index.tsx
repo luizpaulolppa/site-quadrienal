@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
 
 import jesse from "../../assets/jesse-santos/jesse-without-back.jpg";
-import clube1 from "../../assets/jesse-santos/clube1.png";
-import clube2 from "../../assets/jesse-santos/clube2.png";
-import clube3 from "../../assets/jesse-santos/clube3.png";
-import clube4 from "../../assets/jesse-santos/clube4.png";
 import table from "../../assets/jesse-santos/table.png";
 import batismo from "../../assets/jesse-santos/batismo.png";
 import eventos from "../../assets/jesse-santos/eventos.png";
+
+import image1 from "../../assets/jesse-santos/image1.png";
+import image2 from "../../assets/jesse-santos/image2.png";
+import image3 from "../../assets/jesse-santos/image3.png";
+import image4 from "../../assets/jesse-santos/image4.png";
+import image5 from "../../assets/jesse-santos/image5.png";
+import image6 from "../../assets/jesse-santos/image6.png";
+import image9 from "../../assets/jesse-santos/image9.png";
+import image10 from "../../assets/jesse-santos/image10.png";
+import image11 from "../../assets/jesse-santos/image11.png";
+import image12 from "../../assets/jesse-santos/image12.png";
 
 import arrowDownYellow from "../../assets/seta-para-baixo-light-yellow.png";
 import arrowDownRed from "../../assets/seta-para-baixo-light-red.png";
@@ -32,8 +39,6 @@ import {
   HighlightsContainer,
   HighlightsText,
   HighlightsTitle,
-  HighlightsSubTitle,
-  RedCard,
   BoxLine,
   BoxRed,
   BoxPink2,
@@ -130,173 +135,60 @@ const JesseSantos: React.FC = () => {
         <strong>Clube de Aventureiros</strong>
         <p className="red-text">(Quantidade por ano)</p>
         <br />
-        <img src={clube1} alt="clube1" />
+        <img src={image1} alt="clube1" />
         <br />
         <br />
         <strong>Clube de Desbravadores</strong>
         <p className="red-text">(Quantidade por ano)</p>
         <br />
-        <img src={clube2} alt="clube2" />
+        <img src={image2} alt="clube2" />
         <br />
         <br />
         <strong>Membros Aventureiros</strong>
         <p className="red-text">(Quantidade por ano)</p>
         <br />
-        <img src={clube3} alt="clube3" />
+        <img src={image3} alt="clube3" />
         <br />
         <br />
         <strong>Membros Desbravadores</strong>
         <p className="red-text">(Quantidade por ano)</p>
         <br />
-        <img src={clube4} alt="clube4" />
+        <img src={image4} alt="clube4" />
         <br />
         <br />
         <br />
         <img src={table} alt="table" />
         <br />
         <br />
-        <strong>Batismos</strong>
-        <p className="red-text">
-          (Geral para faixa etária desbravador e aventureiro)
-        </p>
+        <img src={image6} alt="" />
         <br />
-        <img src={batismo} alt="batismo" />
+        <img src={image5} alt="" />
         <br />
         <br />
-        <BoxLine>
-          <BoxRed />
-          <p>8 - 9 anos 2019</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxGreen />
-          <p>8 - 9 anos 2020</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxYellow />
-          <p>8 - 9 anos 2021</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxBlue />
-          <p>8 - 9 anos 2022 (até junho)</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxPink />
-          <p>10 - 15 anos 2019</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxOrange />
-          <p>10 - 15 anos 2020</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxGreen2 />
-          <p>10 - 15 anos 2021</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxPink2 />
-          <p>10 - 15 anos 2022 (até junho)</p>
-        </BoxLine>
+        <HighlightsTitle>Batismos</ HighlightsTitle>
+        <br />
+        <img src={image9} alt="batismo" />
+        <br />
+        <br />
+        <img src={image10} alt="batismo" />
         <br />
         <br />
         <strong>
           <h2>Total de Batismos</h2>
         </strong>
         <br />
-        <p>
-          2019 = <span className="green-text">503</span>
-        </p>
-        <p>
-          2020 = <span className="green-text">185</span>
-        </p>
-        <p>
-          2021 = <span className="green-text">381</span>
-        </p>
-        <p>
-          2022 = <span className="green-text">86</span>
-        </p>
+        <img src={image11} alt="batismo" />
         <br />
         <strong>
           <h2>
-            TOTAL DOS 4 ANOS = <br /> <span className="green-text">1.155</span>
+            TOTAL DOS 4 ANOS: <br /> <span className="green-text">1.291</span>
           </h2>
         </strong>
         <br />
         <br />
-        <br />
-        <strong>
-          <h1>Dados de 2018</h1>
-        </strong>
-        <p>
-          Clube de Aventureiros = <span className="green-text">62</span>
-        </p>
-        <p>
-          Clube de Desbravadores = <span className="green-text">93</span>
-        </p>
-        <p>
-          Membros Aventureiros = <span className="green-text">1378</span>
-        </p>
-        <p>
-          Membros Desbravadores = <span className="green-text">2628</span>
-        </p>
+        <img src={image12} alt="batismo" />
         <br />
         <br />
-        <strong>Eventos</strong>
-        <p className="red-text">(Número de participantes)</p>
-        <br />
-        <img src={eventos} alt="batismo" />
-        <br />
-        <br />
-        <BoxLine>
-          <BoxRed />
-          <p>Mega Líder DBV 2018 - Todas Regiões</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxGreen />
-          <p>Mega Líder AVT 2018 - Todas Regiões</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxYellow />
-          <p>Olimpiada DBV - 2018</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxBlue />
-          <p>Olimpori AVT - 2018</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxPink />
-          <p>Calebe de Lenço 2018</p>
-        </BoxLine>
-        <BoxLine>
-          <BoxOrange />
-          <p>Cursos para Secretários, conselheiros e capitães</p>
-        </BoxLine>
-        <br />
-        <br />
-        <strong>
-          <h2>Total</h2>
-        </strong>
-        <br />
-        <p>
-          Eventos 2015-2018 = <span className="green-text">31</span>
-        </p>
-        <p>
-          Eventos 2019 = <span className="green-text">5</span>
-        </p>
-        <p>
-          Eventos 2020 = <span className="green-text">5</span>
-        </p>
-        <p>
-          Eventos 2021 = <span className="green-text">3</span>
-        </p>
-        <p>
-          Eventos 2022 = <span className="green-text">8</span>
-        </p>
-        <br />
-        <br />
-        <strong>
-          <h2>
-            TOTAL 2019 A 2022 = <span className="green-text">21</span>
-          </h2>
-        </strong>
       </HighlightsContainer>
       <ThanksContainer>
         <img src={arrowDownYellow} alt="Seta para baixo amarela" />
@@ -314,14 +206,18 @@ const JesseSantos: React.FC = () => {
           incondicionalmente.
           <br />
           <br />
-          Gratidão também a todos que fazem do MDA da ACSR uma realidade
-          crescente e transformadora e à Administração da ACSR pelo apoio,
+          Gratidão a nossa secretária Emilli Silva, que tem sido incansável 
+          frente a esse ministério e a todos que fazem do MDA da ACSR uma realidade 
+          crescente e transformadora, agradeço também as orientações, conselhos do pastor 
+          Aryel Marques, líder desse ministério para a região sul do Brasil e à 
+          administração da ACSR, Pr. Marcos Jr., Pr. Rogério e Everson Braga, pelo apoio, 
           confiança e oportunidade.
           <br />
           <br />
-          Agradeço ao pastor Fray Calderon que esteve à frente do Ministério de
-          Desbravadores e Aventureiros e fez parte das conquistas e aprendizados
-          nos anos de 2018 a 2021.
+          Agradeço aos pastores Fray Calderon que atuou no Ministério de Desbravadores 
+          e Aventureiros nos anos 2018 à 2021 , ao Uilialdo Barreto que assumiu no 
+          período de 2021 até maio de 2022, estes fizeram parte das conquistas e 
+          aprendizados deixando um excelente legado.
           <br />
           <br />
           Seguimos confiantes na boa mão do nosso líder e Mestre Jesus Cristo!

@@ -7,6 +7,20 @@ import batismo3 from "../../assets/samara-zabel/batismo-3.svg";
 import batismo4 from "../../assets/samara-zabel/batismo-4.svg";
 import batismo5 from "../../assets/samara-zabel/batismo-5.svg";
 import batismo6 from "../../assets/samara-zabel/batismo-6.svg";
+
+import image1 from "../../assets/samara-zabel/image1.png";
+import image2 from "../../assets/samara-zabel/image2.png";
+import image3 from "../../assets/samara-zabel/image3.png";
+import image4 from "../../assets/samara-zabel/image4.png";
+import image5 from "../../assets/samara-zabel/image5.png";
+import image6 from "../../assets/samara-zabel/image6.png";
+import image7 from "../../assets/samara-zabel/image7.png";
+import image8 from "../../assets/samara-zabel/image8.png";
+import image99 from "../../assets/samara-zabel/image99.svg";
+import image100 from "../../assets/samara-zabel/image100.svg";
+import image101 from "../../assets/samara-zabel/image101.svg";
+import image102 from "../../assets/samara-zabel/image102.png";
+
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import arrowDownYellow from "../../assets/seta-para-baixo-yellow.png";
 
@@ -37,11 +51,6 @@ import {
   HighlightBody,
   ReportContainer,
   ReportTitle,
-  ReportYearRed,
-  ReportDescription,
-  ReportYearGreen,
-  ReportYearYellow,
-  ReportYearBlue,
   ReportYearRedAdoletche,
 } from "./styles";
 import FadeIn from "../../components/FadeIn";
@@ -140,19 +149,6 @@ const SamaraZabel: React.FC = () => {
         <br />
       </GreenBox>
       <HighlightsContainer>
-        <HighlightsText>
-          Com a pandemia que atingiu todo o mundo em 2019 e 2020, nossas
-          crianças ficaram longe dos amigos, da escola, da igreja, das classes
-          infantis e das demais atividades ao ar livre.
-          <br />
-          <br />
-          Por isso, nossos departamentos que envolvem crianças e adolescentes
-          receberam grande apoio da ACRS para alimentar pequenos e grandes
-          dentro de suas casas, por treinamentos para professores ou classes
-          para nossos alunos.
-        </HighlightsText>
-      </HighlightsContainer>
-      <HighlightsContainer>
         <img src={arrowDownRed} alt="Seta para baixo vermelha" />
         <br />
         <HighlightsTitle>Destaques</HighlightsTitle>
@@ -160,10 +156,11 @@ const SamaraZabel: React.FC = () => {
         <HighlightListContainer>
           <HighlightContainer>
             <HighlightHead>
-              4 Escolas de Pais - Tudo Começa em Casa
+              4 Escolas de Pais "Tudo Começa em Casa"
             </HighlightHead>
+            <HighlightBody className="small">Adolescentes Participando do Concurso</HighlightBody> 
             <HighlightBody>
-              Adolescentes Participando do Concurso - “BEP Teen - Bom de
+              “BEP Teen - Bom de
               Espírito de Profecia”
             </HighlightBody>
           </HighlightContainer>
@@ -171,8 +168,9 @@ const SamaraZabel: React.FC = () => {
             <HighlightHead>
               82 Escolas Cristã de Férias em Parceria com os Calebs
             </HighlightHead>
+            <HighlightBody className="small">Adolescentes e Juvenis Participando do</HighlightBody> 
             <HighlightBody>
-              Adolescentes e Juvenis Participando do Concurso de Oratória
+              "Concurso de Oratória"
             </HighlightBody>
           </HighlightContainer>
           <HighlightContainer>
@@ -197,47 +195,29 @@ const SamaraZabel: React.FC = () => {
           <ReportTitle>
             <span>CRM</span> com crianças
           </ReportTitle>
-          <ReportYearRed>2019</ReportYearRed>
-          <ReportDescription>
-            Dados baseados em cima de 2.951 crianças - <span>(33%)</span>
-          </ReportDescription>
-
-          <ReportYearGreen>2020</ReportYearGreen>
-          <ReportDescription>Sem dados</ReportDescription>
-
-          <ReportYearYellow>2021</ReportYearYellow>
-          <ReportDescription>
-            Dados baseados em cima de 2.858 crianças - <span>(21%)</span>
-          </ReportDescription>
-
-          <ReportYearBlue>2022</ReportYearBlue>
-          <ReportDescription>
-            Dados baseados em cima de 1.437 crianças -{" "}
-            <span>(30% até o segundo trimestre)</span>
-          </ReportDescription>
+          <br />
+          <img src={image1} alt="" />
+          <br /><br />
+          <img src={image2} alt="" />
+          <br /><br />
+          <img src={image3} alt="" />
+          <br /><br />
+          <img src={image4} alt="" />
+          <br />
         </ReportContainer>
         <ReportContainer>
           <ReportTitle>
             <span>CRM</span> com adolescentes
           </ReportTitle>
-          <ReportYearRed>2019</ReportYearRed>
-          <ReportDescription>
-            Dados baseados em cima de 963 crianças - <span>(32%)</span>
-          </ReportDescription>
-
-          <ReportYearGreen>2020</ReportYearGreen>
-          <ReportDescription>Sem dados</ReportDescription>
-
-          <ReportYearYellow>2021</ReportYearYellow>
-          <ReportDescription>
-            Dados baseados em cima de 1.004 crianças - <span>(21%)</span>
-          </ReportDescription>
-
-          <ReportYearBlue>2022</ReportYearBlue>
-          <ReportDescription>
-            Dados baseados em cima de 518 crianças -{" "}
-            <span>(30% até o segundo trimestre)</span>
-          </ReportDescription>
+          <br />
+          <img src={image5} alt="" />
+          <br /><br />
+          <img src={image6} alt="" />
+          <br /><br />
+          <img src={image7} alt="" />
+          <br /><br />
+          <img src={image8} alt="" />
+          <br />
         </ReportContainer>
       </HighlightsContainer>
       <HighlightsContainer>
@@ -246,7 +226,7 @@ const SamaraZabel: React.FC = () => {
           <strong>Idade de 8 a 12 anos</strong>
           <br />
           <br />
-          <img src={batismo1} alt="Batismos de Crianças" />
+          <img src={image99} alt="Batismos de Crianças" />
         </HighlightsText>
         <br />
         <br />
@@ -257,7 +237,7 @@ const SamaraZabel: React.FC = () => {
           <strong>Idade de 13 a 16 anos</strong>
           <br />
           <br />
-          <img src={batismo2} alt="Batismos de Adolescentes" />
+          <img src={image100} alt="Batismos de Adolescentes" />
         </HighlightsText>
         <br />
         <br />
@@ -307,11 +287,13 @@ const SamaraZabel: React.FC = () => {
         <HighlightsText>
           <br />
           <br />
-          <img
-            src={batismo6}
-            alt="Curso de Liderança para Líderes do MC e MA"
-          />
+          <img src={image101} alt="Curso de Liderança para Líderes do MC e MA" />
         </HighlightsText>
+        <br /><br />
+        <ReportContainer>
+          <img src={image102} alt="" />
+          <br /><br />
+        </ReportContainer>
       </HighlightsContainer>
       <ThanksContainer>
         <img src={arrowDownYellow} alt="Seta para baixo amarela" />
@@ -344,6 +326,10 @@ const SamaraZabel: React.FC = () => {
           Aos coordenadores e professores que são fieis, incansáveis, pacientes
           e perseverantes no serviço de levar crianças, juvenis e adolescentes
           rumo a Canaã Celestial.
+          <br />
+          <br />
+          A minha secretária Vitória por seu compromisso e dedicação nestes ministérios, 
+          juntamente com as secretárias anteriores Jéssica Contri e Rosângela Alves.
           <br />
           <br />
           Aos pastores e suas respectivas esposas que incentivaram, participaram

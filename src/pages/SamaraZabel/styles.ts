@@ -403,21 +403,37 @@ export const HighlightHead = styled.div`
   font-weight: 600;
   font-size: 24px;
   line-height: 130%;
+  text-align: center;
 `;
 
 export const HighlightBody = styled.div`
   color: #f1403f;
   padding: 24px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
+  text-align: center;
+
+  &.small {
+    font-size: 20px;
+  }
 `;
 
-export const ReportContainer = styled.div``;
+export const ReportContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
 
 export const ReportTitle = styled.div`
   margin-top: 50px;
   font-weight: 600;
+  align-items: center;
+  display: flex;
 
   span {
     font-size: 36px;
