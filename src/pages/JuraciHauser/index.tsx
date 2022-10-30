@@ -6,6 +6,15 @@ import arrowDownGreen from "../../assets/seta-para-baixo.png";
 import books from "../../assets/juraci-hauser/books.png";
 import books2 from "../../assets/juraci-hauser/books2.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
+import vendas1 from "../../assets/juraci-hauser/vendas1.png";
+import vendas2 from "../../assets/juraci-hauser/vendas2.png";
+import vendas3 from "../../assets/juraci-hauser/vendas3.png";
+import vendas4 from "../../assets/juraci-hauser/vendas4.png";
+import vendas5 from "../../assets/juraci-hauser/vendas5.png";
+import alem1 from "../../assets/juraci-hauser/alem1.png";
+import alem2 from "../../assets/juraci-hauser/alem2.png";
+import saude1 from "../../assets/juraci-hauser/saude1.png";
+import saude2 from "../../assets/juraci-hauser/saude2.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -39,7 +48,7 @@ const JuraciHauser: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   function addFideIn(element: string, startFade: string) {
@@ -143,16 +152,9 @@ const JuraciHauser: React.FC = () => {
         </HighlightsText>
         <br />
         <br />
-        <HighlightsSubTitle className="bold">
+        <HighlightsTitle className="bold">
           Colportores Permanentes:
-        </HighlightsSubTitle>
-        <br />
-        <HighlightsText>
-          A Associação Central Sul Rio-Grandense conta com 265 colportores que
-          se encontram entre os grupos de Permanentes e Estudantes, Ocasionais e
-          Jubilados.
-        </HighlightsText>
-        <br />
+        </HighlightsTitle>
         <br />
       </HighlightsContainer>
       <div id="start_fade1"></div>
@@ -235,9 +237,49 @@ const JuraciHauser: React.FC = () => {
         <br />
         <br />
         <HighlightsSubTitle2>
-          Gráfico de vendas gerais de colportores permanentes e colportores
-          estudantes:
+          Vendas ao público, de livros e revistas da colportagem:
         </HighlightsSubTitle2>
+        <br />
+        <br />
+        <img src={vendas1} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle2>
+          Campanha de Sonhando Alto - Vendas ao público
+        </HighlightsSubTitle2>
+        <br />
+        <br />
+        <img src={vendas2} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle2>
+          Campanha de Férias de Estudantes - Vendas ao público
+        </HighlightsSubTitle2>
+        <br />
+        <br />
+        <img src={vendas3} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle2>
+          Colportores Permanentes (efetivos) - Vendas ao público
+        </HighlightsSubTitle2>
+        <br />
+        <br />
+        <img src={vendas4} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle2>
+          Nº de assinantes das revistas:
+        </HighlightsSubTitle2>
+        <HighlightsText>
+          Vida e Saúde, Nosso <br /> Amiguinho, Nosso <br /> Amiguinho Júnior
+        </HighlightsText>
+        <br />
+        <p className="small-text">
+          *95% desses assinantes não são Adventistas do Sétimo Dia
+        </p>
+        <br />
+        <img src={vendas5} alt="" />
         <br />
         <br />
         <HighlightsTitle>
@@ -257,6 +299,10 @@ const JuraciHauser: React.FC = () => {
           • Mais de 500 estudos bíblicos levantados.
           <br />
         </HighlightsText>
+        <br />
+        <img src={alem1} alt="" />
+        <br />
+        <img src={alem2} alt="" />
         <br />
         <br />
         <HighlightsTitle>Livros Missionários</HighlightsTitle>
@@ -371,11 +417,11 @@ const JuraciHauser: React.FC = () => {
           pela transmissão.
         </HighlightsText>
         <br />
+        <img src={saude1} alt="" />
         <br />
+        <img src={saude2} alt="" />
       </HighlightsContainer>
       <ThanksContainer>
-        <br />
-        <br />
         <img src={yellowArrowDown} alt="Seta para baixo amarela" />
         <br />
         <ThanksTitle>Agradecimentos</ThanksTitle>
@@ -409,7 +455,7 @@ const JuraciHauser: React.FC = () => {
           Por último, nossa gratidão e respeito aos valentes colportores da
           ACSR, que não recuaram diante dos desafios impostos pela pandemia.
           Esses homens e mulheres, moças e rapazes literalmente foram a campo, e
-          Nosso Senhor honrou o ministério desses Mensageiros da Esperança. A
+          nosso Senhor honrou o ministério desses Mensageiros da Esperança. A
           Deus todo louvor e gratidão!
           <br />
           <br />
