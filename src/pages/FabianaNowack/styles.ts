@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div``;
 
 export const TitleContainer = styled.div`
-padding: 100px 30px 30px;
+  padding: 100px 30px 30px;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -89,6 +89,45 @@ export const GreenBox = styled.div`
   }
 `;
 
+export const DarkBox = styled(GreenBox)`
+  background-color: #000000;
+
+  img {
+    width: 100%;
+  }
+`;
+
+export const RedBox = styled(GreenBox)`
+  background-color: #F1403F;
+
+  img {
+    width: 100%;
+  }
+`;
+
+export const RedBoxText = styled.div`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-top: 22px;
+`
+
+export const RedBoxTitle = styled.p`
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+`
+
+export const RedBoxSubTitle = styled.div`
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-top: 22px;
+`
+
 export const ThanksContainer = styled.div`
   padding: 60px 30px 30px;
   display: flex;
@@ -167,10 +206,10 @@ export const HighlightsSubTitle = styled.span`
 `;
 
 export const HighlightsSubTitle2 = styled.span`
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
 `;
 
 export const HighlightsText = styled.span`
@@ -181,7 +220,7 @@ export const HighlightsText = styled.span`
   color: #000000;
 
   &.green {
-    color: #19CD77;
+    color: #19cd77;
   }
 
   img {
@@ -199,28 +238,28 @@ export const BoxFinancial = styled.div`
   background-color: black;
   font-weight: 600;
   font-size: 24px;
-  color: #FFFFFF;
-`
+  color: #ffffff;
+`;
 
 export const BoxFinancialPink = styled(BoxFinancial)`
-  background-color: #E1A0F8;
-`
+  background-color: #e1a0f8;
+`;
 
 export const BoxFinancialRed = styled(BoxFinancial)`
-  background-color: #F1403F;
-`
+  background-color: #f1403f;
+`;
 
 export const BoxFinancialGreen = styled(BoxFinancial)`
-  background-color: #19CD77;
-`
+  background-color: #19cd77;
+`;
 
 export const BoxFinancialYellow = styled(BoxFinancial)`
-  background-color: #E8D71E;
-`
+  background-color: #e8d71e;
+`;
 
 export const BoxFinancialBlue = styled(BoxFinancial)`
-  background-color: #63B4EF;
-`
+  background-color: #63b4ef;
+`;
 
 export const Bullet = styled.div`
   display: flex;
@@ -231,18 +270,18 @@ export const Bullet = styled.div`
     margin: 0;
     padding: 0;
   }
-`
+`;
 
 export const YellowTopic = styled.div`
   height: 12px;
   width: 12px;
   min-height: 12px;
   min-width: 12px;
-  background-color: #E8D71E;
+  background-color: #e8d71e;
   border-radius: 2px;
   margin-top: 6px;
   margin-right: 6px;
-`
+`;
 
 export const YearTitle = styled.div`
   height: 56px;
@@ -254,20 +293,28 @@ export const YearTitle = styled.div`
   display: flex;
   align-items: center;
   padding-left: 32px;
-`
+`;
 
 export const YearTitleGreen = styled(YearTitle)`
-  background-color: #19CD77;
-`
+  background-color: #19cd77;
+`;
 
 export const YearTitleRed = styled(YearTitle)`
-  background-color: #F1403F;
-`
+  background-color: #f1403f;
+`;
 
 export const YearTitleYellow = styled(YearTitle)`
-  background-color: #E8D71E;
-`
+  background-color: #e8d71e;
+`;
 
 export const YearTitleBlue = styled(YearTitle)`
-  background-color: #63B4EF;
-`
+  background-color: #63b4ef;
+`;
+
+export const ULContainer = styled.div`
+  margin-left: 16px;
+
+  .strong {
+    font-weight: bold;
+  }
+`;
