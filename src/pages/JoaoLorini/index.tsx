@@ -1,6 +1,44 @@
 import React, { useEffect, useState } from "react";
 import joaoLorini from "../../assets/joao-lorini/joao-without-back.jpg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
+import image1 from "../../assets/joao-lorini/image1.png";
+import image2 from "../../assets/joao-lorini/image2.png";
+import image3 from "../../assets/joao-lorini/image3.png";
+import image4 from "../../assets/joao-lorini/image4.png";
+import image5 from "../../assets/joao-lorini/image5.png";
+import image6 from "../../assets/joao-lorini/image6.png";
+import image7 from "../../assets/joao-lorini/image7.png";
+import image8 from "../../assets/joao-lorini/image8.png";
+import image9 from "../../assets/joao-lorini/image9.png";
+import image10 from "../../assets/joao-lorini/image10.png";
+import image11 from "../../assets/joao-lorini/image11.png";
+import image12 from "../../assets/joao-lorini/image12.png";
+import image13 from "../../assets/joao-lorini/image13.png";
+import image14 from "../../assets/joao-lorini/image14.png";
+import image15 from "../../assets/joao-lorini/image15.png";
+import image16 from "../../assets/joao-lorini/image16.png";
+import image17 from "../../assets/joao-lorini/image17.png";
+import image18 from "../../assets/joao-lorini/image18.png";
+import image19 from "../../assets/joao-lorini/image19.png";
+import image20 from "../../assets/joao-lorini/image20.png";
+import image21 from "../../assets/joao-lorini/image21.png";
+import image22 from "../../assets/joao-lorini/image22.png";
+import image23 from "../../assets/joao-lorini/image23.png";
+import image24 from "../../assets/joao-lorini/image24.png";
+import image30 from "../../assets/joao-lorini/image30.png";
+import image31 from "../../assets/joao-lorini/image31.png";
+import image32 from "../../assets/joao-lorini/image32.png";
+import image33 from "../../assets/joao-lorini/image33.png";
+import image34 from "../../assets/joao-lorini/image34.png";
+import image35 from "../../assets/joao-lorini/image35.png";
+import image36 from "../../assets/joao-lorini/image36.png";
+import image37 from "../../assets/joao-lorini/image37.png";
+import image38 from "../../assets/joao-lorini/image38.png";
+import image39 from "../../assets/joao-lorini/image39.png";
+import image40 from "../../assets/joao-lorini/image40.svg";
+import image41 from "../../assets/joao-lorini/image41.png";
+import image42 from "../../assets/joao-lorini/image42.png";
+
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -24,6 +62,7 @@ import {
   HighlightsTitle,
   HighlightsSubTitle,
   Italic,
+  Badge,
 } from "./styles";
 
 const JoaoLorini: React.FC = () => {
@@ -69,16 +108,15 @@ const JoaoLorini: React.FC = () => {
         </Role>
         <TextContainer>
           <TextCapitularContainer>
-            <FirstLetter>“P</FirstLetter>
+            <FirstLetter>“I</FirstLetter>
             <Text>
-              ortanto, vão e façam discípulos de todas as nações, batizando-os
-              em nome do Pai, do
+              ndo, portanto, façam discípulos de todas as nações, 
+              batizando-os em nome do Pai, e do Filho e
             </Text>
           </TextCapitularContainer>
           <Text>
-            Filho e do Espírito Santo, ensinando-os a guardar todas as coisas
-            que tenho ordenado a vocês. E eis que estou com vocês todos os dias
-            até o fim dos tempos”
+            do Espírito Santo; ensinando-os a guardar todas as coisas que vos tenho ordenado. 
+            E eis que estou convosco todos os dias até a consumação do século.” 
             <br />
             <br />
             <Italic>(Mt 28:19, 20).</Italic>
@@ -94,43 +132,70 @@ const JoaoLorini: React.FC = () => {
         <HighlightsText>
           A nossa grande missão é fazer discípulos. Sonhamos, oramos e
           trabalhamos para termos uma igreja envolvida, para chegarmos ao sonho
-          de ser Cada Um Salvando Um. Para isso, trabalhamos através da Roda do
+          de ser <strong>Cada Um Salvando Um</strong>. Para isso, trabalhamos através da Roda do
           Discipulado. Queremos a maioria da igreja da ACSR:
         </HighlightsText>
         <br />
         <HighlightsText>
-          1. Ter em seu estilo de vida a prática da comunhão, relacionamento e
-          missão (INDO);
+          <Badge color="#DB3332" style={{ padding: '20px' }}>
+            <span style={{ fontWeight: '600', fontSize: '46px' }}>
+              1.
+            </span>
+            <span style={{ fontWeight: '400', fontSize: '16px' }}>
+              Tendo em seu estilo de vida 
+              a prática da comunhão, relacionamento e missão (IDE).
+            </span>
+          </Badge>
           <br />
-          2. Conectar-se aos interessados intencionalmente para fazer deles
-          novos discípulos por estudos bíblicos (FAÇAM DISCÍPULOS);
+          <Badge color="#19CD77" style={{ padding: '20px' }}>
+            <span style={{ fontWeight: '600', fontSize: '46px' }}>
+              2.
+            </span>
+            <span style={{ fontWeight: '400', fontSize: '16px' }}>
+            Se conectando aos seus interessados intencionalmente para fazer deles novos discípulos por meio de estudos bíblicos 
+            (FAZEI DISCÍPULOS).
+            </span>
+          </Badge>
           <br />
-          3. Desafiar discípulos maduros a tomarem a decisão pública pelo
-          batismo (BATIZANDO);
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontWeight: '600', fontSize: '46px' }}>
+              3.
+            </span>
+            <span style={{ fontWeight: '400', fontSize: '16px' }}>
+              Desafiando seus discípulos maduros a tomarem a decisão pública pelo batismo  
+              (BATIZANDO).
+            </span>
+          </Badge>
           <br />
-          4. Após o batismo, ensinar os discípulos a aprofundarem a vida cristã
-          paras se multiplicarem, fazendo outros novos discípulos (ENSINANDO).
+          <Badge color="#63B4EF" style={{ padding: '20px' }}>
+            <span style={{ fontWeight: '600', fontSize: '46px' }}>
+              4.
+            </span>
+            <span style={{ fontWeight: '400', fontSize: '16px' }}>
+              Continuando, após o batismo, a ensinar seus discípulos a aprofundarem a vida 
+              cristã e a multiplicarem-se, fazendo também outros novos discípulos (ENSINANDO).
+            </span>
+          </Badge>
         </HighlightsText>
-      </HighlightsContainer>
-      <ThanksContainer>
         <br />
         <br />
-        <img src={redArrowDown} alt="Seta para baixo vermelha" />
+        <img src={redArrowDown} className="icon" alt="Seta para baixo vermelha" />
         <br />
         <ThanksTitle>Destaques</ThanksTitle>
         <br />
         <br />
         <HighlightsSubTitle>CRM</HighlightsSubTitle>
         <br />
-        <ThanksText>
-          * Obs.: Em 2019 o cartão de chamada da Escola Sabatina não possuía as
-          perguntas da Roda do Discipulado. Em 2022, os dados são apenas do 1º
-          trimestre.
-        </ThanksText>
-
+        <img src={image1} alt="" />
+        <br />
+        <img src={image2} alt="" />
+        <br />
+        <img src={image3} alt="" />
+        <br />
+        <img src={image4} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Rede do pastoreio</HighlightsSubTitle>
+        <ThanksTitle>Rede do pastoreio</ThanksTitle>
         <br />
         <ThanksText>
           O Ministério Pessoal trabalhou através de uma rede de pastoreio onde
@@ -140,25 +205,26 @@ const JoaoLorini: React.FC = () => {
           estes líderes conduziram toda a igreja através das Unidades de Ação da
           Escola Sabatina.
         </ThanksText>
-
         <br />
+        <img src={image5} alt="" />
         <br />
-        <HighlightsSubTitle>Semana Santa</HighlightsSubTitle>
+        <ThanksTitle>Semana Santa</ThanksTitle>
         <br />
         <ThanksText>
-          Louvamos a Deus pelos resultados alcançados nas Semanas Santas deste
-          quadriênio. Sem dúvida, o melhor ano foi 2019. Os dois anos seguintes,
-          2020 e 2021, foram períodos difíceis com igrejas fechadas. Já em 2022
-          começamos uma retomada.
+          Louvamos a Deus pelos resultados alcançados nas Semanas Santas deste quadriênio. 
+          Tivemos um ano maravilhoso para a Semana Santa: 2019. Depois enfrentamos dois 
+          anos de igrejas fechadas no período da Semana Santa: 2020 e 2021. 
+          E no ano de 2022 começamos uma retomada. Seguem maiores informações:
         </ThanksText>
         <br />
         <br />
-        <ThanksText>
-          *Obs.: Em 2020, devido ao início da pandemia da COVID-19, a Semana
-          Santa foi feita através de transmissões da das, portanto, não houve
-          relatório.
-        </ThanksText>
-
+        <img src={image6} alt="" />
+        <br />
+        <img src={image7} alt="" />
+        <br />
+        <img src={image8} alt="" />
+        <br />
+        <img src={image9} alt="" />
         <br />
         <br />
         <HighlightsSubTitle>Semana Santa Especial</HighlightsSubTitle>
@@ -172,38 +238,31 @@ const JoaoLorini: React.FC = () => {
           da ACSR assumiram um ponto de pregação. Ao final, foi realizado um
           encerramento envolvendo os três campos gaúchos no estádio Beira-Rio.
           Louvamos a Deus pelo maior batismo deste campo em uma Semana Santa:
-          382 pessoas.
+          <strong> 382</strong> pessoas.
         </ThanksText>
-
+        <br />
+        <img src={image10} alt="" />
+        <br />
+        <img src={image11} alt="" />
+        <br />
+        <img src={image12} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Materiais Missionários</HighlightsSubTitle>
+        <HighlightsTitle>Materiais Missionários</HighlightsTitle>
         <br />
         <ThanksText>
-          O Ministério Pessoal providencia material missionário de boa qualidade
-          e em quantidade suficiente para que a igreja possa fazer o trabalho na
-          linha de frente. Seguem alguns números sobre os principais materiais
-          distribuídos neste quadriênio:
+          O Ministério Pessoal providencia material missionário de boa qualidade 
+          e em quantidade suficiente para que a igreja possa fazer o trabalho na 
+          linha de frente. 
+          <br />
+          <br />
+          Alguns números sobre os principais materiais distribuídos neste quadriênio: 
         </ThanksText>
         <br />
-        <br />
-        <ThanksText>
-          <ul>
-            <li>
-              Estudos Bíblicos (Amigos de Fé, Jesus Restaurador da Vida, Ouvindo
-              a Voz de Deus, A Bíblia Ensina, Apocalipse, Daniel, Ensinos de
-              Jesus etc.) = 105.400
-            </li>
-            <li>Folhetos Missionários = 1.660.000</li>
-            <li>Pesquisas Bíblicas = 20.000</li>
-            <li>DVD’s Missionários = 30.000</li>
-            <li>Bíblias = 13.400</li>
-          </ul>
-        </ThanksText>
-
+        <img src={image13} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Trilhas Missionárias</HighlightsSubTitle>
+        <HighlightsTitle>Trilhas Missionárias</HighlightsTitle>
         <br />
         <ThanksText>
           Desde 2019, temos trabalhado na ACSR com duas trilhas missionárias:
@@ -214,10 +273,10 @@ const JoaoLorini: React.FC = () => {
           de treinamento ao longo do processo. O resultado é uma colheita
           organizada, consistente e forte.
         </ThanksText>
-
         <br />
+        <img src={image14} alt="" />
         <br />
-        <HighlightsSubTitle>Amigos de Fé</HighlightsSubTitle>
+        <HighlightsTitle>Amigos de Fé</HighlightsTitle>
         <br />
         <ThanksText>
           A proposta deste projeto é que o membro envolvido faça o discipulado
@@ -226,21 +285,14 @@ const JoaoLorini: React.FC = () => {
           de duplas a cada ano:
         </ThanksText>
         <br />
+        <img src={image15} alt="" />
         <br />
-        <ThanksText>
-          2019 = 2.023 duplas
-          <br />
-          2020 = 1.158 duplas
-          <br />
-          2021 = 1.989 duplas
-          <br />
-          2022 = 1.679 duplas
-          <br />
-        </ThanksText>
-
+        <img src={image16} alt="" />
+        <br />
+        <img src={image17} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>PGP (Pequeno Grupo de Pastores)</HighlightsSubTitle>
+        <HighlightsTitle>PGP (Pequeno Grupo de Pastores)</HighlightsTitle>
         <br />
         <ThanksText>
           Todos os pastores da ACRS se reuniram em PGP’s nas regiões de Porto
@@ -249,10 +301,13 @@ const JoaoLorini: React.FC = () => {
           alinha os pastores distritais com a visão missionária do campo, além
           de prover motivação, apoio e materiais.
         </ThanksText>
-
+        <br />
+        <img src={image18} alt="" />
+        <br />
+        <img src={image19} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>PGL (Pequeno Grupo de Líderes)</HighlightsSubTitle>
+        <HighlightsTitle>PGL (Pequeno Grupo de Líderes)</HighlightsTitle>
         <br />
         <ThanksText>
           Este é um encontro regular do pastor distrital com os anciãos,
@@ -262,10 +317,13 @@ const JoaoLorini: React.FC = () => {
           relacionamento e missão), discipulado de líderes e didática do ensino
           da lição da Escola Sabatina.
         </ThanksText>
-
+        <br />
+        <img src={image20} alt="" />
+        <br />
+        <img src={image21} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Espaços Novo Tempo</HighlightsSubTitle>
+        <HighlightsTitle>Espaços Novo Tempo</HighlightsTitle>
         <br />
         <ThanksText>
           Com o crescimento expressivo da Rede Novo Tempo de Comunicação, a ACSR
@@ -274,12 +332,15 @@ const JoaoLorini: React.FC = () => {
           para atender os interessados da TV Novo Tempo: pastor Juscelino
           Ferreira Santos.
         </ThanksText>
-
+        <br />
+        <img src={image22} alt="" />
+        <br />
+        <img src={image23} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>
+        <HighlightsTitle>
           Fundação de novos Espaços Novo Tempo
-        </HighlightsSubTitle>
+        </HighlightsTitle>
         <br />
         <ThanksText>
           O processo de fundação inclui formação e treinamento de equipe local
@@ -287,9 +348,19 @@ const JoaoLorini: React.FC = () => {
         </ThanksText>
         <br />
         <br />
+        <Badge color="#E1A0F8" style={{ padding: '20px' }}>
+          <span style={{ fontSize: '28px' }}><strong>2018</strong></span>
+        </Badge>
+        <br />
         <ThanksText>
-          2019:
-          <br />
+          14 Espaços Novo Tempo em funcionamento na ACSR
+        </ThanksText>
+        <br />
+        <Badge color="#F1403F" style={{ padding: '20px' }}>
+          <span style={{ fontSize: '28px' }}><strong>2019</strong></span>
+        </Badge>
+        <br />
+        <ThanksText>
           1. Canoas
           <br />
           2. Cruz Alta
@@ -312,10 +383,11 @@ const JoaoLorini: React.FC = () => {
           <br />
         </ThanksText>
         <br />
+        <Badge color="#19CD77" style={{ padding: '20px' }}>
+          <span style={{ fontSize: '28px' }}><strong>2020</strong></span>
+        </Badge>
         <br />
         <ThanksText>
-          2020:
-          <br />
           1. Guajuviras
           <br />
           2. Boqueirão
@@ -346,10 +418,11 @@ const JoaoLorini: React.FC = () => {
           <br />
         </ThanksText>
         <br />
+        <Badge color="#E8D71E" style={{ padding: '20px' }}>
+          <span style={{ fontSize: '28px' }}><strong>2021</strong></span>
+        </Badge>
         <br />
         <ThanksText>
-          2021:
-          <br />
           1. São Sebastião do Caí
           <br />
           2. Modelo
@@ -388,39 +461,40 @@ const JoaoLorini: React.FC = () => {
           <br />
         </ThanksText>
         <br />
+        <Badge color="#63B4EF" style={{ padding: '20px' }}>
+          <span style={{ fontSize: '28px' }}><strong>2022</strong></span>
+        </Badge>
         <br />
         <ThanksText>
-          2022 (até março):
-          <br />
           1. Quevedo
           <br />
           2. Colorado
           <br />
           3. Vila Hilda
           <br />
-          4. Salto do Jacuí
+          4. Tupanciretã
+          <br />
+          5. Salgado Filho
+          <br />
+          6. Medianeira
+          <br />
+          7. Faxinal de Dentro
+          <br />
+          8. Alegrete
+          <br />
+          9.  São Borja
+          <br />
+          10. Cachoeirinha
           <br />
         </ThanksText>
-        <br />
         <ThanksText>
           Batismos por influência da TV, rádio, web e equipes Novo Tempo:
         </ThanksText>
         <br />
-        <br />
-        <ThanksText>
-          1. 2019: 97
-          <br />
-          2. 2020: 179
-          <br />
-          3. 2021: 280
-          <br />
-          4. 2022: 17 (até março)
-          <br />
-        </ThanksText>
-
+        <img src={image24} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Escola Sabatina</HighlightsSubTitle>
+        <HighlightsTitle>Escola Sabatina</HighlightsTitle>
         <br />
         <ThanksText>
           A Escola Sabatina reflete a visão de ser o maior e o mais eficaz
@@ -431,83 +505,47 @@ const JoaoLorini: React.FC = () => {
         </ThanksText>
         <br />
         <br />
-        <ThanksText>
-          A nossa grande missão é fazer discípulos. Sonhamos, oramos e
-          trabalhamos para termos uma igreja envolvida e alcançarmos o sonho de
-          ser Cada Um Salvando Um. Para isso, trabalhamos desde 2020 através da
-          Roda do Discipulado:
-        </ThanksText>
+        <img src={image30} alt="" />
+        <br />
+        <img src={image31} alt="" />
+        <br />
+        <img src={image32} alt="" />
+        <br />
+        <img src={image33} alt="" />
+        <br />
+        <img src={image34} alt="" />
+        <br />
+        <img src={image35} alt="" />
+        <br />
+        <img src={image36} alt="" />
+        <br />
+        <img src={image37} alt="" />
         <br />
         <br />
-        <ThanksText>
-          1. Tendo em seu estilo de vida a prática da comunhão, relacionamento e
-          missão (INDO);
-          <br />
-          2. Se conectando aos seus interessados intencionalmente para fazer
-          deles novos discípulos por estudos bíblicos (FAÇAM DISCÍPULOS);
-          <br />
-          3. Desafiando seus discípulos maduros a tomarem a decisão pública pelo
-          batismo (BATIZANDO);
-          <br />
-          4. Continuando, após o batismo, a ensinar seus discípulos a
-          aprofundarem a vida cristã e a multiplicarem-se, fazendo também outros
-          novos discípulos (ENSINANDO).
-          <br />
-        </ThanksText>
-        <br />
-        <br />
-
-        <br />
-        <br />
-        <HighlightsSubTitle>Roda do Discipulado</HighlightsSubTitle>
+        <HighlightsTitle>Dados da Escola Sabatina</HighlightsTitle>
         <br />
         <ThanksText>
-          * Obs.: Em 2019, o cartão de chamada da ES não possuía as perguntas da
-          Roda do Discipulado. Os dados de 2022 são apenas do primeiro
-          trimestre.
+        A estrutura que mais traz unidade para a IASD é a Escola Sabatina, 
+        pois em cada Igreja tem uma Escola Sabatina funcionando com o estudo da mesma lição. 
+        Seguem os números de Escolas Sabatinas ativas deste quadriênio:
         </ThanksText>
-
-        <br />
-        <br />
-        <HighlightsSubTitle>Dados da Escola Sabatina</HighlightsSubTitle>
-        <br />
-        <ThanksText>
-          A estrutura que mais traz união para a igreja é a Escola Sabatina,
-          pois cada Unidade de Ação estimula seus alunos a estudarem a lição, a
-          mesma em todo o mundo. Para incentivar a assinatura da lição da ES, a
-          cada ano é realizado em setembro, o Projeto Maná, uma parceria com a
-          editora da igreja no Brasil, a Casa Publicadora Brasileira.
-        </ThanksText>
-        <br />
-        <br />
         <br />
         <ThanksText>* Dados até 1o trimestre/2022.</ThanksText>
-
+        <br />
+        <img src={image38} alt="" />
+        <br />
+        <img src={image39} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Verbas para treinamentos (C1S1)</HighlightsSubTitle>
-        <br />
-        <ThanksText>
-          Cada distrito e Escola Sabatina da ACSR recebe uma verba anual para
-          investir em treinamentos para o Discipulado. Seguem os valores de
-          verba de treinamento do quadriênio:
-        </ThanksText>
-        <br />
+        <HighlightsTitle>Verbas para treinamentos (C1S1)</HighlightsTitle>
         <br />
         <ThanksText>
-          2019 = R$ 345.000,00
-          <br />
-          2020 = R$ 348.000,00
-          <br />
-          2021 = R$ 260.000,00
-          <br />
-          2022 = R$ 260.000,00
-          <br />
+          Cada distrito da ACSR recebe uma verba anual para investir em treinamentos 
+          para o Discipulado. Seguem os valores de verba de treinamento do quadriênio:
         </ThanksText>
-
         <br />
+        <img src={image40} alt="" />
         <br />
-        <HighlightsSubTitle>Associação Ministerial</HighlightsSubTitle>
         <br />
         <ThanksText>
           Na Igreja Adventista do Sétimo Dia, a Associação Ministerial é formada
@@ -531,21 +569,11 @@ const JoaoLorini: React.FC = () => {
         </ThanksText>
         <br />
         <br />
-        <ThanksText>
-          Duas reuniões com pastores aspirantes foram realizadas por ano, de
-          igual forma os Concílios Pastorais. O Concílio para anciãos acontece
-          uma vez ao ano, apenas em 2020 este encontro foi on-line, devido à
-          pandemia. Já o Concílio para as Famílias ministeriais aconteceu em
-          2019 e 2021.
-        </ThanksText>
+        <img src={image41} alt="" />
         <br />
+        <img src={image42} alt="" />
         <br />
-        <ThanksText>
-          O Programa de Atendimento ao Ministério Pastoral (PAMP) foi feito seis
-          vezes por ano. Três cerimônias de Ordenação ao Ministério aconteceram
-          neste quadriênio e ao todo, 12 pastores foram ordenados.
-        </ThanksText>
-      </ThanksContainer>
+      </HighlightsContainer>
       <ThanksContainer>
         <br />
         <br />
@@ -555,25 +583,36 @@ const JoaoLorini: React.FC = () => {
         <br />
         <br />
         <ThanksText>
-          Agradeço, em primeiro lugar, a Deus pelo chamado ao Ministério e por
-          ter me guiado até aqui. Agradeço à minha esposa, Bianca Lorini e aos
-          meus filhos, Emily e Henrique por sempre apoiarem incondicionalmente
-          meu Ministério, colocando a Deus em primeiro lugar.
+          Agradeço em primeiro lugar a Deus pelo chamado ao Ministério 
+          e por ter me guiado até aqui. Agradeço a minha esposa Bianca e 
+          aos meus filhos Emily e Henrique por sempre apoiarem de forma 
+          incondicional meu Ministério, colocando a Deus em primeiro. 
+          Agradeço minha mãe Lourdes Lorini por ter colocado em meu coração 
+          desde a infância o temor do Senhor e por ter sido fundamental 
+          para que me formasse um pastor. 
           <br />
           <br />
-          Agradeço à minha mãe, Lourdes Lorini por colocar em meu coração desde
-          a infância o temor do Senhor e por ser fundamental para me formar um
-          pastor.
+          Grato também sou as minhas secretárias nesse quadriênio: 
+          Stéphany Claro, Keila Moreles, Andressa Cruz, Ellen Silva e 
+          Rosângela Borges. Além delas, grato sou à Marissol Pasqualetto 
+          que trabalhou como secretária para o relatório da Escola Sabatina. 
+          Agradeço aos demais familiares e amigos por fazerem parte deste 
+          Ministério. Nossa gratidão e reconhecimento pelo trabalho de meu 
+          antecessor na área Ministerial, Pr. Rogério Gurniak. Gratidão também ao 
+          Pr. Juscelino Ferreira que atuou durante o quadriênio como coordenador 
+          do Ministério Novo Tempo com resultados fantásticos.
           <br />
           <br />
-          Agradeço aos demais familiares e amigos por fazerem parte deste
-          Ministério.
+          Também agradeço aos líderes da USB, Pr. Fabio Correa como líder 
+          MIPES e Pr. Elieser Vargas como líder Ministerial. 
+          Agradeço à Administração da ACSR pela confiança e apoio sem medida. 
+          Deixo aqui igualmente meu apreço e gratidão aos colegas Departamentais, 
+          na ACSR trabalhamos como uma família. 
           <br />
           <br />
-          Minha gratidão à Administração da ACSR pela confiança e apoio sem
-          medida. Ao pastor Rogério Gurniak que liderou a Associação Ministerial
-          na ACSR de 2019 a 2021 sem medir esforços para alcançar estes
-          resultados no quadriênio.
+          E concluo agradecendo a cada pastor, ao ancionato e a toda liderança 
+          do Ministério Pessoal e Escola Sabatina: vocês honraram a Deus com 
+          vosso comprometimento e trabalho!
           <br />
           <br />
         </ThanksText>

@@ -2,6 +2,18 @@ import React, { useEffect, useState } from "react";
 
 import rosinhaOliveira from "../../assets/rosinha-oliveira/rosinha-without-back.jpg";
 import greenArrowDown from "../../assets/seta-para-baixo.png";
+import arrowDownRed from "../../assets/seta-para-baixo-red.png";
+
+import image1 from "../../assets/rosinha-oliveira/image1.png";
+import image2 from "../../assets/rosinha-oliveira/image2.png";
+import image3 from "../../assets/rosinha-oliveira/image3.png";
+import image4 from "../../assets/rosinha-oliveira/image4.png";
+import image5 from "../../assets/rosinha-oliveira/image5.png";
+import image6 from "../../assets/rosinha-oliveira/image6.png";
+import image7 from "../../assets/rosinha-oliveira/image7.png";
+import image8 from "../../assets/rosinha-oliveira/image8.png";
+import image9 from "../../assets/rosinha-oliveira/image9.png";
+import image10 from "../../assets/rosinha-oliveira/image10.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -23,6 +35,7 @@ import {
   HighlightsContainer,
   HighlightsText,
   GreenBox,
+  HighlightsTitle,
 } from "./styles";
 import FadeIn from "../../components/FadeIn";
 
@@ -82,7 +95,7 @@ const RosinhaOliveira: React.FC = () => {
           <br /> Oliveira
         </Name>
         <Role>
-          Ministério da Mulher, Área Feminina da Associação Ministerial
+          Ministério da Mulher, Ministério da Recepção e Área Feminina da Associação Ministerial
         </Role>
         <TextContainer>
           <TextCapitularContainer>
@@ -121,12 +134,14 @@ const RosinhaOliveira: React.FC = () => {
           <br />
           <h1>
             No território da ACSR hoje, temos um número expressivo de <br />
-            <span className="red">9.796 mulheres</span>
+            <span className="red">9.756 mulheres</span>
             <br />
-            que representam <br /> <span className="green">58%</span> do total
+            que representam <br /> <span className="green">58,3%</span> do total
             de membros da Associação, que poderão fazer parte da missão de
             salvar.
           </h1>
+          <br />
+          Nossa responsabilidade é motivá-las usando seus dons nesta tarefa tão nobre.
         </HighlightsText>
         <br />
       </HighlightsContainer>
@@ -143,83 +158,137 @@ const RosinhaOliveira: React.FC = () => {
         <br />
       </GreenBox>
       <HighlightsContainer>
+        <br />
+        <br />
+        <img
+          src={arrowDownRed}
+          style={{ height: "48px", width: "48px" }}
+          alt="Seta para baixo vermelha"
+        />
+        <br />
+        <HighlightsTitle>Destaques</HighlightsTitle>
+        <br />
         <HighlightsText>
-          <h2>Ministério da Recepção com envolvimento das Novas Gerações;</h2>
+          •	Ministério da Recepção com envolvimento das Novas Gerações;
           <br />
-          <ul>
-            <li>
-              Quartas de Poder — Realizadas nas últimas quartas de cada mês;
-            </li>
-            <li>Grupos de Intercessão;</li>
-            <li>Treinamento de líderes Distritais;</li>
-            <li>Projeto MEL, envolvendo as Novas Gerações e Novos na Fé;</li>
-            <li>Dia Mundial de Oração;</li>
-            <li>Chás Evangelísticos;</li>
-            <li>Quebrando o Silêncio na Igreja e nas escolas;</li>
-            <li>
-              Congresso EU VOU — Cada participante, líder ou coordenadora,
-              trazendo uma pessoa que está discipulando;
-            </li>
-            <li>
-              Outubro Rosa: Palestras e atividades físicas, corrida virtual ou
-              solidária ‘Superação’;
-            </li>
-            <li>
-              Semana de Evangelismo de Colheita, com pregadores jovens e
-              adolescentes, realizada no mês de novembro.
-            </li>
-          </ul>
+          •	Quartas de Poder — Realizadas nas últimas quartas de cada mês;
+          <br />
+          •	Grupos de Intercessão;
+          <br />
+          •	Treinamento de líderes Distritais;
+          <br />
+          •	Projeto MEL, envolvendo as Novas Gerações e Novos na Fé;
+          <br />
+          •	Dia Mundial de Oração;
+          <br />
+          •	Chás Evangelísticos;
+          <br />
+          •	Quebrando o Silêncio na Igreja 
+          e nas escolas;
+          <br />
+          •	Congresso EU VOU — Cada participante, líder ou coordenadora, trazendo uma pessoa que está discipulando;
+          <br />
+          •	Outubro Rosa: Palestras e atividades físicas, corrida virtual ou solidária  ‘Superação’;
+          <br />
+          •	Semana de Evangelismo de Colheita, com pregadores jovens e adolescentes, realizada no mês de novembro.
         </HighlightsText>
       </HighlightsContainer>
+      <GreenBox>
+          Área Feminina da Associação Ministerial (AFAM)
+          <br />
+          “O Senhor gostaria que o Ministro e Esposa tivessem unidos no
+          trabalho. […] Ela faz o trabalho de seu esposo mais completo”
+          <br />
+          <br />
+          <span className="italic-block">
+            (Ellen G. White, 6 Manuscripts Releases, 43).
+          </span>
+      </GreenBox>
+      <HighlightsText>
+        <br />
+        <br />
+        A AFAM atua como apoio à Associação Ministerial orientando as esposas
+        dos pastores e dos anciãos na edificação de suas respectivas famílias,
+        igrejas e comunidades.
+        <br />
+        <br />
+        Neste quadriênio, a AFAM teve o privilégio de contribuir com o
+        desenvolvimento da esposa do pastor em diferentes áreas da vida, como:
+        relacionamento, educação de filhos, saúde física, emocional e
+        espiritual. Sempre trazendo ênfases similares às Competências
+        Ministeriais com o propósito de oferecer as melhores ferramentas para
+        o desenvolvimento de um ministério pleno, completo, equilibrado e
+        permanente.
+        <br />
+        <br />
+        De maneira individual, o departamento promoveu a harmonia e felicidade
+        do casal pastoral, desenvolvendo eventos e atividades que proporcionam
+        a condução deste objetivo, bem como o incentivo no envolvimento das
+        frentes missionárias da igreja, com a missão de salvar.
+        <br />
+        <br />
+      </HighlightsText>
+
+        <HighlightsTitle>Ministério do MM</HighlightsTitle>
+        <br />
+        <br />
+        <img src={image1} alt="" />
+        <br />
+        <img src={image2} alt="" />
+        <br />
+        <img src={image3} alt="" />
+        <br />
+        <br />
+        <img src={image4} alt="" />
+        <br />
+        <br />
+        <HighlightsTitle>Departamento da AFAM</HighlightsTitle>
+        <br />
+        <br />
+        <img src={image5} alt="" />
+        <br />
+
       <HighlightsContainer>
+        <br />
+        <br />
+        <img
+          src={arrowDownRed}
+          style={{ height: "48px", width: "48px" }}
+          alt="Seta para baixo vermelha"
+        />
+        <br />
+        <HighlightsTitle>Destaques</HighlightsTitle>
+        <br />
         <HighlightsText>
-          <h2>Área Feminina da Associação Ministerial (AFAM)</h2>
+          •Concílios com a família pastoral;
           <br />
-          <h2>
-            “O Senhor gostaria que o Ministro e Esposa tivessem unidos no
-            trabalho. […] Ela faz o trabalho de seu esposo mais completo”
-            <br />
-            <br />
-            <span className="italic-block">
-              (Ellen G. White, 6 Manuscripts Releases, 43).
-            </span>
-          </h2>
+          •	Retiros e concílios somente com as esposas de pastores;
           <br />
+          •	Visitas ministeriais on-line e presencial;
           <br />
-          A AFAM atua como apoio à Associação Ministerial orientando as esposas
-          dos pastores e dos anciãos na edificação de suas respectivas famílias,
-          igrejas e comunidades.
+          •	Encontros regionais — PGPEP;
           <br />
+          •	Concílio de esposas de anciãos;
           <br />
-          Neste quadriênio, a AFAM teve o privilégio de contribuir com o
-          desenvolvimento da esposa do pastor em diferentes áreas da vida, como:
-          relacionamento, educação de filhos, saúde física, emocional e
-          espiritual. Sempre trazendo ênfases similares às Competências
-          Ministeriais com o propósito de oferecer as melhores ferramentas para
-          o desenvolvimento de um ministério pleno, completo, equilibrado e
-          permanente.
+          •	Treinamento com esposas de pastores aspirantes ao ministério;
           <br />
+          •	Vigílias com as esposas de pastores departamentais;
           <br />
-          De maneira individual, o departamento promoveu a harmonia e felicidade
-          do casal pastoral, desenvolvendo eventos e atividades que proporcionam
-          a condução deste objetivo, bem como o incentivo no envolvimento das
-          frentes missionárias da igreja, com a missão de salvar.
-          <br />
-          <br />
-          Concílios com a família pastoral;
-          <ul className="ml16">
-            <li>Retiros e concílios somente com as esposas de pastores;</li>
-            <li>Visitas ministeriais on-line e presencial;</li>
-            <li>Encontros regionais — PGPEP;</li>
-            <li>Concílio de esposas de anciãos;</li>
-            <li>
-              Treinamento com esposas de pastores aspirantes ao ministério;
-            </li>
-            <li>Vigílias com as esposas de pastores departamentais;</li>
-            <li>Grupos on-line de intercessão.</li>
-          </ul>
+          •	Grupos on-line de intercessão.
         </HighlightsText>
       </HighlightsContainer>
+
+      <img src={image6} alt="" />
+      <br />
+      <img src={image7} alt="" />
+      <br />
+      <img src={image8} alt="" />
+      <br />
+      <img src={image9} alt="" />
+      <br />
+      <img src={image10} alt="" />
+      <br />
+
       <ThanksContainer>
         <img src={greenArrowDown} alt="Seta para baixo verde" />
         <br />

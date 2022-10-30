@@ -11,6 +11,14 @@ padding: 100px 30px 30px;
   background-color: black;
 `;
 
+export const HighlightsTitle = styled.span`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  color: #000000;
+`;
+
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;

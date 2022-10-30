@@ -19,6 +19,23 @@ padding: 100px 30px 30px;
   background-color: black;
 `;
 
+export const Badge = styled.div`
+  border-radius: 16px;
+  padding: 3px 30px;
+  background: ${(props) => props.color};
+  display: flex;
+  flex-direction: column;
+  /* height: 210px; */
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+`;
+
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -123,6 +140,13 @@ export const HighlightsContainer = styled.div`
       &.bold {
         font-weight: 600;
       }
+    }
+  }
+
+  img {
+    &.icon {
+      width: 48px;
+      height: 48px;
     }
   }
 `;
