@@ -85,6 +85,26 @@ export const GreenBox = styled.div`
   line-height: 62px;
   color: #ffffff;
 
+  span {
+    &.test1 {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    
+    &.test3 {
+      font-family: 'Poppins';
+      font-style: italic;
+      font-weight: 500;
+      font-size: 32px;
+    }
+
+    &.test4 {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
   div {
     display: flex;
     justify-content: flex-end;
@@ -106,6 +126,12 @@ export const ThanksContainer = styled.div`
     width: 48px;
     height: 48px;
   }
+`;
+
+export const TContainer = styled.div`
+  padding: 60px 30px 30px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ThanksTitle = styled.span`

@@ -36,6 +36,8 @@ import {
   HighlightsText,
   GreenBox,
   HighlightsTitle,
+  Badge,
+  TContainer
 } from "./styles";
 import FadeIn from "../../components/FadeIn";
 
@@ -171,63 +173,80 @@ const RosinhaOliveira: React.FC = () => {
         <HighlightsText>
           •	Ministério da Recepção com envolvimento das Novas Gerações;
           <br />
+          <br />
           •	Quartas de Poder — Realizadas nas últimas quartas de cada mês;
+          <br />
           <br />
           •	Grupos de Intercessão;
           <br />
+          <br />
           •	Treinamento de líderes Distritais;
+          <br />
           <br />
           •	Projeto MEL, envolvendo as Novas Gerações e Novos na Fé;
           <br />
+          <br />
           •	Dia Mundial de Oração;
           <br />
+          <br />
           •	Chás Evangelísticos;
+          <br />
           <br />
           •	Quebrando o Silêncio na Igreja 
           e nas escolas;
           <br />
+          <br />
           •	Congresso EU VOU — Cada participante, líder ou coordenadora, trazendo uma pessoa que está discipulando;
           <br />
+          <br />
           •	Outubro Rosa: Palestras e atividades físicas, corrida virtual ou solidária  ‘Superação’;
+          <br />
           <br />
           •	Semana de Evangelismo de Colheita, com pregadores jovens e adolescentes, realizada no mês de novembro.
         </HighlightsText>
       </HighlightsContainer>
       <GreenBox>
-          Área Feminina da Associação Ministerial (AFAM)
+          <span className="test1">
+            Área Feminina da Associação Ministerial (AFAM)
+          </span>
           <br />
-          “O Senhor gostaria que o Ministro e Esposa tivessem unidos no
-          trabalho. […] Ela faz o trabalho de seu esposo mais completo”
+          <br />
+          <span className="test3">
+            “O Senhor gostaria que o Ministro e Esposa tivessem unidos no
+            trabalho. 
+            […] Ela faz o trabalho de seu esposo mais completo”
+          </span>
           <br />
           <br />
-          <span className="italic-block">
+          <span className="test4">
             (Ellen G. White, 6 Manuscripts Releases, 43).
           </span>
       </GreenBox>
-      <HighlightsText>
-        <br />
-        <br />
-        A AFAM atua como apoio à Associação Ministerial orientando as esposas
-        dos pastores e dos anciãos na edificação de suas respectivas famílias,
-        igrejas e comunidades.
-        <br />
-        <br />
-        Neste quadriênio, a AFAM teve o privilégio de contribuir com o
-        desenvolvimento da esposa do pastor em diferentes áreas da vida, como:
-        relacionamento, educação de filhos, saúde física, emocional e
-        espiritual. Sempre trazendo ênfases similares às Competências
-        Ministeriais com o propósito de oferecer as melhores ferramentas para
-        o desenvolvimento de um ministério pleno, completo, equilibrado e
-        permanente.
-        <br />
-        <br />
-        De maneira individual, o departamento promoveu a harmonia e felicidade
-        do casal pastoral, desenvolvendo eventos e atividades que proporcionam
-        a condução deste objetivo, bem como o incentivo no envolvimento das
-        frentes missionárias da igreja, com a missão de salvar.
-        <br />
-        <br />
-      </HighlightsText>
+      <TContainer>
+        <HighlightsText>
+          <br />
+          <br />
+          A AFAM atua como apoio à Associação Ministerial orientando as esposas
+          dos pastores e dos anciãos na edificação de suas respectivas famílias,
+          igrejas e comunidades.
+          <br />
+          <br />
+          Neste quadriênio, a AFAM teve o privilégio de contribuir com o
+          desenvolvimento da esposa do pastor em diferentes áreas da vida, como:
+          relacionamento, educação de filhos, saúde física, emocional e
+          espiritual. Sempre trazendo ênfases similares às Competências
+          Ministeriais com o propósito de oferecer as melhores ferramentas para
+          o desenvolvimento de um ministério pleno, completo, equilibrado e
+          permanente.
+          <br />
+          <br />
+          De maneira individual, o departamento promoveu a harmonia e felicidade
+          do casal pastoral, desenvolvendo eventos e atividades que proporcionam
+          a condução deste objetivo, bem como o incentivo no envolvimento das
+          frentes missionárias da igreja, com a missão de salvar.
+          <br />
+          <br />
+        </HighlightsText>
 
         <HighlightsTitle>Ministério do MM</HighlightsTitle>
         <br />
@@ -247,7 +266,7 @@ const RosinhaOliveira: React.FC = () => {
         <br />
         <img src={image5} alt="" />
         <br />
-
+      </TContainer>
       <HighlightsContainer>
         <br />
         <br />
@@ -260,35 +279,52 @@ const RosinhaOliveira: React.FC = () => {
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
         <HighlightsText>
-          •Concílios com a família pastoral;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•Concílios com a família pastoral;</strong></span>
+          </Badge>
           <br />
-          •	Retiros e concílios somente com as esposas de pastores;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Retiros e concílios somente com as esposas de pastores;</strong></span>
+          </Badge>
           <br />
-          •	Visitas ministeriais on-line e presencial;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Visitas ministeriais on-line e presencial;</strong></span>
+          </Badge>
           <br />
-          •	Encontros regionais — PGPEP;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Encontros regionais — PGPEP;</strong></span>
+          </Badge>
           <br />
-          •	Concílio de esposas de anciãos;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Concílio de esposas de anciãos;</strong></span>
+          </Badge>
           <br />
-          •	Treinamento com esposas de pastores aspirantes ao ministério;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Treinamento com esposas de pastores aspirantes ao ministério;</strong></span>
+          </Badge>
           <br />
-          •	Vigílias com as esposas de pastores departamentais;
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Vigílias com as esposas de pastores departamentais;</strong></span>
+          </Badge>
           <br />
-          •	Grupos on-line de intercessão.
+          <Badge color="#E8D71E" style={{ padding: '20px' }}>
+            <span style={{ fontSize: '18px', color: '#000000' }}><strong>•	Grupos on-line de intercessão.</strong></span>
+          </Badge>
+          <br />
         </HighlightsText>
       </HighlightsContainer>
-
-      <img src={image6} alt="" />
-      <br />
-      <img src={image7} alt="" />
-      <br />
-      <img src={image8} alt="" />
-      <br />
-      <img src={image9} alt="" />
-      <br />
-      <img src={image10} alt="" />
-      <br />
-
+      <TContainer>
+        <img src={image6} alt="" />
+        <br />
+        <img src={image7} alt="" />
+        <br />
+        <img src={image8} alt="" />
+        <br />
+        <img src={image9} alt="" />
+        <br />
+        <img src={image10} alt="" />
+        <br />
+      </TContainer>
       <ThanksContainer>
         <img src={greenArrowDown} alt="Seta para baixo verde" />
         <br />
