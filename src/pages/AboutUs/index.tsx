@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import setaParaBaixo from "../../assets/seta-para-baixo.png";
-import time1 from "../../assets/time1.png";
-import time2 from "../../assets/time2.png";
+import time1 from "../../assets/about-us/time1.png";
+import time2 from "../../assets/about-us/time2.png";
+import pastores1 from "../../assets/about-us/pastores1.png";
+import pastores2 from "../../assets/about-us/pastores2.png";
+import pastores3 from "../../assets/about-us/pastores3.png";
+import pastores4 from "../../assets/about-us/pastores4.png";
+import pastores5 from "../../assets/about-us/pastores5.png";
+import pastores6 from "../../assets/about-us/pastores6.png";
+import pastores7 from "../../assets/about-us/pastores7.png";
+import servidores1 from "../../assets/about-us/servidores1.png";
+import servidores2 from "../../assets/about-us/servidores2.png";
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -13,7 +22,7 @@ import {
   SummaryContainer,
   Name,
   AboutUsContainer,
-  AboutUsTitle
+  AboutUsTitle,
 } from "./styles";
 
 const AboutUs: React.FC = () => {
@@ -22,11 +31,16 @@ const AboutUs: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   function linkToDepartmentsSection() {
-    navigate('/')
+    navigate("/");
   }
 
   if (openMenu) {
-    return <Menu link={linkToDepartmentsSection} onClose={() => setOpenMenu(false)} />;
+    return (
+      <Menu
+        link={linkToDepartmentsSection}
+        onClose={() => setOpenMenu(false)}
+      />
+    );
   }
 
   return (
@@ -36,60 +50,72 @@ const AboutUs: React.FC = () => {
         setOpenMenu={(data) => setOpenMenu(data)}
       />
       <Content>
-        <TitleContainer>
-          Discipulando <br />
-          para a <br />
-          Eternidade
-        </TitleContainer>
+        <br />
+        <TitleContainer>Expediente</TitleContainer>
         <SummaryContainer>
-          <h2>Sumário</h2>
           <ul>
             <li>
-              Presidência | <Name>Pr. Marcos Júnior</Name>
+              <Name>Produção Executiva:</Name> Pr. Marcos Júnior, Presidente |
+              Pr. Rogério Gurniak, Secretário | Everson Braga, Tesoureiro
             </li>
             <li>
-              Secretaria, Serviço Voluntário Adventista, Centro de Vida Saudável
-              | <Name>Pr. Rogério Gurniak</Name>
-            </li>
-            <li>Tesouraria e Expansão Patrimonial | Everson Braga</li>
-            <li>Educação Adventista | <Name>Fabiana Nowack</Name></li>
-            <li>
-              Ministério Jovem, Ministério da Música, Comunicação e
-              Universitários | <Name>Pr. Douglas Silva</Name>
+              <Name>Conselho Consultivo | Departamentais:</Name> Douglas Silva |
+              Fabiana Nowack | Jessé Santos | João Lorini | Juraci Hauser |
+              Marcelo Dadamo | Paulo Aguiar | Rosinha Oliveira | Samara Zabel
             </li>
             <li>
-              Ministério da Criança e Ministério do Adolescente | <Name>Samara Zabel</Name>
-            </li>
-            <li>Desbravadores e Aventureiros | <Name>Pr. Jessé Santos</Name></li>
-            <li>
-              Associação Ministerial, Ministério Pessoal e Escola Sabatina | <Name>Pr. João Lorini</Name>
+              <Name>Jornalista Responsável:</Name> Bianca Lorini - Registro
+              Profissional: 0017738 RS
             </li>
             <li>
-              Ministério da Mulher, Área Feminina da Associação Ministerial | <Name>Rosinha Oliveira</Name>
+              <Name>Projeto gráfico e Desenvolvimento:</Name> Broccoli
+              Comunicação
             </li>
             <li>
-              Ministério da Família, Mordomia Cristã, Ação Solidária Adventista
-              | <Name>Pr. Paulo Aguiar</Name>
+              <Name>Imagens:</Name> Arquivo ACSR | Arquivo igrejas
             </li>
-            <li>Evangelismo | Pr. <Name>Marcelo Dadamo</Name></li>
             <li>
-              Publicações, Espírito de Profecia, Saúde | <Name>Pr. Juraci Hauser</Name>
+              <Name>Revisão:</Name> Fabiana Lopes
+            </li>
+            <li>
+              <Name>Site:</Name> acsr.adventistas.org.br
+            </li>
+            <li>
+              <Name>Redes Sociais:</Name>
+              <br />
+              Facebook: @acsr.rs
+              <br />
+              Instagram: @adventistasacsr
+              <br />
+              YouTube: Adventistas Centro do Rio Grande do Sul
             </li>
           </ul>
         </SummaryContainer>
         <AboutUsContainer>
-          <img src={setaParaBaixo} alt="setaParaBaixo" />
+          <img src={setaParaBaixo} alt="" className="setaParaBaixo" />
           <AboutUsTitle>Quem somos</AboutUsTitle>
-          <img src={time1} alt="Time" />
-          <ul>
-            <li>Presidência | Pr. Marcos Júnior</li>
-            <li>Secretaria, Serviço Voluntário Adventista, Centro de Vida Saudável | Pr. Rogério Gurniak</li>
-            <li>Tesouraria e Expansão Patrimonial | Erverson Braga</li>
-            <li>Educação Adventista| Fabiana Nowack</li>
-            <li>Ministério Jovem, Ministério da Música, Comunicação e Universitários | Pr. Douglas Silva</li>
-            <li>Ministério da Criança e Ministério do Adolescente | Samara Zabel</li>
-          </ul>
-          <img src={time2} alt="Time" />
+          <AboutUsTitle>Pastores</AboutUsTitle>
+          <img src={time1} alt="" />
+          <p className="subtitle">Distritais</p>
+          <img src={pastores1} alt="" />
+          <p className="subtitle">Escolares</p>
+          <img src={pastores2} alt="" />
+          <p className="subtitle">Centros de Influência</p>
+          <img src={pastores3} alt="" />
+          <p className="subtitle">Auxiliares</p>
+          <img src={pastores4} alt="" />
+          <p className="subtitle">Departamentais</p>
+          <img src={pastores5} alt="" />
+          <p className="subtitle">Escola Bíblica</p>
+          <img src={pastores6} alt="" />
+          <p className="subtitle">Um Ano em Missão (OYiM)</p>
+          <img src={pastores7} alt="" />
+          <AboutUsTitle>Servidores</AboutUsTitle>
+          <img src={time2} alt="" />
+          <p className="subtitle">Escritório</p>
+          <img src={servidores1} alt="" />
+          <p className="subtitle">Todos os servidores do campo</p>
+          <img src={servidores2} alt="" />
         </AboutUsContainer>
       </Content>
     </Container>

@@ -2,22 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 
-export const Content = styled.div`
-  /* padding: 0px 30px 0px 30px; */
-`;
+export const Content = styled.div``;
 
 export const TitleContainer = styled.div`
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
   padding-top: 100px;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 24px;
   color: #FFFFFF;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 49.79%, #000000 73.23%);
+  background: black;
 `;
 
 export const SummaryContainer = styled.div`
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
   background-color: black;
   color: #FFFFFF;
 
@@ -53,6 +51,20 @@ export const AboutUsContainer = styled.div`
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .setaParaBaixo {
+    width: 50px;
+  }
+
+  .subtitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: bold;
   }
 `;
 
