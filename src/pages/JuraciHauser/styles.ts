@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  .small-text {
+    font-size: 12px;
+  }
+`;
 
 export const TitleContainer = styled.div`
 padding: 100px 30px 30px;
