@@ -5,6 +5,36 @@ import paulo from "../../assets/paulo-aguiar/paulo-without-back.jpg";
 import arrowDown from "../../assets/arrow-down-white.svg";
 import arrowDownRed from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
+import image1 from "../../assets/paulo-aguiar/image1.png";
+import image2 from "../../assets/paulo-aguiar/image2.png";
+import image3 from "../../assets/paulo-aguiar/image3.png";
+import image4 from "../../assets/paulo-aguiar/image4.png";
+import image5 from "../../assets/paulo-aguiar/image5.png";
+import image6 from "../../assets/paulo-aguiar/image6.png";
+import image7 from "../../assets/paulo-aguiar/image7.png";
+import image8 from "../../assets/paulo-aguiar/image8.png";
+import image9 from "../../assets/paulo-aguiar/image9.png";
+import image10 from "../../assets/paulo-aguiar/image10.png";
+import image11 from "../../assets/paulo-aguiar/image11.png";
+import image12 from "../../assets/paulo-aguiar/image12.png";
+import image13 from "../../assets/paulo-aguiar/image13.png";
+import image14 from "../../assets/paulo-aguiar/image14.png";
+import image15 from "../../assets/paulo-aguiar/image15.png";
+import image16 from "../../assets/paulo-aguiar/image16.png";
+import image17 from "../../assets/paulo-aguiar/image17.png";
+import image18 from "../../assets/paulo-aguiar/image18.png";
+import image19 from "../../assets/paulo-aguiar/image19.png";
+import image20 from "../../assets/paulo-aguiar/image20.png";
+import image21 from "../../assets/paulo-aguiar/image21.png";
+import image22 from "../../assets/paulo-aguiar/image22.png";
+import image222 from "../../assets/paulo-aguiar/image222.png";
+import image23 from "../../assets/paulo-aguiar/image23.png";
+import image24 from "../../assets/paulo-aguiar/image24.png";
+import image25 from "../../assets/paulo-aguiar/image25.png";
+import image26 from "../../assets/paulo-aguiar/image26.png";
+
+
+
 
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
@@ -21,6 +51,7 @@ import {
   FirstLetter,
   Text,
   GreenBox,
+  RedBox,
   ThanksContainer,
   ThanksText,
   ThanksTitle,
@@ -28,6 +59,7 @@ import {
   HighlightsText,
   HighlightsTitle,
   HighlightsSubTitle,
+  YellowBox,
 } from "./styles";
 import FadeIn from "../../components/FadeIn";
 
@@ -110,142 +142,93 @@ const PauloAguiar: React.FC = () => {
           Aguiar
         </Name>
         <Role>
-          Ministério da Família, Mordomia Cristã, Ação Solidária Adventista
+          Mordomia Cristã, Ministério da Família, ASA - Ação Solidária Adventista
         </Role>
         <TextContainer>
           <TextCapitularContainer>
             <FirstLetter>“O</FirstLetter>
             <Text>tudo de mim em resposta ao Tudo de Deus".</Text>
           </TextCapitularContainer>
-          <Text>
-            “Quando os seguidores de Cristo Lhe devolvem o que Lhe é devido,
-            estão acumulando tesouro que lhes será entregue quando ouvirem as
-            palavras: “Bem está, bom e fiel servo… entra no gozo do teu Senhor”.
-            Mt 25:23. “O qual pelo gozo que Lhe estava proposto suportou a cruz,
-            desprezando a afronta, e assentou-Se à destra do trono de Deus.” Hb
-            12:2. O gozo de ver almas redimidas, almas eternamente salvas, eis a
-            recompensa de todos os que assentam os pés nas pegadas dAquele que
-            disse: 'Segue-Me.’”
-            <br />
-            <br />
-            (Ellen G. White, O Desejado de Todas as Nações, p. 523).
-          </Text>
-          <br />
           <br />
         </TextContainer>
       </TitleContainer>
+
+      <GreenBox>
+        <br />
+        <br />
+        <span className="title">
+          Mordomia Cristã
+        </span>
+        <br />
+        <br />
+          "Quando os seguidores de Cristo Lhe devolvem o que Lhe é devido, 
+          estão acumulando tesouro que lhes será entregue quando ouvirem as palavras: 
+          “Bem está, servo bom e fiel [...] entra no alegria do teu Senhor”. Mateus 25:23. 
+          “O qual pelo alegria que Lhe estava proposta suportou a cruz, desprezando a 
+          afronta, e assentou-Se à destra do trono de Deus”. Hebreus 12:2. A alegria 
+          de ver pessoas redimidas, eternamente salvas, eis a recompensa de todos os que 
+          assentam os pés nas pegadas dAquele que disse: 'Segue-Me'.”
+        <br />  <br />
+          O Desejado de todas as nações, p. 366
+        <br />
+        <br />
+          Ser um mordomo fiel de Deus, implica viver e administrar a nossa vida, 
+          reconhecendo por palavras e ações que Deus é o Nosso Senhor, que Ele é o 
+          Nosso Deus, e que Ele é o único dono de tudo que somos e de tudo o que temos.
+        <br />
+        <br />
+      </GreenBox>
       <HighlightsContainer>
         <br /> <br />
-        <HighlightsTitle>Mordomia Cristã</HighlightsTitle>
+        <HighlightsSubTitle>Projeto "Primeiro Deus - 10 dias de oração”</HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Ainda em nossos dias, há pessoas que possuem bons recursos financeiros
-          e um mordomo em sua casa. Essa função, entre outras coisas, é
-          responsável por administrar a casa do dono. Cuidar da casa e dos
-          empregados (cozinheiras, motorista, jardineiro etc.) estão entre as
-          suas possíveis atribuições.
-        </HighlightsText>
-        <br />
-        <HighlightsText>
-          Devido à sua posição, o mordomo geralmente tem grande liberdade com
-          acesso a tudo que pertence ao proprietário e deve ser uma pessoa de
-          absoluta confiança. Além disso, tudo o que está sob sua
-          responsabilidade não lhe pertence, mas ao dono.
-        </HighlightsText>
-        <br />
-        <HighlightsText>
-          Ainda que essa analogia seja limitada, ela nos ajuda a entender o
-          conceito da Mordomia Cristã. Deus é o dono de todas as coisas: o
-          Universo, o mundo, os animais e claro, o ser humano. Apesar disso, Ele
-          nos confiou a administração de nossa vida, corpo, tempo, dons e
-          recursos materiais.
-        </HighlightsText>
-        <br />
-        <HighlightsText>
-          Portanto, ser um mordomo fiel de Deus, implica viver e administrar a
-          nossa vida, reconhecendo por palavras e ações, que Deus é o nosso
-          Senhor e o único dono de tudo que somos e temos.
-        </HighlightsText>
-        <br />
-        <HighlightsText>
-          A grande oferta de salvação entregue por Deus na cruz do calvário, Seu
-          Filho Amado, deve inspirar nossa profunda gratidão e reconhecimento
-          por Seu amor, bondade e cuidado. Nós só podemos ‘dar’ a Deus ou
-          devolver o que Ele já nos deu, como disse Davi: “Porque quem sou eu, e
-          quem é o meu povo para que pudéssemos dar voluntariamente estas
-          coisas? Porque tudo vem de ti, e nós só damos o que vem das tuas mãos”
-          (1Cr29:14).
+          Realizado a cada ano em todas as igrejas da ACSR
         </HighlightsText>
         <br />
         <br />
-        <HighlightsTitle>Reavivamento Espiritual</HighlightsTitle>
+        <HighlightsSubTitle>Número de igrejas atendidas com o Seminário Teórico-Prático (Santa Convocação)</HighlightsSubTitle>
+        <br />
+        <img src={image1} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle>Número de igrejas onde sermões de fidelidade foram pregados mensalmente</HighlightsSubTitle>
+        <br />
+        <img src={image2} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle>Capacitações Regionais para líderes de Mordomia Cristã</HighlightsSubTitle>
+        <br />
+        <img src={image3} alt="" />
+        <br />
+        <img src={image4} alt="" />
+        <br />
+        <br />
+        <HighlightsSubTitle>Treinamentos para as professoras nas trimestrais</HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Não existe reavivamento espiritual sem estudo diário da Bíblia e
-          oração. É também função da igreja motivar seus membros através de
-          encontros de oração e comunhão. Ao longo deste quadriênio, as igrejas
-          da ACSR enfatizaram este reavivamento, através do Projeto ‘Primeiro
-          Deus — 10 dias de oração’ para contribuir nesse processo.
+          Realizado a cada ano em todas as igrejas da ACSR
         </HighlightsText>
         <br />
-        <br />
-        <HighlightsTitle>Seminário Teórico-Prático</HighlightsTitle>
-        <br />
-        <HighlightsText>
-          Cada pastor distrital participou deste modelo de treinamento em que
-          foi ressaltada a importância da Mordomia Cristã para o cumprimento da
-          missão. Nestes quatro anos, 120 congregações foram atendidas com o
-          programa.
-        </HighlightsText>
+        <img src={image5} alt="" />
         <br />
         <br />
-        <HighlightsTitle>Capacitações</HighlightsTitle>
-        <br />
-        <HighlightsText>
-          Os diretores de Mordomia foram capacitados por treinamentos regionais
-          ou gerais, a cada início de ano, para todo o campo. Nesses encontros,
-          eles receberam inspiração, motivação, materiais e orientação para
-          honrar a Deus através da missão que lhes foi confiada, além da
-          formação de novos líderes. No quadriênio, ocorreram três encontros
-          especiais para diretores de Mordomia e tesoureiros para guiar o
-          trabalho nessas áreas importantes da igreja.
-        </HighlightsText>
+        <img src={image6} alt="" />
         <br />
         <br />
-        <HighlightsTitle>Treinamentos nas trimestrais</HighlightsTitle>
-        <br />
-        <HighlightsText>
-          Para consolidar a Mordomia Cristã das Novas Gerações, as professoras
-          do Ministério da Criança e Ministério do Adolescente receberam
-          capacitação sobre o tema nas trimestrais.
-        </HighlightsText>
+        <img src={image7} alt="" />
         <br />
         <br />
-        <HighlightsTitle>Treinamentos para as famílias</HighlightsTitle>
-        <br />
-        <HighlightsText>
-          Através de encontros em igrejas e retiros espirituais, o tema da
-          fidelidade a Deus foi abordado para reforçar o relacionamento de
-          líderes e membros com Nosso Senhor.
-        </HighlightsText>
-        <br />
-        <HighlightsTitle>Dados</HighlightsTitle>
+        <img src={image8} alt="" />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <img src={image9} alt="" />
         <br />
         <br />
       </HighlightsContainer>
       <div id="start_fade1"></div>
       <div id="start_fade2"></div>
-      <GreenBox>
+      <RedBox>
         <br />
         <span className="title">
           <FadeIn id="fade1" duration="3s" delay="0.2s">
@@ -267,155 +250,92 @@ const PauloAguiar: React.FC = () => {
           (Ellen G. White, Beneficência Social, p.235).
         </span>
         <br />
-        <div>
-          <img src={arrowDown} alt="Down" />
-        </div>
         <br />
         <br />
-      </GreenBox>
+      </RedBox>
       <HighlightsContainer>
-        <HighlightsText>
-          Grande será o alcance e as bençãos que uma família cristã poderá
-          prover ao mundo, levando o testemunho de Cristo e abençoando as
-          pessoas e comunidade ao seu redor. Além disso, uma família cristã
-          provê um ambiente seguro e acolhedor onde todos podem se desenvolver
-          segundo a vontade do Senhor. Por isso, as ações do Ministério da
-          Família contribuem para este importante objetivo.
-        </HighlightsText>
-        <br /> <br />
+        <img src={image10} alt="" />
         <br />
-        <br />
-        <img
-          src={arrowDownRed}
-          style={{ height: "48px", width: "48px" }}
-          alt="Seta para baixo vermelha"
-        />
-        <br />
-        <HighlightsTitle>Destaques</HighlightsTitle>
-        <br />
-        <HighlightsSubTitle>Curso de Noivos</HighlightsSubTitle>
-        <br />
-        <HighlightsText>
-          A cada ano, foram realizados dois cursos de noivos de modo a preparar
-          os casais para a vida conjugal, abordando temas essenciais como: vida
-          espiritual, missão da família cristã, educação de filhos, intimidade,
-          finanças e comunicação do casal.
-        </HighlightsText>
         <br />
         <HighlightsSubTitle>Retiros e Encontros de Casais</HighlightsSubTitle>
         <br />
-        <HighlightsText>
-          Nos distritos da ACSR tivemos 116 retiros ou encontros de casais neste
-          quadriênio. Esses encontros focalizaram a comunicação do casal, maior
-          intimidade entre eles e com Deus.
-        </HighlightsText>
+        <img src={image11} alt="" />
         <br />
-        <HighlightsSubTitle>Encontro para pais</HighlightsSubTitle>
         <br />
-        <HighlightsText>
-          Ao longo dos quatro anos, foram realizados 172 encontros para pais
-          para auxiliar os pais na educação e preparo dos filhos para a vida.
-          Nesses encontros, os principais temas tradados foram: disciplina
-          cristã, finanças para crianças, educação cristã e formação das novas
-          gerações para a missão.
-        </HighlightsText>
+        <img src={image12} alt="" />
         <br />
-        <HighlightsSubTitle>Adoração em Família</HighlightsSubTitle>
-        <br />
-        <HighlightsText>
-          Visando desenvolver espiritualmente as famílias no estudo da Bíblia e
-          do Espírito de Profecia, foram realizadas oito quartas-feiras de
-          estudo de um livro do Espírito de Profecia por ano, em cada igreja.
-        </HighlightsText>
         <br />
         <HighlightsSubTitle>Projeto Conectando Corações</HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Através do incentivo de um álbum de figurinhas colecionáveis dos
-          personagens bíblicos e outras ações, as famílias foram incentivadas a
-          crescer em cinco áreas seguindo o acróstico da palavra FÁCIL:
-          Fidelidade (dízimos e ofertas), Adoração (culto familiar), Comunhão
-          (estudo da Bíblia e lição), Intercessão (oração em família) e Lazer
-          (brincadeiras e atividades juntos).
+          Através do incentivo de um álbum de figurinhas colecionáveis 
+          dos personagens bíblicos e outras ações, as famílias foram incentivadas 
+          a crescer em 5 áreas seguindo o acróstico da palavra FÁCIL:
         </HighlightsText>
         <br />
-        <HighlightsSubTitle>
-          Incentivo à fidelidade das novas gerações
-        </HighlightsSubTitle>
+        <img src={image13} alt="" />
         <br />
-        <HighlightsText>
-          Neste quadriênio, a ACSR incentivou os pais a fidelidade das novas
-          gerações tanto em eventos para famílias pastorais, funcionários e
-          programações nas igrejas locais.
-        </HighlightsText>
         <br />
-        <HighlightsSubTitle>Capacitação de líderes</HighlightsSubTitle>
+        <HighlightsSubTitle>Capacitações Regionais para líderes do Ministério da Família </HighlightsSubTitle>
         <br />
-        <HighlightsText>
-          A cada ano, os líderes do Ministério da Família eram treinados por
-          capacitações gerais e regionais com objetivo de desenvolver novos
-          líderes e prover conhecimento, motivação e materiais para o trabalho
-          com as famílias da igreja.
-        </HighlightsText>
+        <img src={image14} alt="" />
         <br />
-        <HighlightsSubTitle>Ação Solidária Adventista (ASA)</HighlightsSubTitle>
         <br />
-        <HighlightsText>
-          Ação Solidária Adventista reflete a visão de impulsionar ideias e
-          ações ligadas a uma relação de auxílio mútuo, uma virtude cristã que
-          pratica a partilha de bens, sejam materiais ou espirituais, em
-          atividades reais. Sua missão consiste em envolver cada membro da
-          igreja no Relacionamento através do incentivo às ações solidárias
-          semanais. Nosso objetivo é ter a maioria dos membros vivendo o amor ao
-          próximo como seu estilo de vida.
-        </HighlightsText>
+      </HighlightsContainer>
+      <YellowBox>
+        <br />
+        <br />
+        <span className="title">
+          ASA - Ação Solidária Adventista
+        </span>
+        <br />
+        <br />
+          Ação Solidária Adventista (ASA) tem a missão de envolver cada membro 
+          da igreja no Relacionamento através do incentivo às ações solidárias semanais. 
+          Nosso objetivo é ter a maioria dos membros vivendo o amor ao próximo como seu 
+          estilo de vida.
         <br />
         <br />
         <br />
+      </YellowBox>
+      <HighlightsContainer>
+        <img src={image15} alt="" />
         <br />
         <br />
+        <img src={image16} alt="" />
         <br />
         <br />
-        <br />
-        <HighlightsSubTitle>Recolta</HighlightsSubTitle>
-        <br />
-        <HighlightsText>
-          Uma vez ao ano, a Igreja Adventista realiza a campanha da recolta para
-          levantar fundos ao trabalho solidário. Através dessa campanha, a
-          comunidade conhece as iniciativas da ASA com a oportunidade de
-          colaborar.
-        </HighlightsText>
+        <img src={image17} alt="" />
         <br />
         <br />
+        <img src={image18} alt="" />
         <br />
         <br />
+        <img src={image19} alt="" />
         <br />
         <br />
+        <img src={image20} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Fundo Solidário Educacional</HighlightsSubTitle>
-        <br />
-        <HighlightsText>
-          Exclusivamente na ACSR, desde 2015, os valores da recolta são
-          destinados para o Fundo Solidário Educacional, desta forma, alunos
-          abaixo da linha da pobreza têm a oportunidade de estudar nas escolas
-          adventistas. O Fundo paga todas as mensalidades do ano letivo, além de
-          fornecer uniforme completo e material escolar. Os recursos recoltados
-          no ano corrente ajudam os alunos no ano seguinte. De 2019 a 2021, oito
-          alunos foram ajudados e em 2022, nove alunos receberam ajuda
-          financeira.
-        </HighlightsText>
-        <br />
-        <HighlightsSubTitle>Capacitações e treinamentos</HighlightsSubTitle>
-        <br />
-        <HighlightsText>
-          Ao longo de cada ano, os líderes da ASA foram treinados com
-          capacitações gerais, regionais e locais para desenvolver novos líderes
-          e prover inspiração, estratégias e materiais para o trabalho nos
-          postos locais.
-        </HighlightsText>
+        <img src={image21} alt="" />
         <br />
         <br />
+        <img src={image222} alt="" />
+        <br />
+        <br />
+        <img src={image22} alt="" />
+        <br />
+        <br />
+        <img src={image23} alt="" />
+        <br />
+        <br />
+        <img src={image24} alt="" />
+        <br />
+        <br />
+        <img src={image25} alt="" />
+        <br />
+        <br />
+        <img src={image26} alt="" />
       </HighlightsContainer>
       <ThanksContainer>
         <br />
@@ -426,31 +346,25 @@ const PauloAguiar: React.FC = () => {
         <br />
         <br />
         <ThanksText>
-          Agradeço a Deus, o Doador de toda a vida pelo chamado para a missão. É
-          um privilégio servir na Obra do Senhor.
+          Agradeço a Deus o doador de toda a vida pelo chamado a missão e privilégio 
+          de servir na Obra do Senhor. Agradeço a minha amada esposa Karina Aguiar 
+          pela parceria, apoio, dedicação e amor, sem ela nada disso seria possível. 
+          Aos meus filhos Lukas e Júlia pelo carinho, amor e por sempre me colocarem “pra cima”, 
+          vocês são meu orgulho, meu presente e minha alegria.  
+          E não posso esquecer dos meus pais Deniclei (Dino) e Maria de Lurdes (Lú) 
+          por terem colocado no meu coração o amor a Cristo, a Igreja e a Missão. 
           <br />
           <br />
-          Agradeço à minha amada esposa Karina Aguiar pela parceria, apoio,
-          dedicação e amor, sem ela, nada disso seria possível. Aos meus filhos
-          Lukas e Júlia pelo carinho, amor e por sempre me colocarem ‘pra cima’,
-          vocês são meu orgulho, meu presente e minha alegria. E não posso
-          esquecer dos meus pais Deniclei Aguiar (Dino) e Maria de Lurdes Aguiar
-          (Lú) por colocarem no meu coração o amor a Cristo, à Igreja e à
-          Missão.
+          Obrigado a administração do campo da ACSR por nos dar toda a estrutura para 
+          realizar nosso trabalho a cada dia. Grato aos meus colegas distritais e departamentais, 
+          sobretudo ao Pr. Rogério Gurniak, Pr. Elton Jr. e Pr. João Lorini que respectivamente 
+          lideraram as áreas de Mordomia Cristã, Ministério da Família e ASA de 2019 a 2021 e 
+          fizeram um excelente trabalho. 
           <br />
           <br />
-          Obrigado à Administração do campo da ACSR por nos dar toda a estrutura
-          para realizar nosso trabalho a cada dia. Grato aos meus colegas
-          distritais e departamentais, sobretudo aos pastores Rogério Gurniak,
-          Elton Júnior e João Lorini que respectivamente, lideraram as áreas de
-          Mordomia Cristã, Ministério da Família e ASA de 2019 a 2021 com um
-          excelente trabalho.
-          <br />
-          <br />
-          Por fim, muito obrigado à igreja de Cristo, aos nossos líderes e
-          membros que tornam todos os sonhos, trabalhos e realizações possíveis
-          através da dedicação pessoal e da presença do Espírito Santo em suas
-          vidas.
+          E por fim, muito obrigado a igreja de Cristo, aos nossos líderes e membros que 
+          tornam todos os sonhos, trabalhos e realizações possíveis através da dedicação 
+          pessoal e da presença do Espírito Santo em suas vidas.  
           <br />
           <br />
         </ThanksText>

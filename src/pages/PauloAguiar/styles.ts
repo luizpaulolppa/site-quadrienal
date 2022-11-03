@@ -72,6 +72,45 @@ export const GreenBox = styled.div`
   padding: 30px;
   background-color: #13b466;
   font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  img {
+    width: 40px;
+    text-align: center;
+  }
+
+  span {
+    &.title {
+      font-size: 40px;
+      line-height: 130%;
+      font-weight: 600;
+    }
+
+    &.sub-title {
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &.footer {
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+`;
+
+export const RedBox = styled.div`
+  padding: 30px;
+  background-color: #F1403F;
+  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 130%;
@@ -92,6 +131,45 @@ export const GreenBox = styled.div`
     &.title {
       font-size: 40px;
       line-height: 130%;
+    }
+
+    &.sub-title {
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &.footer {
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+`;
+
+export const YellowBox = styled.div`
+  padding: 30px;
+  background-color: #E8D71E;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  img {
+    width: 40px;
+    text-align: center;
+  }
+
+  span {
+    &.title {
+      font-size: 40px;
+      line-height: 130%;
+      font-weight: 600;
     }
 
     &.sub-title {
@@ -163,7 +241,7 @@ export const HighlightsTitle = styled.span`
 
 export const HighlightsSubTitle = styled.span`
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
   line-height: 130%;
 `;
