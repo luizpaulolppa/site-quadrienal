@@ -235,7 +235,7 @@ const EversonBraga: React.FC = () => {
 
         <HighlightsDataText>
           Podemos confirmá-la através do crescimento de{" "}
-          <span className="green">24,58% </span>
+          <span className="green">24,59% </span>
           nos dízimos e <span className="blue">15,86%</span> nas ofertas
         </HighlightsDataText>
 

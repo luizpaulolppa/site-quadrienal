@@ -554,7 +554,7 @@ const RogerioGurniak: React.FC = () => {
         <S.LabelContainer>
           <div>
             <img src={diagonalArrowBlue} alt="Seta na diagonal azul" />
-            <span>*Aguardando dados*</span>
+            <span>Dr. Romário</span>
           </div>
         </S.LabelContainer>
         <br />
