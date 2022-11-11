@@ -171,8 +171,6 @@ const FabianaNowack: React.FC = () => {
       <div id="start_fade1"></div>
       <S.GreenBox>
         <br />
-        <br />
-        <br />
         <FadeIn id="fade1" duration="3s" delay="0.2s">
           Conheça a estrutura educacional das 9 unidades escolares que compõe a
           Educação Adventista na ACSR:
@@ -181,7 +179,6 @@ const FabianaNowack: React.FC = () => {
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
-        <br />
         <br />
       </S.GreenBox>
       <S.ContainerData>
@@ -282,11 +279,15 @@ const FabianaNowack: React.FC = () => {
           <S.BoxFinancialBlue>R$ 5.382.722,00*</S.BoxFinancialBlue>
           <br />
           <br />
-          <S.HighlightsSubTitle>Resultado Financeiro</S.HighlightsSubTitle>
+          <S.HighlightsSubTitle>Inadimplência (%)</S.HighlightsSubTitle>
           <br />
           <br />
           <img src={inadimplencia} alt="" />
           <span>*Dados de setembro/22</span>
+          <br />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Investimentos Gerais</S.HighlightsSubTitle>
           <br />
           <br />
           <strong>2018</strong>
@@ -312,6 +313,7 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksTitle>Filantropia</S.ThanksTitle>
+          <br />
           <br />
           <S.ThanksText>
             É uma concessão governamental à Instituição Adventista de Educação.
