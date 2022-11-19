@@ -523,3 +523,12 @@ export const TotalRegiao = styled.div`
 `
 
 export const FormerReligionSubTitle = styled.strong``
+
+export const CenterImageBatismo = styled.div`
+  display: flex;
+  justify-content: center;
+  
+  img {
+    max-width: 250;
+  }
+`;

@@ -88,7 +88,7 @@ const RogerioGurniak: React.FC = () => {
       arrowClosed: arrowTopSVG,
     },
     {
-      title: "Dicipular",
+      title: "Discipular",
       description:
         "O discipulado é a razão de qualquer área da igreja, e neste departamento não é diferente. Por isso, realiza um trabalho que envolve mais pessoas no ministério, por metas traçadas dentro de uma liderança em rede. Desta forma, um distrital de Secretaria tem uma liderança discipuladora sobre os secretários de cada congregação do distrito pastoral.",
       isOpen: true,
@@ -220,11 +220,12 @@ const RogerioGurniak: React.FC = () => {
                 <img src={obj.iconClosed} alt="informar" />
               )}
               <p>{obj.title}</p>
-              {obj.isOpen ? (
+              <span></span>
+              {/* {obj.isOpen ? (
                 <img src={obj.arrowOpened} alt="" className="arrow" />
               ) : (
                 <img src={obj.arrowClosed} alt="" className="arrow" />
-              )}
+              )} */}
             </S.AccordionHeader>
             <S.AccordionBody isOpen={obj.isOpen}>
               <p>{obj.description}</p>
@@ -462,7 +463,7 @@ const RogerioGurniak: React.FC = () => {
         <img src={congregations} alt="Congregações" />
         <br />
         <br />
-        <S.FormerReligionTitle>Secretárias Nota 1000</S.FormerReligionTitle>
+        <S.FormerReligionTitle>Secretária Nota 1000</S.FormerReligionTitle>
         <br />
         <br />
         <img
@@ -539,7 +540,7 @@ const RogerioGurniak: React.FC = () => {
           </div>
           <div>
             <img src={diagonalArrowYellow} alt="Seta na diagonal amarela" />
-            <span>Rio Branco-Caxias</span>
+            <span>Rio Branco - Caxias</span>
           </div>
           <div>
             <img src={diagonalArrowYellow} alt="Seta na diagonal amarela" />
@@ -809,18 +810,22 @@ const RogerioGurniak: React.FC = () => {
         <br />
         <S.HighlightsText>
           Atualmente, existe no CVS de Caxias do Sul um grupo organizado, que já
-          levou ao batismo cerca de 55 pessoas:
+          levou ao batismo cerca de 58 pessoas:
         </S.HighlightsText>
         <br />
-        <img src={batismos001} alt="" />
+        <S.CenterImageBatismo>
+          <img src={batismos001} alt="" />
+        </S.CenterImageBatismo>
         <br />
         <S.HighlightsText>
           O CVS de Porto Alegre participou no plantio de duas novas
           congregações, Higienópolis e Jardim Lindoia. Neste momento, há uma
-          congregação no próprio CVS, que levou ao batismo 58 pessoas:
+          congregação no próprio CVS, que levou ao batismo 74 pessoas:
         </S.HighlightsText>
         <br />
-        <img src={batismos002} alt="" />
+        <S.CenterImageBatismo>
+          <img src={batismos002} alt="" />
+        </S.CenterImageBatismo>
         <br />
         <br />
         <br />
