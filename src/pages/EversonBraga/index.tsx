@@ -141,7 +141,7 @@ const EversonBraga: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
