@@ -7,6 +7,7 @@ import batismo3 from "../../assets/samara-zabel/batismo-3.svg";
 import batismo4 from "../../assets/samara-zabel/batismo-4.svg";
 import batismo5 from "../../assets/samara-zabel/batismo-5.svg";
 import batismo6 from "../../assets/samara-zabel/batismo-6.svg";
+import adole from "../../assets/samara-zabel/adole.png";
 
 import image1 from "../../assets/samara-zabel/image1.png";
 import image2 from "../../assets/samara-zabel/image2.png";
@@ -121,7 +122,7 @@ const SamaraZabel: React.FC = () => {
           </TextCapitularContainer>
           <Text>
             que haviam de ser herdeiros de Sua graça e súditos do Seu reino, e
-            alguns dos quais se tornariam mártires por amor dEle”
+            alguns dos quais se tornariam mártires por amor dEle”.
             <br />
             <br />
             (Ellen G. White, O Desejado de Todas as Nações, p. 515, 516).
@@ -131,7 +132,7 @@ const SamaraZabel: React.FC = () => {
         </TextContainer>
       </TitleContainer>
       <HighlightsContainer>
-        <HighlightsText className="italic-block">
+        <HighlightsText>
           Trabalhar com crianças requer a plena consciência de que estamos não
           só influenciando vidas, mas ajudando a formá-las.
         </HighlightsText>
@@ -159,17 +160,17 @@ const SamaraZabel: React.FC = () => {
               4 Escolas de Pais "Tudo Começa em Casa"
             </HighlightHead>
             <HighlightBody className="small">Adolescentes Participando do Concurso</HighlightBody> 
-            <HighlightBody>
+            <HighlightBody style={{ marginTop: '-30px' }}>
               “BEP Teen - Bom de
               Espírito de Profecia”
             </HighlightBody>
           </HighlightContainer>
           <HighlightContainer>
             <HighlightHead>
-              82 Escolas Cristã de Férias em Parceria com os Calebs
+              82 Escolas Cristãs de Férias em Parceria com os Calebes
             </HighlightHead>
             <HighlightBody className="small">Adolescentes e Juvenis Participando do</HighlightBody> 
-            <HighlightBody>
+            <HighlightBody style={{ marginTop: '-30px' }}>
               "Concurso de Oratória"
             </HighlightBody>
           </HighlightContainer>
@@ -180,9 +181,6 @@ const SamaraZabel: React.FC = () => {
             </HighlightBody>
           </HighlightContainer>
           <HighlightContainer>
-            <HighlightHead>
-              Escola Sabatina na Pandemia Online para Todas as Crianças
-            </HighlightHead>
             <HighlightBody>
               Vídeos para Adoração Infantil nos Cultos de Quarta e Domingo
             </HighlightBody>
@@ -260,6 +258,8 @@ const SamaraZabel: React.FC = () => {
           <ReportYearRedAdoletche>6 batismos</ReportYearRedAdoletche>
         </HighlightsText>
         <br />
+        <img src={adole} style={{ width: '100%', height: '216px' }} alt="" />
+        <br />
         <br />
         <HighlightsTitle>Trimestrais</HighlightsTitle>
         <HighlightsText>
@@ -302,33 +302,33 @@ const SamaraZabel: React.FC = () => {
         <br />
         <br />
         <ThanksText>
-          A Deus primeiramente que olha com amor eterno e acredita que crianças,
+          A Deus primeiramente, que olha com amor eterno e acredita que crianças,
           juvenis e adolescentes têm muito a fazer e contribuir para a
           finalização de Sua Obra.
           <br />
           <br />
-          A minha família, em especial meu marido Gerson Zabel que sempre me
+          À minha família, em especial meu marido Gerson Zabel, que sempre me
           apoiou e esteve ao meu lado em todos os momentos.
           <br />
           <br />
-          A Administração da ACSR que não mede esforços para que os objetivos
+          À Administração da ACSR que não mede esforços para que os objetivos
           desse departamento sejam alcançados.
           <br />
           <br />
-          A USB na pessoa da Prof. Júlia pelo apoio incondicional e orientações
+          À USB na pessoa da professora Júlia Cardoso pelo apoio incondicional e orientações
           inspiradoras.
           <br />
           <br />
-          Ao Marcus e Daiana Azevedo por viver intensamente o Ministério do
-          Adolescente junto a ACSR.
+          Ao Marcus e Daiana Azevedo por viverem intensamente o Ministério do
+          Adolescente junto à ACSR.
           <br />
           <br />
           Aos coordenadores e professores que são fieis, incansáveis, pacientes
           e perseverantes no serviço de levar crianças, juvenis e adolescentes
-          rumo a Canaã Celestial.
+          rumo à Canaã Celestial.
           <br />
           <br />
-          A minha secretária Vitória por seu compromisso e dedicação nestes ministérios, 
+          À minha secretária Vitória por seu compromisso e dedicação nestes ministérios, 
           juntamente com as secretárias anteriores Jéssica Contri e Rosângela Alves.
           <br />
           <br />

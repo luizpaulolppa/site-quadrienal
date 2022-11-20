@@ -169,7 +169,7 @@ const PauloAguiar: React.FC = () => {
           de ver pessoas redimidas, eternamente salvas, eis a recompensa de todos os que 
           assentam os pés nas pegadas dAquele que disse: 'Segue-Me'.”
         <br />  <br />
-          O Desejado de todas as nações, p. 366
+          (Ellen G. White, O Desejado de Todas as Nações, p.366)
         <br />
         <br />
           Ser um mordomo fiel de Deus, implica viver e administrar a nossa vida, 
@@ -183,7 +183,7 @@ const PauloAguiar: React.FC = () => {
         <HighlightsSubTitle>Projeto "Primeiro Deus - 10 dias de oração”</HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Realizado a cada ano em todas as igrejas da ACSR
+          Realizado a cada ano em todas as igrejas da ACSR.
         </HighlightsText>
         <br />
         <br />
@@ -207,7 +207,7 @@ const PauloAguiar: React.FC = () => {
         <HighlightsSubTitle>Treinamentos para as professoras nas trimestrais</HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Realizado a cada ano em todas as igrejas da ACSR
+          Foi realizado em 2022 para fortalecer a mordomia cristã das novas gerações.
         </HighlightsText>
         <br />
         <img src={image5} alt="" />
@@ -242,12 +242,12 @@ const PauloAguiar: React.FC = () => {
         <br />
         <FadeIn id="fade2" duration="3s" delay="0.2s">
           "Uma família bem ordenada, bem disciplinada, terá poderosa influência
-          para o bem"
+          para o bem".
         </FadeIn>
         <br />
         <br />
         <span className="footer">
-          (Ellen G. White, Beneficência Social, p.235).
+          (Ellen G. White, Beneficência Social, p.235)
         </span>
         <br />
         <br />
@@ -346,23 +346,23 @@ const PauloAguiar: React.FC = () => {
         <br />
         <br />
         <ThanksText>
-          Agradeço a Deus o doador de toda a vida pelo chamado a missão e privilégio 
-          de servir na Obra do Senhor. Agradeço a minha amada esposa Karina Aguiar 
+          Agradeço a Deus, o doador de toda a vida, pelo chamado a missão e privilégio 
+          de servir na Obra do Senhor. Agradeço à minha amada esposa Karina Aguiar 
           pela parceria, apoio, dedicação e amor, sem ela nada disso seria possível. 
           Aos meus filhos Lukas e Júlia pelo carinho, amor e por sempre me colocarem “pra cima”, 
           vocês são meu orgulho, meu presente e minha alegria.  
           E não posso esquecer dos meus pais Deniclei (Dino) e Maria de Lurdes (Lú) 
-          por terem colocado no meu coração o amor a Cristo, a Igreja e a Missão. 
+          por terem colocado no meu coração o amor a Cristo, à Igreja e à Missão. 
           <br />
           <br />
-          Obrigado a administração do campo da ACSR por nos dar toda a estrutura para 
+          Obrigado à administração do campo da ACSR por nos dar toda a estrutura para 
           realizar nosso trabalho a cada dia. Grato aos meus colegas distritais e departamentais, 
-          sobretudo ao Pr. Rogério Gurniak, Pr. Elton Jr. e Pr. João Lorini que respectivamente 
+          sobretudo aos pastores Rogério Gurniak, Elton Júnior e João Lorini que, respectivamente,
           lideraram as áreas de Mordomia Cristã, Ministério da Família e ASA de 2019 a 2021 e 
           fizeram um excelente trabalho. 
           <br />
           <br />
-          E por fim, muito obrigado a igreja de Cristo, aos nossos líderes e membros que 
+          Por fim, muito obrigado à igreja de Cristo, aos nossos líderes e membros que 
           tornam todos os sonhos, trabalhos e realizações possíveis através da dedicação 
           pessoal e da presença do Espírito Santo em suas vidas.  
           <br />

@@ -132,17 +132,17 @@ const MarceloDadamo: React.FC = () => {
             </Text>
           </TextCapitularContainer>
           <Text>
-            povos os seus feitos.”
+            povos os seus feitos”.
             <br />
             <br />
-            (Sl 105:1).
+            (Sl 105:1)
             <br />
             <br />
             “Avante! Obedeçamos à ordem, […] Deus pede um contínuo progresso na
-            difusão de luz […] Avançai”
+            difusão de luz […] Avançai”.
             <br />
             <br />
-            (Ellen G. White, Serviço Cristão, p. 103).
+            (Ellen G. White, Serviço Cristão, p. 103)
           </Text>
           <br />
         </TextContainer>
@@ -343,8 +343,7 @@ const MarceloDadamo: React.FC = () => {
           <br />
           Ao relatar o que o Senhor tem feito por Sua igreja no território da
           ACSR, podemos afirmar: “Graças te rendemos, ó Deus, graças te
-          rendemos! Invocamos o teu Nome, e declaramos as Tuas maravilhas.” Sal
-          75:1
+          rendemos! Invocamos o teu Nome, e declaramos as Tuas maravilhas.” (Sl 75:1)
           <br />
           <br />
         </ThanksText>

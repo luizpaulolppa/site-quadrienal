@@ -113,7 +113,7 @@ const DouglasSilva: React.FC = () => {
             receberem Sua Palavra no coração e lhe obedecerem na vida. Está
             constantemente procurando atraí-los a Si, a Fonte de toda sabedoria,
             bondade, pureza e verdade. A mente que se ocupa com temas elevados é
-            enobrecida”
+            enobrecida”.
             <br />
             <br />
             (Ellen G. White, Mensagens aos Jovens, p. 56).
@@ -134,7 +134,7 @@ const DouglasSilva: React.FC = () => {
         <HighlightsTitle>Destaques</HighlightsTitle>
         <br />
         <HighlightsText>
-          O Ministério Jovem representa o trabalho de centenas de sociedades de
+          O Ministério Jovem representa o trabalho de centenas de sociedades
           jovens comprometidas com o Senhor Jesus Cristo. Na grande maioria das
           congregações da ACSR, os jovens se organizam para apoiar o ministério
           da igreja de Deus nesta terra. A energia, a força e a disposição da
@@ -201,7 +201,7 @@ const DouglasSilva: React.FC = () => {
         <br />
         <HighlightsTitle>CRM</HighlightsTitle>
         <br />
-        <img src={image1} alt="douglasImg1" />
+        <img src={image1} style={{ width: '229px', height: '424px', margin: 'auto' }} alt="douglasImg1" />
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Save One</HighlightsTitle>
@@ -245,7 +245,7 @@ const DouglasSilva: React.FC = () => {
         <br />
         <HighlightsTitle>Calebes</HighlightsTitle>
         <br />
-        <img src={calebes} alt="calebes" width="300px" />
+        <img src={calebes} alt="calebes" style={{ width: '229px', height: '337px', margin: 'auto' }}/>
         <br />
         <br />
         <p>
@@ -553,7 +553,7 @@ const DouglasSilva: React.FC = () => {
         <br />
         <p>(Assessoria de Imprensa ACSR)</p>
         <br />
-        <img src={image8} alt="producoes" width="300px" />
+        <img src={image8} alt="producoes" style={{ width: '229px', height: '427px', margin: 'auto' }} />
         <br />
       </HighlightsContainer>
       <HighlightsContainer>
@@ -650,11 +650,11 @@ const DouglasSilva: React.FC = () => {
           tão inspiradora e comprometida!
           <br />
           <br />
-          Quero agradecer às secretárias do Ministério Jovem, vocês são grandes
-          no que fazem! No último quadriênio, contamos com todo empenho e
-          dedicação da Fernanda (2019 e 2020) e da Vitória (2021 e 2022). Que a
-          vida e o ministério de vocês continuem sendo uma bênção como foi até
-          aqui! Obrigado!
+          Quero agradecer às secretárias do Ministério Jovem, vocês são grandes no que 
+          fazem! No último quadriênio, contamos com todo empenho e dedicação da Fernanda 
+          (2019 e 2020) e da Vitória (2021 e 2022). 
+          Que a vida e o ministério de vocês continuem sendo uma bênção como foi 
+          até aqui! Obrigado!
           <br />
           <br />
           Agradeço aos colegas departamentais que passaram por estas pastas

@@ -110,7 +110,7 @@ const RosinhaOliveira: React.FC = () => {
           <Text>
             suas faculdades com mais alto proveito. […] Quem pode representar a
             verdade e o exemplo de Cristo melhor que as mulheres cristãs que
-            estão em sua vida praticando a verdade?”
+            estão em sua vida praticando a verdade?”.
             <br />
             <br />
             (Ellen G. White, Evangelismo, p. 369).

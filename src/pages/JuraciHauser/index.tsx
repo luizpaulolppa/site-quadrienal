@@ -121,10 +121,10 @@ const JuraciHauser: React.FC = () => {
           <Text>
             e crentes a Seus pés. Mais de mil serão convertidos em um dia, a
             maioria dos quais atribuirá suas primeiras convicções à leitura de
-            nossas publicações”
+            nossas publicações”.
             <br />
             <br />
-            (Ellen G. White, The Review and Herald, 10/11/1885).
+            (Ellen G. White, The Review and Herald, 10/11/1885)
           </Text>
           <br />
           <br />
@@ -213,7 +213,7 @@ const JuraciHauser: React.FC = () => {
         </HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Campanha de Colportagem no período letivo para estudantes que terminam
+          Campanha de Colportagem no período letivo para estudantes que terminam o 
           Ensino Médio e querem ir para uma Instituição de Ensino Adventista
           fazer uma graduação, ou outro curso.
         </HighlightsText>
@@ -340,7 +340,7 @@ const JuraciHauser: React.FC = () => {
           mensagem angélica, como o braço ao corpo; mas o braço não pode tomar o
           lugar do corpo. A proclamação da mensagem do terceiro anjo, dos
           mandamentos de Deus e do testemunho de Jesus, é o tema principal de
-          nossa obra”
+          nossa obra”.
         </FadeIn>
         <br />
         <br />

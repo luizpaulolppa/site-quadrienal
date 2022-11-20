@@ -110,13 +110,13 @@ const JoaoLorini: React.FC = () => {
           <TextCapitularContainer>
             <FirstLetter>“I</FirstLetter>
             <Text>
-              ndo, portanto, façam discípulos de todas as nações, 
-              batizando-os em nome do Pai, e do Filho e
+              de, portanto, fazei discípulos de todas as nações, batizando-os em 
+              nome do Pai, e do Filho, e
             </Text>
           </TextCapitularContainer>
           <Text>
-            do Espírito Santo; ensinando-os a guardar todas as coisas que vos tenho ordenado. 
-            E eis que estou convosco todos os dias até a consumação do século.” 
+            do Espírito Santo; ensinando-os a guardar todas as coisas que vos tenho 
+            ordenado. E eis que estou convosco todos os dias até à consumação do século.” 
             <br />
             <br />
             <Italic>(Mt 28:19, 20).</Italic>
@@ -132,7 +132,7 @@ const JoaoLorini: React.FC = () => {
         <HighlightsText>
           A nossa grande missão é fazer discípulos. Sonhamos, oramos e
           trabalhamos para termos uma igreja envolvida, para chegarmos ao sonho
-          de ser <strong>Cada Um Salvando Um</strong>. Para isso, trabalhamos através da Roda do
+          de ser <strong>Cada Um Salvando Um</strong>. Para isso, atuamos através da Roda do
           Discipulado. Queremos a maioria da igreja da ACSR:
         </HighlightsText>
         <br />
@@ -152,7 +152,7 @@ const JoaoLorini: React.FC = () => {
               2.
             </span>
             <span style={{ fontWeight: '400', fontSize: '16px' }}>
-            Se conectando aos seus interessados intencionalmente para fazer deles novos discípulos por meio de estudos bíblicos 
+            Conectando-se aos seus interessados intencionalmente para fazer deles novos discípulos por meio de estudos bíblicos 
             (FAZEI DISCÍPULOS).
             </span>
           </Badge>
@@ -183,8 +183,6 @@ const JoaoLorini: React.FC = () => {
         <br />
         <ThanksTitle>Destaques</ThanksTitle>
         <br />
-        <br />
-        <HighlightsSubTitle>CRM</HighlightsSubTitle>
         <br />
         <img src={image1} alt="" />
         <br />
@@ -285,7 +283,7 @@ const JoaoLorini: React.FC = () => {
           de duplas a cada ano:
         </ThanksText>
         <br />
-        <img src={image15} alt="" />
+        <img src={image15} style={{ width: '229px', height: '374px', margin: 'auto' }} alt="" />
         <br />
         <img src={image16} alt="" />
         <br />
@@ -486,9 +484,11 @@ const JoaoLorini: React.FC = () => {
           <br />
           10. Cachoeirinha
           <br />
+          <br />
+          <br />
         </ThanksText>
         <ThanksText>
-          Batismos por influência da TV, rádio, web e equipes Novo Tempo:
+          <strong>Batismos por influência da TV, rádio, web e equipes Novo Tempo:</ strong>
         </ThanksText>
         <br />
         <img src={image24} alt="" />
@@ -504,6 +504,10 @@ const JoaoLorini: React.FC = () => {
           membros como cooperadores de Deus.
         </ThanksText>
         <br />
+        <br />
+        <ThanksText>
+          <strong>Roda do Discipulado</ strong>
+        </ThanksText>
         <br />
         <img src={image30} alt="" />
         <br />
@@ -530,7 +534,7 @@ const JoaoLorini: React.FC = () => {
         Seguem os números de Escolas Sabatinas ativas deste quadriênio:
         </ThanksText>
         <br />
-        <ThanksText>* Dados até 1o trimestre/2022.</ThanksText>
+        <ThanksText>* Dados até 3º trimestre/2022.</ThanksText>
         <br />
         <img src={image38} alt="" />
         <br />
@@ -546,6 +550,8 @@ const JoaoLorini: React.FC = () => {
         <br />
         <img src={image40} alt="" />
         <br />
+        <br />
+        <HighlightsSubTitle><strong>Associação Ministerial</strong></HighlightsSubTitle>
         <br />
         <ThanksText>
           Na Igreja Adventista do Sétimo Dia, a Associação Ministerial é formada
@@ -583,28 +589,28 @@ const JoaoLorini: React.FC = () => {
         <br />
         <br />
         <ThanksText>
-          Agradeço em primeiro lugar a Deus pelo chamado ao Ministério 
-          e por ter me guiado até aqui. Agradeço a minha esposa Bianca e 
-          aos meus filhos Emily e Henrique por sempre apoiarem de forma 
-          incondicional meu Ministério, colocando a Deus em primeiro. 
-          Agradeço minha mãe Lourdes Lorini por ter colocado em meu coração 
-          desde a infância o temor do Senhor e por ter sido fundamental 
+          Agradeço, em primeiro lugar, a Deus pelo chamado ao Ministério 
+          e por ter me guiado até aqui. Agradeço à minha esposa, Bianca Lorini e 
+          aos meus filhos, Emily e Henrique, por sempre apoiarem de forma 
+          incondicional meu Ministério, colocando a Deus em primeiro lugar. 
+          Agradeço à minha mãe, Lourdes Lorini, por ter colocado em meu coração,
+          desde a infância, o temor do Senhor e por ter sido fundamental 
           para que me formasse um pastor. 
           <br />
           <br />
-          Grato também sou as minhas secretárias nesse quadriênio: 
+          Grato também sou às minhas secretárias nesse quadriênio: 
           Stéphany Claro, Keila Moreles, Andressa Cruz, Ellen Silva e 
           Rosângela Borges. Além delas, grato sou à Marissol Pasqualetto 
           que trabalhou como secretária para o relatório da Escola Sabatina. 
           Agradeço aos demais familiares e amigos por fazerem parte deste 
           Ministério. Nossa gratidão e reconhecimento pelo trabalho de meu 
-          antecessor na área Ministerial, Pr. Rogério Gurniak. Gratidão também ao 
-          Pr. Juscelino Ferreira que atuou durante o quadriênio como coordenador 
+          antecessor na área Ministerial, pastor Rogério Gurniak. Gratidão também ao 
+          pastor Juscelino Ferreira que atuou durante o quadriênio como coordenador 
           do Ministério Novo Tempo com resultados fantásticos.
           <br />
           <br />
-          Também agradeço aos líderes da USB, Pr. Fabio Correa como líder 
-          MIPES e Pr. Elieser Vargas como líder Ministerial. 
+          Também agradeço aos líderes da USB, pastor Fabio Correa como líder 
+          MIPES e pastor Elieser Vargas como líder Ministerial. 
           Agradeço à Administração da ACSR pela confiança e apoio sem medida. 
           Deixo aqui igualmente meu apreço e gratidão aos colegas Departamentais, 
           na ACSR trabalhamos como uma família. 
