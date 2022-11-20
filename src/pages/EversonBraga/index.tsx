@@ -4,7 +4,7 @@ import everson from "../../assets/everson/everson-without-back.jpg";
 import redArrowDown from "../../assets/seta-para-baixo-red.png";
 import yellowArrowDown from "../../assets/seta-para-baixo-yellow.png";
 import greenArrow from "../../assets/everson/arrow.png";
-import image1 from "../../assets/everson/image-1.jpg";
+import image1 from "../../assets/everson/image-1.png";
 import image2 from "../../assets/everson/image-2.png";
 import image3 from "../../assets/everson/image-3.png";
 import image4 from "../../assets/everson/image-4.png";
