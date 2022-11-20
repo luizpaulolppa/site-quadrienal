@@ -54,9 +54,9 @@ const JesseSantos: React.FC = () => {
   const navigate = useNavigate();
   const [openMenu, setOpenMenu] = useState(false);
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function linkToDepartmentsSection() {
     navigate("/?departamentos=true");
