@@ -93,7 +93,7 @@ const FabianaNowack: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
@@ -159,7 +159,7 @@ const FabianaNowack: React.FC = () => {
             como o Universo; uma educação que não se poderá completar nesta
             vida, mas que se prolongará na vindoura; educação que garante ao
             estudante eficiente sua promoção da escola preparatória da Terra
-            para o curso superior – a escola celestial”
+            para o curso superior – a escola celestial.”
             <br />
             <br />
             (Ellen G. White, Educação, p. 9).
@@ -171,17 +171,14 @@ const FabianaNowack: React.FC = () => {
       <div id="start_fade1"></div>
       <S.GreenBox>
         <br />
-        <br />
-        <br />
         <FadeIn id="fade1" duration="3s" delay="0.2s">
-          Conheça a estrutura educacional das 9 unidades escolares que compõe a
+          Conheça a estrutura educacional das 9 unidades escolares que compõem a
           Educação Adventista na ACSR:
         </FadeIn>
         <br />
         <div>
           <img src={arrowDown} alt="Down" />
         </div>
-        <br />
         <br />
       </S.GreenBox>
       <S.ContainerData>
@@ -280,13 +277,18 @@ const FabianaNowack: React.FC = () => {
           <br />
           <strong>2022</strong>
           <S.BoxFinancialBlue>R$ 5.382.722,00*</S.BoxFinancialBlue>
+          *Valor agosto/22
           <br />
           <br />
-          <S.HighlightsSubTitle>Resultado Financeiro</S.HighlightsSubTitle>
+          <S.HighlightsSubTitle>Inadimplência (%)</S.HighlightsSubTitle>
           <br />
           <br />
           <img src={inadimplencia} alt="" />
           <span>*Dados de setembro/22</span>
+          <br />
+          <br />
+          <br />
+          <S.HighlightsSubTitle>Investimentos Gerais</S.HighlightsSubTitle>
           <br />
           <br />
           <strong>2018</strong>
@@ -313,13 +315,14 @@ const FabianaNowack: React.FC = () => {
           <br />
           <S.ThanksTitle>Filantropia</S.ThanksTitle>
           <br />
+          <br />
           <S.ThanksText>
             É uma concessão governamental à Instituição Adventista de Educação.
             A filantropia é regida por legislação nacional própria que visa a
-            concessão de bolsas de estudos para famílias que se enquadram no
-            perfil sócio-econômico de acordo com os critérios são apresentados
-            no Edital de Filantropia, divulgado em cada escola, no período de
-            matrículas escolares. Atendemos o seguinte, nos últimos anos:
+            cessão de bolsas de estudos para famílias que se enquadram no perfil
+            socioeconômico de acordo com os critérios apresentados no Edital de
+            Filantropia, divulgado em cada escola, no período de matrículas
+            escolares. Atendemos o seguinte, nos últimos anos:
           </S.ThanksText>
           <br />
           <br />
@@ -381,8 +384,8 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            Em 2021, houve a formatura a 1º turma do Ensino Médio do Colégio
-            Adventista de Cachoeirinha.
+            Em 2021, houve a formatura da primeira turma do Ensino Médio do
+            Colégio Adventista de Cachoeirinha.
           </S.ThanksText>
           <br />
           <br />
@@ -401,7 +404,7 @@ const FabianaNowack: React.FC = () => {
             <S.YellowTopic />
             <p>
               <strong>Dezembro de 2018 -</strong> Alvará de Construção da Escola
-              Adventista de Canoas concedido pela prefeitura.
+              Adventista de Canoas concedido pela prefeitura;
             </p>
           </S.Bullet>
           <br />
@@ -409,7 +412,7 @@ const FabianaNowack: React.FC = () => {
             <S.YellowTopic />
             <p>
               <strong>Janeiro de 2019 -</strong> Início das obras da futura
-              Escola Adventista de Canoas.
+              Escola Adventista de Canoas;
             </p>
           </S.Bullet>
           <br />
@@ -418,7 +421,7 @@ const FabianaNowack: React.FC = () => {
             <p>
               <strong>11 de dezembro de 2019 -</strong> Autorização de
               funcionamento da Escola Adventista de Canoas para Educação
-              Infantil e Ensino Fundamental pelo Conselho Estadual de Educação.
+              Infantil e Ensino Fundamental pelo Conselho Estadual de Educação;
             </p>
           </S.Bullet>
           <br />
@@ -426,7 +429,7 @@ const FabianaNowack: React.FC = () => {
             <S.YellowTopic />
             <p>
               <strong>13 de dezembro de 2019 -</strong> Primeira matrícula
-              realizada na Escola Adventista de Canoas.
+              realizada na Escola Adventista de Canoas;
             </p>
           </S.Bullet>
           <br />
@@ -436,7 +439,8 @@ const FabianaNowack: React.FC = () => {
               <strong>28 de janeiro de 2020 -</strong> Inauguração da Escola,
               numa cerimônia com autoridades denominacionais, municipais e
               estaduais presentes, além dos funcionários, novos professores,
-              pais e alunos.
+              pais e alunos. Neste dia, também comemoramos o alcance de meta de
+              alunos para 2020.
             </p>
           </S.Bullet>
           <br />
@@ -451,8 +455,8 @@ const FabianaNowack: React.FC = () => {
           <S.Bullet>
             <S.YellowTopic />
             <p>
-              <strong>10 de fevereiro de 2020 -</strong> Primeiro dia letivo, do
-              primeiro ano letivo da Escola Adventista de Canoas
+              <strong>10 de fevereiro de 2020 -</strong> Primeiro dia, do
+              primeiro ano letivo da Escola Adventista de Canoas.
             </p>
           </S.Bullet>
           <br />
@@ -517,8 +521,8 @@ const FabianaNowack: React.FC = () => {
           <S.ThanksText>
             Em 2021, houve a aquisição do terreno da esquina ao lado da Escola
             Adventista de Caxias do Sul, com 4 lotes. A nova área conta com
-            1.953,85 metros quadrados. Estamos em fase de elaboração do projeto
-            arquitetônico dos novos prédios para a ampliação da escola.
+            1.953,85 m². Estamos em fase de elaboração do projeto arquitetônico
+            dos novos prédios para a ampliação da escola.
           </S.ThanksText>
           <br />
           <br />
@@ -552,14 +556,14 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            Em 2019, com área de 566,58 m², compreendendo 06 salas de aulas,
+            Em 2019, com área de 566,58 m², compreendendo seis salas de aulas,
             laboratório de Química, Física e Biologia, parque indoor e novas
             salas de atendimento. Reforma para nova Biblioteca e nova sala de
-            professores com área de 265,62 m². Em 2021/2022, mais um prédio de 4
-            andares, para aumento de pátio de alunos, 04 salas de aulas, salas
-            de recursos, sala de reforço, ginásio coberto, quadras esportivas
-            descobertas, sala maker, depósitos banheiros e afins num total de
-            1871,82 m² de área construída.
+            professores com área de 265,62 m². Em 2021/2022, mais um prédio de
+            quatro andares, para aumento de pátio de alunos, quatro salas de
+            aulas, salas de recursos, sala de reforço, ginásio coberto, quadras
+            esportivas descobertas, sala maker, depósitos nos banheiros e afins,
+            num total de 1.871,82 m² de área construída.
           </S.ThanksText>
           <br />
           <br />
@@ -572,10 +576,10 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            Edificou-se o prédio principal da escola, com 3 andares, que conta
-            com: 08 salas administrativas, 9 salas de aula, biblioteca, sala dos
-            professores, laboratório de Química, Física e Biologia compreendendo
-            uma área ampliada de 2665,61 m².
+            Edificou-se o prédio principal da escola, com três andares, que
+            conta com: oito salas administrativas, nove salas de aula,
+            biblioteca, sala dos professores, laboratório de Química, Física e
+            Biologia compreendendo uma área ampliada de 2.665,61 m².
           </S.ThanksText>
           <br />
           <br />
@@ -588,9 +592,9 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            Houve a ampliação de salas de aula (6 novas salas de aula), da área
+            Houve a ampliação de seis novas salas de aula, da área
             administrativa, sala de professores, biblioteca escolar, em um total
-            de área construída de 1000,15 m².
+            de área construída de 1.000,15 m².
           </S.ThanksText>
           <br />
           <br />
@@ -620,8 +624,8 @@ const FabianaNowack: React.FC = () => {
           <S.ThanksText>
             Avaliação institucional educacional da União Sul Brasileira, para as
             escolas adventistas e departamentos de educação e seus índices nas
-            diversas áreas (espiritual, pedagógico, administrativo). Na ocasião
-            recebemos 2 (dois) troféus. A ACSR obteve o 2º lugar na USB – em
+            diversas áreas (espiritual, pedagógico, administrativo). Na ocasião,
+            recebemos dois troféus. A ACSR obteve o 2º lugar na USB – em
             pontuação geral (campo mais saudável) e nas áreas de destaque:
             crescimento em matrículas, crescimento real da receita, captação de
             alunos, batismos e crescimento em alunos adventistas.
@@ -652,8 +656,8 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            A missão de Educar Salvando é nossa razão de existir. Abaixo, vamos
-            ressaltar algumas iniciativas que foram destaque deste quadriênio:
+            A missão de Educar Salvando é nossa razão de existir. Abaixo,
+            algumas iniciativas que foram destaque deste quadriênio:
           </S.ThanksText>
           <br />
           <br />
@@ -674,7 +678,7 @@ const FabianaNowack: React.FC = () => {
             <ul className="itens-igreja">
               <li>Desde agosto 2020</li>
               <li>42 membros</li>
-              <li>Culto dos alunos nas sextas de noite</li>
+              <li>Culto dos alunos nas sextas à noite</li>
               <li>10 batismos em 2021</li>
             </ul>
             <br />
@@ -688,7 +692,7 @@ const FabianaNowack: React.FC = () => {
             <ul className="itens-igreja">
               <li>Desde abril 2021</li>
               <li>28 membros e 8 interessados</li>
-              <li>4 batismos desde que iniciou</li>
+              <li>4 batismos</li>
             </ul>
             <br />
             <img src={igreja2} alt="" />
@@ -701,9 +705,9 @@ const FabianaNowack: React.FC = () => {
             <br />
             <S.ThanksText>
               Nas unidades escolares mantemos várias classes bíblicas com
-              alunos, pais, servidores durante o ano letivo. Confira abaixo
-              quanto trabalhamos, além das aulas de Ensino Religioso, ensinando
-              a Bíblia...
+              alunos, pais e servidores durante o ano letivo. Confira o
+              crescimento a cada ano no número de alunos participando das
+              classes, além das aulas de Ensino Religioso:
             </S.ThanksText>
             <br />
             <br />
@@ -718,10 +722,10 @@ const FabianaNowack: React.FC = () => {
             <br />
             <br />
             <S.ThanksText>
-              Que momento de festa! Nas escolas, eles se repetem sempre com
-              alunos, pais, servidores e amigos que decidem amar e servir ao
-              Senhor para sempre. Tivemos a oportunidade de celebrar os batismos
-              que estão na planilha abaixo...
+              Que momento de festa! Nas escolas, eles se repetem com alunos,
+              pais, servidores e amigos que decidem amar e servir ao Senhor para
+              sempre. Tivemos a oportunidade de celebrar os batismos que estão
+              na planilha abaixo...
             </S.ThanksText>
             <br />
             <br />
@@ -776,8 +780,8 @@ const FabianaNowack: React.FC = () => {
             <br />
             <S.ThanksText>
               As escolas da ACSR estão sempre engajadas nas ações missionárias
-              da IASD... Por isso, planejamos e realizamos o Calebe School a
-              cada ano. Acompanhe os locais que atuamos e fotos...
+              da IASD. Por isso, planejamos e realizamos o Calebe School a cada
+              ano.
             </S.ThanksText>
             <br />
             <br />
@@ -813,7 +817,7 @@ const FabianaNowack: React.FC = () => {
               <S.ThanksText>
                 É uma forma de acolhimento e testemunho que os professores da
                 ACSR realizam ao visitar seus alunos em casa. É com alegria que
-                mantemos uma média de 1500 visitas a alunos, por ano, mesmo
+                mantemos uma média de 1.500 visitas a alunos, por ano, mesmo
                 durante os anos da Pandemia (visitas de portão ou por zoom).
               </S.ThanksText>
               <br />
@@ -828,13 +832,11 @@ const FabianaNowack: React.FC = () => {
               <br />
               <br />
               <S.ThanksText>
-                São assim denominadas as “Capelas” ou “Encontros Culturais”, das
-                Escolas, atualmente. Aqui são reuniões semanais ou quinzenais
-                com todos os alunos da escola para tratar de temas espirituais,
-                sociais, culturais e curriculares para dar apoio e
-                aconselhamento para nossos alunos em todas as fases de
-                desenvolvimento deles. Abaixo o logo que utilizamos nos Celebras
-                e fotos de Celebras nas unidades escolares...
+                São assim denominadas as “Capelas” ou “Encontros Culturais” das
+                Escolas, atualmente. As reuniões são semanais ou quinzenais para
+                tratar de temas espirituais, sociais, culturais e curriculares
+                para dar apoio e aconselhamento para nossos alunos em todas as
+                fases do desenvolvimento deles.
               </S.ThanksText>
               <br />
               <br />
@@ -849,8 +851,8 @@ const FabianaNowack: React.FC = () => {
               <br />
               <S.ThanksText>
                 Realizados anualmente com todos os servidores das unidades
-                escolares e tem como objetivo o fortalecimento da comunhão,
-                relacionamento e missão.
+                escolares tem o objetivo de fortalecer a comunhão, o
+                relacionamento e a missão.
               </S.ThanksText>
               <br />
               <br />
@@ -866,21 +868,18 @@ const FabianaNowack: React.FC = () => {
                 Assim como as igrejas da ACSR, as escolas realizam anualmente a
                 campanha da recolta, visando arrecadar donativos, tais como:
                 roupas, alimentos e valores em espécie. As roupas e alimentos
-                são destinados a comunidade e ASA das igrejas locais. Já as
-                doações em dinheiro, une-se as doações da IASD para compor o
-                Fundo Solidário Educacional que a cada ano, mantém alunos novos
-                carentes, com a anuidade escolar, livros didáticos e kit de
+                são destinados à comunidade e à ASA das igrejas locais. Já as
+                doações em dinheiro, unem-se às doações da IASD para compor o
+                Fundo Solidário Educacional que, a cada ano, mantém alunos novos
+                carentes, com a anuidade acadêmica, livros didáticos e kit de
                 uniforme escolar. Os alunos beneficiários do Fundo Solidário
                 Educacional são distribuídos nas diversas unidades escolares da
-                ACSR. Veja abaixo as bênçãos...
+                ACSR.
               </S.ThanksText>
               <br />
               <br />
             </div>
             <div>
-              <br />
-              <br />
-              <S.HighlightsSubTitle>Recolta nas Escolas</S.HighlightsSubTitle>
               <br />
               <br />
               <strong>2018</strong>
@@ -918,7 +917,9 @@ const FabianaNowack: React.FC = () => {
               </S.HighlightsSubTitle>
               <br />
               <br />
-              <S.ThanksText>Hoje atendem as escolas da ACSR:</S.ThanksText>
+              <S.ThanksText>
+                Atualmente, atendem as escolas da ACSR:
+              </S.ThanksText>
               <br />
               <br />
               <strong>&#8226; Coordenação da Pastoral Escolar</strong>
@@ -928,7 +929,7 @@ const FabianaNowack: React.FC = () => {
               <br />
               <br />
               <S.ThanksText>
-                Assim, temos direção, missão com planejamento e execução muito
+                Assim, temos direção e missão com planejamento e execução muito
                 focados em discipulado dos alunos adventistas e pregação do
                 evangelho.
               </S.ThanksText>
@@ -960,32 +961,32 @@ const FabianaNowack: React.FC = () => {
         </S.RedBoxSubTitle>
         <S.RedBoxText>
           • Filosofia Adventista de Educação (objetivos, missão, visão,
-          história, pressupostos, etc.)
+          história, pressupostos etc.)
           <br />
-          • Ênfases espirituais da Igreja Adventista do 7º dia
+          • Ênfases espirituais da Igreja Adventista do 7º dia;
           <br />
-          • Proposta Pedagógica Adventista
+          • Proposta Pedagógica Adventista;
           <br />
-          • Gerenciamento de Risco e Crise
+          • Gerenciamento de Risco e Crise;
           <br />
-          • Inclusão Escolar
+          • Inclusão Escolar;
           <br />
-          • Saúde e Nutrição
+          • Saúde e Nutrição;
           <br />
-          • Metodologias Ativas
+          • Metodologias Ativas;
           <br />
-          • Descritores
+          • Descritores;
           <br />
-          • TRI – Teoria da Resposta ao Item
+          • TRI – Teoria da Resposta ao Item;
           <br />
-          • BNCC – Base nacional comum curricular
+          • BNCC – Base nacional comum curricular;
           <br />
-          • Ensino e Avaliação Escolar
+          • Ensino e Avaliação Escolar;
           <br />
-          • Consciência Fonológica
+          • Consciência Fonológica;
           <br />
-          • Metodologia de matemática
-          <br />• Dentre outros
+          • Metodologia de matemática;
+          <br />• Dentre outros;
         </S.RedBoxText>
         <S.RedBoxSubTitle>
           Lista de cursos, palestras e treinamentos para equipe de apoio e
@@ -993,42 +994,42 @@ const FabianaNowack: React.FC = () => {
         </S.RedBoxSubTitle>
         <S.RedBoxText>
           • Filosofia Adventista de Educação (objetivos, missão, visão,
-          história, pressupostos, etc.)
+          história, pressupostos etc.)
           <br />
-          • Ênfases espirituais da Igreja Adventista do 7º dia
+          • Ênfases espirituais da Igreja Adventista do 7º dia;
           <br />
-          • Gerenciamento de Risco e Crise
+          • Gerenciamento de Risco e Crise;
           <br />
-          • Inclusão Escolar
+          • Inclusão Escolar;
           <br />
-          • Primeiros Socorros
+          • Primeiros Socorros;
           <br />
-          • Disciplina Escolar Adventista
+          • Disciplina Escolar Adventista;
           <br />
-          • Código de Ética Escolar
+          • Código de Ética Escolar;
           <br />
-          • Segurança do Trabalho
+          • Segurança do Trabalho;
           <br />
-          • Protocolos de limpeza escolar e de produtos de limpeza
+          • Protocolos de limpeza escolar e de produtos de limpeza;
           <br />
-          • Saúde e Nutrição
+          • Saúde e Nutrição;
           <br />
-          • Atendimento ao Cliente
+          • Atendimento ao Cliente;
           <br />
-          • Atendimento Telefônico
+          • Atendimento Telefônico;
           <br />
-          • Negociação financeira
+          • Negociação financeira;
           <br />
-          • Captação e Fidelização de alunos
+          • Captação e Fidelização de alunos;
           <br />
-          • Fluxo de matrículas
+          • Fluxo de matrículas;
           <br />
-          • Treinamentos para uso de sistemas internos (SSE, CFE, SAD apoio,
-          etc.)
+          • Treinamentos para uso de sistemas internos (SSE, CFE, SAD apoio
+          etc.);
           <br />
-          • Protocolos de saúde do COVID-19 para escolas
+          • Protocolos de saúde do COVID-19 para escolas;
           <br />
-          • Dentre outros
+          • Dentre outros.
           <br />
           <br />
         </S.RedBoxText>
@@ -1043,9 +1044,9 @@ const FabianaNowack: React.FC = () => {
             Componente curricular que faz parte do programa de estudos dos
             alunos de nossas escolas da Educação Infantil ao Ensino Médio,
             implantado a partir de 2021, com o objetivo de trabalhar o
-            auto-conhecimento individual, propósito e missão de vida, origem,
-            história e planejamento do futuro de cada aluno, sempre tendo como
-            base a filosofia adventista de educação.
+            autoconhecimento individual, propósito e missão de vida, origem,
+            história e planejamento do futuro, sempre tendo como base a
+            filosofia adventista de educação.
           </S.ThanksText>
           <br />
           <br />
@@ -1059,7 +1060,7 @@ const FabianaNowack: React.FC = () => {
           <S.ThanksText>
             A partir de 2019, implantamos o Programa Bilíngue nos Colégios de
             Cachoeirinha e Marechal Rondon. As turmas da Educação Infantil e até
-            o 2 ano do Ensino Fundamental destas unidades interagem com
+            o 2º ano do Ensino Fundamental destas unidades interagem com
             atividades na Língua Inglesa todos os dias letivos da semana. Assim,
             vamos formando alunos com fluência na Língua Inglesa. O planejamento
             é incluir outras escolas nos próximos anos.
@@ -1074,13 +1075,11 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            Neste quadriênio ampliamos a área das bibliotecas em nossas escolas,
-            reformamos e também atualizamos o acervo delas. Houve ampliação de
-            área física da biblioteca, completa reforma, mobiliários e
-            equipamentos novos, nas seguintes escolas: Santo Ângelo (2019), Ijuí
-            (2020), Cachoeirinha (2019), Cachoeira do Sul (2021), Santa Maria
-            (2021), Canoas (2022). Quanto ao acervo, o quadro abaixo mostra a
-            quantidade total de acervo das 9 bibliotecas escolares:
+            Expansão de área física das bibliotecas, completa reforma,
+            mobiliários, equipamentos novos e acervos atualizados, nas seguintes
+            escolas: Santo ngelo (2019), Ijuí (2020), Cachoeirinha (2019),
+            Cachoeira do Sul (2021), Santa Maria (2021) e Canoas (2022). O total
+            do acervo das nove bibliotecas escolares são:
           </S.ThanksText>
           <br />
           <br />
@@ -1174,22 +1173,22 @@ const FabianaNowack: React.FC = () => {
           <br />
           <br />
           <S.ThanksText>
-            As aulas na Escola Adventista não pararam com a Pandemia do
-            COVID-19, que afetou drasticamente os anos letivos de 2020 e 2021.
-            Foi desenvolvida a plataforma digital, denominada E-class, com
-            exclusividade para atender as aulas remotas durante a pandemia do
-            COVID-19 e assim atender a todos os alunos das escolas da ACSR. A
-            plataforma digital possibilitou a interação entre professores e
-            alunos, explicações de aulas, envio de material de professores para
-            alunos, entrega de tarefas e atividades de alunos para professores,
-            feedback aos alunos das tarefas realizadas, realização de provas e
-            simulados. E tudo isso, ainda fica como banco de dados por dia e por
-            disciplina, para ser consultado e revisto por alunos e pais.
+            As aulas na Escola Adventista não pararam durante a pandemia da
+            Covid-19, que afetou drasticamente os anos letivos de 2020 e 2021. A
+            Educação Adventista desenvolveu a plataforma digital E-class para
+            atender as aulas remotas nesse período e assim manter o ambiente
+            discente e docente para todas as unidades escolares no Brasil,
+            incluindo as escolas da ACSR.
             <br />
             <br />
-            Somente para um acompanhamento, abaixo temos um relatório de
-            fevereiro a início de setembro de 2021, quanto as aulas e atividades
-            do E-class, das 9 escolas da ACSR:
+            E-class possibilitou a interação entre professores e alunos como:
+            explicações de aulas, envio de material escolar para os estudantes,
+            entrega de tarefas e atividades para os professores, feedback das
+            tarefas realizadas, realização de provas e simulados. Este material
+            fica armazenado diariamente, por disciplina, e pode ser acessado por
+            pais, discentes e docentes. Aulas e atividades do E-class das nove
+            unidades escolares da ACRS de fevereiro ao início de setembro de
+            2021:
           </S.ThanksText>
           <br />
           <br />
@@ -1206,30 +1205,30 @@ const FabianaNowack: React.FC = () => {
       <S.DarkBox>
         <S.RedBoxTitle>Assuntos Públicos & Liberdade Religiosa</S.RedBoxTitle>
         <S.RedBoxText>
-          O Departamento de Assuntos Públicos e Liberdade Religiosa é um
-          departamento da Igreja Adventista que trabalha com a promoção, defesa
-          e orientação sobre Liberdade Religiosa para os membros da IASD e da
-          comunidade como um todo, entendendo que esta é uma característica que
-          Deus nos legou na criação e também um direito constitucional
-          brasileiro. Tal departamento surgiu na fase inicial de nossa igreja e
-          tem ações bem delineadas até então.
+          Assuntos Públicos e Liberdade Religiosa é um departamento da Igreja
+          Adventista que trabalha com a promoção, defesa e orientação sobre
+          Liberdade Religiosa para os membros da IASD e da comunidade como um
+          todo, entendendo que esta é uma característica que Deus nos legou na
+          criação e um direito constitucional brasileiro. Tal departamento
+          surgiu na fase inicial de nossa igreja e tem ações bem delineadas até
+          então.
           <br />
           <br />
           Neste quadriênio, trabalhamos com líderes de igrejas e distritais,
           capacitando e orientando a respeito de assuntos práticos quanto a
           defesa da Liberdade Religiosa para os nossos membros em quaisquer
-          áreas da vida civil (escola, faculdade, emprego, concurso, quartel).
-          Também ressaltamos as questões bíblicas, denominacionais, filosóficas,
-          legais que fundamentam a área da Liberdade Religiosa com líderes,
+          áreas da vida civil (escola, faculdade, emprego, concurso ou quartel).
+          Também ressaltamos as questões bíblicas, denominacionais, filosóficas
+          e legais que fundamentam a área da Liberdade Religiosa com líderes,
           pastores, jovens e demais membros.
           <br />
           <br />
           Realizou-se anualmente, o Encontro de Liberdade Religiosa do RS, com
           os líderes das igrejas, anciãos e interessados. Na ocasião, recebemos
-          como oradores o Pastor Hélio Carnassalle (departamental da DSA de
-          Liberdade Religiosa até 2021), Pastor Luis Mário (Departamental da DSA
-          de Liberdade Religiosa a partir de 2022) e o Pr. Rubens Silva
-          (Departamental da USB de Liberdade Religiosa).
+          como oradores o pastor Hélio Carnassalle (Departamental de Liberdade
+          Religiosa na DSA até 2021), pastor Luis Mário (Departamental de
+          Liberdade Religiosa na DSA a partir de 2022) e o pastor Rubens Silva
+          (Departamental de Liberdade Religiosa da USB).
           <br />
           <br />
           <br />
@@ -1246,32 +1245,32 @@ const FabianaNowack: React.FC = () => {
         <br />
         <br />
         <S.ThanksText>
-          Meus agradecimentos pelos 4 anos de trabalho no Departamento de
-          Educação da ACSR, são em primeiro lugar para Deus, pelas maravilhosas
+          Meus agradecimentos pelos quatro anos de trabalho no Departamento de
+          Educação da ACSR são em primeiro lugar para Deus, pelas maravilhosas
           bênçãos recebidas, pela saúde e motivação renovada a cada dia para
-          cumprir a missão. Pela honra de servi-Lo através da Educação
+          cumprir a missão e pela honra de servi-Lo através da Educação
           Adventista.
           <br />
           <br />
-          Agradeço a meu esposo Abraão Vicente por apoio constante, suas
-          orações, as palavras de encorajamento, bem como a toda minha família!
+          Agradeço ao meu esposo, Abraão Vicente pelo apoio constante, suas
+          orações, as palavras de encorajamento, bem como à toda minha família!
           <br />
           <br />
           Também ressalto meu imenso sentimento de gratidão pelos companheiros
-          que servem nas Escolas Adventistas da ACSR: aos diretores, pastores,
+          que servem nas Escolas Adventistas da ACSR: diretores, pastores,
           tesoureiros, coordenadoras pedagógicas, orientadoras educacionais,
           secretários escolares, professores e demais funcionários, bem como aos
-          colegas do Departamento de Educação! Que privilégio poder trabalhar
-          junto para fortalecer a missão da Educação Adventista aqui em nosso
+          colegas do Departamento de Educação! Que privilégio poder trabalharmos
+          juntos para fortalecer a missão da Educação Adventista aqui em nosso
           território.
           <br />
           <br />
-          Ainda, agradeço aos colegas departamentais da ACSR, aos
-          administradores da ACSR, Pr. Marcos Jr, Pr. Rogério Gurniak, Everson
-          Braga, atualmente. Também ao Pr. Elton Alves e Laudecir Mazzo que
-          também administraram o campo em anos anteriores. A administração da
-          USB e toda a equipe do departamento de Educação da USB, especialmente
-          o Pr. Rubens Silva.
+          Agradeço aos colegas departamentais da ACSR, aos administradores da
+          ACSR pastor Marcos Júnior, pastor Rogério Gurniak e Everson Braga.
+          Também ao pastor Elton Alves e Laudecir Mazzo que também administraram
+          o campo em anos anteriores. Finalmente, minha gratidão à administração
+          da USB com toda sua equipe do departamento de Educação, especialmente
+          ao pastor Rubens Silva.
           <br />
           <br />
         </S.ThanksText>

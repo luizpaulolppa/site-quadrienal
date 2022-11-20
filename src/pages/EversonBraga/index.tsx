@@ -56,11 +56,11 @@ import image48 from "../../assets/everson/image-48.png";
 import image49 from "../../assets/everson/image-49.png";
 import image50 from "../../assets/everson/image-50.png";
 import image51 from "../../assets/everson/image-51.png";
-import image52 from "../../assets/everson/image-52.png";
-import image53 from "../../assets/everson/image-53.png";
-import image54 from "../../assets/everson/image-54.png";
-import image55 from "../../assets/everson/image-55.png";
-import image56 from "../../assets/everson/image-56.png";
+import investimentos_2022_1 from "../../assets/everson/investimentos-2022-1.png";
+import investimentos_2022_2 from "../../assets/everson/investimentos-2022-2.png";
+import investimentos_2019 from "../../assets/everson/investimentos-2019.png";
+import investimentos_2020 from "../../assets/everson/investimentos-2020.png";
+import investimentos_2021 from "../../assets/everson/investimentos-2021.png";
 
 import image57 from "../../assets/everson/image-57.png";
 import image58 from "../../assets/everson/image-58.png";
@@ -197,7 +197,7 @@ const EversonBraga: React.FC = () => {
             <FirstLetter>“A</FirstLetter>
             <Text>
               tua fidelidade se estende de geração em geração; fundaste a terra,
-              e ela permanece”
+              e ela permanece.”
               <br />
               <br />
               (Sl 119:90).
@@ -235,7 +235,7 @@ const EversonBraga: React.FC = () => {
 
         <HighlightsDataText>
           Podemos confirmá-la através do crescimento de{" "}
-          <span className="green">24,58% </span>
+          <span className="green">24,59% </span>
           nos dízimos e <span className="blue">15,86%</span> nas ofertas
         </HighlightsDataText>
 
@@ -258,11 +258,11 @@ const EversonBraga: React.FC = () => {
         <br />
         <FadeIn id="fade1" duration="3s" delay="0.2s">
           “O que semeia em abundância, em abundância também ceifará. Deus não é
-          injusto para que Se esqueça do vosso labor, do vosso trabalho de amor”
+          injusto para que Se esqueça do vosso labor, do vosso trabalho de amor.”
         </FadeIn>
         <br />
         <span>
-          (Ellen G. White, <br /> Conselhos sobre Mordomia, p. 58).
+          (Ellen G. White, conselhos sobre Mordomia, p. 58).
         </span>
         <br />
         <br />
@@ -345,6 +345,8 @@ const EversonBraga: React.FC = () => {
         <span className="subtitle">Despesas com Evangelismo</span>
         <br />
         <br />
+        <img src={image9} alt="" />
+        <br />
         <Badge color="#F1403F" style={{ padding: '20px' }}>
           <span style={{ fontWeight: '600', fontSize: '16px' }}>
             Investimento em Evangelismo <br />2019-2022
@@ -352,9 +354,6 @@ const EversonBraga: React.FC = () => {
         </Badge>
         <br />
         <p><strong>R$ 6.802.020,56</strong></p>
-        <br />
-        <br />
-        <img src={image9} alt="" />
         <br />
         <br />
 
@@ -378,8 +377,9 @@ const EversonBraga: React.FC = () => {
         <br />
         <Badge color="#19CD77" style={{ padding: '20px' }}>
           <span style={{ fontWeight: '600', fontSize: '16px' }}>
-            “O dízimo deve ser unicamente dedicado ao sustento do Ministério Evangélico.
-            ” CM, 81
+            “O dízimo [...] deve ser unicamente dedicado ao sustento do Ministério Evangélico.“
+            <br />
+            (Ellen G. White, Conselhos sobre Mordomia, p. 81).
           </span>
         </Badge>
         <br />
@@ -458,7 +458,7 @@ const EversonBraga: React.FC = () => {
         <span style={{ marginBottom: '5px' }}>Rio Branco | Caxias do Sul | 700.000,00</span>
         <span style={{ marginBottom: '5px' }}>Bela União | Santa Maria | 100.000,00</span>
         <span style={{ marginBottom: '5px' }}>Olarias | Canoas | 180.000,00</span>
-        <span style={{ marginBottom: '5px' }}>Bairro Haller | Sto Ângelo | 107.000,00</span>
+        <span style={{ marginBottom: '5px' }}>Bairro Haller | Santo Ângelo | 107.000,00</span>
         <br />
         <img src={image19} style={{ marginBottom: '10px'}} alt="" />
         <img src={image20} style={{ marginBottom: '10px'}} alt="" />
@@ -613,31 +613,31 @@ const EversonBraga: React.FC = () => {
           <span>2019</span>
         </Badge>
         <br />
-        <img src={image52} alt="" />
+        <img src={investimentos_2019} alt="" />
         <br />
         <br />
         <Badge color="#19CD77">
           <span>2020</span>
         </Badge>
         <br />
-        <img src={image53} alt="" />
+        <img src={investimentos_2020} alt="" />
         <br />
         <br />
         <Badge color="#E8D71E">
           <span>2021</span>
         </Badge>
         <br />
-        <img src={image54} alt="" />
+        <img src={investimentos_2021} alt="" />
         <br />
         <br />
         <Badge color="#63B4EF">
           <span>2022 *</span>
         </Badge>
         <br />
-        <img src={image55} alt="" />
+        <img src={investimentos_2022_1} alt="" />
         <br />
         <br />
-        <img src={image56} alt="" />
+        <img src={investimentos_2022_2} alt="" />
         <br />
         <br />
         <Badge color="#F1403F" style={{ padding: '20px', display: 'flex', flexDirection: 'column' }}>
@@ -789,7 +789,7 @@ const EversonBraga: React.FC = () => {
         <br />
         <img src={image98} style={{ marginBottom: '10px'}} alt="" />
         <img src={image99} style={{ marginBottom: '10px'}} alt="" />
-        <br />
+        <strong>TOTAL: R$ 2.208.000,00</strong>
       </BalanceContainer>
       <ThanksContainer>
         <img src={yellowArrowDown} alt="Seta para baixo amarela" />
@@ -821,7 +821,7 @@ const EversonBraga: React.FC = () => {
           <br />
           Não poderia deixar de agradecer ao pastor Laudecir Mazzo por gerenciar com 
           responsabilidade e competência o departamento de Tesouraria e Expansão 
-          Patrimônio nos anos de 2019 a março de 2021.
+          Patrimonial nos anos de 2019 a março de 2021.
           <br />
         </ThanksText>
       </ThanksContainer>

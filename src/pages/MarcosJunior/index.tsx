@@ -82,7 +82,7 @@ const MarcosJunior: React.FC = () => {
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
   if (isOnScreen(counter)) {
-        if (counter.innerHTML === (16842).toLocaleString("pt-BR")) return; 
+        if (counter.innerHTML === (16735).toLocaleString("pt-BR")) return; 
         if (!isRunningMembersCount) {
           startTotalMembersCount();
         }
@@ -122,7 +122,7 @@ const MarcosJunior: React.FC = () => {
 
   function startTotalMembersCount() {
     isRunningMembersCount = true;
-    const totalMembers = 16842;
+    const totalMembers = 16735;
     let counts = setInterval(updated);
     let upto = 16500;
 
@@ -246,7 +246,7 @@ const MarcosJunior: React.FC = () => {
         <img src={crm} alt="CRM" />
       </CrmContainer>
       <span>
-        *Obs.: Em 2019 o cartão de chamada da Escola Sabatina não possuía as 
+        *Obs.: Em 2019, o cartão de chamada da Escola Sabatina não possuía as 
         perguntas da Roda do Discipulado. Em 2022, os dados são do 3º trimestre, 
         quando foram levantados os dados para esta revista.
       </span>
@@ -289,7 +289,7 @@ const MarcosJunior: React.FC = () => {
         <img src={revitalize1} alt="projetoPlante1" />
         <p>Pastores treinados</p>
         <img src={revitalize2} alt="projetoPlante2" />
-        <p>Igrejas Plantadas</p>
+        <p>Igrejas Revitalizadas</p>
         <img src={revitalize3} alt="projetoPlante3" />
         <br />
         <br />
@@ -352,7 +352,7 @@ const MarcosJunior: React.FC = () => {
         </p>
         <br />
         <p>
-          Aos colportores, por nos inspirar a trabalhar pela fé. A todos os
+          Aos colportores, por nos inspirarem a trabalhar pela fé. A todos os
           funcionários da ACRS, da Educação e voluntários que atuam nas igrejas,
           meu reconhecimento pelo empenho e dedicação.
         </p>
