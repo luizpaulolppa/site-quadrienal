@@ -22,6 +22,12 @@ import image6 from "../../assets/douglas-silva/image6.png";
 import image8 from "../../assets/douglas-silva/image8.png";
 import image9 from "../../assets/douglas-silva/image9.png";
 
+import site from "../../assets/douglas-silva/site.svg";
+import facebook from "../../assets/douglas-silva/facebook.svg";
+import instagram from "../../assets/douglas-silva/instagram.svg";
+import youtube from "../../assets/douglas-silva/youtube.svg";
+
+
 import calebes from "../../assets/douglas-silva/calebes.png";
 import universitarios from "../../assets/douglas-silva/universitarios.png";
 import comunicacao from "../../assets/douglas-silva/comunicacao.png";
@@ -568,19 +574,45 @@ const DouglasSilva: React.FC = () => {
         <HighlightsTitle>Canais de Comunicação da ACSR</HighlightsTitle>
         <br />
         <strong className="subtitle">Site</strong>
-        <RedBox>acsr.adventistas.org</RedBox>
+        <div style={{ display: 'flex' }}>
+          <img src={site} alt="" style={{ marginRight: '15px' }} />
+          <RedBox>
+            <a href="http://acsr.adventistas.org/" target="_blank">
+              acsr.adventistas.org
+            </a>
+          </RedBox>
+        </div>
         <br />
         <strong className="subtitle">Redes Sociais</strong>
         <strong>Facebook</strong>
-        <RedBox>@acsr.rs</RedBox>
+        <div style={{ display: 'flex' }}>
+          <img src={facebook} alt="" style={{ marginRight: '15px' }} />
+          <RedBox>
+            <a href="https://www.facebook.com/acsr.rs" target="_blank">
+              @acsr.rs
+            </a>
+          </RedBox>
+        </div>
         <br />
         <strong>Instagram</strong>
-        <RedBox>@adventistasacsr</RedBox>
+        <div style={{ display: 'flex' }}>
+          <img src={instagram} alt="" style={{ marginRight: '15px' }} />
+          <RedBox>
+            <a href="https://www.instagram.com/adventistasacsr/" target="_blank">
+              @adventistasacsr
+            </a>
+          </RedBox>
+        </div>
         <br />
         <strong>YouTube</strong>
-        <RedBox>
-          Adventistas Centro <br /> do Rio Grande do Sul
-        </RedBox>
+        <div style={{ display: 'flex' }}>
+          <img src={youtube} alt="" style={{ marginRight: '15px' }} />
+          <RedBox>
+            <a href="https://www.youtube.com/@AssociacaoCentralRS" target="_blank">
+              Adventistas Centro <br /> do Rio Grande do Sul
+            </a>
+          </RedBox>
+        </div>
         <br />
       </HighlightsContainer>
       <HighlightsContainer>

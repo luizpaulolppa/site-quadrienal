@@ -483,4 +483,9 @@ export const RedBox = styled.div`
   align-items: center;
   padding: 12px;
   color: #ffffff;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 `;
