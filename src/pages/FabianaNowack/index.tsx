@@ -447,14 +447,6 @@ const FabianaNowack: React.FC = () => {
           <S.Bullet>
             <S.YellowTopic />
             <p>
-              Neste dia, também comemoramos o alcance de meta de alunos para
-              2020.
-            </p>
-          </S.Bullet>
-          <br />
-          <S.Bullet>
-            <S.YellowTopic />
-            <p>
               <strong>10 de fevereiro de 2020 -</strong> Primeiro dia, do
               primeiro ano letivo da Escola Adventista de Canoas.
             </p>
@@ -986,7 +978,8 @@ const FabianaNowack: React.FC = () => {
           • Consciência Fonológica;
           <br />
           • Metodologia de matemática;
-          <br />• Dentre outros;
+          <br />
+          • Dentre outros.
         </S.RedBoxText>
         <S.RedBoxSubTitle>
           Lista de cursos, palestras e treinamentos para equipe de apoio e

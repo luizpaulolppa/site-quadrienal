@@ -353,7 +353,7 @@ const MarcosJunior: React.FC = () => {
         <br />
         <p>
           Aos colportores, por nos inspirarem a trabalhar pela fé. A todos os
-          funcionários da ACRS, da Educação e voluntários que atuam nas igrejas,
+          funcionários da ACSR, da Educação e voluntários que atuam nas igrejas,
           meu reconhecimento pelo empenho e dedicação.
         </p>
         <br />

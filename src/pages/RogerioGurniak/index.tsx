@@ -870,7 +870,7 @@ const RogerioGurniak: React.FC = () => {
           secretariado nas igrejas do nosso campo. Aos secretários distritais
           que são um time discipulador formando e capacitando líderes neste
           departamento. Finalmente, grato à Rosângela Barragan e à Marissol
-          Pasqualetto pela dedicação e profissionalismo na Secretaria da ACRS.
+          Pasqualetto pela dedicação e profissionalismo na Secretaria da ACSR.
           <br />
           <br />
           Nossa gratidão e reconhecimento pelo trabalho do pastor Elton Júnior,
