@@ -328,7 +328,7 @@ const SamaraZabel: React.FC = () => {
           rumo à Canaã Celestial.
           <br />
           <br />
-          À minha secretária Vitória por seu compromisso e dedicação nestes ministérios, 
+          À minha secretária Vitória Boeira por seu compromisso e dedicação nestes ministérios, 
           juntamente com as secretárias anteriores Jéssica Contri e Rosângela Alves.
           <br />
           <br />

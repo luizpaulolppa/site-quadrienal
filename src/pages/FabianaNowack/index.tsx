@@ -716,8 +716,7 @@ const FabianaNowack: React.FC = () => {
             <S.ThanksText>
               Que momento de festa! Nas escolas, eles se repetem com alunos,
               pais, servidores e amigos que decidem amar e servir ao Senhor para
-              sempre. Tivemos a oportunidade de celebrar os batismos que estão
-              na planilha abaixo...
+              sempre. Batismos realizados nas escolas adventistas da ACSR:
             </S.ThanksText>
             <br />
             <br />

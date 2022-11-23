@@ -190,7 +190,14 @@ export const CrmContainer = styled.div`
   span {
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 24px; */
+  }
+
+  .italic {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 `;
 
