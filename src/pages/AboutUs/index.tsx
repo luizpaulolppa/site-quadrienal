@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import setaParaBaixo from "../../assets/seta-para-baixo.png";
-import time1 from "../../assets/about-us/time1.png";
-import time2 from "../../assets/about-us/time2.png";
+import time1 from "../../assets/about-us/time1.jpg";
+import time2 from "../../assets/about-us/time2.jpg";
 import pastores1 from "../../assets/about-us/pastores1.png";
 import pastores2 from "../../assets/about-us/pastores2.png";
 import pastores3 from "../../assets/about-us/pastores3.png";
