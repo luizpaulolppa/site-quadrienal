@@ -721,7 +721,6 @@ const FabianaNowack: React.FC = () => {
             <br />
             <br />
             <img src={batismos1} alt="" />
-            <span className="small-text">*Dados até setembro/22</span>
             <br />
             <br />
             <img src={batismos2} alt="" />
