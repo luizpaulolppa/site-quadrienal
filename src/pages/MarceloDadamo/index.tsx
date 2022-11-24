@@ -20,7 +20,7 @@ import impacto7 from "../../assets/marcelo-dadamo/impacto7.png";
 import impacto8 from "../../assets/marcelo-dadamo/impacto8.png";
 import impacto9 from "../../assets/marcelo-dadamo/impacto9.png";
 import impacto10 from "../../assets/marcelo-dadamo/impacto10.png";
-import missao1 from "../../assets/marcelo-dadamo/missao1.png";
+import missao1 from "../../assets/marcelo-dadamo/missao1.jpg";
 import missao2 from "../../assets/marcelo-dadamo/missao2.png";
 import missao3 from "../../assets/marcelo-dadamo/missao3.png";
 import missao4 from "../../assets/marcelo-dadamo/missao4.png";
