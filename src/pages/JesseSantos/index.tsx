@@ -165,7 +165,7 @@ const JesseSantos: React.FC = () => {
         <img src={image5} alt="" />
         <br />
         <br />
-        <HighlightsTitle>Batismos</ HighlightsTitle>
+        <HighlightsTitle>Batismos</HighlightsTitle>
         <br />
         <img src={image9} alt="batismo" />
         <br />
@@ -201,23 +201,23 @@ const JesseSantos: React.FC = () => {
           graça e amor nada seria possível.
           <br />
           <br />
-          À minha esposa Jaqueline Almeida e meus filhos Matheus e Filipe, por
-          serem pilares na minha caminhada e por me amarem e apoiarem
+          À minha esposa Tatiane e minhas filhas, Júlia e Joana, por serem
+          pilares na minha caminhada e por me amarem e apoiarem
           incondicionalmente.
           <br />
           <br />
-          Gratidão à nossa secretária Emilli Silva, que tem sido incansável 
-          frente a esse ministério e a todos que fazem do MDA da ACSR uma realidade 
-          crescente e transformadora. Agradeço também as orientações, conselhos do pastor 
-          Aryel Marques, líder desse ministério para a região sul do Brasil e à 
-          administração da ACSR, pastor Marcos Júnior, pastor Rogério Gurniak e Everson Braga, pelo apoio, 
-          confiança e oportunidade.
+          Gratidão a nossa secretária Emilli Silva, que tem sido incansável
+          frente a esse ministério e a todos que fazem do MDA da ACSR uma
+          realidade crescente e transformadora, agradeço também as orientações,
+          conselhos do pastor Aryel Marques, líder desse ministério para a
+          região sul do Brasil e à administração da ACSR, Pr. Marcos Jr., Pr.
+          Rogério e Everson Braga, pelo apoio, confiança e oportunidade.
           <br />
           <br />
-          Agradeço ao pastor Fray Calderon que atuou no Ministério de Desbravadores 
-          e Aventureiros nos anos 2018 a 2021, e ao pastor Uilialdo Barreto que assumiu no 
-          período de 2021 até maio de 2022. Eles fizeram parte das conquistas e 
-          aprendizados deixando um excelente legado.
+          Agradeço aos pastores Fray Calderon que atuou no Ministério de
+          Desbravadores e Aventureiros nos anos 2018 à 2021 , ao Uilialdo
+          Barreto que assumiu no período de 2021 até maio de 2022, estes fizeram
+          parte das conquistas e aprendizados deixando um excelente legado.
           <br />
           <br />
           Seguimos confiantes na boa mão do nosso líder e Mestre Jesus Cristo!

@@ -27,7 +27,6 @@ import facebook from "../../assets/douglas-silva/facebook.svg";
 import instagram from "../../assets/douglas-silva/instagram.svg";
 import youtube from "../../assets/douglas-silva/youtube.svg";
 
-
 import calebes from "../../assets/douglas-silva/calebes.png";
 import universitarios from "../../assets/douglas-silva/universitarios.png";
 import comunicacao from "../../assets/douglas-silva/comunicacao.png";
@@ -207,12 +206,20 @@ const DouglasSilva: React.FC = () => {
         <br />
         <HighlightsTitle>CRM</HighlightsTitle>
         <br />
-        <img src={image1} style={{ width: '229px', height: '424px', margin: 'auto' }} alt="douglasImg1" />
+        <img
+          src={image1}
+          style={{ width: "229px", height: "424px", margin: "auto" }}
+          alt="douglasImg1"
+        />
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Save One</HighlightsTitle>
         <br />
-        <img src={douglasImg2} style={{ marginBottom: '10px' }} alt="douglasImg1" />
+        <img
+          src={douglasImg2}
+          style={{ marginBottom: "10px" }}
+          alt="douglasImg1"
+        />
         <img src={douglasImg1} alt="douglasImg1" />
         <br />
         <p>
@@ -226,7 +233,7 @@ const DouglasSilva: React.FC = () => {
       <HighlightsContainer>
         <HighlightsTitle>Campori de Jovens</HighlightsTitle>
         <br />
-        <img src={image2} style={{ marginBottom: '10px' }} alt="" />
+        <img src={image2} style={{ marginBottom: "10px" }} alt="" />
         <img src={image3} alt="" />
         <br />
         <p>
@@ -251,7 +258,11 @@ const DouglasSilva: React.FC = () => {
         <br />
         <HighlightsTitle>Calebes</HighlightsTitle>
         <br />
-        <img src={calebes} alt="calebes" style={{ width: '229px', height: '337px', margin: 'auto' }}/>
+        <img
+          src={calebes}
+          alt="calebes"
+          style={{ width: "229px", height: "337px", margin: "auto" }}
+        />
         <br />
         <br />
         <p>
@@ -507,7 +518,9 @@ const DouglasSilva: React.FC = () => {
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Congregações identificadas</HighlightsTitle>
-        <span><strong>2015-2018</strong></span>
+        <span>
+          <strong>2015-2018</strong>
+        </span>
         <br />
         <strong>Logo NT:</strong>
         <p>
@@ -520,7 +533,9 @@ const DouglasSilva: React.FC = () => {
         </p>
         <br />
         <br />
-        <span><strong>2019-2022</strong></span>
+        <span>
+          <strong>2019-2022</strong>
+        </span>
         <br />
         <strong>Logo NT:</strong>
         <p>
@@ -559,7 +574,11 @@ const DouglasSilva: React.FC = () => {
         <br />
         <p>(Assessoria de Imprensa ACSR)</p>
         <br />
-        <img src={image8} alt="producoes" style={{ width: '229px', height: '427px', margin: 'auto' }} />
+        <img
+          src={image8}
+          alt="producoes"
+          style={{ width: "229px", height: "427px", margin: "auto" }}
+        />
         <br />
       </HighlightsContainer>
       <HighlightsContainer>
@@ -567,15 +586,15 @@ const DouglasSilva: React.FC = () => {
         <br />
         <p>(Informes oficiais do campo distribuídos para todas as igrejas)</p>
         <br />
-        <img src={image9} alt="revista" width="300px" />
+        <img src={image9} alt="revista" style={{ width: "229px", height: "427px", margin: "auto" }} />
         <br />
       </HighlightsContainer>
       <HighlightsContainer>
         <HighlightsTitle>Canais de Comunicação da ACSR</HighlightsTitle>
         <br />
         <strong className="subtitle">Site</strong>
-        <div style={{ display: 'flex' }}>
-          <img src={site} alt="" style={{ marginRight: '15px' }} />
+        <div style={{ display: "flex" }}>
+          <img src={site} alt="" style={{ marginRight: "15px" }} />
           <RedBox>
             <a href="http://acsr.adventistas.org/" target="_blank">
               acsr.adventistas.org
@@ -585,8 +604,8 @@ const DouglasSilva: React.FC = () => {
         <br />
         <strong className="subtitle">Redes Sociais</strong>
         <strong>Facebook</strong>
-        <div style={{ display: 'flex' }}>
-          <img src={facebook} alt="" style={{ marginRight: '15px' }} />
+        <div style={{ display: "flex" }}>
+          <img src={facebook} alt="" style={{ marginRight: "15px" }} />
           <RedBox>
             <a href="https://www.facebook.com/acsr.rs" target="_blank">
               @acsr.rs
@@ -595,20 +614,26 @@ const DouglasSilva: React.FC = () => {
         </div>
         <br />
         <strong>Instagram</strong>
-        <div style={{ display: 'flex' }}>
-          <img src={instagram} alt="" style={{ marginRight: '15px' }} />
+        <div style={{ display: "flex" }}>
+          <img src={instagram} alt="" style={{ marginRight: "15px" }} />
           <RedBox>
-            <a href="https://www.instagram.com/adventistasacsr/" target="_blank">
+            <a
+              href="https://www.instagram.com/adventistasacsr/"
+              target="_blank"
+            >
               @adventistasacsr
             </a>
           </RedBox>
         </div>
         <br />
         <strong>YouTube</strong>
-        <div style={{ display: 'flex' }}>
-          <img src={youtube} alt="" style={{ marginRight: '15px' }} />
+        <div style={{ display: "flex" }}>
+          <img src={youtube} alt="" style={{ marginRight: "15px" }} />
           <RedBox>
-            <a href="https://www.youtube.com/@AssociacaoCentralRS" target="_blank">
+            <a
+              href="https://www.youtube.com/@AssociacaoCentralRS"
+              target="_blank"
+            >
               Adventistas Centro <br /> do Rio Grande do Sul
             </a>
           </RedBox>
@@ -682,11 +707,11 @@ const DouglasSilva: React.FC = () => {
           tão inspiradora e comprometida!
           <br />
           <br />
-          Quero agradecer às secretárias do Ministério Jovem, vocês são grandes no que 
-          fazem! No último quadriênio, contamos com todo empenho e dedicação da Fernanda 
-          (2019 e 2020) e da Vitória (2021 e 2022). 
-          Que a vida e o ministério de vocês continuem sendo uma bênção como foi 
-          até aqui! Obrigado!
+          Quero agradecer às secretárias do Ministério Jovem, vocês são grandes
+          no que fazem! No último quadriênio, contamos com todo empenho e
+          dedicação da Fernanda Sanabria (2019 e 2020) e da Vitória Boeira (2021
+          e 2022). Que a vida e o ministério de vocês continuem sendo uma bênção
+          como foi até aqui! Obrigado!
           <br />
           <br />
           Agradeço aos colegas departamentais que passaram por estas pastas

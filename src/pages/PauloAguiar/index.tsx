@@ -33,9 +33,6 @@ import image24 from "../../assets/paulo-aguiar/image24.png";
 import image25 from "../../assets/paulo-aguiar/image25.png";
 import image26 from "../../assets/paulo-aguiar/image26.png";
 
-
-
-
 import Menu from "../../components/Menu";
 import MenuBlack from "../../components/MenuBlack";
 import { useNavigate } from "react-router-dom";
@@ -142,7 +139,8 @@ const PauloAguiar: React.FC = () => {
           Aguiar
         </Name>
         <Role>
-          Mordomia Cristã, Ministério da Família, ASA - Ação Solidária Adventista
+          Mordomia Cristã, Ministério da Família, ASA - Ação Solidária
+          Adventista
         </Role>
         <TextContainer>
           <TextCapitularContainer>
@@ -156,58 +154,71 @@ const PauloAguiar: React.FC = () => {
       <GreenBox>
         <br />
         <br />
-        <span className="title">
-          Mordomia Cristã
-        </span>
+        <span className="title">Mordomia Cristã</span>
         <br />
         <br />
-          "Quando os seguidores de Cristo Lhe devolvem o que Lhe é devido, 
-          estão acumulando tesouro que lhes será entregue quando ouvirem as palavras: 
-          “Bem está, servo bom e fiel [...] entra no alegria do teu Senhor”. Mateus 25:23. 
-          “O qual pelo alegria que Lhe estava proposta suportou a cruz, desprezando a 
-          afronta, e assentou-Se à destra do trono de Deus”. Hebreus 12:2. A alegria 
-          de ver pessoas redimidas, eternamente salvas, eis a recompensa de todos os que 
-          assentam os pés nas pegadas dAquele que disse: 'Segue-Me'.”
-        <br />  <br />
-          (Ellen G. White, O Desejado de Todas as Nações, p.366)
+        "Quando os seguidores de Cristo Lhe devolvem o que Lhe é devido, estão
+        acumulando tesouro que lhes será entregue quando ouvirem as palavras:
+        “Bem está, servo bom e fiel [...] entra no alegria do teu Senhor”.
+        Mateus 25:23. “O qual pelo alegria que Lhe estava proposta suportou a
+        cruz, desprezando a afronta, e assentou-Se à destra do trono de Deus”.
+        Hebreus 12:2. A alegria de ver pessoas redimidas, eternamente salvas,
+        eis a recompensa de todos os que assentam os pés nas pegadas dAquele que
+        disse: 'Segue-Me'.”
+        <br /> <br />
+        (Ellen G. White, O Desejado de Todas as Nações, p.366)
         <br />
         <br />
-          Ser um mordomo fiel de Deus, implica viver e administrar a nossa vida, 
-          reconhecendo por palavras e ações que Deus é o Nosso Senhor, que Ele é o 
-          Nosso Deus, e que Ele é o único dono de tudo que somos e de tudo o que temos.
+        Ser um mordomo fiel de Deus, implica viver e administrar a nossa vida,
+        reconhecendo por palavras e ações que Deus é o Nosso Senhor, que Ele é o
+        Nosso Deus, e que Ele é o único dono de tudo que somos e de tudo o que
+        temos.
         <br />
         <br />
       </GreenBox>
       <HighlightsContainer>
         <br /> <br />
-        <HighlightsSubTitle>Projeto "Primeiro Deus - 10 dias de oração”</HighlightsSubTitle>
+        <HighlightsSubTitle>
+          Projeto "Primeiro Deus - 10 dias de oração”
+        </HighlightsSubTitle>
         <br />
         <HighlightsText>
           Realizado a cada ano em todas as igrejas da ACSR.
         </HighlightsText>
         <br />
         <br />
-        <HighlightsSubTitle>Número de igrejas atendidas com o Seminário Teórico-Prático (Santa Convocação)</HighlightsSubTitle>
+        <HighlightsSubTitle>
+          Número de igrejas atendidas com o Seminário Teórico-Prático (Santa
+          Convocação)
+        </HighlightsSubTitle>
         <br />
         <img src={image1} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Número de igrejas onde sermões de fidelidade foram pregados mensalmente</HighlightsSubTitle>
+        <HighlightsSubTitle>
+          Número de igrejas onde sermões de fidelidade foram pregados
+          mensalmente
+        </HighlightsSubTitle>
         <br />
         <img src={image2} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Capacitações Regionais para líderes de Mordomia Cristã</HighlightsSubTitle>
+        <HighlightsSubTitle>
+          Capacitações Regionais para líderes de Mordomia Cristã
+        </HighlightsSubTitle>
         <br />
         <img src={image3} alt="" />
         <br />
         <img src={image4} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Treinamentos para as professoras nas trimestrais</HighlightsSubTitle>
+        <HighlightsSubTitle>
+          Treinamentos para as professoras nas trimestrais
+        </HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Foi realizado em 2022 para fortalecer a mordomia cristã das novas gerações.
+          Foi realizado em 2022 para fortalecer a mordomia cristã das novas
+          gerações.
         </HighlightsText>
         <br />
         <img src={image5} alt="" />
@@ -268,15 +279,17 @@ const PauloAguiar: React.FC = () => {
         <HighlightsSubTitle>Projeto Conectando Corações</HighlightsSubTitle>
         <br />
         <HighlightsText>
-          Através do incentivo de um álbum de figurinhas colecionáveis 
-          dos personagens bíblicos e outras ações, as famílias foram incentivadas 
-          a crescer em 5 áreas seguindo o acróstico da palavra FÁCIL:
+          Através do incentivo de um álbum de figurinhas colecionáveis dos
+          personagens bíblicos e outras ações, as famílias foram incentivadas a
+          crescer em 5 áreas seguindo o acróstico da palavra FÁCIL:
         </HighlightsText>
         <br />
         <img src={image13} alt="" />
         <br />
         <br />
-        <HighlightsSubTitle>Capacitações Regionais para líderes do Ministério da Família </HighlightsSubTitle>
+        <HighlightsSubTitle>
+          Capacitações Regionais para líderes do Ministério da Família{" "}
+        </HighlightsSubTitle>
         <br />
         <img src={image14} alt="" />
         <br />
@@ -285,15 +298,13 @@ const PauloAguiar: React.FC = () => {
       <YellowBox>
         <br />
         <br />
-        <span className="title">
-          ASA - Ação Solidária Adventista
-        </span>
+        <span className="title">ASA - Ação Solidária Adventista</span>
         <br />
         <br />
-          Ação Solidária Adventista (ASA) tem a missão de envolver cada membro 
-          da igreja no Relacionamento através do incentivo às ações solidárias semanais. 
-          Nosso objetivo é ter a maioria dos membros vivendo o amor ao próximo como seu 
-          estilo de vida.
+        Ação Solidária Adventista (ASA) tem a missão de envolver cada membro da
+        igreja no Relacionamento através do incentivo às ações solidárias
+        semanais. Nosso objetivo é ter a maioria dos membros vivendo o amor ao
+        próximo como seu estilo de vida.
         <br />
         <br />
         <br />
@@ -346,27 +357,38 @@ const PauloAguiar: React.FC = () => {
         <br />
         <br />
         <ThanksText>
-          Agradeço a Deus, o doador de toda a vida, pelo chamado a missão e privilégio 
-          de servir na Obra do Senhor. Agradeço à minha amada esposa Karina Aguiar 
-          pela parceria, apoio, dedicação e amor, sem ela nada disso seria possível. 
-          Aos meus filhos Lukas e Júlia pelo carinho, amor e por sempre me colocarem “pra cima”, 
-          vocês são meu orgulho, meu presente e minha alegria.  
-          E não posso esquecer dos meus pais Deniclei (Dino) e Maria de Lurdes (Lú) 
-          por terem colocado no meu coração o amor a Cristo, à Igreja e à Missão. 
+          Agradeço a Deus o doador de toda a vida pelo chamado a missão e
+          privilégio de servir na Obra do Senhor. Agradeço a minha amada esposa
+          Karina Aguiar pela parceria, apoio, dedicação e amor, sem ela nada
+          disso seria possível. Aos meus filhos Lukas e Júlia pelo carinho, amor
+          e por sempre me colocarem “pra cima”, vocês são meu orgulho, meu
+          presente e minha alegria. E não posso esquecer dos meus pais Deniclei
+          (Dino) e Maria de Lurdes (Lú) por terem colocado no meu coração o amor
+          a Cristo, a Igreja e a Missão.
           <br />
           <br />
-          Obrigado à administração do campo da ACSR por nos dar toda a estrutura para 
-          realizar nosso trabalho a cada dia. Grato aos meus colegas distritais e departamentais, 
-          sobretudo aos pastores Rogério Gurniak, Elton Júnior e João Lorini que, respectivamente,
-          lideraram as áreas de Mordomia Cristã, Ministério da Família e ASA de 2019 a 2021 e 
-          fizeram um excelente trabalho. 
+          Obrigado a administração do campo da ACSR por nos dar toda a estrutura
+          para realizar nosso trabalho a cada dia. Grato aos meus colegas
+          distritais e departamentais, sobretudo ao Pr. Rogério Gurniak, Pr.
+          Elton Jr. e Pr. João Lorini que respectivamente lideraram as áreas de
+          Mordomia Cristã, Ministério da Família e ASA de 2019 a 2021 e fizeram
+          um excelente trabalho.
           <br />
           <br />
-          Por fim, muito obrigado à igreja de Cristo, aos nossos líderes e membros que 
-          tornam todos os sonhos, trabalhos e realizações possíveis através da dedicação 
-          pessoal e da presença do Espírito Santo em suas vidas.  
+          Sou grato aos nossos líderes da USB, Pr. Harry e Pr. Geisler que
+          lideraram a Mordomia Cristã durante este período, e ao Pr. Vargas
+          nosso líder do Ministério da Família, pelos preciosos conselhos e
+          orientacões.
           <br />
           <br />
+          Louvo e agradeço a Deus pela vida, dedicação e excelente trabalho de
+          nossas secretárias de departamento, Naylane e Marissol, que são uma
+          bençao para nós.
+          <br />
+          <br />E por fim, muito obrigado a igreja de Cristo, aos nossos líderes
+          e membros que tornam todos os sonhos, trabalhos e realizações
+          possíveis através da dedicação pessoal e da presença do Espírito Santo
+          em suas vidas.
         </ThanksText>
       </ThanksContainer>
     </Container>

@@ -244,12 +244,12 @@ const MarcosJunior: React.FC = () => {
       <CrmContainer>
         <p>CRM - ACSR</p>
         <img src={crm} alt="CRM" />
+        <p className="italic">
+          *Obs.: Em 2019, o cartão de chamada da Escola Sabatina não possuía as 
+          perguntas da Roda do Discipulado. Em 2022, os dados são do 3º trimestre, 
+          quando foram levantados os dados para esta revista.
+        </p>
       </CrmContainer>
-      <span>
-        *Obs.: Em 2019, o cartão de chamada da Escola Sabatina não possuía as 
-        perguntas da Roda do Discipulado. Em 2022, os dados são do 3º trimestre, 
-        quando foram levantados os dados para esta revista.
-      </span>
       <EvangelismoContainer>
         <p>Evangelismos</p>
         <Tabs
